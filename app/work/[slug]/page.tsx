@@ -22,6 +22,10 @@ export function generateMetadata({ params }: { params: { slug: string } }): Meta
   };
 }
 
+type Block =
+  | { kind: 'text'; value: string; first: boolean }
+  | { kind: 'image'; src: string; idx: number; caption?: string };
+
 export default function ProjectPage({ params }: { params: { slug: string } }) {
   const item = getWorkBySlug(params.slug);
   if (!item) notFound();
@@ -29,6 +33,21 @@ export default function ProjectPage({ params }: { params: { slug: string } }) {
   const paragraphs = item.article
     ? item.article.split('\n\n').map((p) => p.trim()).filter(Boolean)
     : [];
+  const images = item.images || [];
+
+  // Interleave: paragraph[0], image[0], paragraph[1], image[1], …
+  const blocks: Block[] = [];
+  const len = Math.max(paragraphs.length, images.length);
+  for (let i = 0; i < len; i++) {
+    if (paragraphs[i]) blocks.push({ kind: 'text', value: paragraphs[i], first: i === 0 });
+    if (images[i])
+      blocks.push({
+        kind: 'image',
+        src: images[i],
+        idx: i,
+        caption: item.captions?.[i],
+      });
+  }
 
   return (
     <article
@@ -38,11 +57,12 @@ export default function ProjectPage({ params }: { params: { slug: string } }) {
         minHeight: '100vh',
       }}
     >
+      {/* Header — full-width container */}
       <div
         style={{
           maxWidth: '780px',
           margin: '0 auto',
-          padding: 'clamp(40px,6vw,80px) clamp(20px,5vw,32px)',
+          padding: '40px clamp(20px,5vw,32px) 32px',
         }}
       >
         <Link
@@ -94,67 +114,107 @@ export default function ProjectPage({ params }: { params: { slug: string } }) {
             fontSize: '12px',
             letterSpacing: '0.18em',
             color: 'var(--text-dark-3)',
-            marginBottom: '36px',
             paddingBottom: '32px',
             borderBottom: '1px solid var(--line-faint)',
           }}
         >
           {item.stat}
         </div>
+      </div>
 
-        {paragraphs.map((p, i) => (
-          <p
-            key={i}
-            style={{
-              fontSize: i === 0 ? '17px' : '15.5px',
-              lineHeight: 1.85,
-              color: i === 0 ? 'var(--text-dark)' : 'var(--text-dark-2)',
-              marginBottom: '28px',
-              fontWeight: i === 0 ? 400 : 300,
-            }}
-          >
-            {p}
-          </p>
-        ))}
-
-        {item.images && item.images.length > 0 && (
-          <div style={{ marginTop: '48px', display: 'flex', flexDirection: 'column', gap: '32px' }}>
-            {item.images.map((src, i) => (
-              <figure key={i}>
-                <div
+      {/* Body — interleaved blocks. Odd-indexed images are inset; even are full-width. */}
+      <div style={{ paddingBottom: 'clamp(48px,6vw,80px)' }}>
+        {blocks.map((block, i) => {
+          if (block.kind === 'text') {
+            return (
+              <p
+                key={`t-${i}`}
+                style={{
+                  fontSize: block.first ? '17px' : '15.5px',
+                  fontWeight: block.first ? 400 : 300,
+                  lineHeight: 1.85,
+                  color: block.first ? 'var(--text-dark)' : 'var(--text-dark-2)',
+                  maxWidth: '720px',
+                  margin: '0 auto',
+                  marginTop: i === 0 ? '0' : 'clamp(28px,4vw,44px)',
+                  padding: '0 clamp(20px,5vw,32px)',
+                }}
+              >
+                {block.value}
+              </p>
+            );
+          }
+          // Image block
+          const isInset = block.idx % 2 === 1;
+          return (
+            <figure
+              key={`i-${i}`}
+              style={{
+                margin: 'clamp(40px,5vw,60px) auto',
+                maxWidth: isInset ? '720px' : '960px',
+                padding: isInset ? '0 clamp(20px,5vw,32px)' : '0',
+              }}
+            >
+              <div
+                style={{
+                  position: 'relative',
+                  aspectRatio: '4/3',
+                  background: 'var(--surface-3)',
+                  border: '1px solid var(--line-faint)',
+                  overflow: 'hidden',
+                }}
+              >
+                <Image
+                  src={block.src}
+                  alt={block.caption || `${item.title} — image ${block.idx + 1}`}
+                  fill
+                  sizes="(max-width: 960px) 100vw, 960px"
+                  style={{ objectFit: 'cover' }}
+                />
+              </div>
+              <figcaption
+                style={{
+                  display: 'flex',
+                  justifyContent: 'space-between',
+                  alignItems: 'center',
+                  gap: '12px',
+                  padding: '10px 14px',
+                  borderTop: '1px solid var(--line-faint)',
+                  background: 'var(--surface)',
+                  borderLeft: '1px solid var(--line-faint)',
+                  borderRight: '1px solid var(--line-faint)',
+                  borderBottom: '1px solid var(--line-faint)',
+                }}
+              >
+                <span
                   style={{
-                    position: 'relative',
-                    aspectRatio: '4/3',
-                    background: 'var(--surface-3)',
-                    border: '1px solid var(--line-faint)',
+                    fontFamily: 'var(--font-mono)',
+                    fontSize: '11px',
+                    color: 'var(--text-dark-4)',
+                    letterSpacing: '0.18em',
+                    flexShrink: 0,
                   }}
                 >
-                  <Image
-                    src={src}
-                    alt={item.captions?.[i] || `${item.title} — image ${i + 1}`}
-                    fill
-                    sizes="(max-width: 780px) 100vw, 780px"
-                    style={{ objectFit: 'cover' }}
-                  />
-                </div>
-                {item.captions?.[i] && (
-                  <figcaption
+                  {String(block.idx + 1).padStart(2, '0')} / {String(images.length).padStart(2, '0')}
+                </span>
+                {block.caption && (
+                  <span
                     style={{
                       fontFamily: 'var(--font-mono)',
                       fontSize: '11px',
                       fontStyle: 'italic',
                       color: 'var(--text-dark-3)',
                       letterSpacing: '0.04em',
-                      marginTop: '10px',
+                      textAlign: 'right',
                     }}
                   >
-                    {item.captions[i]}
-                  </figcaption>
+                    {block.caption}
+                  </span>
                 )}
-              </figure>
-            ))}
-          </div>
-        )}
+              </figcaption>
+            </figure>
+          );
+        })}
       </div>
     </article>
   );

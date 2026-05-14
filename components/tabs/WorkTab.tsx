@@ -1,6 +1,7 @@
 'use client';
 import { useState } from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 import { WORK, WORK_FILTERS } from '@/data/work';
 
 export function WorkTab() {
@@ -39,8 +40,21 @@ export function WorkTab() {
       <div className="work-grid">
         {filtered.map((item) => (
           <Link key={item.id} href={`/work/${item.slug}`} className="work-card">
-            <div className="work-card-img" style={{ background: item.gradient }}>
-              <span className="work-card-glyph">{item.glyph}</span>
+            <div
+              className="work-card-img"
+              style={item.image ? undefined : { background: item.gradient }}
+            >
+              {item.image ? (
+                <Image
+                  src={item.image}
+                  alt={item.title}
+                  fill
+                  sizes="(max-width: 720px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                  style={{ objectFit: 'cover' }}
+                />
+              ) : (
+                <span className="work-card-glyph">{item.glyph}</span>
+              )}
               <span className="work-card-stat">{item.stat}</span>
             </div>
             <div className="work-card-body">
