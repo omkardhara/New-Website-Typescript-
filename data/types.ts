@@ -1,0 +1,66 @@
+export type WorkItem = {
+  id: number;
+  slug: string;
+  cat: 'performance' | 'brand' | 'installation' | 'activism' | 'production';
+  tag: string;
+  title: string;
+  desc: string;
+  stat: string;
+  glyph: string;
+  gradient?: string;
+  image?: string;
+  images?: string[];
+  captions?: string[];
+  article?: string;
+};
+
+export type Video = {
+  title: string;
+  sub: string;
+  yt: string;
+  thumb: string;
+  portrait?: boolean;
+};
+
+export type PressItem = {
+  id: number;
+  publication: string;
+  featured: boolean;
+  year: string;
+  type: 'image' | 'pdf';
+  src: string;
+};
+
+export type Note = {
+  id: number;
+  slug: string;
+  title: string;
+  date: string;
+  read: string;
+  tag: string;
+  excerpt: string;
+  image?: string;
+};
+
+export type Chapter = {
+  id: string;
+  roman: string;
+  label: string;
+  period: string;
+  desc: string;
+};
+
+export type Offering = {
+  id: string;
+  icon: string;
+  label: string;
+  title: string;
+  desc: string;
+  note: string;
+};
+
+export type Social = {
+  label: string;
+  handle: string;
+  href: string;
+};
