@@ -1,5 +1,8 @@
 import { SOCIALS } from '@/data/site';
 
+// Replace this with the actual WhatsApp number (digits only, no + or spaces)
+const WHATSAPP_NUMBER = '919XXXXXXXXX';
+
 export function ContactBand() {
   return (
     <section className="contact-band" id="contact">
@@ -34,6 +37,18 @@ export function ContactBand() {
           <a href="mailto:omkar.dhara@gmail.com" className="contact-email">
             omkar.dhara@gmail.com
           </a>
+
+          <div className="contact-meta-label">WhatsApp</div>
+          <a
+            href={`https://wa.me/${WHATSAPP_NUMBER}`}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="contact-email"
+            style={{ marginBottom: 32 }}
+          >
+            Message on WhatsApp →
+          </a>
+
           <div className="contact-meta-label">Find me here</div>
           <div className="contact-socials">
             {SOCIALS.map((s) => (

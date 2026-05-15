@@ -3,7 +3,6 @@ import type { WorkItem } from './types';
 export const WORK_FILTERS = [
   { id: 'all', label: 'Everything' },
   { id: 'performance', label: 'Performances' },
-  { id: 'brand', label: 'Brand Work' },
   { id: 'installation', label: 'Installations' },
   { id: 'activism', label: 'Activism' },
   { id: 'production', label: 'Production' },

@@ -14,10 +14,12 @@ export const VIDEOS: Video[] = [
     thumb: 'https://img.youtube.com/vi/-EecfvR0_FE/maxresdefault.jpg',
   },
   {
+    // Doordarshan video doesn't auto-generate a maxresdefault thumbnail.
+    // Use the local image from /public/images/.
     title: 'Beyond Thoughts · Doordarshan',
     sub: 'A walk through the journey · National TV',
     yt: '5A9IgNfa7Wg',
-    thumb: 'https://img.youtube.com/vi/5A9IgNfa7Wg/maxresdefault.jpg',
+    thumb: '/images/Doordarshan-Beyond Thoughts- Omkar Dhareshwar.png',
   },
   {
     title: 'Museum of Goa · Flow Simulator',

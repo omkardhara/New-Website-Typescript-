@@ -35,7 +35,6 @@ export default function ProjectPage({ params }: { params: { slug: string } }) {
     : [];
   const images = item.images || [];
 
-  // Interleave: paragraph[0], image[0], paragraph[1], image[1], …
   const blocks: Block[] = [];
   const len = Math.max(paragraphs.length, images.length);
   for (let i = 0; i < len; i++) {
@@ -50,37 +49,51 @@ export default function ProjectPage({ params }: { params: { slug: string } }) {
   }
 
   return (
-    <article
-      style={{
-        background: 'var(--bg-cream)',
-        paddingTop: '110px',
-        minHeight: '100vh',
-      }}
-    >
-      {/* Header — full-width container */}
+    <article style={{ background: 'var(--bg-cream)', minHeight: '100vh' }}>
+      {/* #10: prominent sticky back button */}
+      <div
+        style={{
+          position: 'sticky',
+          top: 0,
+          zIndex: 40,
+          background: 'rgba(248,246,241,0.95)',
+          backdropFilter: 'blur(20px) saturate(1.4)',
+          borderBottom: '1px solid var(--line-faint)',
+          padding: '74px clamp(20px,5vw,32px) 14px',
+        }}
+      >
+        <div style={{ maxWidth: '960px', margin: '0 auto' }}>
+          <Link
+            href="/#tab-work"
+            style={{
+              display: 'inline-flex',
+              alignItems: 'center',
+              gap: '10px',
+              fontFamily: 'var(--font-mono)',
+              fontSize: '11px',
+              letterSpacing: '0.2em',
+              textTransform: 'uppercase',
+              color: 'var(--text-dark)',
+              textDecoration: 'none',
+              padding: '10px 18px',
+              border: '1px solid var(--line-dark)',
+              background: 'var(--surface)',
+              transition: 'all 0.25s',
+            }}
+            className="back-btn"
+          >
+            <span style={{ fontSize: '14px' }}>←</span> Back to all work
+          </Link>
+        </div>
+      </div>
+
       <div
         style={{
           maxWidth: '780px',
           margin: '0 auto',
-          padding: '40px clamp(20px,5vw,32px) 32px',
+          padding: '32px clamp(20px,5vw,32px) 0',
         }}
       >
-        <Link
-          href="/#tab-work"
-          style={{
-            fontFamily: 'var(--font-mono)',
-            fontSize: '10px',
-            letterSpacing: '0.18em',
-            textTransform: 'uppercase',
-            color: 'var(--text-dark-3)',
-            textDecoration: 'none',
-            marginBottom: '32px',
-            display: 'inline-block',
-          }}
-        >
-          ← Back to all work
-        </Link>
-
         <div
           style={{
             fontFamily: 'var(--font-mono)',
@@ -122,7 +135,6 @@ export default function ProjectPage({ params }: { params: { slug: string } }) {
         </div>
       </div>
 
-      {/* Body — interleaved blocks. Odd-indexed images are inset; even are full-width. */}
       <div style={{ paddingBottom: 'clamp(48px,6vw,80px)' }}>
         {blocks.map((block, i) => {
           if (block.kind === 'text') {
@@ -144,7 +156,6 @@ export default function ProjectPage({ params }: { params: { slug: string } }) {
               </p>
             );
           }
-          // Image block
           const isInset = block.idx % 2 === 1;
           return (
             <figure
@@ -192,7 +203,6 @@ export default function ProjectPage({ params }: { params: { slug: string } }) {
                     fontSize: '11px',
                     color: 'var(--text-dark-4)',
                     letterSpacing: '0.18em',
-                    flexShrink: 0,
                   }}
                 >
                   {String(block.idx + 1).padStart(2, '0')} / {String(images.length).padStart(2, '0')}
@@ -215,6 +225,38 @@ export default function ProjectPage({ params }: { params: { slug: string } }) {
             </figure>
           );
         })}
+      </div>
+
+      {/* Closing back button at end of article */}
+      <div
+        style={{
+          maxWidth: '780px',
+          margin: '0 auto',
+          padding: '24px clamp(20px,5vw,32px) 80px',
+          borderTop: '1px solid var(--line-faint)',
+          textAlign: 'center',
+        }}
+      >
+        <Link
+          href="/#tab-work"
+          style={{
+            display: 'inline-flex',
+            alignItems: 'center',
+            gap: '10px',
+            fontFamily: 'var(--font-mono)',
+            fontSize: '11px',
+            letterSpacing: '0.2em',
+            textTransform: 'uppercase',
+            color: 'var(--bg-cream)',
+            background: 'var(--gold)',
+            padding: '14px 28px',
+            textDecoration: 'none',
+            transition: 'all 0.25s',
+            marginTop: '32px',
+          }}
+        >
+          <span style={{ fontSize: '14px' }}>←</span> Browse more work
+        </Link>
       </div>
     </article>
   );

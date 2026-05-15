@@ -42,17 +42,6 @@ export function Hero() {
 
   return (
     <section className="hero">
-      <div className="hero-coord">
-        <div className="hero-coord-block">
-          <span className="ember">Mumbai · IN</span>
-          <span>19.07°N 72.87°E</span>
-        </div>
-        <div className="hero-coord-block">
-          <span className="hero-coord-live ember">Available · 2026</span>
-          <span>Est. 2014</span>
-        </div>
-      </div>
-
       <div className="hero-grid">
         <div className="hero-left">
           <div className="hero-eyebrow">Flow Artist · Performer · Storyteller</div>
@@ -82,20 +71,10 @@ export function Hero() {
             <a href="#tab-work" className="btn-ghost">
               See the work
             </a>
+            {/* #4: Action-verb CTA replacing the stat phrasing */}
             <Link href="/story" className="story-link">
-              10 years · 6 chapters →
+              Know the story →
             </Link>
-          </div>
-
-          <div className="hero-stats" ref={statsRef}>
-            {STATS.map((s) => (
-              <div className="hero-stat" key={s.label}>
-                <span className="hero-stat-num" data-target={s.num} data-suffix={s.suffix || ''}>
-                  0
-                </span>
-                <span className="hero-stat-label">{s.label}</span>
-              </div>
-            ))}
           </div>
 
           <div className="hero-offerings" id="offerings">
@@ -108,6 +87,17 @@ export function Hero() {
             <Link href="/contact" className="offering-chip">
               <span className="offering-chip-num">03</span> Brand Collaborations
             </Link>
+          </div>
+
+          <div className="hero-stats" ref={statsRef}>
+            {STATS.map((s) => (
+              <div className="hero-stat" key={s.label}>
+                <span className="hero-stat-num" data-target={s.num} data-suffix={s.suffix || ''}>
+                  0
+                </span>
+                <span className="hero-stat-label">{s.label}</span>
+              </div>
+            ))}
           </div>
         </div>
 

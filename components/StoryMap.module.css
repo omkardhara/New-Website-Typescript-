@@ -1,10 +1,64 @@
 /* ──────────────────────────────────────────────────────────
- * Story Map — videogame-style chapter map
+ * Story Map — videogame-style chapter map (v3)
+ * Cleaner: no year ticks, taller canvas, more node breathing room
  * ────────────────────────────────────────────────────────── */
+
+/* Sticky back button at very top of /story page */
+.stickyBack {
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  background: rgba(248,246,241,0.95);
+  backdrop-filter: blur(20px) saturate(1.4);
+  border-bottom: 1px solid var(--line-faint);
+  padding: 74px clamp(20px,5vw,32px) 14px;
+}
+.backBtn {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  font-family: var(--font-mono);
+  font-size: 11px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--text-dark);
+  text-decoration: none;
+  padding: 10px 18px;
+  border: 1px solid var(--line-dark);
+  background: var(--surface);
+  transition: all 0.25s;
+}
+.backBtn:hover {
+  background: var(--gold);
+  color: var(--bg-cream);
+  border-color: var(--gold);
+}
+.backArrow { font-size: 14px; }
+
+.backBtnInline {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  font-family: var(--font-mono);
+  font-size: 11px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--bg-cream);
+  text-decoration: none;
+  padding: 14px 28px;
+  background: var(--gold);
+  transition: all 0.25s;
+}
+.backBtnInline:hover { background: var(--gold-bright); }
+.panelFoot {
+  padding: 24px clamp(20px,4vw,40px) 28px;
+  text-align: center;
+  border-top: 1px solid var(--line-faint);
+}
 
 .wrap {
   background: var(--bg-cream);
-  padding: 110px clamp(20px, 5vw, 64px) clamp(48px, 6vw, 80px);
+  padding: 32px clamp(20px, 5vw, 64px) clamp(48px, 6vw, 80px);
   min-height: 100vh;
   position: relative;
 }
@@ -14,10 +68,7 @@
   margin: 0 auto;
 }
 
-/* ── Header ─────────────────────────────────────────────── */
-.header {
-  margin-bottom: 48px;
-}
+.header { margin-bottom: 48px; }
 .dispatch {
   font-family: var(--font-mono);
   font-size: 10px;
@@ -43,12 +94,8 @@
   letter-spacing: -0.02em;
   color: var(--text-dark);
 }
-.title em {
-  font-style: italic;
-  color: var(--gold);
-}
+.title em { font-style: italic; color: var(--gold); }
 
-/* ── HUD strip ──────────────────────────────────────────── */
 .hud {
   display: flex;
   flex-wrap: wrap;
@@ -83,12 +130,11 @@
   color: var(--text-dark-4);
 }
 
-/* ── Map canvas ─────────────────────────────────────────── */
+/* Canvas — wider aspect ratio, more breathing room */
 .canvasWrap {
   position: relative;
   width: 100%;
-  /* Maintain aspect ratio of the SVG viewBox so absolute-positioned nodes line up */
-  aspect-ratio: 1400 / 500;
+  aspect-ratio: 1400 / 800;
   margin-bottom: 32px;
 }
 .svg {
@@ -98,6 +144,7 @@
   height: 100%;
 }
 
+/* Node cards */
 .node {
   position: absolute;
   transform: translate(-50%, -50%);
@@ -107,54 +154,51 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 8px;
-  padding: 8px;
+  gap: 14px;
+  padding: 4px;
   text-align: center;
   font-family: inherit;
-  width: 140px;
+  width: 180px;
 }
 
-.nodePeriod {
-  font-family: var(--font-mono);
-  font-size: 9px;
-  letter-spacing: 0.22em;
-  text-transform: uppercase;
-  color: var(--text-dark-4);
-  transition: color 0.3s;
-}
-.node.active .nodePeriod { color: var(--gold); }
-
-.nodeCircle {
+.nodeCard {
   position: relative;
-  width: 64px;
-  height: 64px;
-  border-radius: 50%;
-  background: var(--bg-cream);
+  width: 110px;
+  height: 110px;
+  background: var(--surface);
   border: 1.5px solid var(--line-dark);
+  border-radius: 8px;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
+  gap: 4px;
+  padding: 12px;
   transition: all 0.4s cubic-bezier(0.16,1,0.3,1);
-  box-shadow: 0 0 0 6px var(--bg-cream);
+  box-shadow: 0 0 0 8px var(--bg-cream), 0 2px 8px rgba(15,15,13,0.04);
 }
-.node:hover .nodeCircle {
+
+.node:hover .nodeCard {
   border-color: var(--gold);
-  transform: scale(1.05);
+  transform: translateY(-2px);
+  box-shadow: 0 0 0 8px var(--bg-cream), 0 8px 24px rgba(46,107,79,0.18);
 }
-.node.active .nodeCircle {
+
+.node.active .nodeCard {
   background: var(--gold);
   border-color: var(--gold);
-  transform: scale(1.15);
-  box-shadow: 0 0 0 6px var(--bg-cream), 0 0 0 7.5px var(--gold);
+  transform: scale(1.1);
+  box-shadow: 0 0 0 8px var(--bg-cream), 0 0 0 9.5px var(--gold), 0 16px 36px rgba(46,107,79,0.32);
 }
-.node.visited:not(.active) .nodeCircle {
+
+.node.visited:not(.active) .nodeCard {
   border-color: var(--gold);
-  background: rgba(46,107,79,0.08);
+  background: rgba(46,107,79,0.06);
 }
 
 .nodeRoman {
   font-family: var(--font-serif);
-  font-size: 24px;
+  font-size: 26px;
   font-style: italic;
   font-weight: 400;
   color: var(--text-dark-3);
@@ -164,11 +208,23 @@
 .node.active .nodeRoman { color: var(--bg-cream); }
 .node.visited:not(.active) .nodeRoman { color: var(--gold); }
 
-/* Pulsing ring on active */
+.nodeIcon { margin: 2px 0; }
+.node.active .nodeIcon :global(svg) { stroke: var(--bg-cream); }
+
+.nodeCount {
+  font-family: var(--font-mono);
+  font-size: 8px;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--text-dark-4);
+  margin-top: 2px;
+}
+.node.active .nodeCount { color: rgba(248,246,241,0.85); }
+
 .nodePulse {
   position: absolute;
-  inset: -4px;
-  border-radius: 50%;
+  inset: -6px;
+  border-radius: 12px;
   border: 1.5px solid var(--gold);
   opacity: 0;
   pointer-events: none;
@@ -176,29 +232,41 @@
 .node.active .nodePulse {
   animation: ring-pulse 2.4s ease-out infinite;
 }
-
 @keyframes ring-pulse {
   0% { transform: scale(1); opacity: 0.7; }
-  100% { transform: scale(1.45); opacity: 0; }
+  100% { transform: scale(1.35); opacity: 0; }
 }
 
+.nodeMeta {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+}
+.nodePeriod {
+  font-family: var(--font-mono);
+  font-size: 9px;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--text-dark-4);
+  transition: color 0.3s;
+}
+.node.active .nodePeriod { color: var(--gold); }
 .nodeLabel {
   font-family: var(--font-sans);
-  font-size: 13px;
+  font-size: 14px;
   font-weight: 500;
   color: var(--text-dark);
-  margin-top: 4px;
 }
 .nodeDesc {
   font-family: var(--font-mono);
   font-size: 10px;
   color: var(--text-dark-4);
   line-height: 1.4;
-  max-width: 14ch;
+  max-width: 18ch;
   letter-spacing: 0.02em;
 }
 
-/* "You are here" hint when nothing selected */
 .hint {
   text-align: center;
   font-family: var(--font-mono);
@@ -207,10 +275,10 @@
   text-transform: uppercase;
   color: var(--text-dark-4);
   margin-bottom: 24px;
-  opacity: 0.7;
+  opacity: 0.8;
 }
 
-/* ── Detail panel ───────────────────────────────────────── */
+/* Detail panel */
 .panel {
   background: var(--surface);
   border: 1px solid var(--line-dark);
@@ -272,9 +340,7 @@
   color: var(--gold);
 }
 
-.events {
-  padding: 8px clamp(20px, 4vw, 40px) 28px;
-}
+.events { padding: 8px clamp(20px, 4vw, 40px) 28px; }
 .event {
   width: 100%;
   display: grid;
@@ -310,7 +376,6 @@
   background: var(--ember);
   border-color: var(--ember);
 }
-.event.open .eventIcon :global(svg) { stroke: var(--bg-cream); }
 
 .eventYear {
   font-family: var(--font-mono);
@@ -358,14 +423,14 @@
   border: 1px solid var(--line-faint);
 }
 
-/* ── Responsive ─────────────────────────────────────────── */
 @media (max-width: 1024px) {
-  .canvasWrap { aspect-ratio: auto; }
+  .canvasWrap { aspect-ratio: auto; padding: 8px 0; }
   .svg { display: none; }
   .nodes {
     display: flex;
     flex-direction: column;
     gap: 8px;
+    position: relative;
   }
   .node {
     position: relative;
@@ -376,31 +441,33 @@
     flex-direction: row;
     text-align: left;
     align-items: center;
-    gap: 16px;
-    padding: 18px 16px;
+    gap: 18px;
+    padding: 16px;
     border: 1px solid var(--line-faint);
     background: var(--surface);
   }
   .node.active { background: var(--bg-warm); border-color: var(--gold); }
   .node.visited:not(.active) { border-color: rgba(46,107,79,0.4); }
-  .nodeCircle {
-    width: 52px;
-    height: 52px;
+  .nodeCard {
+    width: 72px;
+    height: 72px;
+    flex-shrink: 0;
     box-shadow: none;
+    padding: 6px;
   }
-  .node.active .nodeCircle {
+  .node.active .nodeCard {
     box-shadow: 0 0 0 4px var(--bg-warm), 0 0 0 5.5px var(--gold);
   }
   .nodePulse { display: none; }
-  .nodeRoman { font-size: 20px; }
-  .nodePeriod { order: 3; margin-left: auto; }
+  .nodeRoman { font-size: 18px; }
+  .nodeCount { font-size: 7px; }
+  .nodeMeta { align-items: flex-start; }
   .nodeDesc { max-width: none; }
-  /* Connecting vertical line on mobile */
   .nodesMobileLine {
     position: absolute;
-    left: 42px;
-    top: 60px;
-    bottom: 60px;
+    left: 52px;
+    top: 80px;
+    bottom: 80px;
     width: 1px;
     background: linear-gradient(to bottom, transparent, var(--line-dark) 10%, var(--line-dark) 90%, transparent);
     z-index: 0;
@@ -411,6 +478,7 @@
 }
 
 @media (max-width: 640px) {
+  .stickyBack { padding-top: 80px; padding-bottom: 12px; }
   .hudStat { min-width: 110px; padding: 14px 16px; }
   .hudStatNum { font-size: 22px; }
   .nodeLabel { font-size: 14px; }

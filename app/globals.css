@@ -312,3 +312,180 @@ body::before {
   .story-chapter-desc { max-width: none; }
   .panel-head h2 { font-size: clamp(28px, 8vw, 40px); }
 }
+/* ═══════════════════════════════════════════════════════════
+ * APPEND THIS TO THE END OF app/globals.css
+ * (Do not replace the whole file — these are additions)
+ * ═══════════════════════════════════════════════════════════ */
+
+/* ── #1: CredStrip — auto-scrolling client/press ribbon ──── */
+.cred-strip-wrap {
+  background: var(--surface);
+  border-top: 1px solid var(--line-faint);
+  border-bottom: 1px solid var(--line-faint);
+  padding: 22px 0 26px;
+  overflow: hidden;
+  position: relative;
+  z-index: 3;
+}
+.cred-strip-label {
+  font-family: var(--font-mono);
+  font-size: 10px;
+  letter-spacing: 0.28em;
+  color: var(--text-dark-3);
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 16px;
+}
+.cred-strip-viewport {
+  overflow: hidden;
+  position: relative;
+}
+.cred-strip-viewport::before,
+.cred-strip-viewport::after {
+  content: '';
+  position: absolute;
+  top: 0; bottom: 0;
+  width: 80px;
+  z-index: 2;
+  pointer-events: none;
+}
+.cred-strip-viewport::before {
+  left: 0;
+  background: linear-gradient(to right, var(--surface), transparent);
+}
+.cred-strip-viewport::after {
+  right: 0;
+  background: linear-gradient(to left, var(--surface), transparent);
+}
+.cred-strip-marquee {
+  display: flex;
+  width: max-content;
+  gap: 0;
+  animation: cred-scroll 38s linear infinite;
+}
+.cred-strip-item {
+  font-family: var(--font-mono);
+  font-size: 12px;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--text-dark-3);
+  padding: 0 32px;
+  border-right: 1px solid var(--line-faint);
+  white-space: nowrap;
+}
+@keyframes cred-scroll {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
+}
+
+/* ── #6: SideRail — desktop right-side tab indicator ───── */
+.side-rail {
+  position: fixed;
+  right: 22px;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 45;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+.side-rail-item {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 12px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 4px 0;
+  font-family: inherit;
+}
+.side-rail-label {
+  font-family: var(--font-mono);
+  font-size: 10px;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--text-dark-3);
+  opacity: 0;
+  transform: translateX(8px);
+  transition: opacity 0.25s, transform 0.25s;
+}
+.side-rail-num {
+  color: var(--text-dark-4);
+  margin-right: 4px;
+}
+.side-rail-item:hover .side-rail-label {
+  opacity: 1;
+  transform: translateX(0);
+}
+.side-rail-dot {
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  background: rgba(135,132,124,0.45);
+  transition: all 0.3s ease;
+  flex-shrink: 0;
+}
+.side-rail-item:hover .side-rail-dot {
+  background: var(--gold-light);
+  transform: scale(1.4);
+}
+.side-rail-item.active .side-rail-dot {
+  background: var(--gold);
+  transform: scale(1.55);
+  box-shadow: 0 0 0 4px rgba(46,107,79,0.14);
+}
+.side-rail-item.active .side-rail-label {
+  opacity: 1;
+  transform: translateX(0);
+  color: var(--gold);
+}
+@media (max-width: 1024px) {
+  .side-rail { display: none !important; }
+}
+
+/* ── #3: stuck-state tab bar — much more prominent ───── */
+.tab-bar-wrap.stuck {
+  box-shadow: 0 8px 24px rgba(15,15,13,0.08);
+  background: rgba(248,246,241,0.97);
+  backdrop-filter: blur(20px) saturate(1.4);
+}
+.tab-bar-wrap.stuck .tab-btn {
+  padding-top: 22px;
+  padding-bottom: 22px;
+}
+.tab-bar-wrap.stuck .tab-btn.active {
+  background: rgba(46,107,79,0.06);
+}
+
+/* ── #9: NotesTab cover images ─────────────────────────── */
+.note-card {
+  /* Override existing padding so image can stretch full width */
+  padding: 0 !important;
+  overflow: hidden;
+}
+.note-img-wrap {
+  position: relative;
+  width: 100%;
+  height: 220px;
+  background: var(--surface-3);
+  overflow: hidden;
+}
+.note-img-wrap.small { height: 160px; }
+.note-card.featured .note-img-wrap { height: 300px; }
+.note-card-body {
+  padding: 28px 26px 30px;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+.note-card.featured .note-card-body {
+  padding: 36px 32px 40px;
+}
+
+/* ── #10: back button hover state ──────────────────────── */
+.back-btn:hover {
+  background: var(--gold) !important;
+  color: var(--bg-cream) !important;
+  border-color: var(--gold) !important;
+}
