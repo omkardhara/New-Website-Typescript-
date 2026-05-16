@@ -477,7 +477,7 @@
 }
 .eventImg {
   width: clamp(180px, 28vw, 280px);
-  aspect-ratio: 4/3;
+  aspect-ratio: 4 / 3;
   object-fit: cover;
   background: var(--surface-3);
   border: 1px solid var(--line-faint);

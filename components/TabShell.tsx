@@ -12,8 +12,9 @@ export function TabShell({ tabs }: { tabs: TabDef[] }) {
   const [active, setActive] = useState(tabs[0].id);
   const [stuck, setStuck] = useState(false);
   const sentinelRef = useRef<HTMLDivElement>(null);
+  const contentRef = useRef<HTMLDivElement>(null);
 
-  // Detect when the tab bar has become sticky so we can amp up its visual prominence
+  // Detect when the tab bar has become sticky
   useEffect(() => {
     if (!sentinelRef.current) return;
     const obs = new IntersectionObserver(
@@ -26,12 +27,13 @@ export function TabShell({ tabs }: { tabs: TabDef[] }) {
 
   const handleSelect = (id: string) => {
     setActive(id);
-    if (typeof window !== 'undefined' && window.innerWidth < 720) {
-      document.querySelector('.tab-bar-wrap')?.scrollIntoView({
-        behavior: 'smooth',
-        block: 'start',
-      });
-    }
+    // Scroll to content panel, clearing the sticky tab bar height (~90px)
+    setTimeout(() => {
+      if (contentRef.current) {
+        const top = contentRef.current.getBoundingClientRect().top + window.scrollY - 90;
+        window.scrollTo({ top, behavior: 'smooth' });
+      }
+    }, 50);
   };
 
   return (
@@ -57,7 +59,7 @@ export function TabShell({ tabs }: { tabs: TabDef[] }) {
         </div>
       </div>
 
-      <div className="tab-content">
+      <div className="tab-content" ref={contentRef}>
         {tabs.map((t) => (
           <div
             key={t.id}
