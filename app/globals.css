@@ -366,18 +366,6 @@ body::before {
   to { transform: translateX(-50%); }
 }
 
-* ═══════════════════════════════════════════════════════════
- * APPEND THIS TO THE END OF app/globals.css
- *
- * This is the FULL v3 append — replaces any earlier append block.
- * Includes: CredStrip, SideRail, NotesTab images, back-btn,
- *           plus the NEW tab bar (dark band with pill buttons).
- *
- * If you previously appended v2, REMOVE that block first (find
- * the "APPEND THIS TO THE END OF app/globals.css" comment in your
- * globals.css and delete from that comment to the end). Then paste
- * this whole block.
- * ═══════════════════════════════════════════════════════════ */
 
 /* ── CredStrip — auto-scrolling ribbon ──────────────────── */
 .cred-strip-wrap {
