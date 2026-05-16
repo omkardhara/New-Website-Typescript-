@@ -1,6 +1,5 @@
 'use client';
 import { useState, useEffect, useRef, type ReactNode } from 'react';
-import { SideRail } from './SideRail';
 
 export type TabDef = {
   id: string;
@@ -57,9 +56,6 @@ export function TabShell({ tabs }: { tabs: TabDef[] }) {
           ))}
         </div>
       </div>
-
-      {/* Desktop-only right-side tab indicator */}
-      <SideRail tabs={tabs} activeId={active} onSelect={handleSelect} />
 
       <div className="tab-content">
         {tabs.map((t) => (
