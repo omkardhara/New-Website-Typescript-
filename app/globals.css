@@ -140,20 +140,9 @@ body::before {
 .offering-chip:hover { border-color: var(--gold-light); background: rgba(46,107,79,0.16); color: var(--text-light); }
 .offering-chip-num { color: var(--ember-light); font-size: 9px; }
 
-/* Tab shell */
-.tab-shell { background: var(--bg-cream); position: relative; z-index: 2; }
-.tab-bar-wrap { position: sticky; top: 0; z-index: 50; background: var(--bg-cream); border-bottom: 1px solid var(--line-dark); overflow-x: auto; -webkit-overflow-scrolling: touch; scrollbar-width: none; }
-.tab-bar-wrap::-webkit-scrollbar { display: none; }
-.tab-bar { display: flex; gap: 0; padding: 0 clamp(20px, 5vw, 64px); max-width: 1400px; margin: 0 auto; min-width: max-content; }
-.tab-btn { font-family: var(--font-mono); font-size: 12px; letter-spacing: 0.2em; text-transform: uppercase; color: var(--text-dark-3); background: none; border: none; padding: 26px 24px; cursor: pointer; position: relative; transition: color 0.25s; white-space: nowrap; display: flex; align-items: center; gap: 10px; }
-.tab-btn-num { font-family: var(--font-mono); font-size: 9px; color: var(--text-dark-4); letter-spacing: 0.14em; }
-.tab-btn:hover { color: var(--text-dark); }
-.tab-btn.active { color: var(--gold); }
-.tab-btn.active .tab-btn-num { color: var(--ember); }
-.tab-btn::after { content: ''; position: absolute; bottom: -1px; left: 24px; right: 24px; height: 2px; background: var(--gold); transform: scaleX(0); transform-origin: left; transition: transform 0.45s cubic-bezier(0.16,1,0.3,1); }
-.tab-btn.active::after { transform: scaleX(1); }
-
-.tab-content { padding: clamp(48px, 6vw, 80px) clamp(20px, 5vw, 64px); max-width: 1400px; margin: 0 auto; min-height: 60vh; }
+/* Tab shell — base (dark v3 styles further below override nothing; kept as single source) */
+.tab-shell { background: var(--bg-dark); position: relative; z-index: 2; }
+.tab-content { padding: clamp(48px, 6vw, 80px) clamp(20px, 5vw, 64px); max-width: 1400px; margin: 0 auto; min-height: 60vh; background: var(--bg-cream); }
 .tab-panel { display: none; }
 .tab-panel.active { display: block; animation: fade-in 0.5s cubic-bezier(0.16,1,0.3,1); }
 
@@ -314,10 +303,18 @@ body::before {
 }
 /* ═══════════════════════════════════════════════════════════
  * APPEND THIS TO THE END OF app/globals.css
- * (Do not replace the whole file — these are additions)
+ *
+ * This is the FULL v3 append — replaces any earlier append block.
+ * Includes: CredStrip, SideRail, NotesTab images, back-btn,
+ *           plus the NEW tab bar (dark band with pill buttons).
+ *
+ * If you previously appended v2, REMOVE that block first (find
+ * the "APPEND THIS TO THE END OF app/globals.css" comment in your
+ * globals.css and delete from that comment to the end). Then paste
+ * this whole block.
  * ═══════════════════════════════════════════════════════════ */
 
-/* ── #1: CredStrip — auto-scrolling client/press ribbon ──── */
+/* ── CredStrip — auto-scrolling ribbon ──────────────────── */
 .cred-strip-wrap {
   background: var(--surface);
   border-top: 1px solid var(--line-faint);
@@ -336,10 +333,7 @@ body::before {
   text-align: center;
   margin-bottom: 16px;
 }
-.cred-strip-viewport {
-  overflow: hidden;
-  position: relative;
-}
+.cred-strip-viewport { overflow: hidden; position: relative; }
 .cred-strip-viewport::before,
 .cred-strip-viewport::after {
   content: '';
@@ -349,14 +343,8 @@ body::before {
   z-index: 2;
   pointer-events: none;
 }
-.cred-strip-viewport::before {
-  left: 0;
-  background: linear-gradient(to right, var(--surface), transparent);
-}
-.cred-strip-viewport::after {
-  right: 0;
-  background: linear-gradient(to left, var(--surface), transparent);
-}
+.cred-strip-viewport::before { left: 0; background: linear-gradient(to right, var(--surface), transparent); }
+.cred-strip-viewport::after { right: 0; background: linear-gradient(to left, var(--surface), transparent); }
 .cred-strip-marquee {
   display: flex;
   width: max-content;
@@ -378,7 +366,157 @@ body::before {
   to { transform: translateX(-50%); }
 }
 
-/* ── #6: SideRail — desktop right-side tab indicator ───── */
+* ═══════════════════════════════════════════════════════════
+ * APPEND THIS TO THE END OF app/globals.css
+ *
+ * This is the FULL v3 append — replaces any earlier append block.
+ * Includes: CredStrip, SideRail, NotesTab images, back-btn,
+ *           plus the NEW tab bar (dark band with pill buttons).
+ *
+ * If you previously appended v2, REMOVE that block first (find
+ * the "APPEND THIS TO THE END OF app/globals.css" comment in your
+ * globals.css and delete from that comment to the end). Then paste
+ * this whole block.
+ * ═══════════════════════════════════════════════════════════ */
+
+/* ── CredStrip — auto-scrolling ribbon ──────────────────── */
+.cred-strip-wrap {
+  background: var(--surface);
+  border-top: 1px solid var(--line-faint);
+  border-bottom: 1px solid var(--line-faint);
+  padding: 22px 0 26px;
+  overflow: hidden;
+  position: relative;
+  z-index: 3;
+}
+.cred-strip-label {
+  font-family: var(--font-mono);
+  font-size: 10px;
+  letter-spacing: 0.28em;
+  color: var(--text-dark-3);
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 16px;
+}
+.cred-strip-viewport { overflow: hidden; position: relative; }
+.cred-strip-viewport::before,
+.cred-strip-viewport::after {
+  content: '';
+  position: absolute;
+  top: 0; bottom: 0;
+  width: 80px;
+  z-index: 2;
+  pointer-events: none;
+}
+.cred-strip-viewport::before { left: 0; background: linear-gradient(to right, var(--surface), transparent); }
+.cred-strip-viewport::after { right: 0; background: linear-gradient(to left, var(--surface), transparent); }
+.cred-strip-marquee {
+  display: flex;
+  width: max-content;
+  gap: 0;
+  animation: cred-scroll 38s linear infinite;
+}
+.cred-strip-item {
+  font-family: var(--font-mono);
+  font-size: 12px;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--text-dark-3);
+  padding: 0 32px;
+  border-right: 1px solid var(--line-faint);
+  white-space: nowrap;
+}
+@keyframes cred-scroll {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
+}
+
+/* ═══════════════════════════════════════════════════════════
+ * NEW TAB BAR — dark band, pill buttons, unmissable
+ * Override the older .tab-bar / .tab-btn styles by force
+ * ═══════════════════════════════════════════════════════════ */
+.tab-bar-wrap {
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  background: var(--bg-dark);
+  border-bottom: 1px solid rgba(248,246,241,0.08);
+  border-top: none;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none;
+  transition: box-shadow 0.3s;
+}
+.tab-bar-wrap::-webkit-scrollbar { display: none; }
+.tab-bar-wrap.stuck {
+  box-shadow: 0 6px 24px rgba(15,15,13,0.28);
+}
+/* "Tabs" mono label floating above the bar — orientation cue */
+.tab-bar-wrap::before {
+  content: 'Browse the work →';
+  display: block;
+  font-family: var(--font-mono);
+  font-size: 9px;
+  letter-spacing: 0.28em;
+  text-transform: uppercase;
+  color: var(--ember-light);
+  text-align: center;
+  padding: 14px 0 0;
+}
+
+.tab-bar {
+  display: flex;
+  gap: 8px;
+  padding: 14px clamp(20px, 5vw, 64px) 18px;
+  max-width: 1400px;
+  margin: 0 auto;
+  min-width: max-content;
+}
+
+.tab-btn {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--text-light-2);
+  background: rgba(248,246,241,0.04);
+  border: 1px solid rgba(248,246,241,0.15);
+  border-radius: 999px;
+  padding: 11px 22px;
+  cursor: pointer;
+  position: relative;
+  transition: all 0.25s;
+  white-space: nowrap;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+.tab-btn-num {
+  font-family: var(--font-mono);
+  font-size: 9px;
+  color: var(--ember-light);
+  letter-spacing: 0.14em;
+  font-weight: 400;
+}
+.tab-btn:hover {
+  color: var(--bg-cream);
+  background: rgba(248,246,241,0.1);
+  border-color: rgba(248,246,241,0.35);
+}
+.tab-btn.active {
+  color: var(--bg-cream);
+  background: var(--gold);
+  border-color: var(--gold);
+  box-shadow: 0 4px 14px rgba(46,107,79,0.4);
+}
+.tab-btn.active .tab-btn-num {
+  color: var(--bg-cream);
+  opacity: 0.85;
+}
+/* Old underline pseudo killed */
+.tab-btn::after { display: none !important; }
+
+/* ── SideRail — desktop right-side tab indicator ───────── */
 .side-rail {
   position: fixed;
   right: 22px;
@@ -410,14 +548,8 @@ body::before {
   transform: translateX(8px);
   transition: opacity 0.25s, transform 0.25s;
 }
-.side-rail-num {
-  color: var(--text-dark-4);
-  margin-right: 4px;
-}
-.side-rail-item:hover .side-rail-label {
-  opacity: 1;
-  transform: translateX(0);
-}
+.side-rail-num { color: var(--text-dark-4); margin-right: 4px; }
+.side-rail-item:hover .side-rail-label { opacity: 1; transform: translateX(0); }
 .side-rail-dot {
   width: 9px;
   height: 9px;
@@ -444,23 +576,8 @@ body::before {
   .side-rail { display: none !important; }
 }
 
-/* ── #3: stuck-state tab bar — much more prominent ───── */
-.tab-bar-wrap.stuck {
-  box-shadow: 0 8px 24px rgba(15,15,13,0.08);
-  background: rgba(248,246,241,0.97);
-  backdrop-filter: blur(20px) saturate(1.4);
-}
-.tab-bar-wrap.stuck .tab-btn {
-  padding-top: 22px;
-  padding-bottom: 22px;
-}
-.tab-bar-wrap.stuck .tab-btn.active {
-  background: rgba(46,107,79,0.06);
-}
-
-/* ── #9: NotesTab cover images ─────────────────────────── */
+/* ── NotesTab cover images ─────────────────────────────── */
 .note-card {
-  /* Override existing padding so image can stretch full width */
   padding: 0 !important;
   overflow: hidden;
 }
@@ -479,13 +596,17 @@ body::before {
   flex-direction: column;
   flex: 1;
 }
-.note-card.featured .note-card-body {
-  padding: 36px 32px 40px;
-}
+.note-card.featured .note-card-body { padding: 36px 32px 40px; }
 
-/* ── #10: back button hover state ──────────────────────── */
+/* ── back button hover state ───────────────────────────── */
 .back-btn:hover {
   background: var(--gold) !important;
   color: var(--bg-cream) !important;
   border-color: var(--gold) !important;
+}
+
+/* ── Mobile tab bar tweaks ─────────────────────────────── */
+@media (max-width: 720px) {
+  .tab-bar { padding: 10px 16px 14px; gap: 6px; }
+  .tab-btn { padding: 10px 16px; font-size: 10px; }
 }
