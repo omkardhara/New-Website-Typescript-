@@ -1,4 +1,5 @@
 import type { PressItem, Note, Chapter, Offering, Social } from './types';
+import { WRITING_CONTENT } from './writing-content';
 
 // ─── PRESS ──────────────────────────────────────────────────
 export const PRESS: PressItem[] = [
@@ -12,8 +13,9 @@ export const PRESS: PressItem[] = [
   { id: 8, publication: 'Local Press', featured: false, type: 'image', src: '/images/press/local-press.jpg', year: '2022' },
 ];
 
-// ─── FIELD NOTES ────────────────────────────────────────────
+// ─── WRITINGS ───────────────────────────────────────────────
 export const NOTES: Note[] = [
+  // Articles
   {
     id: 1,
     slug: 'flow-arts-taught-me-stillness',
@@ -24,6 +26,7 @@ export const NOTES: Note[] = [
     tag: 'Craft',
     type: 'article',
     excerpt: 'The cruel paradox at the center of every movement practice: the harder you chase the state, the further it gets. Here\'s what six years of throwing objects at my own face taught me about letting go.',
+    content: WRITING_CONTENT['flow-arts-taught-me-stillness'],
   },
   {
     id: 2,
@@ -35,6 +38,7 @@ export const NOTES: Note[] = [
     tag: 'Adventure',
     type: 'article',
     excerpt: '3,000 km on three wheels with no plan, one co-driver, and a vehicle that kept threatening to retire.',
+    content: WRITING_CONTENT['rickshaw-run-dispatch'],
   },
   {
     id: 3,
@@ -46,6 +50,7 @@ export const NOTES: Note[] = [
     tag: 'Writing',
     type: 'article',
     excerpt: 'When a mainstream brand wants to cover a subculture, something usually gets lost in translation. On trying to not be that loss.',
+    content: WRITING_CONTENT['writing-for-red-bull'],
   },
   {
     id: 4,
@@ -56,6 +61,41 @@ export const NOTES: Note[] = [
     tag: 'Identity',
     type: 'article',
     excerpt: '"So what do you do?" I used to give a different answer every time. Lately I\'ve stopped answering at all. It\'s going better.',
+    content: WRITING_CONTENT['stopped-explaining-at-parties'],
+  },
+  // Poems
+  {
+    id: 5,
+    slug: 'three-balls',
+    title: 'Three Balls',
+    date: 'February 2025',
+    read: '1 min',
+    tag: 'Object & Identity',
+    type: 'poem',
+    excerpt: 'Watch the pattern, not the pieces. The pattern is the thing.',
+    content: WRITING_CONTENT['three-balls'],
+  },
+  {
+    id: 6,
+    slug: 'border-town',
+    title: 'Border Town',
+    date: 'December 2024',
+    read: '1 min',
+    tag: 'Road',
+    type: 'poem',
+    excerpt: 'Some distances are for the inside.',
+    content: WRITING_CONTENT['border-town'],
+  },
+  {
+    id: 7,
+    slug: 'the-fire-doesnt-ask',
+    title: 'The Fire Doesn\'t Ask',
+    date: 'October 2024',
+    read: '1 min',
+    tag: 'Practice',
+    type: 'poem',
+    excerpt: 'You train for the dark parts — the handoff between intention and release.',
+    content: WRITING_CONTENT['the-fire-doesnt-ask'],
   },
 ];
 

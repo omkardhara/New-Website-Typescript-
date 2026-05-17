@@ -478,26 +478,26 @@ body::before {
 }
 .tab-bar-wrap::-webkit-scrollbar { display: none; }
 .tab-bar-wrap.stuck { border-bottom-color: rgba(248,246,241,0.18); }
-/* "Tabs" mono label floating above the bar — orientation cue */
-.tab-bar-wrap::before {
-  content: 'Browse the work →';
-  display: block;
+
+.tab-bar {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px clamp(20px, 5vw, 64px) 12px;
+  max-width: 1400px;
+  margin: 0 auto;
+  min-width: max-content;
+}
+
+.tab-bar-label {
   font-family: var(--font-mono);
   font-size: 9px;
   letter-spacing: 0.28em;
   text-transform: uppercase;
   color: var(--ember-light);
-  text-align: center;
-  padding: 14px 0 0;
-}
-
-.tab-bar {
-  display: flex;
-  gap: 8px;
-  padding: 14px clamp(20px, 5vw, 64px) 18px;
-  max-width: 1400px;
-  margin: 0 auto;
-  min-width: max-content;
+  margin-right: 8px;
+  white-space: nowrap;
+  flex-shrink: 0;
 }
 
 .tab-btn {
@@ -634,6 +634,7 @@ body::before {
 
 /* ── Mobile tab bar tweaks ─────────────────────────────── */
 @media (max-width: 720px) {
-  .tab-bar { padding: 10px 16px 14px; gap: 6px; }
+  .tab-bar { padding: 8px 16px 10px; gap: 6px; }
+  .tab-bar-label { display: none; }
   .tab-btn { padding: 10px 16px; font-size: 10px; }
 }
