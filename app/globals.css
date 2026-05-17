@@ -433,11 +433,15 @@ body::before {
   overflow-x: auto;
   -webkit-overflow-scrolling: touch;
   scrollbar-width: none;
-  transition: box-shadow 0.3s;
+  transition: box-shadow 0.3s, transform 0.32s cubic-bezier(0.4, 0, 0.2, 1);
 }
 .tab-bar-wrap::-webkit-scrollbar { display: none; }
 .tab-bar-wrap.stuck {
   box-shadow: 0 6px 24px rgba(15,15,13,0.28);
+}
+.tab-bar-wrap.bar-hidden {
+  transform: translateY(-110%);
+  pointer-events: none;
 }
 /* "Tabs" mono label floating above the bar — orientation cue */
 .tab-bar-wrap::before {

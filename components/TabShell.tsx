@@ -11,26 +11,47 @@ export type TabDef = {
 export function TabShell({ tabs }: { tabs: TabDef[] }) {
   const [active, setActive] = useState(tabs[0].id);
   const [stuck, setStuck] = useState(false);
+  const [barVisible, setBarVisible] = useState(true);
   const sentinelRef = useRef<HTMLDivElement>(null);
   const tabBarRef = useRef<HTMLDivElement>(null);
   const panelRefs = useRef<Record<string, HTMLDivElement | null>>({});
+  const lastScrollY = useRef(0);
+  const isProgrammatic = useRef(false);
 
-  // Detect when the tab bar has become sticky
+  // Detect when the tab bar has become sticky; reset visibility when it unsticks
   useEffect(() => {
     if (!sentinelRef.current) return;
     const obs = new IntersectionObserver(
-      ([entry]) => setStuck(!entry.isIntersecting),
+      ([entry]) => {
+        const isStuck = !entry.isIntersecting;
+        setStuck(isStuck);
+        if (!isStuck) setBarVisible(true);
+      },
       { threshold: 0 }
     );
     obs.observe(sentinelRef.current);
     return () => obs.disconnect();
   }, []);
 
+  // Hide on scroll down, show on scroll up — only while the bar is sticky
+  useEffect(() => {
+    lastScrollY.current = window.scrollY;
+    const onScroll = () => {
+      if (isProgrammatic.current) return;
+      const y = window.scrollY;
+      const delta = y - lastScrollY.current;
+      lastScrollY.current = y;
+      if (Math.abs(delta) < 4) return; // ignore micro-scrolls / rubber-band
+      setBarVisible(delta < 0); // negative delta = scrolling up
+    };
+    window.addEventListener('scroll', onScroll, { passive: true });
+    return () => window.removeEventListener('scroll', onScroll);
+  }, []);
+
   // Update active tab button as user scrolls through sections
   useEffect(() => {
     const barHeight = tabBarRef.current?.getBoundingClientRect().height ?? 90;
     const observers: IntersectionObserver[] = [];
-
     tabs.forEach((t) => {
       const el = panelRefs.current[t.id];
       if (!el) return;
@@ -43,17 +64,24 @@ export function TabShell({ tabs }: { tabs: TabDef[] }) {
       obs.observe(el);
       observers.push(obs);
     });
-
     return () => observers.forEach((o) => o.disconnect());
   }, [tabs]);
 
   const handleSelect = (id: string) => {
     setActive(id);
+    setBarVisible(true);
     const el = panelRefs.current[id];
     if (!el) return;
     const barHeight = tabBarRef.current?.getBoundingClientRect().height ?? 90;
     const top = el.getBoundingClientRect().top + window.scrollY - barHeight;
+
+    isProgrammatic.current = true;
     window.scrollTo({ top, behavior: 'smooth' });
+    // Resume direction tracking once the smooth scroll settles
+    setTimeout(() => {
+      isProgrammatic.current = false;
+      lastScrollY.current = window.scrollY;
+    }, 700);
   };
 
   return (
@@ -61,7 +89,10 @@ export function TabShell({ tabs }: { tabs: TabDef[] }) {
       {/* Sentinel just above the tab bar — tells us when the bar is stuck */}
       <div ref={sentinelRef} style={{ height: 1 }} />
 
-      <div ref={tabBarRef} className={`tab-bar-wrap${stuck ? ' stuck' : ''}`}>
+      <div
+        ref={tabBarRef}
+        className={`tab-bar-wrap${stuck ? ' stuck' : ''}${stuck && !barVisible ? ' bar-hidden' : ''}`}
+      >
         <div className="tab-bar" role="tablist">
           {tabs.map((t) => (
             <button
