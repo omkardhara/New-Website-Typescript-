@@ -71,7 +71,6 @@ export function Hero() {
             <a href="#tab-work" className="btn-ghost">
               See the work
             </a>
-            {/* #4: Action-verb CTA replacing the stat phrasing */}
             <Link href="/story" className="story-link">
               Know the story →
             </Link>

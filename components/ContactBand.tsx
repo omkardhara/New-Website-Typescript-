@@ -1,7 +1,6 @@
 import { SOCIALS } from '@/data/site';
 
-// Replace this with the actual WhatsApp number (digits only, no + or spaces)
-const WHATSAPP_NUMBER = '919XXXXXXXXX';
+const WHATSAPP_NUMBER = '919920499089';
 
 export function ContactBand() {
   return (
