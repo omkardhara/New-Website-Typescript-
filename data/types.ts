@@ -40,6 +40,7 @@ export type Note = {
   tag: string;
   excerpt: string;
   image?: string;
+  content?: string;
 };
 
 export type Chapter = {

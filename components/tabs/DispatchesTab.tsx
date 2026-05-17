@@ -3,7 +3,7 @@ export function DispatchesTab() {
     <>
       <div className="panel-head">
         <div className="panel-head-left">
-          <div className="panel-dispatch">Field Reports · Off-Script</div>
+          <div className="panel-dispatch">Adventures · Off-Script</div>
           <h2>
             Occasionally, I go
             <br />
@@ -61,9 +61,13 @@ export function DispatchesTab() {
               <span className="dispatch-stat-label">chai stops</span>
             </div>
           </div>
-          <a href="#" className="btn-ghost dark" style={{ alignSelf: 'flex-start' }}>
-            Read the full dispatch →
-          </a>
+          <span
+            className="btn-ghost dark"
+            style={{ alignSelf: 'flex-start', opacity: 0.4, cursor: 'default', pointerEvents: 'none' }}
+            aria-disabled="true"
+          >
+            Full dispatch coming soon →
+          </span>
         </div>
       </div>
     </>

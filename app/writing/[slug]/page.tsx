@@ -1,0 +1,214 @@
+import type { Metadata } from 'next';
+import { notFound } from 'next/navigation';
+import Link from 'next/link';
+import Image from 'next/image';
+import { NOTES, getNoteBySlug } from '@/data/site';
+
+export function generateStaticParams() {
+  return NOTES.map((n) => ({ slug: n.slug }));
+}
+
+export function generateMetadata({ params }: { params: { slug: string } }): Metadata {
+  const note = getNoteBySlug(params.slug);
+  if (!note) return { title: 'Not found' };
+  return {
+    title: note.title,
+    description: note.excerpt,
+    openGraph: {
+      title: note.title,
+      description: note.excerpt,
+      images: note.image ? [note.image] : undefined,
+    },
+    alternates: {
+      canonical: `https://www.omkardhareshwar.com/writing/${note.slug}`,
+    },
+  };
+}
+
+export default function WritingPage({ params }: { params: { slug: string } }) {
+  const note = getNoteBySlug(params.slug);
+  if (!note) notFound();
+
+  const paragraphs = note.content
+    ? note.content.split('\n\n').map((p) => p.trim()).filter(Boolean)
+    : [];
+
+  return (
+    <article style={{ background: 'var(--bg-cream)', minHeight: '100vh' }}>
+      <div
+        style={{
+          position: 'sticky',
+          top: 0,
+          zIndex: 40,
+          background: 'rgba(248,246,241,0.95)',
+          backdropFilter: 'blur(20px) saturate(1.4)',
+          borderBottom: '1px solid var(--line-faint)',
+          padding: '74px clamp(20px,5vw,32px) 14px',
+        }}
+      >
+        <div style={{ maxWidth: '780px', margin: '0 auto' }}>
+          <Link
+            href="/#tab-notes"
+            style={{
+              display: 'inline-flex',
+              alignItems: 'center',
+              gap: '10px',
+              fontFamily: 'var(--font-mono)',
+              fontSize: '11px',
+              letterSpacing: '0.2em',
+              textTransform: 'uppercase',
+              color: 'var(--text-dark)',
+              textDecoration: 'none',
+              padding: '10px 18px',
+              border: '1px solid var(--line-dark)',
+              background: 'var(--surface)',
+              transition: 'all 0.25s',
+            }}
+            className="back-btn"
+          >
+            <span style={{ fontSize: '14px' }}>←</span> Back to writings
+          </Link>
+        </div>
+      </div>
+
+      <div
+        style={{
+          maxWidth: '780px',
+          margin: '0 auto',
+          padding: '32px clamp(20px,5vw,32px) 0',
+        }}
+      >
+        <div
+          style={{
+            fontFamily: 'var(--font-mono)',
+            fontSize: '11px',
+            letterSpacing: '0.2em',
+            textTransform: 'uppercase',
+            color: 'var(--gold)',
+            marginBottom: '20px',
+          }}
+        >
+          {note.tag}
+        </div>
+
+        <h1
+          style={{
+            fontFamily: 'var(--font-serif)',
+            fontSize: 'clamp(30px,5vw,54px)',
+            fontWeight: 400,
+            lineHeight: 1.1,
+            letterSpacing: '-0.02em',
+            marginBottom: '20px',
+            color: 'var(--text-dark)',
+          }}
+        >
+          {note.title}
+        </h1>
+
+        <div
+          style={{
+            fontFamily: 'var(--font-mono)',
+            fontSize: '12px',
+            letterSpacing: '0.18em',
+            color: 'var(--text-dark-3)',
+            paddingBottom: '32px',
+            borderBottom: '1px solid var(--line-faint)',
+          }}
+        >
+          {note.date} · {note.read} read
+        </div>
+      </div>
+
+      {note.image && (
+        <div
+          style={{
+            maxWidth: '960px',
+            margin: '40px auto',
+            padding: '0',
+            position: 'relative',
+            aspectRatio: '16/9',
+          }}
+        >
+          <Image
+            src={note.image}
+            alt={note.title}
+            fill
+            sizes="(max-width: 960px) 100vw, 960px"
+            style={{ objectFit: 'cover' }}
+            priority
+          />
+        </div>
+      )}
+
+      <div
+        style={{
+          maxWidth: '780px',
+          margin: '0 auto',
+          padding: '0 clamp(20px,5vw,32px)',
+          paddingBottom: 'clamp(48px,6vw,80px)',
+        }}
+      >
+        {paragraphs.length === 0 ? (
+          <p
+            style={{
+              fontSize: '18px',
+              fontWeight: 400,
+              lineHeight: 1.85,
+              color: 'var(--text-dark)',
+              marginTop: 'clamp(28px,4vw,44px)',
+              fontStyle: 'italic',
+            }}
+          >
+            {note.excerpt}
+          </p>
+        ) : (
+          paragraphs.map((para, i) => (
+            <p
+              key={i}
+              style={{
+                fontSize: i === 0 ? '18px' : '16px',
+                fontWeight: i === 0 ? 400 : 300,
+                lineHeight: 1.85,
+                color: i === 0 ? 'var(--text-dark)' : 'var(--text-dark-2)',
+                marginTop: i === 0 ? 'clamp(28px,4vw,44px)' : 'clamp(20px,3vw,32px)',
+              }}
+            >
+              {para}
+            </p>
+          ))
+        )}
+      </div>
+
+      <div
+        style={{
+          maxWidth: '780px',
+          margin: '0 auto',
+          padding: '24px clamp(20px,5vw,32px) 80px',
+          borderTop: '1px solid var(--line-faint)',
+          textAlign: 'center',
+        }}
+      >
+        <Link
+          href="/#tab-notes"
+          style={{
+            display: 'inline-flex',
+            alignItems: 'center',
+            gap: '10px',
+            fontFamily: 'var(--font-mono)',
+            fontSize: '11px',
+            letterSpacing: '0.2em',
+            textTransform: 'uppercase',
+            color: 'var(--bg-cream)',
+            background: 'var(--gold)',
+            padding: '14px 28px',
+            textDecoration: 'none',
+            transition: 'all 0.25s',
+            marginTop: '32px',
+          }}
+        >
+          <span style={{ fontSize: '14px' }}>←</span> More writings
+        </Link>
+      </div>
+    </article>
+  );
+}

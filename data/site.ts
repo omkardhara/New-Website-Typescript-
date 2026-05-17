@@ -101,6 +101,8 @@ export const SOCIALS: Social[] = [
   { label: 'Juggler Insta', handle: '@manwith3balls', href: 'https://instagram.com/manwith3balls' },
 ];
 
+export const getNoteBySlug = (slug: string) => NOTES.find((n) => n.slug === slug);
+
 // ─── NAV ────────────────────────────────────────────────────
 export const NAV_LINKS = [
   { label: 'Story', href: '/story' },
