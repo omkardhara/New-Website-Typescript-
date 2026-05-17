@@ -3,7 +3,7 @@ export function DispatchesTab() {
     <>
       <div className="panel-head">
         <div className="panel-head-left">
-          <div className="panel-dispatch">Field Reports · Off-Script</div>
+          <div className="panel-dispatch">Adventures · Off-Script</div>
           <h2>
             Occasionally, I go
             <br />

@@ -28,7 +28,7 @@ const TABS: TabDef[] = [
   { id: 'media', num: '02', label: 'Media', content: <MediaTab /> },
   { id: 'press', num: '03', label: 'Press', content: <PressTab /> },
   { id: 'notes', num: '04', label: 'Writings', content: <NotesTab /> },
-  { id: 'dispatches', num: '05', label: 'Dispatches', content: <DispatchesTab /> },
+  { id: 'dispatches', num: '05', label: 'Adventures', content: <DispatchesTab /> },
 ];
 
 export default function HomePage() {

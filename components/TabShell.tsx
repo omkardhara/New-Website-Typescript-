@@ -1,6 +1,9 @@
 'use client';
 import { useState, useEffect, useRef, type ReactNode } from 'react';
 
+// Must match --nav-h in globals.css
+const NAV_H = 72;
+
 export type TabDef = {
   id: string;
   label: string;
@@ -27,7 +30,8 @@ export function TabShell({ tabs }: { tabs: TabDef[] }) {
         setStuck(isStuck);
         if (!isStuck) setBarVisible(true);
       },
-      { threshold: 0 }
+      // rootMargin matches the nav height so stuck fires exactly when the bar pins below the nav
+      { threshold: 0, rootMargin: `-${NAV_H}px 0px 0px 0px` }
     );
     obs.observe(sentinelRef.current);
     return () => obs.disconnect();
@@ -51,6 +55,8 @@ export function TabShell({ tabs }: { tabs: TabDef[] }) {
   // Update active tab button as user scrolls through sections
   useEffect(() => {
     const barHeight = tabBarRef.current?.getBoundingClientRect().height ?? 90;
+    // When stuck the bar's bottom is at NAV_H + barHeight; use that as the top dead-zone
+    const topOffset = NAV_H + barHeight;
     const observers: IntersectionObserver[] = [];
     tabs.forEach((t) => {
       const el = panelRefs.current[t.id];
@@ -59,7 +65,7 @@ export function TabShell({ tabs }: { tabs: TabDef[] }) {
         ([entry]) => {
           if (entry.isIntersecting) setActive(t.id);
         },
-        { rootMargin: `-${barHeight}px 0px -55% 0px`, threshold: 0 }
+        { rootMargin: `-${topOffset}px 0px -55% 0px`, threshold: 0 }
       );
       obs.observe(el);
       observers.push(obs);
@@ -73,7 +79,7 @@ export function TabShell({ tabs }: { tabs: TabDef[] }) {
     const el = panelRefs.current[id];
     if (!el) return;
     const barHeight = tabBarRef.current?.getBoundingClientRect().height ?? 90;
-    const top = el.getBoundingClientRect().top + window.scrollY - barHeight;
+    const top = el.getBoundingClientRect().top + window.scrollY - NAV_H - barHeight;
 
     isProgrammatic.current = true;
     window.scrollTo({ top, behavior: 'smooth' });
