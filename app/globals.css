@@ -218,6 +218,46 @@ body::before {
 .note-excerpt { font-size: 13.5px; color: var(--text-dark-2); line-height: 1.8; flex: 1; margin-bottom: 24px; }
 .note-read { font-family: var(--font-mono); font-size: 10px; letter-spacing: 0.16em; text-transform: uppercase; color: var(--gold); border-top: 1px solid var(--line-faint); padding-top: 16px; }
 
+/* Writings sub-tabs */
+.writings-sub-tabs { display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 36px; }
+.writings-sub-tab {
+  font-family: var(--font-mono);
+  font-size: 10px;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--text-dark-3);
+  background: transparent;
+  border: 1px solid var(--line-dark);
+  border-radius: 999px;
+  padding: 9px 20px;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+  transition: color 0.2s, background 0.2s, border-color 0.2s;
+}
+.writings-sub-tab:hover { color: var(--text-dark); border-color: rgba(15,15,13,0.35); }
+.writings-sub-tab.active { background: var(--text-dark); color: var(--bg-cream); border-color: var(--text-dark); }
+.writings-sub-tab-count {
+  font-family: var(--font-serif);
+  font-size: 13px;
+  font-weight: 400;
+  opacity: 0.55;
+}
+.writings-empty {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+  padding: 80px 32px;
+  border: 1px dashed var(--line-dark);
+  text-align: center;
+  min-height: 240px;
+}
+.writings-empty span { font-family: var(--font-mono); font-size: 10px; letter-spacing: 0.22em; text-transform: uppercase; color: var(--text-dark-4); }
+.writings-empty em { font-family: var(--font-serif); font-size: 22px; font-weight: 400; color: var(--text-dark-3); font-style: italic; }
+
 /* Story preview */
 .story-rail { display: flex; justify-content: space-between; align-items: flex-start; position: relative; padding: 40px 0; }
 .story-rail::before { content: ''; position: absolute; top: 50%; left: 6%; right: 6%; height: 1px; background: var(--line-dark); }

@@ -31,6 +31,8 @@ export type PressItem = {
   src: string;
 };
 
+export type NoteType = 'article' | 'poem' | 'short-story';
+
 export type Note = {
   id: number;
   slug: string;
@@ -39,6 +41,7 @@ export type Note = {
   read: string;
   tag: string;
   excerpt: string;
+  type: NoteType;
   image?: string;
   content?: string;
 };

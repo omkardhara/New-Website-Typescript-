@@ -22,6 +22,7 @@ export const NOTES: Note[] = [
     date: 'March 2025',
     read: '5 min',
     tag: 'Craft',
+    type: 'article',
     excerpt: 'The cruel paradox at the center of every movement practice: the harder you chase the state, the further it gets. Here\'s what six years of throwing objects at my own face taught me about letting go.',
   },
   {
@@ -32,6 +33,7 @@ export const NOTES: Note[] = [
     date: 'January 2025',
     read: '12 min',
     tag: 'Adventure',
+    type: 'article',
     excerpt: '3,000 km on three wheels with no plan, one co-driver, and a vehicle that kept threatening to retire.',
   },
   {
@@ -42,6 +44,7 @@ export const NOTES: Note[] = [
     date: 'November 2024',
     read: '7 min',
     tag: 'Writing',
+    type: 'article',
     excerpt: 'When a mainstream brand wants to cover a subculture, something usually gets lost in translation. On trying to not be that loss.',
   },
   {
@@ -51,6 +54,7 @@ export const NOTES: Note[] = [
     date: 'September 2024',
     read: '4 min',
     tag: 'Identity',
+    type: 'article',
     excerpt: '"So what do you do?" I used to give a different answer every time. Lately I\'ve stopped answering at all. It\'s going better.',
   },
 ];
