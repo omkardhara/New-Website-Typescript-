@@ -29,8 +29,9 @@ export default function WritingPage({ params }: { params: { slug: string } }) {
   const note = getNoteBySlug(params.slug);
   if (!note) notFound();
 
-  const paragraphs = note.content
-    ? note.content.split('\n\n').map((p) => p.trim()).filter(Boolean)
+  const isPoem = note.type === 'poem';
+  const blocks = note.content
+    ? note.content.split('\n\n').map((b) => b.trim()).filter(Boolean)
     : [];
 
   return (
@@ -142,13 +143,13 @@ export default function WritingPage({ params }: { params: { slug: string } }) {
 
       <div
         style={{
-          maxWidth: '780px',
+          maxWidth: isPoem ? '560px' : '780px',
           margin: '0 auto',
           padding: '0 clamp(20px,5vw,32px)',
           paddingBottom: 'clamp(48px,6vw,80px)',
         }}
       >
-        {paragraphs.length === 0 ? (
+        {blocks.length === 0 ? (
           <p
             style={{
               fontSize: '18px',
@@ -161,8 +162,32 @@ export default function WritingPage({ params }: { params: { slug: string } }) {
           >
             {note.excerpt}
           </p>
+        ) : isPoem ? (
+          // Poem: render each stanza as a block, lines within stanza separated by <br>
+          <div
+            style={{
+              fontFamily: 'var(--font-serif)',
+              fontSize: 'clamp(17px,2vw,20px)',
+              fontWeight: 300,
+              lineHeight: 1.9,
+              color: 'var(--text-dark)',
+              marginTop: 'clamp(40px,5vw,64px)',
+            }}
+          >
+            {blocks.map((stanza, i) => (
+              <p key={i} style={{ marginBottom: 'clamp(24px,3vw,36px)' }}>
+                {stanza.split('\n').map((line, j, arr) => (
+                  <span key={j}>
+                    {line}
+                    {j < arr.length - 1 && <br />}
+                  </span>
+                ))}
+              </p>
+            ))}
+          </div>
         ) : (
-          paragraphs.map((para, i) => (
+          // Article: plain paragraphs
+          blocks.map((para, i) => (
             <p
               key={i}
               style={{
