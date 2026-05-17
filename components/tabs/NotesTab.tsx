@@ -76,6 +76,9 @@ export function NotesTab() {
                 <span className="note-date">
                   {featured.date} · {featured.read}
                 </span>
+                {featured.aiAssisted && (
+                  <span className="note-ai-badge">AI assisted</span>
+                )}
               </div>
               <h3 className="note-title">{featured.title}</h3>
               <p className="note-excerpt">{featured.excerpt}</p>
@@ -102,6 +105,9 @@ export function NotesTab() {
                   <span className="note-date">
                     {n.date} · {n.read}
                   </span>
+                  {n.aiAssisted && (
+                    <span className="note-ai-badge">AI assisted</span>
+                  )}
                 </div>
                 <h3 className="note-title">{n.title}</h3>
                 <p className="note-excerpt">{n.excerpt}</p>

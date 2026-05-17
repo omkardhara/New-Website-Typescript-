@@ -44,6 +44,7 @@ export type Note = {
   type: NoteType;
   image?: string;
   content?: string;
+  aiAssisted?: boolean;
 };
 
 export type Chapter = {
