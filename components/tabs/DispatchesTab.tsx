@@ -61,9 +61,13 @@ export function DispatchesTab() {
               <span className="dispatch-stat-label">chai stops</span>
             </div>
           </div>
-          <a href="#" className="btn-ghost dark" style={{ alignSelf: 'flex-start' }}>
-            Read the full dispatch →
-          </a>
+          <span
+            className="btn-ghost dark"
+            style={{ alignSelf: 'flex-start', opacity: 0.4, cursor: 'default', pointerEvents: 'none' }}
+            aria-disabled="true"
+          >
+            Full dispatch coming soon →
+          </span>
         </div>
       </div>
     </>
