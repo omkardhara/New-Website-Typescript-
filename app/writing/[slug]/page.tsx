@@ -79,17 +79,34 @@ export default function WritingPage({ params }: { params: { slug: string } }) {
           padding: '32px clamp(20px,5vw,32px) 0',
         }}
       >
-        <div
-          style={{
-            fontFamily: 'var(--font-mono)',
-            fontSize: '11px',
-            letterSpacing: '0.2em',
-            textTransform: 'uppercase',
-            color: 'var(--gold)',
-            marginBottom: '20px',
-          }}
-        >
-          {note.tag}
+        <div style={{ display: 'flex', alignItems: 'center', gap: '14px', marginBottom: '20px' }}>
+          <div
+            style={{
+              fontFamily: 'var(--font-mono)',
+              fontSize: '11px',
+              letterSpacing: '0.2em',
+              textTransform: 'uppercase',
+              color: 'var(--gold)',
+            }}
+          >
+            {note.tag}
+          </div>
+          {note.aiAssisted && (
+            <div
+              style={{
+                fontFamily: 'var(--font-mono)',
+                fontSize: '10px',
+                letterSpacing: '0.18em',
+                textTransform: 'uppercase',
+                color: 'var(--ember-light)',
+                border: '1px solid var(--ember-light)',
+                padding: '3px 10px',
+                opacity: 0.8,
+              }}
+            >
+              AI assisted
+            </div>
+          )}
         </div>
 
         <h1
