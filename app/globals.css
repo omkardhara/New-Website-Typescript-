@@ -461,25 +461,14 @@ body::before {
 }
 
 /* ═══════════════════════════════════════════════════════════
- * TAB BAR — sticky outer collapses to 0 height when hidden
- * so there is never a dead zone between the nav and content.
+ * TAB BAR — sticky below the fixed nav
  * ═══════════════════════════════════════════════════════════ */
 .tab-bar-outer {
   position: sticky;
   top: var(--nav-h);
   z-index: 50;
-  /* grid collapse trick: animates the layout height to 0 */
-  display: grid;
-  grid-template-rows: 1fr;
-  overflow: hidden;
-  transition: grid-template-rows 0.32s cubic-bezier(0.4, 0, 0.2, 1);
-}
-.tab-bar-outer.bar-hidden {
-  grid-template-rows: 0fr;
-  pointer-events: none;
 }
 .tab-bar-wrap {
-  min-height: 0; /* required for grid collapse */
   background: var(--bg-dark);
   border-bottom: 1px solid rgba(248,246,241,0.08);
   overflow-x: auto;
