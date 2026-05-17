@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import Link from 'next/link';
 import { SOCIALS } from '@/data/site';
 
 export const metadata: Metadata = {
@@ -9,11 +10,41 @@ export const metadata: Metadata = {
 export default function ContactPage() {
   return (
     <main style={{ background: 'var(--bg-dark)', color: 'var(--text-light)', minHeight: '100vh' }}>
+      {/* Back link — sits just below the fixed nav */}
       <div
         style={{
           maxWidth: '900px',
           margin: '0 auto',
-          padding: '160px clamp(20px,5vw,64px) 80px',
+          padding: '90px clamp(20px,5vw,64px) 0',
+        }}
+      >
+        <Link
+          href="/"
+          style={{
+            display: 'inline-flex',
+            alignItems: 'center',
+            gap: '10px',
+            fontFamily: 'var(--font-mono)',
+            fontSize: '11px',
+            letterSpacing: '0.2em',
+            textTransform: 'uppercase',
+            color: 'var(--text-light-2)',
+            textDecoration: 'none',
+            padding: '10px 18px',
+            border: '1px solid rgba(248,246,241,0.2)',
+            transition: 'all 0.25s',
+          }}
+          className="back-btn"
+        >
+          <span style={{ fontSize: '14px' }}>←</span> Back to home
+        </Link>
+      </div>
+
+      <div
+        style={{
+          maxWidth: '900px',
+          margin: '0 auto',
+          padding: '56px clamp(20px,5vw,64px) 80px',
         }}
       >
         <div
@@ -120,16 +151,6 @@ export default function ContactPage() {
             >
               Message on WhatsApp →
             </a>
-            <div
-              style={{
-                fontFamily: 'var(--font-mono)',
-                fontSize: '11px',
-                color: 'var(--text-light-3)',
-                marginTop: '8px',
-              }}
-            >
-              Replace the placeholder number in app/contact/page.tsx with your real WhatsApp.
-            </div>
           </div>
 
           <div>

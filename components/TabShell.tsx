@@ -2,7 +2,7 @@
 import { useState, useEffect, useRef, type ReactNode } from 'react';
 
 // Must match --nav-h in globals.css
-const NAV_H = 72;
+const NAV_H = 74;
 
 export type TabDef = {
   id: string;
