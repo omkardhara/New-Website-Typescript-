@@ -1,6 +1,6 @@
 'use client';
 
-import { useEffect, useRef } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import type { PressItem } from '@/data/types';
 
 interface Props {
@@ -13,6 +13,8 @@ interface Props {
 export function PressLightbox({ items, index, onClose, onChange }: Props) {
   const item = items[index];
   const closingRef = useRef(false);
+  const imgWrapRef = useRef<HTMLDivElement>(null);
+  const [showScrollHint, setShowScrollHint] = useState(false);
 
   const allImages = item ? [item.src, ...(item.images ?? [])] : [];
 
@@ -22,6 +24,13 @@ export function PressLightbox({ items, index, onClose, onChange }: Props) {
     // Pop the history entry we pushed on mount, then close
     window.history.back();
   };
+
+  // Reset scroll position and show hint whenever item changes
+  useEffect(() => {
+    if (imgWrapRef.current) imgWrapRef.current.scrollTop = 0;
+    setShowScrollHint(allImages.length > 1);
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [index]);
 
   useEffect(() => {
     // Push a dummy history entry so mobile back-swipe closes the lightbox
@@ -70,7 +79,11 @@ export function PressLightbox({ items, index, onClose, onChange }: Props) {
       <div className="press-lightbox-inner" onClick={(e) => e.stopPropagation()}>
         <button className="press-lightbox-close" onClick={handleClose} aria-label="Close">✕</button>
 
-        <div className="press-lightbox-img-wrap">
+        <div
+          ref={imgWrapRef}
+          className="press-lightbox-img-wrap"
+          onScroll={() => setShowScrollHint(false)}
+        >
           {allImages.map((src, i) => (
             // eslint-disable-next-line @next/next/no-img-element
             <img
@@ -80,6 +93,12 @@ export function PressLightbox({ items, index, onClose, onChange }: Props) {
             />
           ))}
         </div>
+
+        {showScrollHint && (
+          <div className="press-lightbox-scroll-hint">
+            scroll for more pages ↓
+          </div>
+        )}
 
         <div className="press-lightbox-footer">
           <div className="press-lightbox-info">
