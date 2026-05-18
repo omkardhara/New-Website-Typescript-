@@ -308,7 +308,7 @@ export const NOTES: Note[] = [
     id: 13,
     slug: 'yuvaiva-dharmasheelah-syaat',
     title: 'Yuvaiva Dharmasheelah Syaat',
-    date: '2018',
+    date: '2015',
     read: '5 min',
     tag: 'Adventure',
     type: 'article',
