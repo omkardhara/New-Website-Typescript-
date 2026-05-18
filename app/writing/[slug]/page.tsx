@@ -216,11 +216,11 @@ export default function WritingPage({ params }: { params: { slug: string } }) {
             <p
               key={i}
               style={{
-                fontSize: i === 0 ? '18px' : '16px',
-                fontWeight: i === 0 ? 400 : 300,
+                fontSize: '18px',
+                fontWeight: 400,
                 lineHeight: 1.85,
-                color: i === 0 ? 'var(--text-dark)' : 'var(--text-dark-2)',
-                marginTop: i === 0 ? 'clamp(28px,4vw,44px)' : 'clamp(20px,3vw,32px)',
+                color: 'var(--text-dark)',
+                marginTop: 'clamp(28px,4vw,44px)',
               }}
             >
               {para}
