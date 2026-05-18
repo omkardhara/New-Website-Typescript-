@@ -529,10 +529,11 @@ body::before {
   display: block;
   height: 30px;
   width: auto;
-  max-width: 160px;
+  max-width: 180px;
   object-fit: contain;
   filter: grayscale(1);
   opacity: 0.55;
+  mix-blend-mode: multiply;
   transition: opacity 0.25s;
 }
 .cred-strip-viewport:hover .cred-strip-item img { opacity: 0.7; }
@@ -604,10 +605,11 @@ body::before {
   display: block;
   height: 30px;
   width: auto;
-  max-width: 160px;
+  max-width: 180px;
   object-fit: contain;
   filter: grayscale(1);
   opacity: 0.55;
+  mix-blend-mode: multiply;
   transition: opacity 0.25s;
 }
 .cred-strip-viewport:hover .cred-strip-item img { opacity: 0.7; }
