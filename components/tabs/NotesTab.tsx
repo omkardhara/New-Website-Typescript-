@@ -86,7 +86,7 @@ export function NotesTab() {
                 </div>
                 <h3 className="note-title">{featured.title}</h3>
                 <p className="note-excerpt">{featured.excerpt}</p>
-                <div className="note-read">{featured.url ? 'Read on Red Bull →' : 'Read the piece →'}</div>
+                <div className="note-read">{featured.url ? `Read on ${featured.publication ?? 'site'} →` : 'Read the piece →'}</div>
               </div>
             </Link>
 
@@ -121,7 +121,7 @@ export function NotesTab() {
                   </div>
                   <h3 className="note-title">{n.title}</h3>
                   <p className="note-excerpt">{n.excerpt}</p>
-                  <div className="note-read">{n.url ? 'Read on Red Bull →' : 'Read →'}</div>
+                  <div className="note-read">{n.url ? `Read on ${n.publication ?? 'site'} →` : 'Read →'}</div>
                 </div>
               </Link>
             ))}

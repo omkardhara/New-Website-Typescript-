@@ -140,7 +140,7 @@ export function WritingListPage({ type }: { type: NoteType }) {
                 </div>
                 <h3 className="note-title">{n.title}</h3>
                 <p className="note-excerpt">{n.excerpt}</p>
-                <div className="note-read">{n.url ? 'Read on Red Bull →' : 'Read →'}</div>
+                <div className="note-read">{n.url ? `Read on ${n.publication ?? 'site'} →` : 'Read →'}</div>
               </div>
             </Link>
           ))}

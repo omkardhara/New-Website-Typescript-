@@ -8,6 +8,7 @@ export const REDBULL_NOTES: Note[] = [
     title: 'B-Boy Glib: Red Bull BC One Cypher India 2024',
     date: '2024', read: '4 min', tag: 'Breaking', type: 'article',
     excerpt: 'A profile of B-Boy Glib — one of India\'s sharpest breakers — heading into the Red Bull BC One Cypher India 2024 national qualifier.',
+    publication: 'Red Bull',
     url: 'https://www.redbull.com/in-en/red-bull-bc-one-cypher-india-2024-glib',
   },
   {
@@ -15,6 +16,7 @@ export const REDBULL_NOTES: Note[] = [
     title: 'B-Boy Flying Machine: Red Bull BC One Cypher India 2024',
     date: '2024', read: '4 min', tag: 'Breaking', type: 'article',
     excerpt: 'B-Boy Flying Machine\'s path to the Red Bull BC One Cypher India 2024 — the national qualifier that puts India\'s best breakers on the world stage.',
+    publication: 'Red Bull',
     url: 'https://www.redbull.com/in-en/red-bull-bc-one-cypher-india-2024-flying-machine',
   },
 
@@ -24,6 +26,7 @@ export const REDBULL_NOTES: Note[] = [
     title: 'Under My Wings: Conor Maguire at Kovalam',
     date: 'Oct 2024', read: '5 min', tag: 'Surfing', type: 'article',
     excerpt: 'Irish big-wave surfer Conor Maguire chases Kerala\'s legendary breaks at Kovalam — a transcript of what it means to read a wave from the inside.',
+    publication: 'Red Bull',
     url: 'https://www.redbull.com/in-en/under-my-wiiings-conor-maguire-kovalam',
   },
 
@@ -33,6 +36,7 @@ export const REDBULL_NOTES: Note[] = [
     title: 'Red Bull Dance Your Style India Finals 2024: Battle Chart Playlist',
     date: '2024', read: '3 min', tag: 'Dance', type: 'article',
     excerpt: 'The official soundtrack of the Red Bull Dance Your Style India Finals 2024 — every song that dropped, every battle it decided.',
+    publication: 'Red Bull',
     url: 'https://www.redbull.com/in-en/red-bull-dance-your-style-2024-india-finals-battle-chart-playlist',
   },
   {
@@ -40,6 +44,7 @@ export const REDBULL_NOTES: Note[] = [
     title: 'T-Rai: Red Bull Dance Your Style India Champion 2024',
     date: '2024', read: '4 min', tag: 'Dance', type: 'article',
     excerpt: 'How T-Rai took the crowd vote at every turn and became the Red Bull Dance Your Style India champion in 2024.',
+    publication: 'Red Bull',
     url: 'https://www.redbull.com/in-en/red-bull-dance-your-style-2024-india-champion-t-rai',
   },
   {
@@ -47,6 +52,7 @@ export const REDBULL_NOTES: Note[] = [
     title: 'T: Red Bull Dance Your Style 2024 India Finals Top 16',
     date: '2024', read: '3 min', tag: 'Dance', type: 'article',
     excerpt: 'A profile of dancer T, one of sixteen finalists at the Red Bull Dance Your Style India Finals 2024.',
+    publication: 'Red Bull',
     url: 'https://www.redbull.com/in-en/red-bull-dance-your-style-2024-india-finals-top-16-t',
   },
   {
@@ -54,6 +60,7 @@ export const REDBULL_NOTES: Note[] = [
     title: 'Bebo Shree: Red Bull Dance Your Style 2024 India Finals Top 16',
     date: '2024', read: '3 min', tag: 'Dance', type: 'article',
     excerpt: 'Bebo Shree\'s journey to the Red Bull Dance Your Style India Finals 2024 — movement, instinct, and crowd connection.',
+    publication: 'Red Bull',
     url: 'https://www.redbull.com/in-en/red-bull-dance-your-style-2024-india-finals-top-16-bebo-shree',
   },
   {
@@ -61,6 +68,7 @@ export const REDBULL_NOTES: Note[] = [
     title: 'Divya: Red Bull Dance Your Style 2024 India Finals Top 16',
     date: '2024', read: '3 min', tag: 'Dance', type: 'article',
     excerpt: 'A profile of Divya, competing in the top 16 at the Red Bull Dance Your Style India Finals 2024.',
+    publication: 'Red Bull',
     url: 'https://www.redbull.com/in-en/red-bull-dance-your-style-2024-india-finals-top-16-divya',
   },
   {
@@ -68,6 +76,7 @@ export const REDBULL_NOTES: Note[] = [
     title: 'Gourav Sarwan: Red Bull Dance Your Style 2024 India Finals Top 16',
     date: '2024', read: '3 min', tag: 'Dance', type: 'article',
     excerpt: 'Gourav Sarwan in the top 16 at the Red Bull Dance Your Style India Finals 2024 — the dancer, the style, the read.',
+    publication: 'Red Bull',
     url: 'https://www.redbull.com/in-en/red-bull-dance-your-style-2024-india-finals-top-16-gourav-sarwan',
   },
   {
@@ -75,6 +84,7 @@ export const REDBULL_NOTES: Note[] = [
     title: 'Manish Pop: Red Bull Dance Your Style 2024 India Finals Top 16',
     date: '2024', read: '3 min', tag: 'Dance', type: 'article',
     excerpt: 'Manish Pop brings popping precision to the Red Bull Dance Your Style India Finals 2024 top 16.',
+    publication: 'Red Bull',
     url: 'https://www.redbull.com/in-en/red-bull-dance-your-style-2024-india-finals-top-16-manish-pop',
   },
   {
@@ -82,6 +92,7 @@ export const REDBULL_NOTES: Note[] = [
     title: 'Popping Mi: Red Bull Dance Your Style 2024 India Finals Top 16',
     date: '2024', read: '3 min', tag: 'Dance', type: 'article',
     excerpt: 'A profile of Popping Mi in the top 16 at the Red Bull Dance Your Style India Finals 2024.',
+    publication: 'Red Bull',
     url: 'https://www.redbull.com/in-en/red-bull-dance-your-style-2024-india-finals-top-16-popping-mi',
   },
   {
@@ -89,6 +100,7 @@ export const REDBULL_NOTES: Note[] = [
     title: 'Sambo: Red Bull Dance Your Style 2024 India Finals Top 16',
     date: '2024', read: '3 min', tag: 'Dance', type: 'article',
     excerpt: 'Sambo\'s story heading into the Red Bull Dance Your Style India Finals 2024 top 16.',
+    publication: 'Red Bull',
     url: 'https://www.redbull.com/in-en/red-bull-dance-your-style-2024-india-finals-top-16-sambo',
   },
   {
@@ -96,6 +108,7 @@ export const REDBULL_NOTES: Note[] = [
     title: 'Sameer: Red Bull Dance Your Style 2024 India Finals Top 16',
     date: '2024', read: '3 min', tag: 'Dance', type: 'article',
     excerpt: 'A profile of Sameer, one of the top 16 dancers at the Red Bull Dance Your Style India Finals 2024.',
+    publication: 'Red Bull',
     url: 'https://www.redbull.com/in-en/red-bull-dance-your-style-2024-india-finals-top-16-sameer',
   },
   {
@@ -103,6 +116,7 @@ export const REDBULL_NOTES: Note[] = [
     title: 'Sammy: Red Bull Dance Your Style 2024 India Finals Top 16',
     date: '2024', read: '3 min', tag: 'Dance', type: 'article',
     excerpt: 'Sammy in the top 16 at the Red Bull Dance Your Style India Finals 2024 — style, instinct, crowd.',
+    publication: 'Red Bull',
     url: 'https://www.redbull.com/in-en/red-bull-dance-your-style-2024-india-finals-top-16-sammy',
   },
   {
@@ -110,6 +124,7 @@ export const REDBULL_NOTES: Note[] = [
     title: 'Shiva: Red Bull Dance Your Style 2024 India Finals Top 16',
     date: '2024', read: '3 min', tag: 'Dance', type: 'article',
     excerpt: 'Shiva\'s profile in the top 16 at the Red Bull Dance Your Style India Finals 2024.',
+    publication: 'Red Bull',
     url: 'https://www.redbull.com/in-en/red-bull-dance-your-style-2024-india-finals-top-16-shiva',
   },
   {
@@ -117,6 +132,7 @@ export const REDBULL_NOTES: Note[] = [
     title: 'Dey Dey: Red Bull Dance Your Style 2024 Weekender India Finals',
     date: '2024', read: '3 min', tag: 'Dance', type: 'article',
     excerpt: 'Popper Dey Dey at the Red Bull Dance Your Style Weekender India Finals 2024 — reading the music, owning the room.',
+    publication: 'Red Bull',
     url: 'https://www.redbull.com/in-en/red-bull-dance-your-style-2024-weekender-india-finals-dey-dey-popping',
   },
   {
@@ -124,6 +140,7 @@ export const REDBULL_NOTES: Note[] = [
     title: 'Frankwa: Red Bull Dance Your Style 2024 Weekender India Finals',
     date: '2024', read: '3 min', tag: 'Dance', type: 'article',
     excerpt: 'House dancer Frankwa at the Red Bull Dance Your Style Weekender India Finals 2024.',
+    publication: 'Red Bull',
     url: 'https://www.redbull.com/in-en/red-bull-dance-your-style-2024-weekender-india-finals-frankwa-house',
   },
   {
@@ -131,6 +148,7 @@ export const REDBULL_NOTES: Note[] = [
     title: 'Stalamuerte: Red Bull Dance Your Style 2024 Weekender India Finals',
     date: '2024', read: '3 min', tag: 'Dance', type: 'article',
     excerpt: 'Hip-hop dancer Stalamuerte at the Red Bull Dance Your Style Weekender India Finals 2024.',
+    publication: 'Red Bull',
     url: 'https://www.redbull.com/in-en/red-bull-dance-your-style-2024-weekender-india-finals-stalamuerte-hip-hop',
   },
 
@@ -140,6 +158,7 @@ export const REDBULL_NOTES: Note[] = [
     title: 'Queendom Wins Red Bull Off The Roof 2023',
     date: 'Nov 2023', read: '4 min', tag: 'Dance', type: 'article',
     excerpt: 'How Queendom took the top spot at Red Bull Off The Roof 2023 — India\'s premier rooftop dance competition.',
+    publication: 'Red Bull',
     url: 'https://www.redbull.com/in-en/red-bull-off-the-roof-competition-winner-queendom',
   },
 
@@ -149,6 +168,7 @@ export const REDBULL_NOTES: Note[] = [
     title: 'Nepo: Red Bull Dance Your Style India Champion 2023',
     date: '2023', read: '4 min', tag: 'Dance', type: 'article',
     excerpt: 'Nepo\'s path to winning the Red Bull Dance Your Style India Finals 2023 — dancing for the crowd, not the judges.',
+    publication: 'Red Bull',
     url: 'https://www.redbull.com/in-en/red-bull-dance-your-style-india-finals-2023-winner-nepo',
   },
   {
@@ -156,6 +176,7 @@ export const REDBULL_NOTES: Note[] = [
     title: 'Red Bull Dance Your Style 2023 India Finals: Top 16',
     date: '2023', read: '5 min', tag: 'Dance', type: 'article',
     excerpt: 'Meet the sixteen dancers who made it to the Red Bull Dance Your Style India Finals 2023 — the styles, the stories, the battles.',
+    publication: 'Red Bull',
     url: 'https://www.redbull.com/in-en/red-bull-dance-your-style-2023-india-finals-top-16',
   },
   {
@@ -163,6 +184,7 @@ export const REDBULL_NOTES: Note[] = [
     title: 'The Best Street Dance Advice from India\'s Top Dancers',
     date: '2023', read: '6 min', tag: 'Dance', type: 'article',
     excerpt: 'India\'s finest street dancers share the one piece of advice that changed how they move, train, and think about the craft.',
+    publication: 'Red Bull',
     url: 'https://www.redbull.com/in-en/best-street-dance-advice',
   },
   {
@@ -170,6 +192,7 @@ export const REDBULL_NOTES: Note[] = [
     title: 'India\'s Best Street Dance Events, Jams, Battles & Competitions',
     date: '2023', read: '7 min', tag: 'Dance', type: 'article',
     excerpt: 'A comprehensive guide to the street dance events, jams, battles, and competitions you need to know if you\'re part of the Indian dance scene.',
+    publication: 'Red Bull',
     url: 'https://www.redbull.com/in-en/india-street-dance-events-jams-battles-competitions',
   },
   {
@@ -177,6 +200,7 @@ export const REDBULL_NOTES: Note[] = [
     title: 'Best Places to Train and Practice Street Dance in India',
     date: '2023', read: '6 min', tag: 'Dance', type: 'article',
     excerpt: 'Where India\'s street dancers go to train, practice, and grow — a city-by-city guide to the spaces that built the scene.',
+    publication: 'Red Bull',
     url: 'https://www.redbull.com/in-en/india-street-dance-places-to-train-practice',
   },
   {
@@ -184,6 +208,7 @@ export const REDBULL_NOTES: Note[] = [
     title: 'Learn Street Dance Through Videos, Tutorials & Documentaries',
     date: '2023', read: '6 min', tag: 'Dance', type: 'article',
     excerpt: 'The videos, tutorials, and documentaries that actually teach you something — a curated list for anyone serious about street dance.',
+    publication: 'Red Bull',
     url: 'https://www.redbull.com/in-en/learn-street-dance-through-videos-tutorials-documentaries',
   },
 
@@ -193,6 +218,7 @@ export const REDBULL_NOTES: Note[] = [
     title: 'Katsu One: Interview at Red Bull BC One Cypher India 2023',
     date: '2023', read: '5 min', tag: 'Breaking', type: 'article',
     excerpt: 'An interview with Katsu One at the Red Bull BC One Cypher India 2023 — on the global breaking scene, competition, and what India means to the culture.',
+    publication: 'Red Bull',
     url: 'https://www.redbull.com/in-en/red-bull-bc-one-cypher-india-2023-interview-katsu-one',
   },
   {
@@ -200,6 +226,7 @@ export const REDBULL_NOTES: Note[] = [
     title: 'Dyzee on "Our System": BC One Cypher India 2023',
     date: '2023', read: '5 min', tag: 'Breaking', type: 'article',
     excerpt: 'B-Boy Dyzee breaks down the systems, structures, and soul of breaking at the Red Bull BC One Cypher India 2023.',
+    publication: 'Red Bull',
     url: 'https://www.redbull.com/in-en/red-bull-bc-one-cypher-india-2023-dyzee-our-system',
   },
 
@@ -209,6 +236,7 @@ export const REDBULL_NOTES: Note[] = [
     title: 'Aryan Brahmin: The Handball Player from Bhubaneswar',
     date: 'Jun 2023', read: '5 min', tag: 'Sport', type: 'article',
     excerpt: 'Aryan Brahmin is putting Bhubaneswar on the handball map — a story about sport, passion, and a city finding its athlete.',
+    publication: 'Red Bull',
     url: 'https://www.redbull.com/in-en/aryan-brahmin-handball-bhubaneswar',
   },
 
@@ -218,6 +246,7 @@ export const REDBULL_NOTES: Note[] = [
     title: 'Red Bull January Jumpstart 2023',
     date: 'Jan 2023', read: '4 min', tag: 'Dance', type: 'article',
     excerpt: 'The Red Bull January Jumpstart — India\'s annual street dance season opener, kicking off the year with ciphers, battles, and community.',
+    publication: 'Red Bull',
     url: 'https://www.redbull.com/in-en/red-bull-january-jumpstart',
   },
 
@@ -227,6 +256,7 @@ export const REDBULL_NOTES: Note[] = [
     title: 'Jasika: Red Bull Dance Your Style 2022 India Finals Top 16',
     date: '2022', read: '3 min', tag: 'Dance', type: 'article',
     excerpt: 'Jasika represents the North at the Red Bull Dance Your Style India Finals 2022 — style, story, and what she\'s bringing to the floor.',
+    publication: 'Red Bull',
     url: 'https://www.redbull.com/in-en/red-bull-dance-your-style-2022-india-finals-top-16-jasika',
   },
   {
@@ -234,6 +264,7 @@ export const REDBULL_NOTES: Note[] = [
     title: 'Mr V: Red Bull Dance Your Style 2022 India Finals Top 16',
     date: '2022', read: '3 min', tag: 'Dance', type: 'article',
     excerpt: 'Mr V\'s profile in the top 16 at the Red Bull Dance Your Style India Finals 2022, representing the North zone.',
+    publication: 'Red Bull',
     url: 'https://www.redbull.com/in-en/red-bull-dance-your-style-2022-india-finals-top-16-mr-v',
   },
   {
@@ -241,6 +272,7 @@ export const REDBULL_NOTES: Note[] = [
     title: 'Mr Pop K.O.R.N.: Red Bull Dance Your Style 2022 India Finals Top 16',
     date: '2022', read: '3 min', tag: 'Dance', type: 'article',
     excerpt: 'Mr Pop K.O.R.N. in the top 16 at the Red Bull Dance Your Style India Finals 2022, representing the North zone.',
+    publication: 'Red Bull',
     url: 'https://www.redbull.com/in-en/red-bull-dance-your-style-2022-india-finals-top-16-mr-pop-k-o-r-n',
   },
   {
@@ -248,6 +280,7 @@ export const REDBULL_NOTES: Note[] = [
     title: 'Jenny Gusai: Red Bull Dance Your Style 2022 India Finals Top 16',
     date: '2022', read: '3 min', tag: 'Dance', type: 'article',
     excerpt: 'Jenny Gusai represents the North at the Red Bull Dance Your Style India Finals 2022.',
+    publication: 'Red Bull',
     url: 'https://www.redbull.com/in-en/red-bull-dance-your-style-2022-india-finals-top-16-jenny-gusai',
   },
   {
@@ -255,6 +288,7 @@ export const REDBULL_NOTES: Note[] = [
     title: 'Mekhola: Red Bull Dance Your Style 2022 India Finals Top 16',
     date: '2022', read: '3 min', tag: 'Dance', type: 'article',
     excerpt: 'Mekhola\'s profile in the top 16 at the Red Bull Dance Your Style India Finals 2022, representing the East.',
+    publication: 'Red Bull',
     url: 'https://www.redbull.com/in-en/red-bull-dance-your-style-2022-india-finals-top-16-mekhola',
   },
   {
@@ -262,6 +296,7 @@ export const REDBULL_NOTES: Note[] = [
     title: '3D Lock: Red Bull Dance Your Style 2022 India Finals Top 16',
     date: '2022', read: '3 min', tag: 'Dance', type: 'article',
     excerpt: '3D Lock brings locking to the East zone at the Red Bull Dance Your Style India Finals 2022.',
+    publication: 'Red Bull',
     url: 'https://www.redbull.com/in-en/red-bull-dance-your-style-2022-india-finals-top-16-3d-lock',
   },
   {
@@ -269,6 +304,7 @@ export const REDBULL_NOTES: Note[] = [
     title: 'Nextion: Red Bull Dance Your Style 2022 India Finals Top 16',
     date: '2022', read: '3 min', tag: 'Dance', type: 'article',
     excerpt: 'Nextion\'s profile in the top 16 at the Red Bull Dance Your Style India Finals 2022, representing the East zone.',
+    publication: 'Red Bull',
     url: 'https://www.redbull.com/in-en/red-bull-dance-your-style-2022-india-finals-top-16-nextion',
   },
   {
@@ -276,6 +312,7 @@ export const REDBULL_NOTES: Note[] = [
     title: 'Popping Ranjan: Red Bull Dance Your Style 2022 India Finals Top 16',
     date: '2022', read: '3 min', tag: 'Dance', type: 'article',
     excerpt: 'Popping Ranjan brings precision popping to the East at the Red Bull Dance Your Style India Finals 2022.',
+    publication: 'Red Bull',
     url: 'https://www.redbull.com/in-en/red-bull-dance-your-style-2022-india-finals-top-16-popping-ranjan',
   },
   {
@@ -283,6 +320,7 @@ export const REDBULL_NOTES: Note[] = [
     title: 'Anushi Singh: Red Bull Dance Your Style 2022 India Finals Top 16',
     date: '2022', read: '3 min', tag: 'Dance', type: 'article',
     excerpt: 'Anushi Singh represents the West at the Red Bull Dance Your Style India Finals 2022.',
+    publication: 'Red Bull',
     url: 'https://www.redbull.com/in-en/red-bull-dance-your-style-2022-india-finals-top-16-anushi-singh',
   },
   {
@@ -290,6 +328,7 @@ export const REDBULL_NOTES: Note[] = [
     title: 'Boogie Vikash: Red Bull Dance Your Style 2022 India Finals Top 16',
     date: '2022', read: '3 min', tag: 'Dance', type: 'article',
     excerpt: 'Boogie Vikash\'s profile in the top 16 at the Red Bull Dance Your Style India Finals 2022, West zone.',
+    publication: 'Red Bull',
     url: 'https://www.redbull.com/in-en/red-bull-dance-your-style-2022-india-finals-top-16-boogie-vikash',
   },
   {
@@ -297,6 +336,7 @@ export const REDBULL_NOTES: Note[] = [
     title: 'Killa B: Red Bull Dance Your Style 2022 India Finals Top 16',
     date: '2022', read: '3 min', tag: 'Dance', type: 'article',
     excerpt: 'Killa B in the top 16 at the Red Bull Dance Your Style India Finals 2022, representing the West zone.',
+    publication: 'Red Bull',
     url: 'https://www.redbull.com/in-en/red-bull-dance-your-style-2022-india-finals-top-16-killa-b',
   },
   {
@@ -304,6 +344,7 @@ export const REDBULL_NOTES: Note[] = [
     title: 'Saber: Red Bull Dance Your Style 2022 India Finals Top 16',
     date: '2022', read: '3 min', tag: 'Dance', type: 'article',
     excerpt: 'Saber\'s profile in the top 16 at the Red Bull Dance Your Style India Finals 2022, West zone.',
+    publication: 'Red Bull',
     url: 'https://www.redbull.com/in-en/red-bull-dance-your-style-2022-india-finals-top-16-saber',
   },
   {
@@ -311,6 +352,7 @@ export const REDBULL_NOTES: Note[] = [
     title: 'Ken: Red Bull Dance Your Style 2022 India Finals Top 16',
     date: '2022', read: '3 min', tag: 'Dance', type: 'article',
     excerpt: 'Ken represents the South at the Red Bull Dance Your Style India Finals 2022.',
+    publication: 'Red Bull',
     url: 'https://www.redbull.com/in-en/red-bull-dance-your-style-2022-india-finals-top-16-ken',
   },
   {
@@ -318,6 +360,7 @@ export const REDBULL_NOTES: Note[] = [
     title: 'Pradeep: Red Bull Dance Your Style 2022 India Finals Top 16',
     date: '2022', read: '3 min', tag: 'Dance', type: 'article',
     excerpt: 'Pradeep\'s profile in the top 16 at the Red Bull Dance Your Style India Finals 2022, South zone.',
+    publication: 'Red Bull',
     url: 'https://www.redbull.com/in-en/red-bull-dance-your-style-2022-india-finals-top-16-pradeep',
   },
   {
@@ -325,6 +368,7 @@ export const REDBULL_NOTES: Note[] = [
     title: 'Smoke: Red Bull Dance Your Style 2022 India Finals Top 16',
     date: '2022', read: '3 min', tag: 'Dance', type: 'article',
     excerpt: 'Smoke in the top 16 at the Red Bull Dance Your Style India Finals 2022, representing the South.',
+    publication: 'Red Bull',
     url: 'https://www.redbull.com/in-en/red-bull-dance-your-style-2022-india-finals-top-16-smoke',
   },
   {
@@ -332,6 +376,7 @@ export const REDBULL_NOTES: Note[] = [
     title: 'Theertha: Red Bull Dance Your Style 2022 India Finals Top 16',
     date: '2022', read: '3 min', tag: 'Dance', type: 'article',
     excerpt: 'Theertha\'s profile in the top 16 at the Red Bull Dance Your Style India Finals 2022, South zone.',
+    publication: 'Red Bull',
     url: 'https://www.redbull.com/in-en/red-bull-dance-your-style-2022-india-finals-top-16-theertha',
   },
 
@@ -341,6 +386,7 @@ export const REDBULL_NOTES: Note[] = [
     title: 'B-Boy Vibe: Red Bull BC One Cypher India 2022',
     date: '2022', read: '4 min', tag: 'Breaking', type: 'article',
     excerpt: 'B-Boy Vibe\'s profile heading into the Red Bull BC One Cypher India 2022 national qualifier.',
+    publication: 'Red Bull',
     url: 'https://www.redbull.com/in-en/red-bull-bc-one-cypher-india-2022-b-boy-vibe',
   },
   {
@@ -348,6 +394,7 @@ export const REDBULL_NOTES: Note[] = [
     title: 'B-Boy Joon: Red Bull BC One Cypher India 2022',
     date: '2022', read: '4 min', tag: 'Breaking', type: 'article',
     excerpt: 'A profile of B-Boy Joon at the Red Bull BC One Cypher India 2022.',
+    publication: 'Red Bull',
     url: 'https://www.redbull.com/in-en/red-bull-bc-one-cypher-india-2022-b-boy-joon',
   },
   {
@@ -355,6 +402,7 @@ export const REDBULL_NOTES: Note[] = [
     title: 'B-Boy Crazy Bright: Red Bull BC One Cypher India 2022',
     date: '2022', read: '4 min', tag: 'Breaking', type: 'article',
     excerpt: 'B-Boy Crazy Bright at the Red Bull BC One Cypher India 2022 — energy, power, and the breaking mindset.',
+    publication: 'Red Bull',
     url: 'https://www.redbull.com/in-en/red-bull-bc-one-cypher-india-2022-b-boy-crazy-bright',
   },
   {
@@ -362,6 +410,7 @@ export const REDBULL_NOTES: Note[] = [
     title: 'B-Boy Shawn: Red Bull BC One Cypher India 2022',
     date: '2022', read: '4 min', tag: 'Breaking', type: 'article',
     excerpt: 'A profile of B-Boy Shawn at the Red Bull BC One Cypher India 2022 national qualifier.',
+    publication: 'Red Bull',
     url: 'https://www.redbull.com/in-en/red-bull-bc-one-cypher-india-2022-b-boy-shawn',
   },
   {
@@ -369,6 +418,7 @@ export const REDBULL_NOTES: Note[] = [
     title: 'B-Boy Jack: Red Bull BC One Cypher India 2022',
     date: '2022', read: '4 min', tag: 'Breaking', type: 'article',
     excerpt: 'B-Boy Jack\'s path to the Red Bull BC One Cypher India 2022.',
+    publication: 'Red Bull',
     url: 'https://www.redbull.com/in-en/red-bull-bc-one-cypher-india-2022-b-boy-jack',
   },
   {
@@ -376,6 +426,7 @@ export const REDBULL_NOTES: Note[] = [
     title: 'B-Boy Jin: Red Bull BC One Cypher India 2022',
     date: '2022', read: '4 min', tag: 'Breaking', type: 'article',
     excerpt: 'A profile of B-Boy Jin competing at the Red Bull BC One Cypher India 2022.',
+    publication: 'Red Bull',
     url: 'https://www.redbull.com/in-en/red-bull-bc-one-cypher-india-2022-b-boy-jin',
   },
   {
@@ -383,6 +434,7 @@ export const REDBULL_NOTES: Note[] = [
     title: 'B-Boy Ginni: Red Bull BC One Cypher India 2022',
     date: '2022', read: '4 min', tag: 'Breaking', type: 'article',
     excerpt: 'B-Boy Ginni at the Red Bull BC One Cypher India 2022 — style, history, and what drives him.',
+    publication: 'Red Bull',
     url: 'https://www.redbull.com/in-en/red-bull-bc-one-cypher-india-2022-b-boy-ginni',
   },
   {
@@ -390,6 +442,7 @@ export const REDBULL_NOTES: Note[] = [
     title: 'B-Boy Antique: Red Bull BC One Cypher India 2022',
     date: '2022', read: '4 min', tag: 'Breaking', type: 'article',
     excerpt: 'B-Boy Antique\'s profile at the Red Bull BC One Cypher India 2022 national qualifier.',
+    publication: 'Red Bull',
     url: 'https://www.redbull.com/in-en/red-bull-bc-one-cypher-india-2022-b-boy-antique',
   },
 
@@ -399,6 +452,7 @@ export const REDBULL_NOTES: Note[] = [
     title: 'Immortals FC: Red Bull Neymar Jr\'s Five 2022, Navi Mumbai',
     date: '2022', read: '3 min', tag: 'Football', type: 'article',
     excerpt: 'A profile of Immortals FC from Navi Mumbai, competing in the Red Bull Neymar Jr\'s Five 2022.',
+    publication: 'Red Bull',
     url: 'https://www.redbull.com/in-en/red-bull-neymar-jrs-five-immortals-fc-navi-mumbai-team',
   },
   {
@@ -406,6 +460,7 @@ export const REDBULL_NOTES: Note[] = [
     title: 'Joga Bonito: Red Bull Neymar Jr\'s Five 2022, Bengaluru',
     date: '2022', read: '3 min', tag: 'Football', type: 'article',
     excerpt: 'Joga Bonito from Bengaluru — their story heading into the Red Bull Neymar Jr\'s Five 2022.',
+    publication: 'Red Bull',
     url: 'https://www.redbull.com/in-en/red-bull-neymar-jrs-five-joga-bonito-bengaluru-team',
   },
   {
@@ -413,6 +468,7 @@ export const REDBULL_NOTES: Note[] = [
     title: 'Joga Bonito: Red Bull Neymar Jr\'s Five 2022, Bhubaneswar',
     date: '2022', read: '3 min', tag: 'Football', type: 'article',
     excerpt: 'Joga Bonito from Bhubaneswar profile at the Red Bull Neymar Jr\'s Five 2022.',
+    publication: 'Red Bull',
     url: 'https://www.redbull.com/in-en/red-bull-neymar-jrs-five-joga-bonito-bhubaneswar-team',
   },
   {
@@ -420,6 +476,7 @@ export const REDBULL_NOTES: Note[] = [
     title: '9 Para: Red Bull Neymar Jr\'s Five 2022, Chandigarh',
     date: '2022', read: '3 min', tag: 'Football', type: 'article',
     excerpt: '9 Para from Chandigarh — a profile of the team at the Red Bull Neymar Jr\'s Five 2022.',
+    publication: 'Red Bull',
     url: 'https://www.redbull.com/in-en/red-bull-neymar-jrs-five-9-para-chandigarh-team',
   },
   {
@@ -427,6 +484,7 @@ export const REDBULL_NOTES: Note[] = [
     title: 'Super 5: Red Bull Neymar Jr\'s Five 2022, Bengaluru',
     date: '2022', read: '3 min', tag: 'Football', type: 'article',
     excerpt: 'Super 5 from Bengaluru profile at the Red Bull Neymar Jr\'s Five 2022.',
+    publication: 'Red Bull',
     url: 'https://www.redbull.com/in-en/red-bull-neymar-jrs-five-super-5-bengaluru-team',
   },
   {
@@ -434,6 +492,7 @@ export const REDBULL_NOTES: Note[] = [
     title: 'Goal Hunter FC: Red Bull Neymar Jr\'s Five 2022, Delhi',
     date: '2022', read: '3 min', tag: 'Football', type: 'article',
     excerpt: 'Goal Hunter FC from Delhi — their story at the Red Bull Neymar Jr\'s Five 2022.',
+    publication: 'Red Bull',
     url: 'https://www.redbull.com/in-en/red-bull-neymar-jrs-five-goal-hunter-fc-delhi-team',
   },
   {
@@ -441,6 +500,7 @@ export const REDBULL_NOTES: Note[] = [
     title: 'Tribals United FC: Red Bull Neymar Jr\'s Five 2022, Dimapur',
     date: '2022', read: '3 min', tag: 'Football', type: 'article',
     excerpt: 'Tribals United FC from Dimapur — a profile at the Red Bull Neymar Jr\'s Five 2022.',
+    publication: 'Red Bull',
     url: 'https://www.redbull.com/in-en/red-bull-neymar-jrs-five-tribals-united-fc-dimapur-team',
   },
   {
@@ -448,6 +508,7 @@ export const REDBULL_NOTES: Note[] = [
     title: 'Boom Boom: Red Bull Neymar Jr\'s Five 2022, Goa',
     date: '2022', read: '3 min', tag: 'Football', type: 'article',
     excerpt: 'Boom Boom from Goa — their profile heading into the Red Bull Neymar Jr\'s Five 2022.',
+    publication: 'Red Bull',
     url: 'https://www.redbull.com/in-en/red-bull-neymar-jrs-five-boom-boom-goa-team',
   },
   {
@@ -455,6 +516,7 @@ export const REDBULL_NOTES: Note[] = [
     title: 'Champun FC: Red Bull Neymar Jr\'s Five 2022, Guwahati',
     date: '2022', read: '3 min', tag: 'Football', type: 'article',
     excerpt: 'Champun FC from Guwahati at the Red Bull Neymar Jr\'s Five 2022.',
+    publication: 'Red Bull',
     url: 'https://www.redbull.com/in-en/red-bull-neymar-jrs-five-champun-fc-guwahati-team',
   },
   {
@@ -462,6 +524,7 @@ export const REDBULL_NOTES: Note[] = [
     title: 'Rampagers: Red Bull Neymar Jr\'s Five 2022, Hyderabad',
     date: '2022', read: '3 min', tag: 'Football', type: 'article',
     excerpt: 'The Rampagers from Hyderabad — a team profile at the Red Bull Neymar Jr\'s Five 2022.',
+    publication: 'Red Bull',
     url: 'https://www.redbull.com/in-en/red-bull-neymar-jrs-five-rampagers-hyderabad-team',
   },
   {
@@ -469,6 +532,7 @@ export const REDBULL_NOTES: Note[] = [
     title: 'Joga Bonito: Red Bull Neymar Jr\'s Five 2022, Mumbai',
     date: '2022', read: '3 min', tag: 'Football', type: 'article',
     excerpt: 'Joga Bonito from Mumbai profile at the Red Bull Neymar Jr\'s Five 2022.',
+    publication: 'Red Bull',
     url: 'https://www.redbull.com/in-en/red-bull-neymar-jrs-five-joga-bonito-mumbai-team',
   },
   {
@@ -476,6 +540,7 @@ export const REDBULL_NOTES: Note[] = [
     title: 'Penaldo FC: Red Bull Neymar Jr\'s Five 2022, Jaipur',
     date: '2022', read: '3 min', tag: 'Football', type: 'article',
     excerpt: 'Penaldo FC from Jaipur — their story heading into the Red Bull Neymar Jr\'s Five 2022.',
+    publication: 'Red Bull',
     url: 'https://www.redbull.com/in-en/red-bull-neymar-jrs-five-penaldo-fc-jaipur-team',
   },
   {
@@ -483,6 +548,7 @@ export const REDBULL_NOTES: Note[] = [
     title: 'The Wolves: Red Bull Neymar Jr\'s Five 2022, Jalandhar',
     date: '2022', read: '3 min', tag: 'Football', type: 'article',
     excerpt: 'The Wolves from Jalandhar at the Red Bull Neymar Jr\'s Five 2022.',
+    publication: 'Red Bull',
     url: 'https://www.redbull.com/in-en/red-bull-neymar-jrs-five-the-wolves-jalandhar-team',
   },
   {
@@ -490,6 +556,7 @@ export const REDBULL_NOTES: Note[] = [
     title: 'Black & White: Red Bull Neymar Jr\'s Five 2022, Cochin',
     date: '2022', read: '3 min', tag: 'Football', type: 'article',
     excerpt: 'Black & White from Cochin — a team profile at the Red Bull Neymar Jr\'s Five 2022.',
+    publication: 'Red Bull',
     url: 'https://www.redbull.com/in-en/red-bull-neymar-jrs-five-black-and-white-cochin-team',
   },
   {
@@ -497,6 +564,7 @@ export const REDBULL_NOTES: Note[] = [
     title: 'Youth Forum: Red Bull Neymar Jr\'s Five 2022, Kolkata',
     date: '2022', read: '3 min', tag: 'Football', type: 'article',
     excerpt: 'Youth Forum from Kolkata profile at the Red Bull Neymar Jr\'s Five 2022.',
+    publication: 'Red Bull',
     url: 'https://www.redbull.com/in-en/red-bull-neymar-jrs-five-youth-forum-kolkata-team',
   },
   {
@@ -504,6 +572,7 @@ export const REDBULL_NOTES: Note[] = [
     title: 'Midwinter FC: Red Bull Neymar Jr\'s Five 2022, Lucknow',
     date: '2022', read: '3 min', tag: 'Football', type: 'article',
     excerpt: 'Midwinter FC from Lucknow at the Red Bull Neymar Jr\'s Five 2022.',
+    publication: 'Red Bull',
     url: 'https://www.redbull.com/in-en/red-bull-neymar-jrs-five-midwinter-fc-lucknow-team',
   },
   {
@@ -511,6 +580,7 @@ export const REDBULL_NOTES: Note[] = [
     title: 'Ink India: Red Bull Neymar Jr\'s Five 2022, Mumbai',
     date: '2022', read: '3 min', tag: 'Football', type: 'article',
     excerpt: 'Ink India from Mumbai — their profile at the Red Bull Neymar Jr\'s Five 2022.',
+    publication: 'Red Bull',
     url: 'https://www.redbull.com/in-en/red-bull-neymar-jrs-five-ink-india-mumbai-team',
   },
   {
@@ -518,6 +588,7 @@ export const REDBULL_NOTES: Note[] = [
     title: 'Football Freakers: Red Bull Neymar Jr\'s Five 2022, Pune',
     date: '2022', read: '3 min', tag: 'Football', type: 'article',
     excerpt: 'Football Freakers from Pune — a team profile at the Red Bull Neymar Jr\'s Five 2022.',
+    publication: 'Red Bull',
     url: 'https://www.redbull.com/in-en/red-bull-neymar-jrs-five-football-freakers-pune-team',
   },
   {
@@ -525,6 +596,7 @@ export const REDBULL_NOTES: Note[] = [
     title: 'Bomlain FC: Red Bull Neymar Jr\'s Five 2022, Shillong',
     date: '2022', read: '3 min', tag: 'Football', type: 'article',
     excerpt: 'Bomlain FC from Shillong at the Red Bull Neymar Jr\'s Five 2022 — football from the North-East.',
+    publication: 'Red Bull',
     url: 'https://www.redbull.com/in-en/red-bull-neymar-jrs-five-bomlain-fc-shillong-team',
   },
 
@@ -537,6 +609,7 @@ export const ARTFERVOUR_NOTES: Note[] = [
     title: 'These Graffiti Duos Are Taking Walls Across the World by Storm',
     date: '2021', read: '5 min', tag: 'Street Art', type: 'article',
     excerpt: 'A look at the graffiti duos redefining walls across continents — including Mumbai\'s own Wicked Broz, whose murals turned a suburb into an art landmark.',
+    publication: 'Art Fervour',
     url: 'https://artfervour.com/these-graffiti-duos-are-taking-walls-across-the-world-by-storm/',
   },
 ];

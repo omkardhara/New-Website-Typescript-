@@ -55,6 +55,7 @@ export type Note = {
   content?: string;
   aiAssisted?: boolean;
   url?: string;
+  publication?: string;
 };
 
 export type Chapter = {
