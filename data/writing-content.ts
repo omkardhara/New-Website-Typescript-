@@ -1,43 +1,5 @@
 export const WRITING_CONTENT: Record<string, string> = {
 
-// ─── ARTICLES (by Omkar) ───────────────────────────────────
-
-'stopped-explaining-at-parties': `The question usually comes somewhere between the second drink and the point at which people have relaxed enough to be genuinely curious. "So what do you do?"
-
-For about four years, I tried to answer it.
-
-I tried "performer." Which is true but sounds like I own a ventriloquist dummy. I tried "artist." Which is also true and made everyone visibly uncomfortable, as if I'd announced a medical condition. I tried "flow artist, juggler, fire performer, muralist, writer, brand consultant" in various combinations, watching people's expressions cycle through polite interest, polite confusion, and a kind of gentle despair at having asked.
-
-I tried the one-sentence version: "I juggle fire and paint walls and write about subcultures." This was accurate and produced the same outcome as all the others — a pause, a recalibration, and then either "that's so cool" (end of conversation) or a follow-up question I couldn't answer in the time available.
-
-The problem isn't the work. The problem is that the question assumes a form that my work doesn't have.
-
-"What do you do" is, in most contexts, a question about category. You name the category — lawyer, teacher, architect — and the questioner files you and moves on. The conversation continues because you've both agreed on a piece of shared reality. The category is a placeholder that says: I am a recognisable type. We can proceed.
-
-I'm not a recognisable type. I've spent ten years deliberately not becoming one.
-
-This isn't posturing. It's not "I contain multitudes" as a personality statement. It's just what happened when I followed the things I was actually interested in instead of the things that had a ready-made name. I got here by accident, which is the same thing as by design, depending on how far back you're willing to trace the decisions.
-
-What I noticed, when I stopped explaining, is that the silence produces a better conversation.
-
-"What do you do?" — "I'd need more than a sentence for that." Full stop.
-
-This either ends the conversation, which is fine, or causes the person to ask something more specific, which is good. What specific things? How did that happen? What's the juggling for? These questions I can answer. These questions go somewhere.
-
-The categorical question is a social shortcut that I've stopped being able to use. Not because I'm more interesting than people who fit into categories — plenty of categorisable people are more interesting than me — but because the shortcut requires a category, and I don't have one that's true.
-
-The deeper reason I stopped explaining is simpler: I realised the explanation was for other people's comfort, not mine. And that's not a sufficient reason to explain things.
-
-I still get asked, every few weeks, how I ended up doing what I do. The honest answer involves an engineering degree I mostly redirected, a mural in Marol I painted in 2015 that changed the trajectory of everything after it, and about a decade of saying yes to things before I fully understood what I was saying yes to.
-
-But the honest answer is also that I'm not sure I "ended up" anywhere. I keep moving. New disciplines, new collaborations, new things I don't know how to do yet.
-
-The engineer I trained to be is in there somewhere — in the way I think about structure, in the way I solve problems onstage, in the pleasure I take from a system that works cleanly. He's just not running the show.
-
-What's running the show is harder to name.
-
-Maybe that's fine. Maybe it's even the point.`,
-
 // ─── AI ASSISTED ──────────────────────────────────────────
 
 'the-quiet-science-of-roadside-conversions': `I had long believed that India's roads were governed by chaos, until I began to notice, with some admiration, the quiet order of its most overlooked marketplace. It does not announce itself with storefronts or signboards. It arrives instead with a whistle, a raised palm, and the uncanny ability to spot a willing customer from a moving stream of indifference.

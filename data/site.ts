@@ -250,17 +250,6 @@ export const NOTES: Note[] = [
     content: WRITING_CONTENT['learned-men'],
   },
   {
-    id: 4,
-    slug: 'stopped-explaining-at-parties',
-    title: 'Why I stopped explaining what I do at parties',
-    date: 'September 2024',
-    read: '4 min',
-    tag: 'Identity',
-    type: 'article',
-    excerpt: '"So what do you do?" I used to give a different answer every time. Lately I\'ve stopped answering at all. It\'s going better.',
-    content: WRITING_CONTENT['stopped-explaining-at-parties'],
-  },
-  {
     id: 7,
     slug: 'happiness',
     title: 'Happiness',
