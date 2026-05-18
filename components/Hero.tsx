@@ -1,13 +1,7 @@
 'use client';
-import { useEffect, useRef, useState } from 'react';
+import { useEffect, useRef } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
-
-const HIRE_OPTIONS = [
-  { id: 'performances',         num: '01', label: 'Performances' },
-  { id: 'workshops',            num: '02', label: 'Workshops' },
-  { id: 'brand-collaborations', num: '03', label: 'Brand Collaborations' },
-];
 
 type Stat = { num: number; label: string; suffix?: string };
 
@@ -34,8 +28,6 @@ function animateCounter(el: HTMLElement, target: number, suffix = '') {
 
 export function Hero() {
   const statsRef = useRef<HTMLDivElement>(null);
-  const [selected, setSelected] = useState<string | null>(null);
-  const hireHref = selected ? `/contact?for=${selected}` : '/contact';
 
   useEffect(() => {
     const t = setTimeout(() => {
@@ -73,7 +65,7 @@ export function Hero() {
           </div>
 
           <div className="hero-ctas">
-            <Link href={hireHref} className="btn-primary">
+            <Link href="/contact" className="btn-primary">
               Hire me <span>→</span>
             </Link>
             <a href="#tab-work" className="btn-ghost">
@@ -85,16 +77,10 @@ export function Hero() {
           </div>
 
           <div className="hero-offerings" id="offerings">
-            {HIRE_OPTIONS.map((o) => (
-              <button
-                key={o.id}
-                className={`offering-chip${selected === o.id ? ' active' : ''}`}
-                onClick={() => setSelected((prev) => prev === o.id ? null : o.id)}
-                aria-pressed={selected === o.id}
-              >
-                <span className="offering-chip-num">{o.num}</span> {o.label}
-              </button>
-            ))}
+            <span className="offering-label">Available for</span>
+            <span className="offering-chip"><span className="offering-chip-num">01</span> Performances</span>
+            <span className="offering-chip"><span className="offering-chip-num">02</span> Workshops</span>
+            <span className="offering-chip"><span className="offering-chip-num">03</span> Brand Collaborations</span>
           </div>
 
           <div className="hero-stats" ref={statsRef}>
