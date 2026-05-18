@@ -11,7 +11,7 @@ const LOGOS: Logo[] = [
   { name: 'National Geographic', type: 'image', src: '/images/logos/natgeo.png',              h: 54 },
   { name: 'Britannia',           type: 'image', src: '/images/logos/britannia.jpg',            h: 52 },
   { name: 'Universal Music',     type: 'image', src: '/images/logos/universal-music.png',      h: 32, noBg: true },
-  { name: 'Mumbai Metro',        type: 'image', src: '/images/logos/mumbai-metro.jpg',         h: 36 },
+  { name: 'Mumbai Metro',        type: 'image', src: '/images/logos/mumbai-metro.jpg',         h: 48 },
   { name: 'Museum of Goa',       type: 'image', src: '/images/logos/museum-of-goa.png',        h: 30 },
   { name: 'Phantom',             type: 'image', src: '/images/logos/phantom.jpg',              h: 48 },
   { name: 'Puma',                type: 'icon',  src: '/images/logos/puma.svg' },
