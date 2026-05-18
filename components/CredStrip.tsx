@@ -1,21 +1,25 @@
 'use client';
 import { useState, useRef, useEffect } from 'react';
 
-// w: display width in px at h=32. Square Simple Icons logos use 32x32.
-const LOGOS = [
-  { name: 'Red Bull',           src: '/images/logos/redbull.svg',        w: 32  },
-  { name: 'National Geographic',src: '/images/logos/natgeo.svg',         w: 90  },
-  { name: 'Britannia',          src: '/images/logos/britannia.svg',       w: 106 },
-  { name: 'BMW',                src: '/images/logos/bmw.svg',             w: 32  },
-  { name: 'The Adventurists',   src: '/images/logos/adventurists.svg',    w: 164 },
-  { name: 'Universal Music',    src: '/images/logos/universal-music.svg', w: 148 },
-  { name: 'Mumbai Metro',       src: '/images/logos/mumbai-metro.svg',    w: 136 },
-  { name: 'Museum of Goa',      src: '/images/logos/museum-of-goa.svg',   w: 120 },
-  { name: 'Puma',               src: '/images/logos/puma.svg',            w: 32  },
-  { name: 'Flying Machine',     src: '/images/logos/flying-machine.svg',  w: 138 },
+type Logo =
+  | { name: string; type: 'image'; src: string; h?: number }
+  | { name: string; type: 'icon';  src: string };
+
+const LOGOS: Logo[] = [
+  { name: 'Red Bull',        type: 'icon',  src: '/images/logos/redbull.svg' },
+  { name: 'National Geographic', type: 'image', src: '/images/logos/natgeo.png',         h: 36 },
+  { name: 'Britannia',       type: 'image', src: '/images/logos/britannia.jpg',       h: 32 },
+  { name: 'Universal Music', type: 'image', src: '/images/logos/universal-music.png', h: 38 },
+  { name: 'Mumbai Metro',    type: 'image', src: '/images/logos/mumbai-metro.jpg',    h: 40 },
+  { name: 'Museum of Goa',   type: 'image', src: '/images/logos/museum-of-goa.png',   h: 32 },
+  { name: 'Phantom',         type: 'image', src: '/images/logos/phantom.jpg',         h: 44 },
+  { name: 'Puma',            type: 'icon',  src: '/images/logos/puma.svg' },
+  { name: 'Flying Machine',  type: 'image', src: '/images/logos/flying-machine.jpg',  h: 36 },
+  { name: 'Camlin Kokuyo',   type: 'image', src: '/images/logos/camlin-kokuyo.jpg',   h: 36 },
+  { name: 'BMW',             type: 'icon',  src: '/images/logos/bmw.svg' },
 ];
 
-const items = [...LOGOS, ...LOGOS]; // duplicate for seamless loop
+const items = [...LOGOS, ...LOGOS];
 
 export function CredStrip() {
   const [paused, setPaused] = useState(false);
@@ -47,15 +51,29 @@ export function CredStrip() {
         >
           {items.map((logo, i) => (
             <span className="cred-strip-item" key={i}>
-              {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img
-                src={logo.src}
-                alt={logo.name}
-                width={logo.w}
-                height={32}
-                style={{ display: 'block', opacity: 0.5 }}
-                draggable={false}
-              />
+              {logo.type === 'icon' ? (
+                <span className="cred-strip-icon-wrap">
+                  {/* eslint-disable-next-line @next/next/no-img-element */}
+                  <img
+                    src={logo.src}
+                    alt=""
+                    width={28}
+                    height={28}
+                    style={{ display: 'block', flexShrink: 0 }}
+                    draggable={false}
+                  />
+                  <span className="cred-strip-icon-name">{logo.name}</span>
+                </span>
+              ) : (
+                // eslint-disable-next-line @next/next/no-img-element
+                <img
+                  src={logo.src}
+                  alt={logo.name}
+                  height={logo.h ?? 32}
+                  style={{ display: 'block', width: 'auto' }}
+                  draggable={false}
+                />
+              )}
             </span>
           ))}
         </div>
