@@ -485,7 +485,7 @@ body::before {
   background: var(--surface);
   border-top: 1px solid var(--line-faint);
   border-bottom: 1px solid var(--line-faint);
-  padding: 22px 0 26px;
+  padding: 18px 0 20px;
   overflow: hidden;
   position: relative;
   z-index: 3;
@@ -497,7 +497,7 @@ body::before {
   color: var(--text-dark-3);
   text-transform: uppercase;
   text-align: center;
-  margin-bottom: 16px;
+  margin-bottom: 14px;
 }
 .cred-strip-viewport { overflow: hidden; position: relative; }
 .cred-strip-viewport::before,
@@ -513,9 +513,10 @@ body::before {
 .cred-strip-viewport::after { right: 0; background: linear-gradient(to left, var(--surface), transparent); }
 .cred-strip-marquee {
   display: flex;
+  align-items: center;
   width: max-content;
   gap: 0;
-  animation: cred-scroll 38s linear infinite;
+  animation: cred-scroll 55s linear infinite;
 }
 .cred-strip-item {
   display: flex;
@@ -526,6 +527,11 @@ body::before {
   flex-shrink: 0;
 }
 .cred-strip-item img {
+  display: block;
+  height: 30px;
+  width: auto;
+  max-width: 160px;
+  object-fit: contain;
   filter: grayscale(1);
   opacity: 0.55;
   transition: opacity 0.25s;
@@ -555,7 +561,7 @@ body::before {
   background: var(--surface);
   border-top: 1px solid var(--line-faint);
   border-bottom: 1px solid var(--line-faint);
-  padding: 22px 0 26px;
+  padding: 18px 0 20px;
   overflow: hidden;
   position: relative;
   z-index: 3;
@@ -567,7 +573,7 @@ body::before {
   color: var(--text-dark-3);
   text-transform: uppercase;
   text-align: center;
-  margin-bottom: 16px;
+  margin-bottom: 14px;
 }
 .cred-strip-viewport { overflow: hidden; position: relative; }
 .cred-strip-viewport::before,
@@ -583,9 +589,10 @@ body::before {
 .cred-strip-viewport::after { right: 0; background: linear-gradient(to left, var(--surface), transparent); }
 .cred-strip-marquee {
   display: flex;
+  align-items: center;
   width: max-content;
   gap: 0;
-  animation: cred-scroll 38s linear infinite;
+  animation: cred-scroll 55s linear infinite;
 }
 .cred-strip-item {
   display: flex;
@@ -596,6 +603,11 @@ body::before {
   flex-shrink: 0;
 }
 .cred-strip-item img {
+  display: block;
+  height: 30px;
+  width: auto;
+  max-width: 160px;
+  object-fit: contain;
   filter: grayscale(1);
   opacity: 0.55;
   transition: opacity 0.25s;
