@@ -1,10 +1,15 @@
 'use client';
 import { useState } from 'react';
+import Link from 'next/link';
 import Image from 'next/image';
 import { VIDEOS } from '@/data/videos';
+import type { Video } from '@/data/types';
+
+const PREVIEW_COUNT = 3;
 
 export function MediaTab() {
-  const [activeYt, setActiveYt] = useState<string | null>(null);
+  const [activeVideo, setActiveVideo] = useState<Video | null>(null);
+  const preview = VIDEOS.slice(0, PREVIEW_COUNT);
 
   return (
     <>
@@ -24,15 +29,15 @@ export function MediaTab() {
       </div>
 
       <div className="media-grid">
-        {VIDEOS.map((v, i) => (
+        {preview.map((v, i) => (
           <div
             key={v.yt}
             className="video-card"
-            onClick={() => setActiveYt(v.yt)}
+            onClick={() => setActiveVideo(v)}
             role="button"
             tabIndex={0}
             onKeyDown={(e) => {
-              if (e.key === 'Enter' || e.key === ' ') setActiveYt(v.yt);
+              if (e.key === 'Enter' || e.key === ' ') setActiveVideo(v);
             }}
           >
             <div className="video-thumb">
@@ -55,9 +60,17 @@ export function MediaTab() {
         ))}
       </div>
 
-      {activeYt && (
+      {VIDEOS.length > PREVIEW_COUNT && (
+        <div className="writings-see-all">
+          <Link href="/media" className="writings-see-all-btn">
+            See all {VIDEOS.length} videos →
+          </Link>
+        </div>
+      )}
+
+      {activeVideo && (
         <div
-          onClick={() => setActiveYt(null)}
+          onClick={() => setActiveVideo(null)}
           style={{
             position: 'fixed',
             inset: 0,
@@ -72,17 +85,22 @@ export function MediaTab() {
         >
           <div
             onClick={(e) => e.stopPropagation()}
-            style={{ width: '100%', maxWidth: '900px', aspectRatio: '16/9', position: 'relative' }}
+            style={{
+              width: '100%',
+              maxWidth: activeVideo.portrait ? '380px' : '900px',
+              aspectRatio: activeVideo.portrait ? '9/16' : '16/9',
+              position: 'relative',
+            }}
           >
             <iframe
-              src={`https://www.youtube.com/embed/${activeYt}?autoplay=1&rel=0`}
-              title="Video"
+              src={`https://www.youtube.com/embed/${activeVideo.yt}?autoplay=1&rel=0`}
+              title={activeVideo.title}
               allow="autoplay; encrypted-media; fullscreen"
               allowFullScreen
               style={{ width: '100%', height: '100%', border: 'none' }}
             />
             <button
-              onClick={() => setActiveYt(null)}
+              onClick={() => setActiveVideo(null)}
               style={{
                 position: 'absolute',
                 top: '-44px',

@@ -20,6 +20,7 @@ export type Video = {
   yt: string;
   thumb: string;
   portrait?: boolean;
+  category?: string;
 };
 
 export type PressItem = {
