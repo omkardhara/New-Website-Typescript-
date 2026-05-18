@@ -25,6 +25,12 @@ export const metadata: Metadata = {
     'marol art village',
     'street art mumbai',
     'brand storytelling india',
+    'wicked broz',
+    'graffiti mumbai',
+    'national geographic traveller india',
+    'world atlas of street art',
+    'juggling artist india',
+    'community art marol',
   ],
   authors: [{ name: 'Omkar Dhareshwar' }],
   openGraph: {
@@ -75,7 +81,15 @@ const personSchema = {
     'Street Art',
     'Brand Storytelling',
     'Performance Art',
+    'Graffiti',
+    'Community Art',
   ],
+  subjectOf: {
+    '@type': 'CollectionPage',
+    name: 'Press Coverage',
+    url: `${SITE_URL}/press`,
+    description: 'Media features in National Geographic Traveller India, World Atlas of Street Art, Mid-Day, Times of India and Free Press Journal.',
+  },
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
