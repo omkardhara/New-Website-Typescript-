@@ -110,7 +110,13 @@ export function WritingListPage({ type }: { type: NoteType }) {
 
         <div className="writing-list-grid">
           {notes.map((n) => (
-            <Link key={n.id} href={`/writing/${n.slug}`} className="note-card">
+            <Link
+              key={n.id}
+              href={n.url ?? `/writing/${n.slug}`}
+              target={n.url ? '_blank' : undefined}
+              rel={n.url ? 'noopener noreferrer' : undefined}
+              className="note-card"
+            >
               {n.image && (
                 <div className="note-img-wrap small">
                   <Image
@@ -134,7 +140,7 @@ export function WritingListPage({ type }: { type: NoteType }) {
                 </div>
                 <h3 className="note-title">{n.title}</h3>
                 <p className="note-excerpt">{n.excerpt}</p>
-                <div className="note-read">Read →</div>
+                <div className="note-read">{n.url ? 'Read on Red Bull →' : 'Read →'}</div>
               </div>
             </Link>
           ))}

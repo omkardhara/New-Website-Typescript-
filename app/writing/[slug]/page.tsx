@@ -5,7 +5,7 @@ import Image from 'next/image';
 import { NOTES, getNoteBySlug } from '@/data/site';
 
 export function generateStaticParams() {
-  return NOTES.map((n) => ({ slug: n.slug }));
+  return NOTES.filter((n) => !n.url).map((n) => ({ slug: n.slug }));
 }
 
 export function generateMetadata({ params }: { params: { slug: string } }): Metadata {
