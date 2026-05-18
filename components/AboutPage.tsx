@@ -245,6 +245,61 @@ export function AboutPage() {
               Read the full story
             </Link>
           </div>
+
+          <div
+            style={{
+              marginTop: '32px',
+              padding: '20px 24px',
+              border: '1px solid var(--line-dark)',
+              display: 'flex',
+              alignItems: 'center',
+              justifyContent: 'space-between',
+              gap: '16px',
+              flexWrap: 'wrap',
+            }}
+          >
+            <div>
+              <div
+                style={{
+                  fontFamily: 'var(--font-mono)',
+                  fontSize: '10px',
+                  letterSpacing: '0.2em',
+                  textTransform: 'uppercase',
+                  color: 'var(--text-dark-4)',
+                  marginBottom: '6px',
+                }}
+              >
+                Curious about the journey?
+              </div>
+              <div
+                style={{
+                  fontFamily: 'var(--font-serif)',
+                  fontSize: '18px',
+                  color: 'var(--text-dark)',
+                  lineHeight: 1.3,
+                }}
+              >
+                Ten years, six chapters — the full story is on the Story page.
+              </div>
+            </div>
+            <Link
+              href="/story"
+              style={{
+                fontFamily: 'var(--font-mono)',
+                fontSize: '11px',
+                letterSpacing: '0.2em',
+                textTransform: 'uppercase',
+                color: 'var(--gold)',
+                textDecoration: 'none',
+                whiteSpace: 'nowrap',
+                borderBottom: '1px solid var(--gold)',
+                paddingBottom: '3px',
+                flexShrink: 0,
+              }}
+            >
+              Know the story →
+            </Link>
+          </div>
         </div>
       </div>
 

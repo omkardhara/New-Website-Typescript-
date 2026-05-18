@@ -500,6 +500,9 @@ export function StoryMap() {
                     >
                       <span>←</span> Back to home
                     </Link>
+                    <Link href="/about" className={s.crossLink}>
+                      Meet the person behind the story →
+                    </Link>
                   </div>
                 </motion.div>
               )}

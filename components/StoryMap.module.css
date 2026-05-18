@@ -56,7 +56,23 @@
   padding: 24px clamp(20px,4vw,40px) 28px;
   text-align: center;
   border-top: 1px solid var(--line-faint);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
 }
+.crossLink {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--text-dark-3);
+  text-decoration: none;
+  border-bottom: 1px solid var(--line-dark);
+  padding-bottom: 3px;
+  transition: color 0.25s, border-color 0.25s;
+}
+.crossLink:hover { color: var(--gold); border-color: var(--gold); }
 
 /* ── Page shell ─────────────────────────────────────────── */
 .wrap {
