@@ -26,9 +26,9 @@ export function NotesTab() {
         <div className="panel-head-left">
           <div className="panel-dispatch">Writing · Long-form</div>
           <h2>
-            Thoughts that wouldn&apos;t
+            From walls to stages,
             <br />
-            <em>fit in a caption.</em>
+            <em>to the front pages.</em>
           </h2>
         </div>
         <div className="panel-meta">
