@@ -1,5 +1,6 @@
 import type { PressItem, Note, Chapter, Offering, Social } from './types';
 import { WRITING_CONTENT } from './writing-content';
+import { REDBULL_NOTES, ARTFERVOUR_NOTES } from './redbull-notes';
 
 // ─── PRESS ──────────────────────────────────────────────────
 export const PRESS: PressItem[] = [
@@ -325,6 +326,10 @@ export const NOTES: Note[] = [
     excerpt: 'An army of 136 yuvas set forth towards the Dhak cha Bhairi temple — and found something more than a mountain.',
     content: WRITING_CONTENT['yuvaiva-dharmasheelah-syaat'],
   },
+  // ── Red Bull & External Articles ──────────────────────────
+  ...REDBULL_NOTES,
+  ...ARTFERVOUR_NOTES,
+
   // ── Short Stories ─────────────────────────────────────────
   {
     id: 14,
