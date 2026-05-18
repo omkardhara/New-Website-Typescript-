@@ -1,15 +1,17 @@
 'use client';
 import { useState, useRef, useEffect } from 'react';
 
+// w: display width in px at h=32. Square Simple Icons logos use 32x32.
 const LOGOS = [
-  { name: 'Red Bull',           src: '/images/logos/redbull.svg',        w: 96  },
+  { name: 'Red Bull',           src: '/images/logos/redbull.svg',        w: 32  },
   { name: 'National Geographic',src: '/images/logos/natgeo.svg',         w: 90  },
   { name: 'Britannia',          src: '/images/logos/britannia.svg',       w: 106 },
+  { name: 'BMW',                src: '/images/logos/bmw.svg',             w: 32  },
   { name: 'The Adventurists',   src: '/images/logos/adventurists.svg',    w: 164 },
   { name: 'Universal Music',    src: '/images/logos/universal-music.svg', w: 148 },
   { name: 'Mumbai Metro',       src: '/images/logos/mumbai-metro.svg',    w: 136 },
   { name: 'Museum of Goa',      src: '/images/logos/museum-of-goa.svg',   w: 120 },
-  { name: 'Puma',               src: '/images/logos/puma.svg',            w: 72  },
+  { name: 'Puma',               src: '/images/logos/puma.svg',            w: 32  },
   { name: 'Flying Machine',     src: '/images/logos/flying-machine.svg',  w: 138 },
 ];
 
@@ -50,8 +52,8 @@ export function CredStrip() {
                 src={logo.src}
                 alt={logo.name}
                 width={logo.w}
-                height={28}
-                style={{ display: 'block', opacity: 0.55 }}
+                height={32}
+                style={{ display: 'block', opacity: 0.5 }}
                 draggable={false}
               />
             </span>
