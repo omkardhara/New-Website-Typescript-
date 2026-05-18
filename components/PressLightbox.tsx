@@ -1,6 +1,6 @@
 'use client';
 
-import { useEffect } from 'react';
+import { useEffect, useRef } from 'react';
 import type { PressItem } from '@/data/types';
 
 interface Props {
@@ -12,37 +12,83 @@ interface Props {
 
 export function PressLightbox({ items, index, onClose, onChange }: Props) {
   const item = items[index];
+  const closingRef = useRef(false);
+
+  const allImages = item ? [item.src, ...(item.images ?? [])] : [];
+
+  const handleClose = () => {
+    if (closingRef.current) return;
+    closingRef.current = true;
+    // Pop the history entry we pushed on mount, then close
+    window.history.back();
+  };
 
   useEffect(() => {
-    const prev = document.body.style.overflow;
-    document.body.style.overflow = 'hidden';
-    const handler = (e: KeyboardEvent) => {
-      if (e.key === 'Escape') onClose();
+    // Push a dummy history entry so mobile back-swipe closes the lightbox
+    window.history.pushState({ pressLightbox: true }, '');
+    closingRef.current = false;
+
+    const onPopState = () => {
+      // Back button / swipe triggered — just close (history already popped)
+      closingRef.current = true;
+      onClose();
+    };
+
+    const onKeyDown = (e: KeyboardEvent) => {
+      if (e.key === 'Escape') handleClose();
       if (e.key === 'ArrowRight' && index < items.length - 1) onChange(index + 1);
       if (e.key === 'ArrowLeft' && index > 0) onChange(index - 1);
     };
-    window.addEventListener('keydown', handler);
+
+    const prevOverflow = document.body.style.overflow;
+    document.body.style.overflow = 'hidden';
+    window.addEventListener('popstate', onPopState);
+    window.addEventListener('keydown', onKeyDown);
+
     return () => {
-      document.body.style.overflow = prev;
-      window.removeEventListener('keydown', handler);
+      document.body.style.overflow = prevOverflow;
+      window.removeEventListener('popstate', onPopState);
+      window.removeEventListener('keydown', onKeyDown);
     };
-  }, [index, items.length, onClose, onChange]);
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [index]);
+
+  // When onClose fires (from popstate path) unmount is clean
+  useEffect(() => {
+    return () => {
+      // If we're unmounting without having fired history.back() yet, do it now
+      if (!closingRef.current && window.history.state?.pressLightbox) {
+        window.history.back();
+      }
+    };
+  }, []);
 
   if (!item) return null;
 
   return (
-    <div className="press-lightbox" onClick={onClose}>
+    <div className="press-lightbox" onClick={handleClose}>
       <div className="press-lightbox-inner" onClick={(e) => e.stopPropagation()}>
-        <button className="press-lightbox-close" onClick={onClose} aria-label="Close">✕</button>
+        <button className="press-lightbox-close" onClick={handleClose} aria-label="Close">✕</button>
+
         <div className="press-lightbox-img-wrap">
-          {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img src={item.src} alt={item.title} />
+          {allImages.map((src, i) => (
+            // eslint-disable-next-line @next/next/no-img-element
+            <img
+              key={i}
+              src={src}
+              alt={i === 0 ? item.title : `${item.title} — page ${i + 1}`}
+            />
+          ))}
         </div>
+
         <div className="press-lightbox-footer">
           <div className="press-lightbox-info">
             <div className="press-lightbox-pub">{item.publication}</div>
             <div className="press-lightbox-title">{item.title}</div>
-            <div className="press-lightbox-year">{item.year}</div>
+            <div className="press-lightbox-year">
+              {item.year}
+              {allImages.length > 1 && ` · ${allImages.length} pages`}
+            </div>
             {item.url && (
               <a
                 href={item.url}
@@ -55,11 +101,20 @@ export function PressLightbox({ items, index, onClose, onChange }: Props) {
               </a>
             )}
           </div>
+
           {items.length > 1 && (
             <div className="press-lightbox-nav">
-              <button onClick={() => onChange(index - 1)} disabled={index === 0}>←</button>
+              <button
+                onClick={() => onChange(index - 1)}
+                disabled={index === 0}
+                aria-label="Previous article"
+              >←</button>
               <span>{index + 1} / {items.length}</span>
-              <button onClick={() => onChange(index + 1)} disabled={index === items.length - 1}>→</button>
+              <button
+                onClick={() => onChange(index + 1)}
+                disabled={index === items.length - 1}
+                aria-label="Next article"
+              >→</button>
             </div>
           )}
         </div>

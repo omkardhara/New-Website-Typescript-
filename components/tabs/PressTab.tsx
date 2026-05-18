@@ -59,14 +59,14 @@ export function PressTab() {
       </div>
 
       <div className="press-grid">
-        {preview.map((p, i) => (
+        {preview.map((p) => (
           <div
             key={p.id}
             className="press-card"
-            onClick={() => setLbIndex(i)}
+            onClick={() => setLbIndex(filtered.indexOf(p))}
             role="button"
             tabIndex={0}
-            onKeyDown={(e) => e.key === 'Enter' && setLbIndex(i)}
+            onKeyDown={(e) => e.key === 'Enter' && setLbIndex(filtered.indexOf(p))}
             aria-label={`${p.publication} — ${p.title}`}
           >
             <div className="press-card-bg">
@@ -101,7 +101,7 @@ export function PressTab() {
 
       {lbIndex !== null && (
         <PressLightbox
-          items={preview}
+          items={filtered}
           index={lbIndex}
           onClose={() => setLbIndex(null)}
           onChange={setLbIndex}

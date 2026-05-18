@@ -49,7 +49,7 @@ export function MediaListPage() {
             }}
             className="back-btn"
           >
-            <span style={{ fontSize: '14px' }}>←</span> Back to media
+            <span style={{ fontSize: '14px' }}>←</span> Back to main page
           </Link>
           <div
             style={{

@@ -33,6 +33,7 @@ export type PressItem = {
   year: string;
   type: 'image' | 'pdf';
   src: string;
+  images?: string[];
   category: PressCategory;
   url?: string;
 };
