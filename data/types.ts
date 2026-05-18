@@ -26,10 +26,12 @@ export type Video = {
 export type PressItem = {
   id: number;
   publication: string;
+  title: string;
   featured: boolean;
   year: string;
   type: 'image' | 'pdf';
   src: string;
+  url?: string;
 };
 
 export type NoteType = 'article' | 'poem' | 'short-story';

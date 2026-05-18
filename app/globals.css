@@ -278,8 +278,9 @@ body::before {
 .press-card-bg { position: absolute; inset: 0; z-index: 0; }
 .press-card-overlay { position: absolute; inset: 0; background: linear-gradient(to top, rgba(15,15,13,0.85) 0%, rgba(15,15,13,0.1) 60%, transparent 100%); z-index: 1; }
 .press-card-content { position: relative; z-index: 2; color: var(--text-light); }
-.press-card-pub { font-family: var(--font-serif); font-size: 17px; font-weight: 400; margin-bottom: 4px; }
-.press-card.featured .press-card-pub { font-size: 28px; }
+.press-card-pub { font-family: var(--font-mono); font-size: 9px; letter-spacing: 0.18em; text-transform: uppercase; color: var(--gold-light); margin-bottom: 6px; }
+.press-card-title { font-family: var(--font-serif); font-size: 15px; font-weight: 400; line-height: 1.3; margin-bottom: 8px; color: var(--text-light); }
+.press-card.featured .press-card-title { font-size: 22px; }
 .press-card-meta { font-family: var(--font-mono); font-size: 9px; letter-spacing: 0.18em; color: var(--text-light-3); text-transform: uppercase; }
 .press-card-badge { position: absolute; top: 14px; left: 14px; font-family: var(--font-mono); font-size: 9px; letter-spacing: 0.18em; text-transform: uppercase; color: var(--gold-light); background: rgba(15,15,13,0.55); border: 1px solid rgba(46,107,79,0.5); padding: 5px 11px; z-index: 3; backdrop-filter: blur(8px); }
 
