@@ -43,6 +43,17 @@ export function PressLightbox({ items, index, onClose, onChange }: Props) {
             <div className="press-lightbox-pub">{item.publication}</div>
             <div className="press-lightbox-title">{item.title}</div>
             <div className="press-lightbox-year">{item.year}</div>
+            {item.url && (
+              <a
+                href={item.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="press-lightbox-link"
+                onClick={(e) => e.stopPropagation()}
+              >
+                Read article →
+              </a>
+            )}
           </div>
           {items.length > 1 && (
             <div className="press-lightbox-nav">

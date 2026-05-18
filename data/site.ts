@@ -23,6 +23,7 @@ export const PRESS: PressItem[] = [
     src: '/images/press/world-atlas-wicked-broz.jpg',
     year: '2023',
     category: 'street-art',
+    url: 'https://www.quarto.com/books/9780711283442/the-world-atlas-of-street-art',
   },
   {
     id: 3,
@@ -174,6 +175,7 @@ export const PRESS: PressItem[] = [
     src: '/images/press/fpj-mural-marol.jpg',
     year: '2024',
     category: 'street-art',
+    url: 'https://www.freepressjournal.in/mumbai/mural-in-marol-how-a-graffiti-movement-turned-a-nondescript-mumbai-suburb-into-an-urban-art-landmark',
   },
 ];
 
