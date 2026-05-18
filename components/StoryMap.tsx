@@ -511,6 +511,21 @@ export function StoryMap() {
 
         </div>
       </main>
+
+      {/* Always-visible About crosslink */}
+      <div className={s.aboutBand}>
+        <div className={s.aboutBandInner}>
+          <div>
+            <div className={s.aboutBandLabel}>Want to know the person?</div>
+            <div className={s.aboutBandText}>
+              The story covers the timeline. The About page covers the human.
+            </div>
+          </div>
+          <Link href="/about" className={s.aboutBandLink}>
+            Head to the About page →
+          </Link>
+        </div>
+      </div>
     </>
   );
 }
