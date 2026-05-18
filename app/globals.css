@@ -520,7 +520,7 @@ body::before {
 .cred-strip-item {
   display: flex;
   align-items: center;
-  padding: 0 48px;
+  padding: 0 28px;
   border-right: 1px solid var(--line-faint);
   white-space: nowrap;
   flex-shrink: 0;
@@ -571,7 +571,7 @@ body::before {
 .cred-strip-item {
   display: flex;
   align-items: center;
-  padding: 0 48px;
+  padding: 0 28px;
   border-right: 1px solid var(--line-faint);
   white-space: nowrap;
   flex-shrink: 0;
