@@ -216,6 +216,8 @@ body::before {
 .hero-offerings { margin-top: 28px; display: flex; gap: 8px; flex-wrap: wrap; opacity: 0; animation: rise-up 0.9s cubic-bezier(0.16,1,0.3,1) 1.3s forwards; }
 .offering-chip { font-family: var(--font-mono); font-size: 10px; letter-spacing: 0.16em; text-transform: uppercase; color: var(--gold-light); border: 1px solid var(--line-light); padding: 9px 16px; background: rgba(46,107,79,0.06); cursor: pointer; transition: all 0.25s; text-decoration: none; display: inline-flex; align-items: center; gap: 8px; }
 .offering-chip:hover { border-color: var(--gold-light); background: rgba(46,107,79,0.16); color: var(--text-light); }
+.offering-chip.active { border-color: var(--gold); background: rgba(46,107,79,0.22); color: var(--text-light); }
+.offering-chip.active .offering-chip-num { color: var(--gold); }
 .offering-chip-num { color: var(--ember-light); font-size: 9px; }
 
 /* Tab shell — base (dark v3 styles further below override nothing; kept as single source) */
