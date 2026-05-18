@@ -601,15 +601,3 @@ export const REDBULL_NOTES: Note[] = [
   },
 
 ];
-
-// ── Art Fervour ────────────────────────────────────────────
-export const ARTFERVOUR_NOTES: Note[] = [
-  {
-    id: 200, slug: 'af-graffiti-duos-walls-world',
-    title: 'These Graffiti Duos Are Taking Walls Across the World by Storm',
-    date: '2021', read: '5 min', tag: 'Street Art', type: 'article',
-    excerpt: 'A look at the graffiti duos redefining walls across continents — including Mumbai\'s own Wicked Broz, whose murals turned a suburb into an art landmark.',
-    publication: 'Art Fervour',
-    url: 'https://artfervour.com/these-graffiti-duos-are-taking-walls-across-the-world-by-storm/',
-  },
-];

@@ -8,5 +8,5 @@ export const metadata: Metadata = {
 };
 
 export default function PoemsPage() {
-  return <WritingListPage type="poem" />;
+  return <WritingListPage section="poems" />;
 }

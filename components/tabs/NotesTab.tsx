@@ -3,22 +3,35 @@ import { useState } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 import { NOTES } from '@/data/site';
-import type { NoteType } from '@/data/types';
+import type { WritingSection } from '@/components/WritingListPage';
 
-const SUB_TABS: { id: NoteType; label: string; href: string }[] = [
-  { id: 'article', label: 'Articles', href: '/writing/articles' },
-  { id: 'poem', label: 'Poems', href: '/writing/poems' },
-  { id: 'short-story', label: 'Short Stories', href: '/writing/short-stories' },
+const SUB_TABS: { id: WritingSection; label: string; href: string }[] = [
+  { id: 'essays',  label: 'Essays',   href: '/writing/essays'  },
+  { id: 'redbull', label: 'Red Bull', href: '/writing/redbull' },
+  { id: 'poems',   label: 'Poems',    href: '/writing/poems'   },
 ];
+
+function getFiltered(section: WritingSection) {
+  switch (section) {
+    case 'essays':
+      return NOTES.filter(
+        (n) => (n.type === 'article' || n.type === 'short-story') && n.publication !== 'Red Bull'
+      );
+    case 'redbull':
+      return NOTES.filter((n) => n.publication === 'Red Bull');
+    case 'poems':
+      return NOTES.filter((n) => n.type === 'poem');
+  }
+}
 
 const PREVIEW_COUNT = 3;
 
 export function NotesTab() {
-  const [activeType, setActiveType] = useState<NoteType>('article');
-  const filtered = NOTES.filter((n) => n.type === activeType);
+  const [active, setActive] = useState<WritingSection>('essays');
+  const filtered = getFiltered(active);
   const preview = filtered.slice(0, PREVIEW_COUNT);
   const [featured, ...rest] = preview;
-  const activeTab = SUB_TABS.find((t) => t.id === activeType)!;
+  const activeTab = SUB_TABS.find((t) => t.id === active)!;
 
   return (
     <>
@@ -41,8 +54,8 @@ export function NotesTab() {
         {SUB_TABS.map((t) => (
           <button
             key={t.id}
-            className={`filter-chip${activeType === t.id ? ' active' : ''}`}
-            onClick={() => setActiveType(t.id)}
+            className={`filter-chip${active === t.id ? ' active' : ''}`}
+            onClick={() => setActive(t.id)}
           >
             {t.label}
           </button>
@@ -86,7 +99,9 @@ export function NotesTab() {
                 </div>
                 <h3 className="note-title">{featured.title}</h3>
                 <p className="note-excerpt">{featured.excerpt}</p>
-                <div className="note-read">{featured.url ? `Read on ${featured.publication ?? 'site'} →` : 'Read the piece →'}</div>
+                <div className="note-read">
+                  {featured.url ? `Read on ${featured.publication ?? 'site'} →` : 'Read the piece →'}
+                </div>
               </div>
             </Link>
 
@@ -121,7 +136,9 @@ export function NotesTab() {
                   </div>
                   <h3 className="note-title">{n.title}</h3>
                   <p className="note-excerpt">{n.excerpt}</p>
-                  <div className="note-read">{n.url ? `Read on ${n.publication ?? 'site'} →` : 'Read →'}</div>
+                  <div className="note-read">
+                    {n.url ? `Read on ${n.publication ?? 'site'} →` : 'Read →'}
+                  </div>
                 </div>
               </Link>
             ))}

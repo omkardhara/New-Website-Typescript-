@@ -1,23 +1,37 @@
 import Link from 'next/link';
 import Image from 'next/image';
 import { NOTES } from '@/data/site';
-import type { NoteType } from '@/data/types';
 
-const TYPE_LABELS: Record<NoteType, string> = {
-  article: 'Articles',
-  poem: 'Poems',
-  'short-story': 'Short Stories',
+export type WritingSection = 'essays' | 'redbull' | 'poems';
+
+const SECTIONS: { id: WritingSection; label: string; href: string }[] = [
+  { id: 'essays',  label: 'Essays',   href: '/writing/essays'  },
+  { id: 'redbull', label: 'Red Bull', href: '/writing/redbull' },
+  { id: 'poems',   label: 'Poems',    href: '/writing/poems'   },
+];
+
+const SECTION_TITLES: Record<WritingSection, string> = {
+  essays:  'Essays',
+  redbull: 'Red Bull',
+  poems:   'Poems',
 };
 
-const TYPE_HREFS: Record<NoteType, string> = {
-  article: '/writing/articles',
-  poem: '/writing/poems',
-  'short-story': '/writing/short-stories',
-};
+function getNotesForSection(section: WritingSection) {
+  switch (section) {
+    case 'essays':
+      return NOTES.filter(
+        (n) => (n.type === 'article' || n.type === 'short-story') && n.publication !== 'Red Bull'
+      );
+    case 'redbull':
+      return NOTES.filter((n) => n.publication === 'Red Bull');
+    case 'poems':
+      return NOTES.filter((n) => n.type === 'poem');
+  }
+}
 
-export function WritingListPage({ type }: { type: NoteType }) {
-  const notes = NOTES.filter((n) => n.type === type);
-  const label = TYPE_LABELS[type];
+export function WritingListPage({ section }: { section: WritingSection }) {
+  const notes = getNotesForSection(section);
+  const title = SECTION_TITLES[section];
 
   return (
     <div style={{ background: 'var(--bg-cream)', minHeight: '100vh' }}>
@@ -29,58 +43,65 @@ export function WritingListPage({ type }: { type: NoteType }) {
           background: 'rgba(248,246,241,0.95)',
           backdropFilter: 'blur(20px) saturate(1.4)',
           borderBottom: '1px solid var(--line-faint)',
-          padding: '74px clamp(20px,5vw,64px) 14px',
+          padding: '74px clamp(20px,5vw,64px) 12px',
         }}
       >
-        <div
-          style={{
-            maxWidth: '1400px',
-            margin: '0 auto',
-            display: 'flex',
-            alignItems: 'center',
-            justifyContent: 'space-between',
-          }}
-        >
-          <Link
-            href="/#tab-notes"
+        <div style={{ maxWidth: '1400px', margin: '0 auto' }}>
+          <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginBottom: '10px' }}>
+            <Link
+              href="/#tab-notes"
+              style={{
+                display: 'inline-flex',
+                alignItems: 'center',
+                gap: '8px',
+                fontFamily: 'var(--font-mono)',
+                fontSize: '10px',
+                letterSpacing: '0.2em',
+                textTransform: 'uppercase',
+                color: 'var(--text-dark)',
+                textDecoration: 'none',
+                padding: '8px 14px',
+                border: '1px solid var(--line-dark)',
+                background: 'var(--surface)',
+                transition: 'all 0.25s',
+                flexShrink: 0,
+              }}
+              className="back-btn"
+            >
+              <span style={{ fontSize: '13px' }}>←</span> Writing
+            </Link>
+          </div>
+
+          <div
             style={{
-              display: 'inline-flex',
+              display: 'flex',
               alignItems: 'center',
-              gap: '10px',
-              fontFamily: 'var(--font-mono)',
-              fontSize: '11px',
-              letterSpacing: '0.2em',
-              textTransform: 'uppercase',
-              color: 'var(--text-dark)',
-              textDecoration: 'none',
-              padding: '10px 18px',
-              border: '1px solid var(--line-dark)',
-              background: 'var(--surface)',
-              transition: 'all 0.25s',
+              gap: '6px',
+              overflowX: 'auto',
+              paddingBottom: '2px',
+              scrollbarWidth: 'none',
             }}
-            className="back-btn"
           >
-            <span style={{ fontSize: '14px' }}>←</span> Back to main page
-          </Link>
-          <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
-            {(Object.keys(TYPE_LABELS) as NoteType[]).map((t) => (
+            {SECTIONS.map((s) => (
               <Link
-                key={t}
-                href={TYPE_HREFS[t]}
+                key={s.id}
+                href={s.href}
                 style={{
                   fontFamily: 'var(--font-mono)',
                   fontSize: '10px',
                   letterSpacing: '0.18em',
                   textTransform: 'uppercase',
                   textDecoration: 'none',
-                  padding: '7px 14px',
-                  border: `1px solid ${t === type ? 'var(--line-dark)' : 'var(--line-faint)'}`,
-                  color: t === type ? 'var(--text-dark)' : 'var(--text-dark-3)',
-                  background: t === type ? 'var(--surface)' : 'transparent',
+                  padding: '7px 16px',
+                  border: `1px solid ${s.id === section ? 'var(--line-dark)' : 'var(--line-faint)'}`,
+                  color: s.id === section ? 'var(--text-dark)' : 'var(--text-dark-3)',
+                  background: s.id === section ? 'var(--surface)' : 'transparent',
                   transition: 'all 0.2s',
+                  whiteSpace: 'nowrap',
+                  flexShrink: 0,
                 }}
               >
-                {TYPE_LABELS[t]}
+                {s.label}
               </Link>
             ))}
           </div>
@@ -105,7 +126,7 @@ export function WritingListPage({ type }: { type: NoteType }) {
             marginBottom: '48px',
           }}
         >
-          {label}
+          {title}
         </h1>
 
         <div className="writing-list-grid">
@@ -140,7 +161,9 @@ export function WritingListPage({ type }: { type: NoteType }) {
                 </div>
                 <h3 className="note-title">{n.title}</h3>
                 <p className="note-excerpt">{n.excerpt}</p>
-                <div className="note-read">{n.url ? `Read on ${n.publication ?? 'site'} →` : 'Read →'}</div>
+                <div className="note-read">
+                  {n.url ? `Read on ${n.publication ?? 'site'} →` : 'Read →'}
+                </div>
               </div>
             </Link>
           ))}
