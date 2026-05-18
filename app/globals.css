@@ -518,14 +518,12 @@ body::before {
   animation: cred-scroll 38s linear infinite;
 }
 .cred-strip-item {
-  font-family: var(--font-mono);
-  font-size: 12px;
-  letter-spacing: 0.18em;
-  text-transform: uppercase;
-  color: var(--text-dark-3);
-  padding: 0 32px;
+  display: flex;
+  align-items: center;
+  padding: 0 48px;
   border-right: 1px solid var(--line-faint);
   white-space: nowrap;
+  flex-shrink: 0;
 }
 @keyframes cred-scroll {
   from { transform: translateX(0); }
@@ -571,14 +569,12 @@ body::before {
   animation: cred-scroll 38s linear infinite;
 }
 .cred-strip-item {
-  font-family: var(--font-mono);
-  font-size: 12px;
-  letter-spacing: 0.18em;
-  text-transform: uppercase;
-  color: var(--text-dark-3);
-  padding: 0 32px;
+  display: flex;
+  align-items: center;
+  padding: 0 48px;
   border-right: 1px solid var(--line-faint);
   white-space: nowrap;
+  flex-shrink: 0;
 }
 @keyframes cred-scroll {
   from { transform: translateX(0); }

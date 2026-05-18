@@ -102,7 +102,6 @@ export function Hero() {
 
         <div className="hero-right">
           <div className="portrait-frame">
-            <div className="portrait-caption">Frame 01 · Studio · Mumbai</div>
             <Image
               src="/images/portrait.jpg"
               alt="Omkar Dhareshwar, juggling three glowing balls in a suit"

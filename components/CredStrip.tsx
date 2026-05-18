@@ -1,25 +1,23 @@
 'use client';
 import { useState, useRef, useEffect } from 'react';
 
-const CRED_CLIENTS = [
-  'Red Bull India',
-  'National Geographic',
-  'Museum of Goa',
-  'Doordarshan',
-  'TEDx Talks',
-  'Britannia',
-  'Rickshaw Run 2024',
-  'The Buskers Club',
-  'Goethe-Institut',
-  'Artisans of Mumbai',
-  'Mid-Day',
-  'Graffiti Magazine (DE)',
+const LOGOS = [
+  { name: 'Red Bull',           src: '/images/logos/redbull.svg',        w: 96  },
+  { name: 'National Geographic',src: '/images/logos/natgeo.svg',         w: 90  },
+  { name: 'Britannia',          src: '/images/logos/britannia.svg',       w: 106 },
+  { name: 'The Adventurists',   src: '/images/logos/adventurists.svg',    w: 164 },
+  { name: 'Universal Music',    src: '/images/logos/universal-music.svg', w: 148 },
+  { name: 'Mumbai Metro',       src: '/images/logos/mumbai-metro.svg',    w: 136 },
+  { name: 'Museum of Goa',      src: '/images/logos/museum-of-goa.svg',   w: 120 },
+  { name: 'Puma',               src: '/images/logos/puma.svg',            w: 72  },
+  { name: 'Flying Machine',     src: '/images/logos/flying-machine.svg',  w: 138 },
 ];
+
+const items = [...LOGOS, ...LOGOS]; // duplicate for seamless loop
 
 export function CredStrip() {
   const [paused, setPaused] = useState(false);
   const timeoutRef = useRef<NodeJS.Timeout | null>(null);
-  const items = [...CRED_CLIENTS, ...CRED_CLIENTS]; // duplicate for seamless loop
 
   const togglePause = () => {
     setPaused((p) => !p);
@@ -28,9 +26,7 @@ export function CredStrip() {
   };
 
   useEffect(() => {
-    return () => {
-      if (timeoutRef.current) clearTimeout(timeoutRef.current);
-    };
+    return () => { if (timeoutRef.current) clearTimeout(timeoutRef.current); };
   }, []);
 
   return (
@@ -47,9 +43,17 @@ export function CredStrip() {
           className="cred-strip-marquee"
           style={{ animationPlayState: paused ? 'paused' : 'running' }}
         >
-          {items.map((name, i) => (
+          {items.map((logo, i) => (
             <span className="cred-strip-item" key={i}>
-              {name}
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img
+                src={logo.src}
+                alt={logo.name}
+                width={logo.w}
+                height={28}
+                style={{ display: 'block', opacity: 0.55 }}
+                draggable={false}
+              />
             </span>
           ))}
         </div>
