@@ -244,7 +244,7 @@ export const NOTES: Note[] = [
     title: 'Learned Men',
     date: '2009–11',
     read: '2 min',
-    tag: 'Education',
+    tag: 'Satire',
     type: 'article',
     excerpt: 'The windows of the class are opened wide. But closed shut are those of our minds.',
     content: WRITING_CONTENT['learned-men'],
