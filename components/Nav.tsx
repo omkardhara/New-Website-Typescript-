@@ -31,6 +31,9 @@ export function Nav() {
         <Link className="nav-link" href="/#offerings">
           Offerings
         </Link>
+        <Link className="nav-link" href="/about">
+          About
+        </Link>
         <Link className="nav-link" href="/story">
           Story
         </Link>
