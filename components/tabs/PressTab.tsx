@@ -76,7 +76,7 @@ export function PressTab() {
                 fill
                 sizes="(max-width: 720px) 100vw, (max-width: 1024px) 50vw, 33vw"
                 quality={90}
-                style={{ objectFit: 'cover', objectPosition: 'top' }}
+                style={{ objectFit: 'cover', objectPosition: p.thumbPosition ?? 'top' }}
               />
             </div>
             <div className="press-card-overlay" />

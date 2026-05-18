@@ -42,6 +42,7 @@ export const PRESS: PressItem[] = [
       '/images/press/mid-day-arts-adda-7.jpg',
     ],
     year: 'Apr 2026',
+    thumbPosition: 'left top',
     category: 'street-art',
   },
   // ── Regular ───────────────────────────────────────────────

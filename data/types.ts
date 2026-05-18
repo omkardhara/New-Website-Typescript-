@@ -34,6 +34,7 @@ export type PressItem = {
   type: 'image' | 'pdf';
   src: string;
   images?: string[];
+  thumbPosition?: string;
   category: PressCategory;
   url?: string;
 };
