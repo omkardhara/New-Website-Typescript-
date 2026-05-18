@@ -5,7 +5,6 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { PRESS } from '@/data/site';
 import type { PressCategory } from '@/data/types';
-import { PressLightbox } from '@/components/PressLightbox';
 
 type Cat = PressCategory | 'all';
 
@@ -21,13 +20,11 @@ const SORTED = [...PRESS].sort((a, b) => (b.featured ? 1 : 0) - (a.featured ? 1 
 
 export function PressListPage({ defaultCategory = 'all' }: { defaultCategory?: Cat }) {
   const [cat, setCat] = useState<Cat>(defaultCategory);
-  const [lbIndex, setLbIndex] = useState<number | null>(null);
 
   const filtered = cat === 'all' ? SORTED : SORTED.filter((p) => p.category === cat);
 
   return (
     <div style={{ background: 'var(--bg-cream)', minHeight: '100vh' }}>
-      {/* Sticky header */}
       <div
         style={{
           position: 'sticky',
@@ -49,7 +46,7 @@ export function PressListPage({ defaultCategory = 'all' }: { defaultCategory?: C
           }}
         >
           <Link
-            href="/"
+            href="/#tab-press"
             style={{
               display: 'inline-flex',
               alignItems: 'center',
@@ -104,13 +101,12 @@ export function PressListPage({ defaultCategory = 'all' }: { defaultCategory?: C
           Press
         </h1>
 
-        {/* Filter chips */}
         <div className="filter-row" style={{ marginBottom: '32px' }}>
           {CATS.map((c) => (
             <button
               key={c.id}
               className={`filter-chip${cat === c.id ? ' active' : ''}`}
-              onClick={() => { setCat(c.id); setLbIndex(null); }}
+              onClick={() => setCat(c.id)}
             >
               {c.label}
             </button>
@@ -118,14 +114,11 @@ export function PressListPage({ defaultCategory = 'all' }: { defaultCategory?: C
         </div>
 
         <div className="press-grid">
-          {filtered.map((p, i) => (
-            <div
+          {filtered.map((p) => (
+            <Link
               key={p.id}
+              href={`/press/${p.slug}`}
               className="press-card"
-              onClick={() => setLbIndex(i)}
-              role="button"
-              tabIndex={0}
-              onKeyDown={(e) => e.key === 'Enter' && setLbIndex(i)}
               aria-label={`${p.publication} — ${p.title}`}
             >
               <div className="press-card-bg">
@@ -144,19 +137,10 @@ export function PressListPage({ defaultCategory = 'all' }: { defaultCategory?: C
                 <div className="press-card-title">{p.title}</div>
                 <div className="press-card-meta">{p.year}</div>
               </div>
-            </div>
+            </Link>
           ))}
         </div>
       </div>
-
-      {lbIndex !== null && (
-        <PressLightbox
-          items={filtered}
-          index={lbIndex}
-          onClose={() => setLbIndex(null)}
-          onChange={setLbIndex}
-        />
-      )}
     </div>
   );
 }

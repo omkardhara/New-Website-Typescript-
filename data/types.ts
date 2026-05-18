@@ -27,6 +27,7 @@ export type PressCategory = 'street-art' | 'juggling' | 'activism' | 'installati
 
 export type PressItem = {
   id: number;
+  slug: string;
   publication: string;
   title: string;
   featured: boolean;

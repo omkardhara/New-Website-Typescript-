@@ -5,7 +5,6 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { PRESS } from '@/data/site';
 import type { PressCategory } from '@/data/types';
-import { PressLightbox } from '@/components/PressLightbox';
 
 type Cat = PressCategory | 'all';
 
@@ -19,12 +18,10 @@ const CATS: { id: Cat; label: string }[] = [
 
 const PREVIEW = 3;
 
-// Featured first, then by id
 const SORTED = [...PRESS].sort((a, b) => (b.featured ? 1 : 0) - (a.featured ? 1 : 0));
 
 export function PressTab() {
   const [cat, setCat] = useState<Cat>('all');
-  const [lbIndex, setLbIndex] = useState<number | null>(null);
 
   const filtered = cat === 'all' ? SORTED : SORTED.filter((p) => p.category === cat);
   const preview  = filtered.slice(0, PREVIEW);
@@ -51,7 +48,7 @@ export function PressTab() {
           <button
             key={c.id}
             className={`filter-chip${cat === c.id ? ' active' : ''}`}
-            onClick={() => { setCat(c.id); setLbIndex(null); }}
+            onClick={() => setCat(c.id)}
           >
             {c.label}
           </button>
@@ -60,13 +57,10 @@ export function PressTab() {
 
       <div className="press-grid">
         {preview.map((p) => (
-          <div
+          <Link
             key={p.id}
+            href={`/press/${p.slug}`}
             className="press-card"
-            onClick={() => setLbIndex(filtered.indexOf(p))}
-            role="button"
-            tabIndex={0}
-            onKeyDown={(e) => e.key === 'Enter' && setLbIndex(filtered.indexOf(p))}
             aria-label={`${p.publication} — ${p.title}`}
           >
             <div className="press-card-bg">
@@ -85,7 +79,7 @@ export function PressTab() {
               <div className="press-card-title">{p.title}</div>
               <div className="press-card-meta">{p.year}</div>
             </div>
-          </div>
+          </Link>
         ))}
       </div>
 
@@ -98,15 +92,6 @@ export function PressTab() {
             View all {filtered.length} features →
           </Link>
         </div>
-      )}
-
-      {lbIndex !== null && (
-        <PressLightbox
-          items={filtered}
-          index={lbIndex}
-          onClose={() => setLbIndex(null)}
-          onChange={setLbIndex}
-        />
       )}
     </>
   );

@@ -1,6 +1,6 @@
 import type { MetadataRoute } from 'next';
 import { WORK } from '@/data/work';
-import { NOTES } from '@/data/site';
+import { NOTES, PRESS } from '@/data/site';
 
 const BASE = 'https://www.omkardhareshwar.com';
 
@@ -19,6 +19,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
     })),
     ...NOTES.map((n) => ({
       url: `${BASE}/writing/${n.slug}`,
+      lastModified: new Date(),
+      changeFrequency: 'monthly' as const,
+      priority: 0.7,
+    })),
+    ...PRESS.map((p) => ({
+      url: `${BASE}/press/${p.slug}`,
       lastModified: new Date(),
       changeFrequency: 'monthly' as const,
       priority: 0.7,

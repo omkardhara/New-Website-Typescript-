@@ -6,6 +6,7 @@ export const PRESS: PressItem[] = [
   // ── Featured ──────────────────────────────────────────────
   {
     id: 1,
+    slug: 'natgeo-marol',
     publication: 'National Geographic Traveller India',
     title: 'Marol, Maharashtra — Top Places to Visit in India',
     featured: true,
@@ -17,6 +18,7 @@ export const PRESS: PressItem[] = [
   },
   {
     id: 2,
+    slug: 'world-atlas-wicked-broz',
     publication: 'World Atlas of Street Art',
     title: 'Wicked Broz, Mumbai',
     featured: true,
@@ -28,6 +30,7 @@ export const PRESS: PressItem[] = [
   },
   {
     id: 3,
+    slug: 'mid-day-arts-adda',
     publication: 'Mid-Day',
     title: 'Arts Adda: How Marol Art Village Turned Into a Visual Treat',
     featured: true,
@@ -48,6 +51,7 @@ export const PRESS: PressItem[] = [
   // ── Regular ───────────────────────────────────────────────
   {
     id: 4,
+    slug: 'mid-day-flight-of-colours',
     publication: 'Mid-Day',
     title: 'Flight of Fancied Colours',
     featured: false,
@@ -58,6 +62,7 @@ export const PRESS: PressItem[] = [
   },
   {
     id: 5,
+    slug: 'mid-day-catching-practice',
     publication: 'Mid-Day',
     title: 'Catching Practice',
     featured: false,
@@ -68,6 +73,7 @@ export const PRESS: PressItem[] = [
   },
   {
     id: 6,
+    slug: 'mid-day-juggling-universe',
     publication: 'Mid-Day',
     title: 'Juggling Is His Universe',
     featured: false,
@@ -78,6 +84,7 @@ export const PRESS: PressItem[] = [
   },
   {
     id: 7,
+    slug: 'mid-day-lessons-juggling',
     publication: 'Mid-Day',
     title: 'Lessons in Juggling',
     featured: false,
@@ -88,6 +95,7 @@ export const PRESS: PressItem[] = [
   },
   {
     id: 8,
+    slug: 'mid-day-munna-circuit',
     publication: 'Mid-Day',
     title: 'Listen to Munna and Circuit',
     featured: false,
@@ -98,6 +106,7 @@ export const PRESS: PressItem[] = [
   },
   {
     id: 9,
+    slug: 'mid-day-heat-marol',
     publication: 'Mid-Day',
     title: 'The Heat Is On in Marol',
     featured: false,
@@ -108,6 +117,7 @@ export const PRESS: PressItem[] = [
   },
   {
     id: 10,
+    slug: 'mid-day-lessons-down-under',
     publication: 'Mid-Day',
     title: 'Lessons for Down Under',
     featured: false,
@@ -118,6 +128,7 @@ export const PRESS: PressItem[] = [
   },
   {
     id: 11,
+    slug: 'mid-day-spray-dont-say',
     publication: 'Mid-Day',
     title: "Spray It, Don't Say It",
     featured: false,
@@ -128,6 +139,7 @@ export const PRESS: PressItem[] = [
   },
   {
     id: 12,
+    slug: 'mid-day-back2roots',
     publication: 'Mid-Day',
     title: 'Marol Art Village & Back2TheRoots',
     featured: false,
@@ -138,6 +150,7 @@ export const PRESS: PressItem[] = [
   },
   {
     id: 13,
+    slug: 'mid-day-ladies-first',
     publication: 'Mid-Day',
     title: 'Ladies, Get Ready to Take Over Art',
     featured: false,
@@ -148,6 +161,7 @@ export const PRESS: PressItem[] = [
   },
   {
     id: 14,
+    slug: 'mid-day-memes-matter',
     publication: 'Mid-Day',
     title: 'Memes That Matter',
     featured: false,
@@ -158,6 +172,7 @@ export const PRESS: PressItem[] = [
   },
   {
     id: 15,
+    slug: 'mid-day-rickshaw-run',
     publication: 'Mid-Day',
     title: 'Rickshaw Run: Never Say Die',
     featured: false,
@@ -168,6 +183,7 @@ export const PRESS: PressItem[] = [
   },
   {
     id: 16,
+    slug: 'toi-brushing-roadblocks',
     publication: 'The Times of India',
     title: 'Brushing Away the Roadblocks',
     featured: false,
@@ -178,6 +194,7 @@ export const PRESS: PressItem[] = [
   },
   {
     id: 17,
+    slug: 'fpj-mural-marol',
     publication: 'Free Press Journal',
     title: 'Mural In Marol: How A Graffiti Movement Turned A Suburb Into An Urban Art Landmark',
     featured: false,
@@ -188,6 +205,8 @@ export const PRESS: PressItem[] = [
     url: 'https://www.freepressjournal.in/mumbai/mural-in-marol-how-a-graffiti-movement-turned-a-nondescript-mumbai-suburb-into-an-urban-art-landmark',
   },
 ];
+
+export const getPressItemBySlug = (slug: string) => PRESS.find((p) => p.slug === slug);
 
 // ─── WRITINGS ───────────────────────────────────────────────
 export const NOTES: Note[] = [
