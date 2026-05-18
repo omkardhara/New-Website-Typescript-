@@ -29,22 +29,16 @@ const LOGOS: Logo[] = [
 
 const items = [...LOGOS, ...LOGOS];
 
+// Must match the CSS animation duration for cred-scroll
+const ANIM_DURATION_S = 55;
+
 export function CredStrip() {
   const [paused, setPaused] = useState(false);
   const [swipeX, setSwipeX] = useState(0);
-  const [snapping, setSnapping] = useState(false);
+  const marqueeRef = useRef<HTMLDivElement>(null);
   const timeoutRef = useRef<NodeJS.Timeout | null>(null);
   const touchStartX = useRef(0);
   const swipeStartX = useRef(0);
-
-  const scheduleResume = () => {
-    if (timeoutRef.current) clearTimeout(timeoutRef.current);
-    timeoutRef.current = setTimeout(() => {
-      setSnapping(true);
-      setSwipeX(0);
-      setTimeout(() => { setSnapping(false); setPaused(false); }, 350);
-    }, 2000);
-  };
 
   const handleTouchStart = (e: React.TouchEvent) => {
     touchStartX.current = e.touches[0].clientX;
@@ -58,7 +52,28 @@ export function CredStrip() {
     setSwipeX(swipeStartX.current + delta);
   };
 
-  const handleTouchEnd = () => scheduleResume();
+  const handleTouchEnd = () => {
+    const marquee = marqueeRef.current;
+    if (marquee) {
+      // Read the frozen animation translateX
+      const matrix = new DOMMatrix(window.getComputedStyle(marquee).transform);
+      const animX = matrix.m41;
+      // Combine with user's swipe delta
+      const combined = animX + swipeX;
+      // Total scroll distance = half the duplicated marquee width
+      const totalW = marquee.scrollWidth / 2;
+      // Normalize into [-totalW, 0]
+      let pos = combined % totalW;
+      if (pos > 0) pos -= totalW;
+      // Reposition the animation so it resumes from here
+      const progress = Math.abs(pos) / totalW;
+      marquee.style.animationDelay = `${-(progress * ANIM_DURATION_S)}s`;
+    }
+    // Remove swipe offset — animation picks up from the same visual point
+    setSwipeX(0);
+    if (timeoutRef.current) clearTimeout(timeoutRef.current);
+    timeoutRef.current = setTimeout(() => setPaused(false), 1500);
+  };
 
   useEffect(() => {
     return () => { if (timeoutRef.current) clearTimeout(timeoutRef.current); };
@@ -76,13 +91,9 @@ export function CredStrip() {
         onTouchEnd={handleTouchEnd}
         aria-label="Featured publications and clients"
       >
-        <div
-          style={{
-            transform: `translateX(${swipeX}px)`,
-            transition: snapping ? 'transform 0.35s ease' : 'none',
-          }}
-        >
+        <div style={{ transform: `translateX(${swipeX}px)` }}>
           <div
+            ref={marqueeRef}
             className="cred-strip-marquee"
             style={{ animationPlayState: paused ? 'paused' : 'running' }}
           >
