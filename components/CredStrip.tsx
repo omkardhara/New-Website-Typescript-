@@ -24,7 +24,7 @@ const LOGOS: Logo[] = [
   { name: 'Homegrown',                    type: 'image', src: '/images/logos/homegrown.png',             h: 40 },
   { name: 'Agatsu Foundation',            type: 'image', src: '/images/logos/agatsu.png',                h: 36 },
   { name: 'World Atlas of Street Art',    type: 'image', src: '/images/logos/world-atlas-street-art.jpg', h: 40 },
-  { name: 'Institution',                  type: 'image', src: '/images/logos/institution.jpg',           h: 40 },
+  { name: 'Shri Chitrapur Math',           type: 'image', src: '/images/logos/chitrapur-math.jpg',       h: 40 },
 ];
 
 const items = [...LOGOS, ...LOGOS];
