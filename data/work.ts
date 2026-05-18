@@ -81,12 +81,12 @@ The video crossed 300,000 views on YouTube. MC Altaf went on to join Gully Gang.
     stat: '108 parts · 8-week run',
     glyph: '🎨',
     gradient: 'radial-gradient(ellipse at 50% 60%, rgba(100,80,200,0.22), rgba(15,15,13,0.12) 65%, var(--bg-cream))',
-    image: '/images/flow-sim-2.jpg.png',
+    image: '/images/flow-sim-2.png',
     images: [
-      '/images/flow-sim-1.jpg.jpeg',
-      '/images/flow-sim-2.jpg.png',
-      '/images/flow-sim-4.jpg.png',
-      '/images/flow-sim-3.jpg.jpeg',
+      '/images/flow-sim-1.jpg',
+      '/images/flow-sim-2.png',
+      '/images/flow-sim-4.png',
+      '/images/flow-sim-3.jpg',
     ],
     captions: [
       'Flow Simulator 1.0 Displayed at Museum of Goa',
