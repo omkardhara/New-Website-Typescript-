@@ -30,6 +30,10 @@ export default function WritingPage({ params }: { params: { slug: string } }) {
   if (!note) notFound();
 
   const isPoem = note.type === 'poem';
+  const backHref =
+    note.type === 'poem' ? '/writing/poems' :
+    note.type === 'short-story' ? '/writing/short-stories' :
+    '/writing/articles';
   const blocks = note.content
     ? note.content.split('\n\n').map((b) => b.trim()).filter(Boolean)
     : [];
@@ -49,7 +53,7 @@ export default function WritingPage({ params }: { params: { slug: string } }) {
       >
         <div style={{ maxWidth: '780px', margin: '0 auto' }}>
           <Link
-            href="/#tab-notes"
+            href={backHref}
             style={{
               display: 'inline-flex',
               alignItems: 'center',
@@ -185,7 +189,7 @@ export default function WritingPage({ params }: { params: { slug: string } }) {
             style={{
               fontFamily: 'var(--font-serif)',
               fontSize: 'clamp(17px,2vw,20px)',
-              fontWeight: 300,
+              fontWeight: 400,
               lineHeight: 1.9,
               color: 'var(--text-dark)',
               marginTop: 'clamp(40px,5vw,64px)',
@@ -231,7 +235,7 @@ export default function WritingPage({ params }: { params: { slug: string } }) {
         }}
       >
         <Link
-          href="/#tab-notes"
+          href={backHref}
           style={{
             display: 'inline-flex',
             alignItems: 'center',

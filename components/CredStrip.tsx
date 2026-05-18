@@ -2,7 +2,7 @@
 import { useState, useRef, useEffect } from 'react';
 
 type Logo =
-  | { name: string; type: 'image'; src: string; h?: number; round?: boolean; noBg?: boolean }
+  | { name: string; type: 'image'; src: string; h?: number; round?: boolean; noBg?: boolean; maxW?: number }
   | { name: string; type: 'icon';  src: string };
 
 // h = rendered height in px. Default is 30px (Agatsu standard).
@@ -21,7 +21,7 @@ const LOGOS: Logo[] = [
   { name: 'The Adventurists',    type: 'image', src: '/images/logos/adventurists.png',         h: 38 },
   { name: 'BookMyShow',          type: 'image', src: '/images/logos/bookmyshow.png',           h: 42 },
   { name: 'Mid-Day',             type: 'image', src: '/images/logos/midday.png',               h: 42 },
-  { name: 'The Times of India',  type: 'image', src: '/images/logos/times-of-india.png',       h: 34 },
+  { name: 'The Times of India',  type: 'image', src: '/images/logos/times-of-india.png',       h: 34, maxW: 110 },
   { name: 'Homegrown',           type: 'image', src: '/images/logos/homegrown.png',            h: 46 },
   { name: 'Agatsu Foundation',   type: 'image', src: '/images/logos/agatsu.png',               h: 30 },
   { name: 'Shri Chitrapur Math', type: 'image', src: '/images/logos/chitrapur-math.jpg',       h: 44, round: true },
@@ -31,13 +31,34 @@ const items = [...LOGOS, ...LOGOS];
 
 export function CredStrip() {
   const [paused, setPaused] = useState(false);
+  const [swipeX, setSwipeX] = useState(0);
+  const [snapping, setSnapping] = useState(false);
   const timeoutRef = useRef<NodeJS.Timeout | null>(null);
+  const touchStartX = useRef(0);
+  const swipeStartX = useRef(0);
 
-  const togglePause = () => {
-    setPaused((p) => !p);
+  const scheduleResume = () => {
     if (timeoutRef.current) clearTimeout(timeoutRef.current);
-    timeoutRef.current = setTimeout(() => setPaused(false), 4000);
+    timeoutRef.current = setTimeout(() => {
+      setSnapping(true);
+      setSwipeX(0);
+      setTimeout(() => { setSnapping(false); setPaused(false); }, 350);
+    }, 2000);
   };
+
+  const handleTouchStart = (e: React.TouchEvent) => {
+    touchStartX.current = e.touches[0].clientX;
+    swipeStartX.current = swipeX;
+    setPaused(true);
+    if (timeoutRef.current) clearTimeout(timeoutRef.current);
+  };
+
+  const handleTouchMove = (e: React.TouchEvent) => {
+    const delta = e.touches[0].clientX - touchStartX.current;
+    setSwipeX(swipeStartX.current + delta);
+  };
+
+  const handleTouchEnd = () => scheduleResume();
 
   useEffect(() => {
     return () => { if (timeoutRef.current) clearTimeout(timeoutRef.current); };
@@ -48,45 +69,55 @@ export function CredStrip() {
       <div className="cred-strip-label">Featured &amp; trusted by</div>
       <div
         className="cred-strip-viewport"
-        onMouseEnter={() => setPaused(true)}
+        onMouseEnter={() => { if (timeoutRef.current) clearTimeout(timeoutRef.current); setPaused(true); }}
         onMouseLeave={() => setPaused(false)}
-        onTouchStart={togglePause}
+        onTouchStart={handleTouchStart}
+        onTouchMove={handleTouchMove}
+        onTouchEnd={handleTouchEnd}
         aria-label="Featured publications and clients"
       >
         <div
-          className="cred-strip-marquee"
-          style={{ animationPlayState: paused ? 'paused' : 'running' }}
+          style={{
+            transform: `translateX(${swipeX}px)`,
+            transition: snapping ? 'transform 0.35s ease' : 'none',
+          }}
         >
-          {items.map((logo, i) => (
-            <span className="cred-strip-item" key={i}>
-              {logo.type === 'icon' ? (
-                <span className="cred-strip-icon-wrap">
-                  {/* eslint-disable-next-line @next/next/no-img-element */}
+          <div
+            className="cred-strip-marquee"
+            style={{ animationPlayState: paused ? 'paused' : 'running' }}
+          >
+            {items.map((logo, i) => (
+              <span className="cred-strip-item" key={i}>
+                {logo.type === 'icon' ? (
+                  <span className="cred-strip-icon-wrap">
+                    {/* eslint-disable-next-line @next/next/no-img-element */}
+                    <img
+                      src={logo.src}
+                      alt=""
+                      width={28}
+                      height={28}
+                      style={{ display: 'block', flexShrink: 0 }}
+                      draggable={false}
+                    />
+                    <span className="cred-strip-icon-name">{logo.name}</span>
+                  </span>
+                ) : (
+                  // eslint-disable-next-line @next/next/no-img-element
                   <img
                     src={logo.src}
-                    alt=""
-                    width={28}
-                    height={28}
-                    style={{ display: 'block', flexShrink: 0 }}
+                    alt={logo.name}
+                    style={{
+                      height: logo.h ? `${logo.h}px` : undefined,
+                      ...(logo.maxW && { maxWidth: `${logo.maxW}px` }),
+                      ...(logo.round && { borderRadius: '50%', clipPath: 'circle(50%)' }),
+                      ...(logo.noBg && { filter: 'grayscale(1) brightness(3) contrast(1.5)' }),
+                    }}
                     draggable={false}
                   />
-                  <span className="cred-strip-icon-name">{logo.name}</span>
-                </span>
-              ) : (
-                // eslint-disable-next-line @next/next/no-img-element
-                <img
-                  src={logo.src}
-                  alt={logo.name}
-                  style={{
-                    height: logo.h ? `${logo.h}px` : undefined,
-                    ...(logo.round && { borderRadius: '50%', clipPath: 'circle(50%)' }),
-                    ...(logo.noBg && { filter: 'grayscale(1) brightness(3) contrast(1.5)' }),
-                  }}
-                  draggable={false}
-                />
-              )}
-            </span>
-          ))}
+                )}
+              </span>
+            ))}
+          </div>
         </div>
       </div>
     </div>
