@@ -23,6 +23,8 @@ export type Video = {
   category?: string;
 };
 
+export type PressCategory = 'street-art' | 'juggling' | 'activism' | 'installation';
+
 export type PressItem = {
   id: number;
   publication: string;
@@ -31,6 +33,7 @@ export type PressItem = {
   year: string;
   type: 'image' | 'pdf';
   src: string;
+  category: PressCategory;
   url?: string;
 };
 

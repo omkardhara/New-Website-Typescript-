@@ -1,19 +1,43 @@
+'use client';
+
+import { useState } from 'react';
 import Image from 'next/image';
+import Link from 'next/link';
 import { PRESS } from '@/data/site';
+import type { PressCategory } from '@/data/types';
+import { PressLightbox } from '@/components/PressLightbox';
+
+type Cat = PressCategory | 'all';
+
+const CATS: { id: Cat; label: string }[] = [
+  { id: 'all',          label: 'All' },
+  { id: 'street-art',  label: 'Street Art' },
+  { id: 'juggling',    label: 'Juggling' },
+  { id: 'activism',    label: 'Activism' },
+  { id: 'installation',label: 'Installation' },
+];
+
+const PREVIEW = 3;
+
+// Featured first, then by id
+const SORTED = [...PRESS].sort((a, b) => (b.featured ? 1 : 0) - (a.featured ? 1 : 0));
 
 export function PressTab() {
-  const featured = PRESS.filter((p) => p.featured);
-  const regular = PRESS.filter((p) => !p.featured);
+  const [cat, setCat] = useState<Cat>('all');
+  const [lbIndex, setLbIndex] = useState<number | null>(null);
+
+  const filtered = cat === 'all' ? SORTED : SORTED.filter((p) => p.category === cat);
+  const preview  = filtered.slice(0, PREVIEW);
 
   return (
     <>
       <div className="panel-head">
         <div className="panel-head-left">
-          <div className="panel-dispatch">Press Wire · 2019–2026</div>
+          <div className="panel-dispatch">Press · Street Art · Juggling · Activism</div>
           <h2>
-            Apparently juggling
+            From walls to stages
             <br />
-            in public is <em>newsworthy.</em>
+            <em>to the front page.</em>
           </h2>
         </div>
         <div className="panel-meta">
@@ -22,12 +46,27 @@ export function PressTab() {
         </div>
       </div>
 
+      <div className="filter-row">
+        {CATS.map((c) => (
+          <button
+            key={c.id}
+            className={`filter-chip${cat === c.id ? ' active' : ''}`}
+            onClick={() => { setCat(c.id); setLbIndex(null); }}
+          >
+            {c.label}
+          </button>
+        ))}
+      </div>
+
       <div className="press-grid">
-        {[...featured, ...regular].map((p) => (
+        {preview.map((p, i) => (
           <div
             key={p.id}
-            className={`press-card${p.featured ? ' featured' : ''}`}
-            role="article"
+            className="press-card"
+            onClick={() => setLbIndex(i)}
+            role="button"
+            tabIndex={0}
+            onKeyDown={(e) => e.key === 'Enter' && setLbIndex(i)}
             aria-label={`${p.publication} — ${p.title}`}
           >
             <div className="press-card-bg">
@@ -35,12 +74,11 @@ export function PressTab() {
                 src={p.src}
                 alt={p.title}
                 fill
-                sizes="(max-width: 720px) 100vw, (max-width: 1024px) 50vw, 25vw"
+                sizes="(max-width: 720px) 100vw, (max-width: 1024px) 50vw, 33vw"
                 style={{ objectFit: 'cover', objectPosition: 'top' }}
               />
             </div>
             <div className="press-card-overlay" />
-            {p.featured && <span className="press-card-badge">✦ Featured</span>}
             <div className="press-card-content">
               <div className="press-card-pub">{p.publication}</div>
               <div className="press-card-title">{p.title}</div>
@@ -49,6 +87,26 @@ export function PressTab() {
           </div>
         ))}
       </div>
+
+      {filtered.length > PREVIEW && (
+        <div className="writings-see-all">
+          <Link
+            href={`/press${cat !== 'all' ? `?cat=${cat}` : ''}`}
+            className="writings-see-all-btn"
+          >
+            View all {filtered.length} features →
+          </Link>
+        </div>
+      )}
+
+      {lbIndex !== null && (
+        <PressLightbox
+          items={preview}
+          index={lbIndex}
+          onClose={() => setLbIndex(null)}
+          onChange={setLbIndex}
+        />
+      )}
     </>
   );
 }

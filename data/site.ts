@@ -12,6 +12,7 @@ export const PRESS: PressItem[] = [
     type: 'image',
     src: '/images/press/natgeo-marol-p1.jpg',
     year: 'Dec 2019',
+    category: 'street-art',
   },
   {
     id: 2,
@@ -21,6 +22,7 @@ export const PRESS: PressItem[] = [
     type: 'image',
     src: '/images/press/world-atlas-wicked-broz.jpg',
     year: '2023',
+    category: 'street-art',
   },
   {
     id: 3,
@@ -30,6 +32,7 @@ export const PRESS: PressItem[] = [
     type: 'image',
     src: '/images/press/mid-day-arts-adda.jpg',
     year: 'Apr 2026',
+    category: 'street-art',
   },
   // ── Regular ───────────────────────────────────────────────
   {
@@ -40,6 +43,7 @@ export const PRESS: PressItem[] = [
     type: 'image',
     src: '/images/press/mid-day-flight-colours.jpg',
     year: '2020',
+    category: 'street-art',
   },
   {
     id: 5,
@@ -49,6 +53,7 @@ export const PRESS: PressItem[] = [
     type: 'image',
     src: '/images/press/mid-day-catching-practice.jpg',
     year: '2023',
+    category: 'juggling',
   },
   {
     id: 6,
@@ -58,6 +63,7 @@ export const PRESS: PressItem[] = [
     type: 'image',
     src: '/images/press/mid-day-juggling-universe.jpg',
     year: '2021',
+    category: 'juggling',
   },
   {
     id: 7,
@@ -67,6 +73,7 @@ export const PRESS: PressItem[] = [
     type: 'image',
     src: '/images/press/mid-day-lessons-juggling.jpg',
     year: '2022',
+    category: 'installation',
   },
   {
     id: 8,
@@ -76,6 +83,7 @@ export const PRESS: PressItem[] = [
     type: 'image',
     src: '/images/press/mid-day-munna-circuit.jpg',
     year: '2022',
+    category: 'activism',
   },
   {
     id: 9,
@@ -85,6 +93,7 @@ export const PRESS: PressItem[] = [
     type: 'image',
     src: '/images/press/mid-day-heat-marol.jpg',
     year: '2023',
+    category: 'street-art',
   },
   {
     id: 10,
@@ -94,6 +103,7 @@ export const PRESS: PressItem[] = [
     type: 'image',
     src: '/images/press/mid-day-lessons-downunder.jpg',
     year: '2024',
+    category: 'activism',
   },
   {
     id: 11,
@@ -103,6 +113,7 @@ export const PRESS: PressItem[] = [
     type: 'image',
     src: '/images/press/mid-day-spray-dont-say.jpg',
     year: 'Sep 2021',
+    category: 'street-art',
   },
   {
     id: 12,
@@ -112,6 +123,7 @@ export const PRESS: PressItem[] = [
     type: 'image',
     src: '/images/press/mid-day-back2roots.jpg',
     year: '2022',
+    category: 'activism',
   },
   {
     id: 13,
@@ -121,6 +133,7 @@ export const PRESS: PressItem[] = [
     type: 'image',
     src: '/images/press/mid-day-ladies-first.jpg',
     year: '2021',
+    category: 'street-art',
   },
   {
     id: 14,
@@ -130,6 +143,7 @@ export const PRESS: PressItem[] = [
     type: 'image',
     src: '/images/press/mid-day-memes-matter.jpg',
     year: '2022',
+    category: 'activism',
   },
   {
     id: 15,
@@ -139,6 +153,7 @@ export const PRESS: PressItem[] = [
     type: 'image',
     src: '/images/press/mid-day-rickshaw-run.jpg',
     year: '2023',
+    category: 'juggling',
   },
   {
     id: 16,
@@ -148,6 +163,7 @@ export const PRESS: PressItem[] = [
     type: 'image',
     src: '/images/press/toi-brushing-roadblocks.jpg',
     year: 'Mar 2019',
+    category: 'street-art',
   },
   {
     id: 17,
@@ -157,6 +173,7 @@ export const PRESS: PressItem[] = [
     type: 'image',
     src: '/images/press/fpj-mural-marol.jpg',
     year: '2024',
+    category: 'street-art',
   },
 ];
 
