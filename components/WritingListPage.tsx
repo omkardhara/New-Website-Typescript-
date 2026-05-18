@@ -54,7 +54,7 @@ export function WritingListPage({ type }: { type: NoteType }) {
             }}
             className="back-btn"
           >
-            <span style={{ fontSize: '14px' }}>←</span> Back to writings
+            <span style={{ fontSize: '14px' }}>←</span> Back to main page
           </Link>
           <div
             style={{
