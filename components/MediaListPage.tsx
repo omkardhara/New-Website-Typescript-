@@ -153,9 +153,10 @@ export function MediaListPage() {
             <button
               onClick={() => setActiveVideo(null)}
               style={{
-                position: 'absolute',
-                top: '-44px',
-                right: 0,
+                position: 'fixed',
+                top: '16px',
+                right: '20px',
+                zIndex: 1001,
                 background: 'none',
                 border: '1px solid rgba(255,255,255,0.2)',
                 color: 'rgba(255,255,255,0.7)',

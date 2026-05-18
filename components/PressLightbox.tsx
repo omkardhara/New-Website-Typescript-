@@ -1,6 +1,7 @@
 'use client';
 
 import { useEffect, useRef, useState } from 'react';
+import { createPortal } from 'react-dom';
 import type { PressItem } from '@/data/types';
 
 interface Props {
@@ -74,10 +75,10 @@ export function PressLightbox({ items, index, onClose, onChange }: Props) {
 
   if (!item) return null;
 
-  return (
+  return createPortal(
     <div className="press-lightbox" onClick={handleClose}>
+      <button className="press-lightbox-close" onClick={handleClose} aria-label="Close">✕</button>
       <div className="press-lightbox-inner" onClick={(e) => e.stopPropagation()}>
-        <button className="press-lightbox-close" onClick={handleClose} aria-label="Close">✕</button>
 
         <div
           ref={imgWrapRef}
@@ -138,6 +139,7 @@ export function PressLightbox({ items, index, onClose, onChange }: Props) {
           )}
         </div>
       </div>
-    </div>
+    </div>,
+    document.body
   );
 }

@@ -34,6 +34,10 @@ export default function WritingPage({ params }: { params: { slug: string } }) {
     note.type === 'poem' ? '/writing/poems' :
     note.type === 'short-story' ? '/writing/short-stories' :
     '/writing/articles';
+  const backLabel =
+    note.type === 'poem' ? 'Poems' :
+    note.type === 'short-story' ? 'Short Stories' :
+    'Articles';
   const blocks = note.content
     ? note.content.split('\n\n').map((b) => b.trim()).filter(Boolean)
     : [];
@@ -71,7 +75,7 @@ export default function WritingPage({ params }: { params: { slug: string } }) {
             }}
             className="back-btn"
           >
-            <span style={{ fontSize: '14px' }}>←</span> Back to writings
+            <span style={{ fontSize: '14px' }}>←</span> Back to {backLabel}
           </Link>
         </div>
       </div>
@@ -252,7 +256,7 @@ export default function WritingPage({ params }: { params: { slug: string } }) {
             marginTop: '32px',
           }}
         >
-          <span style={{ fontSize: '14px' }}>←</span> More writings
+          <span style={{ fontSize: '14px' }}>←</span> More {backLabel}
         </Link>
       </div>
     </article>

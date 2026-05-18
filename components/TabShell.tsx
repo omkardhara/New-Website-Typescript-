@@ -25,6 +25,22 @@ export function TabShell({ tabs }: { tabs: TabDef[] }) {
     return () => obs.disconnect();
   }, []);
 
+  // Activate the tab matching the URL hash and scroll to the tab bar
+  useEffect(() => {
+    const hash = window.location.hash; // e.g. "#tab-notes"
+    if (!hash.startsWith('#tab-')) return;
+    const tabId = hash.slice('#tab-'.length);
+    const match = tabs.find((t) => t.id === tabId);
+    if (!match) return;
+    setActive(match.id);
+    setTimeout(() => {
+      if (!sentinelRef.current) return;
+      const y = sentinelRef.current.getBoundingClientRect().top + window.scrollY - NAV_H;
+      window.scrollTo({ top: y, behavior: 'smooth' });
+    }, 80);
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
+
   const handleSelect = (id: string) => {
     setActive(id);
     if (!sentinelRef.current) return;

@@ -9,6 +9,12 @@ const TYPE_LABELS: Record<NoteType, string> = {
   'short-story': 'Short Stories',
 };
 
+const TYPE_HREFS: Record<NoteType, string> = {
+  article: '/writing/articles',
+  poem: '/writing/poems',
+  'short-story': '/writing/short-stories',
+};
+
 export function WritingListPage({ type }: { type: NoteType }) {
   const notes = NOTES.filter((n) => n.type === type);
   const label = TYPE_LABELS[type];
@@ -56,16 +62,27 @@ export function WritingListPage({ type }: { type: NoteType }) {
           >
             <span style={{ fontSize: '14px' }}>←</span> Back to main page
           </Link>
-          <div
-            style={{
-              fontFamily: 'var(--font-mono)',
-              fontSize: '11px',
-              letterSpacing: '0.2em',
-              textTransform: 'uppercase',
-              color: 'var(--text-dark-3)',
-            }}
-          >
-            {notes.length} {label}
+          <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
+            {(Object.keys(TYPE_LABELS) as NoteType[]).map((t) => (
+              <Link
+                key={t}
+                href={TYPE_HREFS[t]}
+                style={{
+                  fontFamily: 'var(--font-mono)',
+                  fontSize: '10px',
+                  letterSpacing: '0.18em',
+                  textTransform: 'uppercase',
+                  textDecoration: 'none',
+                  padding: '7px 14px',
+                  border: `1px solid ${t === type ? 'var(--line-dark)' : 'var(--line-faint)'}`,
+                  color: t === type ? 'var(--text-dark)' : 'var(--text-dark-3)',
+                  background: t === type ? 'var(--surface)' : 'transparent',
+                  transition: 'all 0.2s',
+                }}
+              >
+                {TYPE_LABELS[t]}
+              </Link>
+            ))}
           </div>
         </div>
       </div>
