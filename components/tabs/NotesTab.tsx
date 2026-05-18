@@ -37,22 +37,16 @@ export function NotesTab() {
         </div>
       </div>
 
-      <div className="writings-sub-tabs">
-        {SUB_TABS.map((t) => {
-          const count = NOTES.filter((n) => n.type === t.id).length;
-          return (
-            <button
-              key={t.id}
-              className={`writings-sub-tab${activeType === t.id ? ' active' : ''}`}
-              onClick={() => setActiveType(t.id)}
-            >
-              {t.label}
-              {count > 0 && (
-                <span className="writings-sub-tab-count">{count}</span>
-              )}
-            </button>
-          );
-        })}
+      <div className="filter-row">
+        {SUB_TABS.map((t) => (
+          <button
+            key={t.id}
+            className={`filter-chip${activeType === t.id ? ' active' : ''}`}
+            onClick={() => setActiveType(t.id)}
+          >
+            {t.label}
+          </button>
+        ))}
       </div>
 
       {filtered.length === 0 ? (
