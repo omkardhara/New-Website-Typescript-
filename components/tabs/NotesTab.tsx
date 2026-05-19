@@ -74,6 +74,9 @@ export function NotesTab() {
           </button>
         ))}
       </div>
+      <div className="sr-only" aria-live="polite" aria-atomic="true">
+        {filtered.length} piece{filtered.length !== 1 ? 's' : ''} in {activeTab.label}
+      </div>
 
       {filtered.length === 0 ? (
         <div className="writings-empty">

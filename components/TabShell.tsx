@@ -73,7 +73,7 @@ export function TabShell({ tabs }: { tabs: TabDef[] }) {
 
       <div className={`tab-bar-outer${stuck ? ' stuck' : ''}`}>
         <div className="tab-bar-wrap">
-          <div className="tab-bar" role="tablist">
+          <div className="tab-bar" role="tablist" aria-label="Portfolio sections">
             <span className="tab-bar-label" aria-hidden="true">Browse the work →</span>
             {tabs.map((t) => (
               <button

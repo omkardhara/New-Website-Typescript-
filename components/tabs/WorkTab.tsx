@@ -37,6 +37,9 @@ export function WorkTab() {
           </button>
         ))}
       </div>
+      <div className="sr-only" aria-live="polite" aria-atomic="true">
+        {filtered.length} project{filtered.length !== 1 ? 's' : ''} shown
+      </div>
 
       <div className="work-grid">
         {filtered.map((item, idx) => (

@@ -113,6 +113,9 @@ export function PressListPage({ defaultCategory = 'all' }: { defaultCategory?: C
             </button>
           ))}
         </div>
+        <div className="sr-only" aria-live="polite" aria-atomic="true">
+          {filtered.length} feature{filtered.length !== 1 ? 's' : ''} shown
+        </div>
 
         <div className="press-grid">
           {filtered.map((p) => (
