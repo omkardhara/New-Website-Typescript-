@@ -5,6 +5,19 @@ import { SOCIALS } from '@/data/site';
 export const metadata: Metadata = {
   title: 'Contact',
   description: 'Get in touch with Omkar Dhareshwar — performances, workshops, brand collaborations.',
+  alternates: { canonical: 'https://www.omkardhareshwar.com/contact' },
+  openGraph: {
+    title: 'Contact · Omkar Dhareshwar',
+    description: 'Brands, agencies, curators — reach out for performances, workshops, or brand collaborations.',
+    url: 'https://www.omkardhareshwar.com/contact',
+    images: ['/og-image.jpg'],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Contact · Omkar Dhareshwar',
+    description: 'Brands, agencies, curators — reach out for performances, workshops, or brand collaborations.',
+    images: ['/og-image.jpg'],
+  },
 };
 
 export default function ContactPage() {

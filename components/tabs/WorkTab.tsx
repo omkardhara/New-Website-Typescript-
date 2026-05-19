@@ -25,12 +25,13 @@ export function WorkTab() {
         </div>
       </div>
 
-      <div className="filter-row">
+      <div className="filter-row" role="group" aria-label="Filter projects by category">
         {WORK_FILTERS.map((f) => (
           <button
             key={f.id}
             className={`filter-chip${active === f.id ? ' active' : ''}`}
             onClick={() => setActive(f.id)}
+            aria-pressed={active === f.id}
           >
             {f.label}
           </button>

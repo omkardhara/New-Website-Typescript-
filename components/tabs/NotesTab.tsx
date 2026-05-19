@@ -62,12 +62,13 @@ export function NotesTab() {
         </div>
       </div>
 
-      <div className="filter-row">
+      <div className="filter-row" role="group" aria-label="Filter writing by section">
         {SUB_TABS.map((t) => (
           <button
             key={t.id}
             className={`filter-chip${active === t.id ? ' active' : ''}`}
             onClick={() => setActive(t.id)}
+            aria-pressed={active === t.id}
           >
             {t.label}
           </button>

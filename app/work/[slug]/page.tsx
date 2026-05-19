@@ -3,6 +3,7 @@ import { notFound } from 'next/navigation';
 import Link from 'next/link';
 import Image from 'next/image';
 import { WORK, getWorkBySlug } from '@/data/work';
+import { ReadingProgress } from '@/components/ReadingProgress';
 
 export function generateStaticParams() {
   return WORK.filter((w) => !w.url).map((w) => ({ slug: w.slug }));
@@ -47,22 +48,28 @@ function buildWorkSchema(item: ReturnType<typeof getWorkBySlug>) {
 }
 
 function renderWithLinks(text: string) {
-  const parts = text.split(/(\[[^\]]+\]\([^)]+\))/g);
+  // Split on markdown links [text](url) and **bold**
+  const parts = text.split(/(\[[^\]]+\]\([^)]+\)|\*\*[^*]+\*\*)/g);
   return parts.map((part, i) => {
-    const m = part.match(/^\[([^\]]+)\]\(([^)]+)\)$/);
-    if (!m) return <span key={i}>{part}</span>;
-    const isExternal = m[2].startsWith('http');
-    return (
-      <a
-        key={i}
-        href={m[2]}
-        target={isExternal ? '_blank' : undefined}
-        rel={isExternal ? 'noopener noreferrer' : undefined}
-        style={{ color: 'var(--gold)', textDecoration: 'underline', textUnderlineOffset: '3px' }}
-      >
-        {m[1]}
-      </a>
-    );
+    const link = part.match(/^\[([^\]]+)\]\(([^)]+)\)$/);
+    if (link) {
+      const isExternal = link[2].startsWith('http');
+      return (
+        <a
+          key={i}
+          href={link[2]}
+          target={isExternal ? '_blank' : undefined}
+          rel={isExternal ? 'noopener noreferrer' : undefined}
+          style={{ color: 'var(--gold)', textDecoration: 'underline', textUnderlineOffset: '3px' }}
+        >
+          {link[1]}
+        </a>
+      );
+    }
+    if (part.startsWith('**') && part.endsWith('**')) {
+      return <strong key={i}>{part.slice(2, -2)}</strong>;
+    }
+    return <span key={i}>{part}</span>;
   });
 }
 
@@ -95,6 +102,7 @@ export default function ProjectPage({ params }: { params: { slug: string } }) {
 
   return (
     <article style={{ background: 'var(--bg-cream)', minHeight: '100vh' }}>
+      <ReadingProgress />
       {schema && (
         <script
           type="application/ld+json"
@@ -202,6 +210,19 @@ export default function ProjectPage({ params }: { params: { slug: string } }) {
         )}
         {blocks.map((block, i) => {
           if (block.kind === 'text') {
+            const isHeading = block.value.startsWith('## ') || block.value.startsWith('# ');
+            if (isHeading) {
+              const text = block.value.replace(/^#+\s/, '');
+              return (
+                <h2
+                  key={`t-${i}`}
+                  className="article-h2"
+                  style={{ maxWidth: '720px', margin: '0 auto', padding: '0 clamp(20px,5vw,32px)' }}
+                >
+                  {text}
+                </h2>
+              );
+            }
             return (
               <p
                 key={`t-${i}`}

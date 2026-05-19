@@ -884,3 +884,109 @@ body::before {
   .about-press-item { border-right: none; border-bottom: 1px solid var(--line-dark); flex: 1 1 100%; }
   .about-press-item:last-child { border-bottom: none; }
 }
+
+/* ─── ACCESSIBILITY ──────────────────────────────────────── */
+
+/* Screen-reader only utility */
+.sr-only {
+  position: absolute;
+  width: 1px; height: 1px;
+  padding: 0; margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+/* Skip-to-content link — visible on keyboard focus */
+.skip-to-content {
+  position: absolute;
+  top: -100%;
+  left: 50%;
+  transform: translateX(-50%);
+  background: var(--gold);
+  color: var(--bg-cream);
+  padding: 12px 28px;
+  font-family: var(--font-mono);
+  font-size: 12px;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  text-decoration: none;
+  z-index: 99999;
+  transition: top 0.15s;
+  white-space: nowrap;
+}
+.skip-to-content:focus {
+  top: 16px;
+  outline: 2px solid var(--bg-cream);
+  outline-offset: 2px;
+}
+
+/* Keyboard focus ring — only for keyboard navigation, not mouse clicks */
+:focus-visible {
+  outline: 2px solid var(--gold);
+  outline-offset: 2px;
+}
+/* Suppress outline for mouse users on elements that already have hover states */
+a:focus:not(:focus-visible),
+button:focus:not(:focus-visible) {
+  outline: none;
+}
+
+/* ─── ARTICLE HEADING STYLES ─────────────────────────────── */
+.article-h2 {
+  font-family: var(--font-serif);
+  font-size: clamp(22px, 2.4vw, 28px);
+  font-weight: 400;
+  line-height: 1.2;
+  letter-spacing: -0.01em;
+  color: var(--text-dark);
+  margin-top: clamp(40px, 5vw, 60px);
+  margin-bottom: clamp(8px, 1.5vw, 16px);
+  padding-bottom: 8px;
+  border-bottom: 1px solid var(--line-faint);
+}
+
+/* ─── NEXT / PREV ARTICLE NAVIGATION ────────────────────── */
+.article-nav {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4px;
+  max-width: 780px;
+  margin: 0 auto;
+  padding: 0 clamp(20px, 5vw, 32px) 80px;
+}
+.article-nav-item {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  padding: 20px 24px;
+  background: var(--surface);
+  border: 1px solid var(--line-faint);
+  text-decoration: none;
+  color: inherit;
+  transition: background 0.25s, transform 0.3s;
+}
+.article-nav-item:hover {
+  background: var(--surface-3);
+  transform: translateY(-2px);
+}
+.article-nav-dir {
+  font-family: var(--font-mono);
+  font-size: 9px;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--text-dark-4);
+}
+.article-nav-title {
+  font-family: var(--font-serif);
+  font-size: 16px;
+  font-weight: 400;
+  color: var(--text-dark);
+  line-height: 1.3;
+}
+.article-nav-item.next { text-align: right; }
+@media (max-width: 600px) {
+  .article-nav { grid-template-columns: 1fr; }
+  .article-nav-item.next { text-align: left; }
+}

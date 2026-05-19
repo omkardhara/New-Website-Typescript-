@@ -1,5 +1,12 @@
 import Link from 'next/link';
 
+const QUICK_LINKS = [
+  { href: '/#tab-work',    label: 'Work'    },
+  { href: '/writing/essays', label: 'Writing' },
+  { href: '/about',        label: 'About'   },
+  { href: '/contact',      label: 'Contact' },
+];
+
 export default function NotFound() {
   return (
     <main
@@ -37,11 +44,44 @@ export default function NotFound() {
         >
           Nothing here.
         </h1>
-        <p style={{ color: 'var(--text-dark-2)', marginBottom: '32px' }}>
+        <p
+          style={{
+            color: 'var(--text-dark-3)',
+            fontFamily: 'var(--font-mono)',
+            fontSize: '13px',
+            letterSpacing: '0.04em',
+            marginBottom: '48px',
+            maxWidth: '360px',
+          }}
+        >
           The page you&apos;re looking for doesn&apos;t exist — yet.
         </p>
+
+        <nav aria-label="Quick links" style={{ display: 'flex', gap: '8px', justifyContent: 'center', flexWrap: 'wrap', marginBottom: '40px' }}>
+          {QUICK_LINKS.map((l) => (
+            <Link
+              key={l.href}
+              href={l.href}
+              style={{
+                fontFamily: 'var(--font-mono)',
+                fontSize: '10px',
+                letterSpacing: '0.18em',
+                textTransform: 'uppercase',
+                color: 'var(--text-dark)',
+                textDecoration: 'none',
+                padding: '10px 20px',
+                border: '1px solid var(--line-dark)',
+                background: 'var(--surface)',
+                transition: 'all 0.2s',
+              }}
+            >
+              {l.label}
+            </Link>
+          ))}
+        </nav>
+
         <Link href="/" className="btn-ghost dark">
-          Back to home →
+          ← Back to home
         </Link>
       </div>
     </main>

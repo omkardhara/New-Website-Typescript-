@@ -98,6 +98,7 @@ export function WritingListPage({ section }: { section: WritingSection }) {
               <Link
                 key={s.id}
                 href={s.href}
+                aria-current={s.id === section ? 'page' : undefined}
                 style={{
                   fontFamily: 'var(--font-mono)',
                   fontSize: '10px',

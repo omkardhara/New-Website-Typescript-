@@ -1,4 +1,4 @@
-import type { Metadata } from 'next';
+import type { Metadata, Viewport } from 'next';
 import { cormorant, dmSans, dmMono } from '@/lib/fonts';
 import { Nav } from '@/components/Nav';
 import { Footer } from '@/components/Footer';
@@ -56,6 +56,11 @@ export const metadata: Metadata = {
     follow: true,
     googleBot: { index: true, follow: true, 'max-image-preview': 'large' },
   },
+};
+
+export const viewport: Viewport = {
+  width: 'device-width',
+  initialScale: 1,
   themeColor: '#0F0F0D',
 };
 
@@ -102,8 +107,11 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         />
       </head>
       <body>
+        <a className="skip-to-content" href="#main-content">Skip to main content</a>
         <Nav />
-        {children}
+        <div id="main-content" tabIndex={-1} style={{ outline: 'none' }}>
+          {children}
+        </div>
         <Footer />
       </body>
     </html>
