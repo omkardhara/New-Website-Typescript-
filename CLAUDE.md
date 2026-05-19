@@ -87,9 +87,12 @@
 
 ## SEO patterns
 - Every page has `generateMetadata` with `canonical`, `openGraph` (title, description, url, images), and `twitter` card
-- Article pages (`work/[slug]`, `writing/[slug]`) emit two JSON-LD scripts: CreativeWork/Article + BreadcrumbList
+- Article pages (`work/[slug]`, `writing/[slug]`, `press/[slug]`) emit two JSON-LD scripts: schema + BreadcrumbList
 - Homepage and layout emit Person schema in `<head>` via layout.tsx
-- Press page emits CollectionPage + NewsArticle schema
+- Press page emits CollectionPage + NewsArticle/Book schema per item
+- Writing section pages (essays/poems/redbull) emit CollectionPage schema with hasPart items
+- About page emits AboutPage schema; Contact page emits ContactPage schema
+- Media page emits ItemList + VideoObject schema
 - Fallback OG image: `/public/og-image.jpg` (used when no page-specific image exists)
 
 ## Git workflow
@@ -100,11 +103,16 @@
 ## Accessibility patterns
 - `.sr-only` class in globals.css for screen-reader-only text
 - Skip-to-content link rendered before `<Nav />` in layout.tsx, targets `#main-content`
-- Filter chip groups: add `role="group"` + `aria-label` + `aria-pressed` to each button
+- Article/media pages: `<main style={{display:'contents'}}>` wrapper adds the main landmark without visual impact
+- Filter chip groups: `role="group"` + `aria-label` + `aria-pressed`; add `<div class="sr-only" aria-live="polite">` after for result count
 - Tab panels: `role="tabpanel"` + `aria-labelledby` pointing to controlling tab button
 - Tab buttons: `role="tab"` + `aria-selected` + `tabIndex={active ? 0 : -1}` + keyboard arrow nav
-- Marquee/decorative elements: `aria-hidden="true"`
+- Marquee/decorative elements: `aria-hidden="true"`; duplicate items also get `aria-hidden`
 - Animated content: `aria-live="polite"` on container
+- Dialog pattern: `role="dialog"` + `aria-modal="true"` + `aria-label` + Escape key handler + focus return
+- Nav hamburger: `aria-expanded` + `aria-controls` pointing to menu id; Escape returns focus to hamburger
+- `<article>` elements: `aria-labelledby` pointing to the page `<h1 id>`
+- `<section>` landmarks: `aria-labelledby` pointing to the section `<h2 id>` for named landmark
 
 ## Things NOT to do
 - Don't modify `next.config.ts` or `tsconfig.json` without good reason

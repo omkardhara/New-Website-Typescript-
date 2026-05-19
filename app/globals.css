@@ -538,6 +538,7 @@ body::before {
   transition: opacity 0.25s;
 }
 .cred-strip-viewport:hover .cred-strip-item img { opacity: 0.7; }
+.cred-strip-viewport:hover .cred-strip-marquee { animation-play-state: paused; }
 .cred-strip-icon-wrap {
   display: flex;
   align-items: center;
