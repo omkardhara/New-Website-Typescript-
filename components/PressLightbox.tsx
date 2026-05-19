@@ -115,6 +115,7 @@ export function PressLightbox({ items, index, onClose, onChange }: Props) {
               key={i}
               src={src}
               alt={i === 0 ? item.title : `${item.title} — page ${i + 1}`}
+              loading={i === 0 ? undefined : 'lazy'}
             />
           ))}
         </div>

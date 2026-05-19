@@ -191,6 +191,7 @@ export default function PressArticlePage({ params }: { params: { slug: string } 
             <img
               src={src}
               alt={i === 0 ? item.title : `${item.title} — page ${i + 1}`}
+              loading={i === 0 ? undefined : 'lazy'}
               style={{ width: '100%', height: 'auto', display: 'block' }}
             />
             {allImages.length > 1 && (
