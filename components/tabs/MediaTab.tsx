@@ -50,16 +50,12 @@ export function MediaTab() {
 
       <div className="media-grid">
         {preview.map((v, i) => (
-          <div
+          <button
             key={v.yt}
+            type="button"
             className="video-card"
             onClick={(e) => openVideo(v, e.currentTarget)}
-            role="button"
-            tabIndex={0}
             aria-label={`Play: ${v.title}`}
-            onKeyDown={(e) => {
-              if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); openVideo(v, e.currentTarget); }
-            }}
           >
             <div className="video-thumb">
               <Image
@@ -77,7 +73,7 @@ export function MediaTab() {
             </div>
             <h4 className="video-title">{v.title}</h4>
             <p className="video-sub">{v.sub}</p>
-          </div>
+          </button>
         ))}
       </div>
 
