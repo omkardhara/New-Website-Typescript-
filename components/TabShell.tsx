@@ -69,7 +69,7 @@ export function TabShell({ tabs }: { tabs: TabDef[] }) {
 
   return (
     <div className="tab-shell">
-      <div ref={sentinelRef} style={{ height: 1 }} />
+      <div ref={sentinelRef} style={{ height: 1 }} aria-hidden="true" />
 
       <div className={`tab-bar-outer${stuck ? ' stuck' : ''}`}>
         <div className="tab-bar-wrap">

@@ -29,10 +29,16 @@ export function Nav() {
   // Close menu on route change
   useEffect(() => { setMenuOpen(false); }, [pathname]);
 
-  // Lock body scroll when menu is open
+  // Lock body scroll when menu is open + Escape to close
   useEffect(() => {
     document.body.style.overflow = menuOpen ? 'hidden' : '';
-    return () => { document.body.style.overflow = ''; };
+    if (!menuOpen) return () => { document.body.style.overflow = ''; };
+    const onKey = (e: KeyboardEvent) => { if (e.key === 'Escape') setMenuOpen(false); };
+    document.addEventListener('keydown', onKey);
+    return () => {
+      document.body.style.overflow = '';
+      document.removeEventListener('keydown', onKey);
+    };
   }, [menuOpen]);
 
   return (
