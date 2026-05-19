@@ -26,13 +26,13 @@ export const metadata: Metadata = {
     title: 'Contact · Omkar Dhareshwar',
     description: 'Brands, agencies, curators — reach out for performances, workshops, or brand collaborations.',
     url: 'https://www.omkardhareshwar.com/contact',
-    images: ['/og-image.jpg'],
+    images: [{ url: '/og-image.jpg', alt: 'Omkar Dhareshwar — Flow Artist, Performer & Storyteller' }],
   },
   twitter: {
     card: 'summary_large_image',
     title: 'Contact · Omkar Dhareshwar',
     description: 'Brands, agencies, curators — reach out for performances, workshops, or brand collaborations.',
-    images: ['/og-image.jpg'],
+    images: [{ url: '/og-image.jpg', alt: 'Omkar Dhareshwar — Flow Artist, Performer & Storyteller' }],
   },
 };
 
@@ -131,7 +131,7 @@ export default function ContactPage() {
           more. I read every message personally — usually respond within 48 hours.
         </div>
 
-        <div style={{ display: 'grid', gap: '40px', maxWidth: '600px' }}>
+        <address style={{ fontStyle: 'normal', display: 'grid', gap: '40px', maxWidth: '600px' }}>
           <div>
             <div
               style={{
@@ -214,7 +214,7 @@ export default function ContactPage() {
               ))}
             </div>
           </div>
-        </div>
+        </address>
       </div>
     </main>
     </>

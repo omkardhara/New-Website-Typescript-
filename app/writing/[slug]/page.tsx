@@ -24,13 +24,13 @@ export function generateMetadata({ params }: { params: { slug: string } }): Meta
       title: note.title,
       description: note.excerpt,
       url: `${SITE_URL}/writing/${note.slug}`,
-      images: note.image ? [`${SITE_URL}${note.image}`] : [`${SITE_URL}/og-image.jpg`],
+      images: [{ url: note.image ? `${SITE_URL}${note.image}` : `${SITE_URL}/og-image.jpg`, alt: note.title }],
     },
     twitter: {
       card: 'summary_large_image',
       title: note.title,
       description: note.excerpt,
-      images: note.image ? [`${SITE_URL}${note.image}`] : [`${SITE_URL}/og-image.jpg`],
+      images: [{ url: note.image ? `${SITE_URL}${note.image}` : `${SITE_URL}/og-image.jpg`, alt: note.title }],
     },
   };
 }

@@ -22,13 +22,13 @@ export function generateMetadata({ params }: { params: { slug: string } }): Meta
       title: `${item.publication} — ${item.title}`,
       description: desc,
       url: `${SITE_URL}/press/${item.slug}`,
-      images: [item.src.startsWith('http') ? item.src : `${SITE_URL}${item.src}`],
+      images: [{ url: item.src.startsWith('http') ? item.src : `${SITE_URL}${item.src}`, alt: item.title }],
     },
     twitter: {
       card: 'summary_large_image',
       title: `${item.publication} — ${item.title}`,
       description: desc,
-      images: [item.src.startsWith('http') ? item.src : `${SITE_URL}${item.src}`],
+      images: [{ url: item.src.startsWith('http') ? item.src : `${SITE_URL}${item.src}`, alt: item.title }],
     },
   };
 }

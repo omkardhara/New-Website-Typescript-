@@ -1,5 +1,5 @@
 'use client';
-import { useState } from 'react';
+import { useState, useRef, useEffect } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 import { VIDEOS } from '@/data/videos';
@@ -7,6 +7,26 @@ import type { Video } from '@/data/types';
 
 export function MediaListPage() {
   const [activeVideo, setActiveVideo] = useState<Video | null>(null);
+  const triggerRef = useRef<HTMLElement | null>(null);
+
+  function openVideo(v: Video, trigger: HTMLElement) {
+    triggerRef.current = trigger;
+    setActiveVideo(v);
+  }
+
+  function closeVideo() {
+    setActiveVideo(null);
+    triggerRef.current?.focus();
+    triggerRef.current = null;
+  }
+
+  useEffect(() => {
+    if (!activeVideo) return;
+    const onKey = (e: KeyboardEvent) => { if (e.key === 'Escape') closeVideo(); };
+    window.addEventListener('keydown', onKey);
+    return () => window.removeEventListener('keydown', onKey);
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [activeVideo]);
 
   return (
     <div style={{ background: 'var(--bg-cream)', minHeight: '100vh' }}>
@@ -91,12 +111,12 @@ export function MediaListPage() {
             <div
               key={v.yt}
               className="video-card"
-              onClick={() => setActiveVideo(v)}
+              onClick={(e) => openVideo(v, e.currentTarget)}
               role="button"
               tabIndex={0}
               aria-label={`Play: ${v.title}`}
               onKeyDown={(e) => {
-                if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); setActiveVideo(v); }
+                if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); openVideo(v, e.currentTarget); }
               }}
             >
               <div className="video-thumb">
@@ -125,8 +145,7 @@ export function MediaListPage() {
           role="dialog"
           aria-modal="true"
           aria-label={`Now playing: ${activeVideo.title}`}
-          onClick={() => setActiveVideo(null)}
-          onKeyDown={(e) => { if (e.key === 'Escape') setActiveVideo(null); }}
+          onClick={closeVideo}
           style={{
             position: 'fixed',
             inset: 0,
@@ -156,7 +175,7 @@ export function MediaListPage() {
               style={{ width: '100%', height: '100%', border: 'none' }}
             />
             <button
-              onClick={() => setActiveVideo(null)}
+              onClick={closeVideo}
               aria-label="Close video"
               style={{
                 position: 'fixed',
