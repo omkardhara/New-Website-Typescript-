@@ -404,6 +404,8 @@ export function StoryMap() {
                 <motion.div
                   key={active.id}
                   className={s.panel}
+                  role="region"
+                  aria-label={`${active.label} — chapter details`}
                   style={{
                     borderColor: activeTheme.primary,
                     ['--panel-primary' as string]: activeTheme.primary,
@@ -431,7 +433,7 @@ export function StoryMap() {
                         {active.desc}
                       </div>
                     </div>
-                    <button className={s.panelClose} onClick={() => setActiveId(null)}>
+                    <button className={s.panelClose} onClick={() => setActiveId(null)} aria-label={`Close ${active.label} panel`}>
                       Close ✕
                     </button>
                   </div>

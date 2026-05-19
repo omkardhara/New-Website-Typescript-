@@ -27,6 +27,13 @@ export const metadata: Metadata = {
     url: `${SITE_URL}/press`,
     images: ['/images/press/natgeo-marol-p1.jpg'],
   },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Press · Omkar Dhareshwar',
+    description:
+      'Featured in National Geographic Traveller India, World Atlas of Street Art, Mid-Day, Times of India and more.',
+    images: ['/images/press/natgeo-marol-p1.jpg'],
+  },
 };
 
 const VALID_CATS = ['street-art', 'juggling', 'activism', 'installation'];

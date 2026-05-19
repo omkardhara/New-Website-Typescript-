@@ -115,7 +115,7 @@ export default function ProjectPage({ params }: { params: { slug: string } }) {
   }
 
   return (
-    <article style={{ background: 'var(--bg-cream)', minHeight: '100vh' }}>
+    <article style={{ background: 'var(--bg-cream)', minHeight: '100vh' }} aria-labelledby="project-title">
       <ReadingProgress />
       {schema && (
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />
@@ -181,6 +181,7 @@ export default function ProjectPage({ params }: { params: { slug: string } }) {
         </div>
 
         <h1
+          id="project-title"
           style={{
             fontFamily: 'var(--font-serif)',
             fontSize: 'clamp(34px,5.5vw,60px)',

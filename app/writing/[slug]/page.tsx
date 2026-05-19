@@ -111,7 +111,7 @@ export default function WritingPage({ params }: { params: { slug: string } }) {
   const breadcrumb = buildBreadcrumb(note);
 
   return (
-    <article style={{ background: 'var(--bg-cream)', minHeight: '100vh' }}>
+    <article style={{ background: 'var(--bg-cream)', minHeight: '100vh' }} aria-labelledby="article-title">
       <ReadingProgress />
       {schema && (
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />
@@ -193,6 +193,7 @@ export default function WritingPage({ params }: { params: { slug: string } }) {
         </div>
 
         <h1
+          id="article-title"
           style={{
             fontFamily: 'var(--font-serif)',
             fontSize: 'clamp(30px,5vw,54px)',

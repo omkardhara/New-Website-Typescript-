@@ -37,19 +37,24 @@ export function Nav() {
 
   return (
     <>
-      <nav className={`nav${cream ? ' scrolled-into-cream' : ''}`}>
-        <Link className="nav-logo" href="/" onClick={() => setMenuOpen(false)}>
+      <nav className={`nav${cream ? ' scrolled-into-cream' : ''}`} aria-label="Main navigation">
+        <Link className="nav-logo" href="/" onClick={() => setMenuOpen(false)} aria-current={pathname === '/' ? 'page' : undefined}>
           <span>Omkar</span>
           <span className="nav-logo-mark">×</span>
           <span className="nav-logo-mark">MW3B</span>
         </Link>
         <div className="nav-right">
           {NAV_LINKS.map((l) => (
-            <Link key={l.href} className="nav-link" href={l.href}>
+            <Link
+              key={l.href}
+              className="nav-link"
+              href={l.href}
+              aria-current={pathname === l.href ? 'page' : undefined}
+            >
               {l.label}
             </Link>
           ))}
-          <Link className="nav-cta" href="/contact">
+          <Link className="nav-cta" href="/contact" aria-current={pathname === '/contact' ? 'page' : undefined}>
             Let&apos;s work
           </Link>
           {/* Hamburger — mobile only */}
@@ -67,7 +72,13 @@ export function Nav() {
 
       {/* Mobile menu overlay */}
       {menuOpen && (
-        <div className="nav-mobile-overlay" onClick={() => setMenuOpen(false)}>
+        <div
+          className="nav-mobile-overlay"
+          onClick={() => setMenuOpen(false)}
+          role="dialog"
+          aria-modal="true"
+          aria-label="Navigation menu"
+        >
           <div className="nav-mobile-menu" onClick={(e) => e.stopPropagation()}>
             <div className="nav-mobile-links">
               {NAV_LINKS.map((l) => (
@@ -76,6 +87,7 @@ export function Nav() {
                   href={l.href}
                   className="nav-mobile-link"
                   onClick={() => setMenuOpen(false)}
+                  aria-current={pathname === l.href ? 'page' : undefined}
                 >
                   {l.label}
                 </Link>
@@ -84,6 +96,7 @@ export function Nav() {
                 href="/contact"
                 className="nav-mobile-cta"
                 onClick={() => setMenuOpen(false)}
+                aria-current={pathname === '/contact' ? 'page' : undefined}
               >
                 Let&apos;s work →
               </Link>
