@@ -53,7 +53,7 @@ export const VIDEOS: Video[] = [
     title: 'Under Neon Sky',
     sub: 'Installation · Light & Movement',
     yt: 'M8aD0NU1akw',
-    thumb: 'https://img.youtube.com/vi/M8aD0NU1akw/maxresdefault.jpg',
+    thumb: 'https://img.youtube.com/vi/M8aD0NU1akw/hqdefault.jpg',
   },
   {
     title: "India's First Graffiti Hyperlapse",
