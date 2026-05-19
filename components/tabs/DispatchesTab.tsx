@@ -61,13 +61,13 @@ export function DispatchesTab() {
               <span className="dispatch-stat-label">chai stops</span>
             </div>
           </div>
-          <span
+          <button
             className="btn-ghost dark"
-            style={{ alignSelf: 'flex-start', opacity: 0.4, cursor: 'default', pointerEvents: 'none' }}
-            aria-disabled="true"
+            disabled
+            style={{ alignSelf: 'flex-start', opacity: 0.4, cursor: 'default' }}
           >
             Full dispatch coming soon →
-          </span>
+          </button>
         </div>
       </div>
     </>

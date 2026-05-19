@@ -1,5 +1,28 @@
 import type { Metadata } from 'next';
 import { WritingListPage } from '@/components/WritingListPage';
+import { NOTES } from '@/data/site';
+
+const SITE_URL = 'https://www.omkardhareshwar.com';
+
+const redbullNotes = NOTES.filter((n) => n.publication === 'Red Bull');
+
+const redbullSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'CollectionPage',
+  name: 'Red Bull Writing — Omkar Dhareshwar',
+  url: `${SITE_URL}/writing/redbull`,
+  description: 'Articles written for Red Bull India — covering breaking, street dance, surfing, and sport.',
+  about: { '@type': 'Person', name: 'Omkar Dhareshwar', url: SITE_URL },
+  hasPart: redbullNotes.map((n) => ({
+    '@type': 'Article',
+    name: n.title,
+    description: n.excerpt,
+    url: n.url ?? `${SITE_URL}/writing/${n.slug}`,
+    datePublished: n.date,
+    isPartOf: { '@type': 'Periodical', name: 'Red Bull' },
+    author: { '@type': 'Person', name: 'Omkar Dhareshwar', url: SITE_URL },
+  })),
+};
 
 export const metadata: Metadata = {
   title: 'Red Bull Writing',
@@ -20,5 +43,13 @@ export const metadata: Metadata = {
 };
 
 export default function RedBullPage() {
-  return <WritingListPage section="redbull" />;
+  return (
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(redbullSchema) }}
+      />
+      <WritingListPage section="redbull" />
+    </>
+  );
 }

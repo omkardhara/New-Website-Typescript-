@@ -2,6 +2,22 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 import { SOCIALS } from '@/data/site';
 
+const SITE_URL = 'https://www.omkardhareshwar.com';
+
+const contactSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'ContactPage',
+  name: 'Contact Omkar Dhareshwar',
+  url: `${SITE_URL}/contact`,
+  description: 'Get in touch with Omkar Dhareshwar for performances, workshops, or brand collaborations.',
+  mainEntity: {
+    '@type': 'Person',
+    name: 'Omkar Dhareshwar',
+    email: 'mailto:omkar.dhara@gmail.com',
+    url: SITE_URL,
+  },
+};
+
 export const metadata: Metadata = {
   title: 'Contact',
   description: 'Get in touch with Omkar Dhareshwar — performances, workshops, brand collaborations.',
@@ -22,6 +38,11 @@ export const metadata: Metadata = {
 
 export default function ContactPage() {
   return (
+    <>
+    <script
+      type="application/ld+json"
+      dangerouslySetInnerHTML={{ __html: JSON.stringify(contactSchema) }}
+    />
     <main style={{ background: 'var(--bg-dark)', color: 'var(--text-light)', minHeight: '100vh' }}>
       {/* Back link — sits just below the fixed nav */}
       <div
@@ -196,5 +217,6 @@ export default function ContactPage() {
         </div>
       </div>
     </main>
+    </>
   );
 }
