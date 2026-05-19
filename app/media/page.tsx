@@ -43,12 +43,12 @@ const videoListSchema = {
 
 export default function MediaPage() {
   return (
-    <>
+    <main style={{ display: 'contents' }}>
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(videoListSchema) }}
       />
       <MediaListPage />
-    </>
+    </main>
   );
 }

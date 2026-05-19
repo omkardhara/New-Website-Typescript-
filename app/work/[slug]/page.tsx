@@ -115,6 +115,7 @@ export default function ProjectPage({ params }: { params: { slug: string } }) {
   }
 
   return (
+    <main style={{ display: 'contents' }}>
     <article style={{ background: 'var(--bg-cream)', minHeight: '100vh' }} aria-labelledby="project-title">
       <ReadingProgress />
       {schema && (
@@ -359,5 +360,6 @@ export default function ProjectPage({ params }: { params: { slug: string } }) {
         </Link>
       </div>
     </article>
+    </main>
   );
 }

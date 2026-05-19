@@ -111,6 +111,7 @@ export default function WritingPage({ params }: { params: { slug: string } }) {
   const breadcrumb = buildBreadcrumb(note);
 
   return (
+    <main style={{ display: 'contents' }}>
     <article style={{ background: 'var(--bg-cream)', minHeight: '100vh' }} aria-labelledby="article-title">
       <ReadingProgress />
       {schema && (
@@ -359,5 +360,6 @@ export default function WritingPage({ params }: { params: { slug: string } }) {
         </nav>
       )}
     </article>
+    </main>
   );
 }

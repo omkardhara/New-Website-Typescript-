@@ -55,6 +55,7 @@ export default function PressArticlePage({ params }: { params: { slug: string } 
   const schema = buildPressSchema(item);
 
   return (
+    <main style={{ display: 'contents' }}>
     <article style={{ background: 'var(--bg-cream)', minHeight: '100vh' }} aria-labelledby="press-title">
       {schema && (
         <script
@@ -241,5 +242,6 @@ export default function PressArticlePage({ params }: { params: { slug: string } 
         </Link>
       </div>
     </article>
+    </main>
   );
 }
