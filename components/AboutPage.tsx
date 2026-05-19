@@ -1,8 +1,12 @@
 import Image from 'next/image';
 import Link from 'next/link';
+import type { ReactNode } from 'react';
 import { PRESS } from '@/data/site';
 
-const OFFERS = [
+const extLink = (href: string) => ({ target: '_blank' as const, rel: 'noopener noreferrer', href });
+const linkStyle = { color: 'inherit', textDecoration: 'underline', textUnderlineOffset: '2px' };
+
+const OFFERS: { num: string; title: string; desc: ReactNode }[] = [
   {
     num: '01',
     title: 'Performances',
@@ -16,7 +20,7 @@ const OFFERS = [
   {
     num: '03',
     title: 'Brand Storytelling',
-    desc: 'Writing, direction, and on-screen work for brands that want cultural credibility. I\'ve written for Red Bull, appeared for Britannia, and collaborated with Nat Geo — I know how to make a brand feel human.',
+    desc: <>Writing, direction, and on-screen work for brands that want cultural credibility. I&apos;ve written for <Link href="/writing/redbull" style={linkStyle}>Red Bull</Link>, appeared for <a {...extLink('https://www.youtube.com/watch?v=jyzFUHqmjsQ')} style={linkStyle}>Britannia</a>, and collaborated with <Link href="/press/natgeo-marol" style={linkStyle}>Nat Geo</Link> — I know how to make a brand feel human.</>,
   },
 ];
 
@@ -223,12 +227,19 @@ export function AboutPage() {
           </p>
 
           <p className="about-bio-p">
-            For a decade I was a fixture at Marol Art Village in Mumbai — painting murals, building
-            community, learning what it means to make art in public rather than for it. Five hundred
-            walls later, I&apos;ve been covered by National Geographic, Graffiti Magazine (Germany),
-            Mid-Day, Mumbai Mirror, and Red Bull. I appeared on Doordarshan and in a Britannia
-            commercial. I drove a rickshaw 3,000 km from Gangtok to Kochi with no plan and one
-            co-driver.
+            For a decade I was a fixture at{' '}
+            <Link href="/work/marol-art-village" style={linkStyle}>Marol Art Village</Link>{' '}
+            in Mumbai — painting murals, building community, learning what it means to make art in public rather than for it. Five hundred walls later, I&apos;ve been covered by{' '}
+            <Link href="/press/natgeo-marol" style={linkStyle}>National Geographic</Link>,{' '}
+            Graffiti Magazine (Germany),{' '}
+            <Link href="/press/mid-day-arts-adda" style={linkStyle}>Mid-Day</Link>,{' '}
+            Mumbai Mirror, and{' '}
+            <Link href="/writing/redbull" style={linkStyle}>Red Bull</Link>.{' '}
+            I appeared on{' '}
+            <a {...extLink('https://www.youtube.com/watch?v=5A9IgNfa7Wg')} style={linkStyle}>Doordarshan</a>{' '}
+            and in a{' '}
+            <a {...extLink('https://www.youtube.com/watch?v=jyzFUHqmjsQ')} style={linkStyle}>Britannia commercial</a>.{' '}
+            I drove a rickshaw 3,000 km from Gangtok to Kochi with no plan and one co-driver.
           </p>
 
           <p className="about-bio-p">

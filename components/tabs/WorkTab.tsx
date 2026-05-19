@@ -39,7 +39,13 @@ export function WorkTab() {
 
       <div className="work-grid">
         {filtered.map((item) => (
-          <Link key={item.id} href={`/work/${item.slug}`} className="work-card">
+          <Link
+            key={item.id}
+            href={item.url ?? `/work/${item.slug}`}
+            target={item.url ? '_blank' : undefined}
+            rel={item.url ? 'noopener noreferrer' : undefined}
+            className="work-card"
+          >
             <div
               className="work-card-img"
               style={item.image ? undefined : { background: item.gradient }}

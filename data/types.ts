@@ -13,6 +13,7 @@ export type WorkItem = {
   captions?: string[];
   article?: string;
   yt?: string;
+  url?: string;
 };
 
 export type Video = {

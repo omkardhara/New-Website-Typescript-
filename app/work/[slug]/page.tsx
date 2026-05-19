@@ -5,7 +5,7 @@ import Image from 'next/image';
 import { WORK, getWorkBySlug } from '@/data/work';
 
 export function generateStaticParams() {
-  return WORK.map((w) => ({ slug: w.slug }));
+  return WORK.filter((w) => !w.url).map((w) => ({ slug: w.slug }));
 }
 
 export function generateMetadata({ params }: { params: { slug: string } }): Metadata {
@@ -20,6 +20,26 @@ export function generateMetadata({ params }: { params: { slug: string } }): Meta
       images: item.image ? [item.image] : undefined,
     },
   };
+}
+
+function renderWithLinks(text: string) {
+  const parts = text.split(/(\[[^\]]+\]\([^)]+\))/g);
+  return parts.map((part, i) => {
+    const m = part.match(/^\[([^\]]+)\]\(([^)]+)\)$/);
+    if (!m) return <span key={i}>{part}</span>;
+    const isExternal = m[2].startsWith('http');
+    return (
+      <a
+        key={i}
+        href={m[2]}
+        target={isExternal ? '_blank' : undefined}
+        rel={isExternal ? 'noopener noreferrer' : undefined}
+        style={{ color: 'var(--gold)', textDecoration: 'underline', textUnderlineOffset: '3px' }}
+      >
+        {m[1]}
+      </a>
+    );
+  });
 }
 
 type Block =
@@ -165,7 +185,7 @@ export default function ProjectPage({ params }: { params: { slug: string } }) {
                   padding: '0 clamp(20px,5vw,32px)',
                 }}
               >
-                {block.value}
+                {renderWithLinks(block.value)}
               </p>
             );
           }

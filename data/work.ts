@@ -97,9 +97,9 @@ The video crossed 300,000 views on YouTube. MC Altaf went on to join Gully Gang.
       'Visitors enjoyed the simulated juggling experience',
       'Accompanied by a flow workshop',
     ],
-    article: `The Flow Simulator 1.0 is an interactive installation commissioned for 'Khel-Spel HomoLudens: The Art of Play' at the Museum of Goa, Pilerne.
+    article: `The Flow Simulator 1.0 is an interactive installation commissioned for 'Khel-Spel HomoLudens: The Art of Play' at the [Museum of Goa](https://www.museumofgoa.com), Pilerne.
 
-The Museum of Goa has built a reputation as a space where art feels alive and participatory. Inspired by Johan Huizinga's idea that play is central to culture, the exhibition brings together artists from India and the Netherlands to explore how play shapes the way we think, create, and connect.
+The Museum of Goa has built a reputation as a space where art feels alive and participatory. Inspired by [Johan Huizinga](https://en.wikipedia.org/wiki/Johan_Huizinga)'s idea that play is central to culture, the exhibition brings together artists from India and the Netherlands to explore how play shapes the way we think, create, and connect.
 
 The piece draws from Craig Quat's juggling board and combines elements of juggling and functional movement. Built using PVC pipes, the work reflects ideas like Jugaad and Zuinig, where simple materials are used thoughtfully to create something meaningful.
 
@@ -138,13 +138,13 @@ One of the most memorable parts was leading a juggling workshop for children. Se
 
 Marol had character, history, people from every background imaginable. What it didn't have was a face. Around 2015, I started looking at walls. The first thing I noticed was that the painting was only part of what was happening. People who would normally never speak to each other were suddenly standing side by side, discussing colours, holding ladders, sharing chai.
 
-Through Wicked Broz and later Marol Art Village, I started building the infrastructure around those moments. There was no funding and no sponsor. Just the slow accumulation of trust, one wall at a time.
+Through Wicked Broz and later [Marol Art Village](/work/marol-art-village), I started building the infrastructure around those moments. There was no funding and no sponsor. Just the slow accumulation of trust, one wall at a time.
 
 The clearest proof came when artists from Brazil's Keep It Real Crew painted the clubhouse at Eco Park. Families came downstairs. People called friends over. The clubhouse got repainted two months later and that never bothered me. The afternoon had already happened.
 
-The Ladies First Festival in 2019 was a turning point. The Military Road Residents Welfare Association helped secure permissions and organise at a scale we hadn't reached before. That was the moment it stopped feeling like something we were sneaking past the city and started feeling like something the city was joining.
+The Ladies First Festival in 2019 was a turning point. The [Military Road Residents Welfare Association](https://www.instagram.com/marolartvillage) helped secure permissions and organise at a scale we hadn't reached before. That was the moment it stopped feeling like something we were sneaking past the city and started feeling like something the city was joining.
 
-Today I visit our hotspots and find murals I had nothing to do with. There are over 500 murals across Marol now, all without a single rupee of external funding.`,
+Today I visit our hotspots and find murals I had nothing to do with. There are over 500 murals across Marol now, all without a single rupee of external funding. Covered by [National Geographic](/press/natgeo-marol), [Mid-Day](/press/mid-day-arts-adda), and the [World Atlas of Street Art](/press/world-atlas-wicked-broz).`,
   },
   {
     id: 5,
@@ -190,6 +190,20 @@ Over the next two weeks, the campaign unexpectedly snowballed. It was covered in
     glyph: '👖',
     gradient: 'radial-gradient(ellipse at 60% 40%, rgba(46,107,79,0.22), rgba(15,15,13,0.12) 65%, var(--bg-cream))',
     article: `Story coming soon.`,
+  },
+
+  // ── Documentary ──────────────────────────────────────────
+  {
+    id: 18,
+    slug: 'this-is-my-hood',
+    cat: 'production',
+    tag: 'Documentary · Red Bull · Marol',
+    title: 'This Is My Hood — S1 E1: Marol',
+    desc: 'Curated and featured in this Red Bull documentary on the hip-hop scene in Marol, Mumbai — winner of Best Series (Unscripted) at the Critics Choice Series and Shorts Awards.',
+    stat: 'Best Series Award',
+    glyph: '🎬',
+    gradient: 'radial-gradient(ellipse at 50% 40%, rgba(200,20,20,0.22), rgba(15,15,13,0.12) 65%, var(--bg-cream))',
+    url: 'https://redbull.tv/en_IN/page/page:rrn:content:episode-videos:a67100ad-399c-4546-a386-454b1d4b7a5b/this-is-my-hood-s1-e1',
   },
 
   // ── New projects ─────────────────────────────────────────
