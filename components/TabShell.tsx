@@ -49,6 +49,24 @@ export function TabShell({ tabs }: { tabs: TabDef[] }) {
     window.scrollTo({ top: targetY, behavior: 'smooth' });
   };
 
+  // WAI-ARIA Tabs: arrow-key navigation
+  const handleKeyDown = (e: React.KeyboardEvent, currentId: string) => {
+    const ids = tabs.map((t) => t.id);
+    const idx = ids.indexOf(currentId);
+    let next = -1;
+    if (e.key === 'ArrowRight') next = (idx + 1) % ids.length;
+    if (e.key === 'ArrowLeft') next = (idx - 1 + ids.length) % ids.length;
+    if (e.key === 'Home') next = 0;
+    if (e.key === 'End') next = ids.length - 1;
+    if (next >= 0) {
+      e.preventDefault();
+      handleSelect(ids[next]);
+      // Move focus to the newly active tab button
+      const bar = e.currentTarget.closest('[role="tablist"]');
+      (bar?.querySelector(`#tab-btn-${ids[next]}`) as HTMLElement | null)?.focus();
+    }
+  };
+
   return (
     <div className="tab-shell">
       <div ref={sentinelRef} style={{ height: 1 }} />
@@ -60,12 +78,15 @@ export function TabShell({ tabs }: { tabs: TabDef[] }) {
             {tabs.map((t) => (
               <button
                 key={t.id}
+                id={`tab-btn-${t.id}`}
                 className={`tab-btn${active === t.id ? ' active' : ''}`}
                 role="tab"
                 aria-selected={active === t.id}
                 aria-controls={`tab-${t.id}`}
+                tabIndex={active === t.id ? 0 : -1}
                 data-tab={t.id}
                 onClick={() => handleSelect(t.id)}
+                onKeyDown={(e) => handleKeyDown(e, t.id)}
               >
                 <span className="tab-btn-num">{t.num}</span> {t.label}
               </button>
@@ -81,6 +102,8 @@ export function TabShell({ tabs }: { tabs: TabDef[] }) {
             id={`tab-${t.id}`}
             className={`tab-panel${active === t.id ? ' active' : ''}`}
             role="tabpanel"
+            aria-labelledby={`tab-btn-${t.id}`}
+            tabIndex={0}
           >
             {t.content}
           </div>

@@ -35,6 +35,23 @@ export function generateMetadata({ params }: { params: { slug: string } }): Meta
   };
 }
 
+function buildBreadcrumb(note: ReturnType<typeof getNoteBySlug>) {
+  if (!note) return null;
+  const isPoem = note.type === 'poem';
+  const sectionLabel = isPoem ? 'Poems' : 'Essays';
+  const sectionHref = isPoem ? `${SITE_URL}/writing/poems` : `${SITE_URL}/writing/essays`;
+  return {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: [
+      { '@type': 'ListItem', position: 1, name: 'Home', item: SITE_URL },
+      { '@type': 'ListItem', position: 2, name: 'Writing', item: `${SITE_URL}/writing/essays` },
+      { '@type': 'ListItem', position: 3, name: sectionLabel, item: sectionHref },
+      { '@type': 'ListItem', position: 4, name: note.title },
+    ],
+  };
+}
+
 function buildArticleSchema(note: ReturnType<typeof getNoteBySlug>) {
   if (!note) return null;
   return {
@@ -91,15 +108,16 @@ export default function WritingPage({ params }: { params: { slug: string } }) {
   const nextNote = idx < sectionNotes.length - 1 ? sectionNotes[idx + 1] : null;
 
   const schema = buildArticleSchema(note);
+  const breadcrumb = buildBreadcrumb(note);
 
   return (
     <article style={{ background: 'var(--bg-cream)', minHeight: '100vh' }}>
       <ReadingProgress />
       {schema && (
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
-        />
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />
+      )}
+      {breadcrumb && (
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumb) }} />
       )}
       <div
         style={{

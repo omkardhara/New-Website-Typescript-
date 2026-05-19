@@ -47,6 +47,19 @@ function buildWorkSchema(item: ReturnType<typeof getWorkBySlug>) {
   };
 }
 
+function buildBreadcrumb(item: ReturnType<typeof getWorkBySlug>) {
+  if (!item) return null;
+  return {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: [
+      { '@type': 'ListItem', position: 1, name: 'Home', item: SITE_URL },
+      { '@type': 'ListItem', position: 2, name: 'Work', item: `${SITE_URL}/#tab-work` },
+      { '@type': 'ListItem', position: 3, name: item.title },
+    ],
+  };
+}
+
 function renderWithLinks(text: string) {
   // Split on markdown links [text](url) and **bold**
   const parts = text.split(/(\[[^\]]+\]\([^)]+\)|\*\*[^*]+\*\*)/g);
@@ -81,6 +94,7 @@ export default function ProjectPage({ params }: { params: { slug: string } }) {
   const item = getWorkBySlug(params.slug);
   if (!item) notFound();
   const schema = buildWorkSchema(item);
+  const breadcrumb = buildBreadcrumb(item);
 
   const paragraphs = item.article
     ? item.article.split('\n\n').map((p) => p.trim()).filter(Boolean)
@@ -104,10 +118,10 @@ export default function ProjectPage({ params }: { params: { slug: string } }) {
     <article style={{ background: 'var(--bg-cream)', minHeight: '100vh' }}>
       <ReadingProgress />
       {schema && (
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
-        />
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />
+      )}
+      {breadcrumb && (
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumb) }} />
       )}
       {/* #10: prominent sticky back button */}
       <div

@@ -27,7 +27,11 @@ const LOGOS: Logo[] = [
   { name: 'Shri Chitrapur Math', type: 'image', src: '/images/logos/chitrapur-math.jpg',       h: 44, round: true },
 ];
 
-const items = [...LOGOS, ...LOGOS];
+// Second copy is purely for infinite-scroll visual; hide from screen readers
+const items = [
+  ...LOGOS.map((l) => ({ ...l, _aria: false })),
+  ...LOGOS.map((l) => ({ ...l, _aria: true })),
+];
 
 // Must match the CSS animation duration for cred-scroll
 const ANIM_DURATION_S = 55;
@@ -98,7 +102,7 @@ export function CredStrip() {
             style={{ animationPlayState: paused ? 'paused' : 'running' }}
           >
             {items.map((logo, i) => (
-              <span className="cred-strip-item" key={i}>
+              <span className="cred-strip-item" key={i} aria-hidden={logo._aria || undefined}>
                 {logo.type === 'icon' ? (
                   <span className="cred-strip-icon-wrap">
                     {/* eslint-disable-next-line @next/next/no-img-element */}

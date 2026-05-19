@@ -101,12 +101,13 @@ export function PressListPage({ defaultCategory = 'all' }: { defaultCategory?: C
           Press
         </h1>
 
-        <div className="filter-row" style={{ marginBottom: '32px' }}>
+        <div className="filter-row" role="group" aria-label="Filter press by category" style={{ marginBottom: '32px' }}>
           {CATS.map((c) => (
             <button
               key={c.id}
               className={`filter-chip${cat === c.id ? ' active' : ''}`}
               onClick={() => setCat(c.id)}
+              aria-pressed={cat === c.id}
             >
               {c.label}
             </button>

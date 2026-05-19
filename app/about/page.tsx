@@ -9,6 +9,14 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'About · Omkar Dhareshwar',
     description: 'Mechanical engineer by degree. Everything else by choice.',
+    url: 'https://www.omkardhareshwar.com/about',
+    images: ['/og-image.jpg'],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'About · Omkar Dhareshwar',
+    description: 'Mechanical engineer by degree. Everything else by choice.',
+    images: ['/og-image.jpg'],
   },
 };
 
