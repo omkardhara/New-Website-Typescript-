@@ -170,17 +170,6 @@ export const REDBULL_NOTES: Note[] = [
     url: 'https://www.redbull.com/in-en/red-bull-dance-your-style-2024-weekender-india-finals-stalamuerte-hip-hop',
   },
 
-  // ── Off The Roof 2023 ─────────────────────────────────────
-  {
-    id: 118, slug: 'rb-off-the-roof-2023-queendom',
-    image: '/images/redbull/rb-off-the-roof-2023-queendom.jpg',
-    title: 'Queendom Wins Red Bull Off The Roof 2023',
-    date: 'Nov 2023', read: '4 min', tag: 'Dance', type: 'article',
-    excerpt: 'How Queendom took the top spot at Red Bull Off The Roof 2023 — India\'s premier rooftop dance competition.',
-    publication: 'Red Bull',
-    url: 'https://www.redbull.com/in-en/red-bull-off-the-roof-competition-winner-queendom',
-  },
-
   // ── Dance Your Style 2023 India Finals ────────────────────
   {
     id: 119, slug: 'rb-dys-2023-india-winner-nepo',
@@ -266,17 +255,6 @@ export const REDBULL_NOTES: Note[] = [
     excerpt: 'Aryan Brahmin is putting Bhubaneswar on the handball map — a story about sport, passion, and a city finding its athlete.',
     publication: 'Red Bull',
     url: 'https://www.redbull.com/in-en/aryan-brahmin-handball-bhubaneswar',
-  },
-
-  // ── January Jumpstart 2023 ────────────────────────────────
-  {
-    id: 128, slug: 'rb-january-jumpstart-2023',
-    image: '/images/redbull/rb-january-jumpstart-2023.jpg',
-    title: 'Red Bull January Jumpstart 2023',
-    date: 'Jan 2023', read: '4 min', tag: 'Dance', type: 'article',
-    excerpt: 'The Red Bull January Jumpstart — India\'s annual street dance season opener, kicking off the year with ciphers, battles, and community.',
-    publication: 'Red Bull',
-    url: 'https://www.redbull.com/in-en/red-bull-january-jumpstart',
   },
 
   // ── Dance Your Style 2022 India Finals — Top 16 ───────────
