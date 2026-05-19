@@ -25,14 +25,14 @@ export const metadata: Metadata = {
     description:
       'Featured in National Geographic Traveller India, World Atlas of Street Art, Mid-Day, Times of India and more — street art, juggling, and activism in Mumbai.',
     url: `${SITE_URL}/press`,
-    images: ['/images/press/natgeo-marol-p1.jpg'],
+    images: [{ url: '/images/press/natgeo-marol-p1.jpg', alt: 'National Geographic Traveller India — Omkar Dhareshwar in Marol Art Village' }],
   },
   twitter: {
     card: 'summary_large_image',
     title: 'Press · Omkar Dhareshwar',
     description:
       'Featured in National Geographic Traveller India, World Atlas of Street Art, Mid-Day, Times of India and more.',
-    images: ['/images/press/natgeo-marol-p1.jpg'],
+    images: [{ url: '/images/press/natgeo-marol-p1.jpg', alt: 'National Geographic Traveller India — Omkar Dhareshwar in Marol Art Village' }],
   },
 };
 

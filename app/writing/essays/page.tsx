@@ -33,13 +33,13 @@ export const metadata: Metadata = {
     title: 'Essays · Omkar Dhareshwar',
     description: 'Long-form essays on craft, philosophy, spirituality, adventure, and identity.',
     url: 'https://www.omkardhareshwar.com/writing/essays',
-    images: ['/og-image.jpg'],
+    images: [{ url: '/og-image.jpg', alt: 'Omkar Dhareshwar — Flow Artist, Performer & Storyteller' }],
   },
   twitter: {
     card: 'summary_large_image',
     title: 'Essays · Omkar Dhareshwar',
     description: 'Long-form essays on craft, philosophy, spirituality, adventure, and identity.',
-    images: ['/og-image.jpg'],
+    images: [{ url: '/og-image.jpg', alt: 'Omkar Dhareshwar — Flow Artist, Performer & Storyteller' }],
   },
 };
 
