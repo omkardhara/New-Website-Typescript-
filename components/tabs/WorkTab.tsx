@@ -38,7 +38,7 @@ export function WorkTab() {
       </div>
 
       <div className="work-grid">
-        {filtered.map((item) => (
+        {filtered.map((item, idx) => (
           <Link
             key={item.id}
             href={item.url ?? `/work/${item.slug}`}
@@ -57,6 +57,7 @@ export function WorkTab() {
                   fill
                   sizes="(max-width: 720px) 100vw, (max-width: 1024px) 50vw, 33vw"
                   style={{ objectFit: 'cover' }}
+                  priority={idx === 0}
                 />
               ) : (
                 <span className="work-card-glyph">{item.glyph}</span>
