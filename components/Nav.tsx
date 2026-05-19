@@ -15,6 +15,8 @@ export function Nav() {
   const pathname = usePathname();
   const isHome = pathname === '/';
   const hamburgerRef = useRef<HTMLButtonElement>(null);
+  const menuRef = useRef<HTMLDivElement>(null);
+  const FOCUSABLE = 'a[href], button:not([disabled])';
 
   useEffect(() => {
     if (!isHome) {
@@ -35,7 +37,18 @@ export function Nav() {
     document.body.style.overflow = menuOpen ? 'hidden' : '';
     if (!menuOpen) return () => { document.body.style.overflow = ''; };
     const onKey = (e: KeyboardEvent) => {
-      if (e.key === 'Escape') { setMenuOpen(false); hamburgerRef.current?.focus(); }
+      if (e.key === 'Escape') { setMenuOpen(false); hamburgerRef.current?.focus(); return; }
+      if (e.key === 'Tab' && menuRef.current) {
+        const focusable = Array.from(menuRef.current.querySelectorAll<HTMLElement>(FOCUSABLE));
+        if (!focusable.length) return;
+        const first = focusable[0];
+        const last = focusable[focusable.length - 1];
+        if (e.shiftKey) {
+          if (document.activeElement === first) { e.preventDefault(); last.focus(); }
+        } else {
+          if (document.activeElement === last) { e.preventDefault(); first.focus(); }
+        }
+      }
     };
     document.addEventListener('keydown', onKey);
     return () => {
@@ -91,7 +104,7 @@ export function Nav() {
           aria-modal="true"
           aria-label="Navigation menu"
         >
-          <div id="nav-mobile-menu" className="nav-mobile-menu" onClick={(e) => e.stopPropagation()}>
+          <div ref={menuRef} id="nav-mobile-menu" className="nav-mobile-menu" onClick={(e) => e.stopPropagation()}>
             <div className="nav-mobile-links">
               {NAV_LINKS.map((l) => (
                 <Link
