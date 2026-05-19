@@ -94,21 +94,22 @@ export function MediaListPage() {
               onClick={() => setActiveVideo(v)}
               role="button"
               tabIndex={0}
+              aria-label={`Play: ${v.title}`}
               onKeyDown={(e) => {
-                if (e.key === 'Enter' || e.key === ' ') setActiveVideo(v);
+                if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); setActiveVideo(v); }
               }}
             >
               <div className="video-thumb">
                 <Image
                   src={v.thumb}
-                  alt={v.title}
+                  alt=""
                   fill
                   sizes="(max-width: 720px) 100vw, (max-width: 1024px) 50vw, 33vw"
                   style={{ objectFit: 'cover' }}
                   unoptimized
                 />
-                <span className="play-icon" />
-                <span className="video-num">
+                <span className="play-icon" aria-hidden="true" />
+                <span className="video-num" aria-hidden="true">
                   {String(i + 1).padStart(2, '0')} / {String(VIDEOS.length).padStart(2, '0')}
                 </span>
               </div>
@@ -121,7 +122,11 @@ export function MediaListPage() {
 
       {activeVideo && (
         <div
+          role="dialog"
+          aria-modal="true"
+          aria-label={`Now playing: ${activeVideo.title}`}
           onClick={() => setActiveVideo(null)}
+          onKeyDown={(e) => { if (e.key === 'Escape') setActiveVideo(null); }}
           style={{
             position: 'fixed',
             inset: 0,
@@ -152,6 +157,7 @@ export function MediaListPage() {
             />
             <button
               onClick={() => setActiveVideo(null)}
+              aria-label="Close video"
               style={{
                 position: 'fixed',
                 top: '16px',

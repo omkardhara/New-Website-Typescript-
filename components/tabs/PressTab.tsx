@@ -43,12 +43,13 @@ export function PressTab() {
         </div>
       </div>
 
-      <div className="filter-row">
+      <div className="filter-row" role="group" aria-label="Filter press by category">
         {CATS.map((c) => (
           <button
             key={c.id}
             className={`filter-chip${cat === c.id ? ' active' : ''}`}
             onClick={() => setCat(c.id)}
+            aria-pressed={cat === c.id}
           >
             {c.label}
           </button>
