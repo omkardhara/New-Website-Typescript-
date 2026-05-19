@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import { MediaListPage } from '@/components/MediaListPage';
+import { VIDEOS } from '@/data/videos';
 
 export const metadata: Metadata = {
   title: 'Videos',
@@ -19,6 +20,35 @@ export const metadata: Metadata = {
   },
 };
 
+const videoListSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'ItemList',
+  name: 'Videos — Omkar Dhareshwar',
+  url: 'https://www.omkardhareshwar.com/media',
+  itemListElement: VIDEOS.map((v, i) => ({
+    '@type': 'ListItem',
+    position: i + 1,
+    item: {
+      '@type': 'VideoObject',
+      name: v.title,
+      description: v.sub,
+      thumbnailUrl: v.thumb.startsWith('http')
+        ? v.thumb
+        : `https://www.omkardhareshwar.com${v.thumb}`,
+      embedUrl: `https://www.youtube.com/embed/${v.yt}`,
+      url: `https://www.youtube.com/watch?v=${v.yt}`,
+    },
+  })),
+};
+
 export default function MediaPage() {
-  return <MediaListPage />;
+  return (
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(videoListSchema) }}
+      />
+      <MediaListPage />
+    </>
+  );
 }

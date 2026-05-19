@@ -76,8 +76,14 @@ export function PressLightbox({ items, index, onClose, onChange }: Props) {
   if (!item) return null;
 
   return createPortal(
-    <div className="press-lightbox" onClick={handleClose}>
-      <button className="press-lightbox-close" onClick={handleClose} aria-label="Close">✕</button>
+    <div
+      className="press-lightbox"
+      role="dialog"
+      aria-modal="true"
+      aria-label={item.title}
+      onClick={handleClose}
+    >
+      <button className="press-lightbox-close" onClick={handleClose} aria-label="Close lightbox">✕</button>
       <div className="press-lightbox-inner" onClick={(e) => e.stopPropagation()}>
 
         <div

@@ -41,7 +41,7 @@ export function Hero() {
   }, []);
 
   return (
-    <section className="hero">
+    <section className="hero" aria-label="Introduction">
       <div className="hero-grid">
         <div className="hero-left">
           <div className="hero-eyebrow">Flow Artist · Performer · Storyteller</div>

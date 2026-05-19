@@ -216,7 +216,7 @@ export default function WritingPage({ params }: { params: { slug: string } }) {
             borderBottom: '1px solid var(--line-faint)',
           }}
         >
-          {note.date} · {note.read} read
+          <time dateTime={note.date}>{note.date}</time> · {note.read} read
         </div>
       </div>
 
