@@ -16,7 +16,7 @@ export const WORK: WorkItem[] = [
     tag: 'Street Art · Activism · 2025',
     title: 'Turning Garbage Spots into Conversation Starters',
     desc: 'Using Bollywood memes as street interventions in Marol to make people pause and think twice before they litter.',
-    stat: '6 months',
+    stat: '3 spots · 6 months',
     glyph: '🔥',
     gradient: 'radial-gradient(ellipse at 30% 40%, rgba(200,90,42,0.32), rgba(15,15,13,0.15) 65%, var(--bg-cream))',
     image: '/images/Art-Activism-1.jpg',
