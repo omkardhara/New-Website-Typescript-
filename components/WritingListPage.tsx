@@ -157,7 +157,7 @@ export function WritingListPage({ section }: { section: WritingSection }) {
                     alt={n.title}
                     fill
                     sizes="(max-width: 720px) 100vw, 400px"
-                    style={{ objectFit: 'cover' }}
+                    style={{ objectFit: 'cover', objectPosition: n.imagePosition ?? 'center' }}
                   />
                 </div>
               )}

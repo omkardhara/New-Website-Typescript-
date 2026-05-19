@@ -95,7 +95,7 @@ export function NotesTab() {
                     alt={featured.title}
                     fill
                     sizes="(max-width: 1024px) 100vw, 600px"
-                    style={{ objectFit: 'cover' }}
+                    style={{ objectFit: 'cover', objectPosition: featured.imagePosition ?? 'center' }}
                   />
                 </div>
               )}
@@ -132,7 +132,7 @@ export function NotesTab() {
                       alt={n.title}
                       fill
                       sizes="(max-width: 720px) 100vw, 400px"
-                      style={{ objectFit: 'cover' }}
+                      style={{ objectFit: 'cover', objectPosition: n.imagePosition ?? 'center' }}
                     />
                   </div>
                 )}

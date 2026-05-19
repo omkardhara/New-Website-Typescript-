@@ -52,6 +52,7 @@ export type Note = {
   excerpt: string;
   type: NoteType;
   image?: string;
+  imagePosition?: string;
   content?: string;
   aiAssisted?: boolean;
   url?: string;

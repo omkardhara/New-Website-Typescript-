@@ -25,6 +25,7 @@ export const REDBULL_NOTES: Note[] = [
   // ── Under My Wings — Surfing ───────────────────────────────
   {
     id: 102, slug: 'rb-under-my-wiiings-conor-maguire-kovalam',
+    imagePosition: 'top',
     title: 'Under My Wings: Conor Maguire at Kovalam',
     date: 'Oct 2024', read: '5 min', tag: 'Surfing', type: 'article',
     image: '/images/redbull/rb-under-my-wiiings-conor-maguire-kovalam.jpg',
@@ -63,6 +64,7 @@ export const REDBULL_NOTES: Note[] = [
   },
   {
     id: 106, slug: 'rb-dys-2024-top-16-bebo-shree',
+    imagePosition: 'top',
     title: 'Meet Bebo Shree, a hip-hop dancer who wants to collaborate with Les Twins',
     date: '2024', read: '3 min', tag: 'Dance', type: 'article',
     image: '/images/redbull/rb-dys-2024-top-16-bebo-shree.jpg',
@@ -72,6 +74,7 @@ export const REDBULL_NOTES: Note[] = [
   },
   {
     id: 107, slug: 'rb-dys-2024-top-16-divya',
+    imagePosition: 'top',
     title: 'Meet Divya, an afro dancer who believes in more than just movement',
     date: '2024', read: '3 min', tag: 'Dance', type: 'article',
     image: '/images/redbull/rb-dys-2024-top-16-divya.jpg',
@@ -81,6 +84,7 @@ export const REDBULL_NOTES: Note[] = [
   },
   {
     id: 108, slug: 'rb-dys-2024-top-16-gourav-sarwan',
+    imagePosition: 'top',
     title: 'Meet Gourav Sarwan, a popper who has been in dance battles since age 9',
     date: '2024', read: '3 min', tag: 'Dance', type: 'article',
     image: '/images/redbull/rb-dys-2024-top-16-gourav-sarwan.jpg',
@@ -108,6 +112,7 @@ export const REDBULL_NOTES: Note[] = [
   },
   {
     id: 111, slug: 'rb-dys-2024-top-16-sambo',
+    imagePosition: 'top',
     image: '/images/redbull/rb-dys-2024-top-16-sambo.jpg',
     title: 'Sambo: Red Bull Dance Your Style 2024 India Finals Top 16',
     date: '2024', read: '3 min', tag: 'Dance', type: 'article',
@@ -135,6 +140,7 @@ export const REDBULL_NOTES: Note[] = [
   },
   {
     id: 114, slug: 'rb-dys-2024-top-16-shiva',
+    imagePosition: 'top',
     image: '/images/redbull/rb-dys-2024-top-16-shiva.jpg',
     title: 'Shiva: Red Bull Dance Your Style 2024 India Finals Top 16',
     date: '2024', read: '3 min', tag: 'Dance', type: 'article',
@@ -162,6 +168,7 @@ export const REDBULL_NOTES: Note[] = [
   },
   {
     id: 117, slug: 'rb-dys-2024-weekender-stalamuerte-hip-hop',
+    imagePosition: 'top',
     image: '/images/redbull/rb-dys-2024-weekender-stalamuerte-hip-hop.jpg',
     title: 'Stalamuerte: Red Bull Dance Your Style 2024 Weekender India Finals',
     date: '2024', read: '3 min', tag: 'Dance', type: 'article',
@@ -314,6 +321,7 @@ export const REDBULL_NOTES: Note[] = [
   },
   {
     id: 136, slug: 'rb-dys-2022-top-16-nextion',
+    imagePosition: 'top',
     image: '/images/redbull/rb-dys-2022-top-16-nextion.jpg',
     title: 'Nextion: Red Bull Dance Your Style 2022 India Finals Top 16',
     date: '2022', read: '3 min', tag: 'Dance', type: 'article',
@@ -451,6 +459,7 @@ export const REDBULL_NOTES: Note[] = [
   },
   {
     id: 155, slug: 'rb-bc-one-2022-jin',
+    imagePosition: 'top',
     image: '/images/redbull/rb-bc-one-2022-jin.jpg',
     title: 'B-Boy Jin: Red Bull BC One Cypher India 2022',
     date: '2022', read: '4 min', tag: 'Breaking', type: 'article',
@@ -460,6 +469,7 @@ export const REDBULL_NOTES: Note[] = [
   },
   {
     id: 156, slug: 'rb-bc-one-2022-ginni',
+    imagePosition: 'top',
     image: '/images/redbull/rb-bc-one-2022-ginni.jpg',
     title: 'B-Boy Ginni: Red Bull BC One Cypher India 2022',
     date: '2022', read: '4 min', tag: 'Breaking', type: 'article',
@@ -480,6 +490,7 @@ export const REDBULL_NOTES: Note[] = [
   // ── Neymar Jr's Five 2022 — Team Profiles ──────────────────
   {
     id: 160, slug: 'rb-neymar5-immortals-fc-navi-mumbai',
+    imagePosition: 'top',
     image: '/images/redbull/rb-neymar5-immortals-fc-navi-mumbai.jpg',
     title: 'Immortals FC: Red Bull Neymar Jr\'s Five 2022, Navi Mumbai',
     date: '2022', read: '3 min', tag: 'Football', type: 'article',
@@ -534,6 +545,7 @@ export const REDBULL_NOTES: Note[] = [
   },
   {
     id: 166, slug: 'rb-neymar5-tribals-united-fc-dimapur',
+    imagePosition: 'top',
     image: '/images/redbull/rb-neymar5-tribals-united-fc-dimapur.jpg',
     title: 'Tribals United FC: Red Bull Neymar Jr\'s Five 2022, Dimapur',
     date: '2022', read: '3 min', tag: 'Football', type: 'article',
@@ -588,6 +600,7 @@ export const REDBULL_NOTES: Note[] = [
   },
   {
     id: 172, slug: 'rb-neymar5-the-wolves-jalandhar',
+    imagePosition: 'top',
     image: '/images/redbull/rb-neymar5-the-wolves-jalandhar.jpg',
     title: 'The Wolves: Red Bull Neymar Jr\'s Five 2022, Jalandhar',
     date: '2022', read: '3 min', tag: 'Football', type: 'article',
@@ -606,6 +619,7 @@ export const REDBULL_NOTES: Note[] = [
   },
   {
     id: 174, slug: 'rb-neymar5-youth-forum-kolkata',
+    imagePosition: 'top',
     image: '/images/redbull/rb-neymar5-youth-forum-kolkata.jpg',
     title: 'Youth Forum: Red Bull Neymar Jr\'s Five 2022, Kolkata',
     date: '2022', read: '3 min', tag: 'Football', type: 'article',
@@ -624,6 +638,7 @@ export const REDBULL_NOTES: Note[] = [
   },
   {
     id: 176, slug: 'rb-neymar5-ink-india-mumbai',
+    imagePosition: 'top',
     image: '/images/redbull/rb-neymar5-ink-india-mumbai.jpg',
     title: 'Ink India: Red Bull Neymar Jr\'s Five 2022, Mumbai',
     date: '2022', read: '3 min', tag: 'Football', type: 'article',
@@ -633,6 +648,7 @@ export const REDBULL_NOTES: Note[] = [
   },
   {
     id: 177, slug: 'rb-neymar5-football-freakers-pune',
+    imagePosition: 'top',
     image: '/images/redbull/rb-neymar5-football-freakers-pune.jpg',
     title: 'Football Freakers: Red Bull Neymar Jr\'s Five 2022, Pune',
     date: '2022', read: '3 min', tag: 'Football', type: 'article',
@@ -648,6 +664,80 @@ export const REDBULL_NOTES: Note[] = [
     excerpt: 'Bomlain FC from Shillong at the Red Bull Neymar Jr\'s Five 2022 — football from the North-East.',
     publication: 'Red Bull',
     url: 'https://www.redbull.com/in-en/red-bull-neymar-jrs-five-bomlain-fc-shillong-team',
+  },
+
+  // ── Features & Guides ─────────────────────────────────────
+  {
+    id: 179, slug: 'rb-bc-one-2020-indian-breakers-moments',
+    image: '/images/redbull/rb-bc-one-2020-indian-breakers-moments.jpg',
+    title: 'Red Bull BC One: Indian Breakers\' Favourite Moments',
+    date: '2020', read: '4 min', tag: 'Breaking', type: 'article',
+    excerpt: 'India\'s top breakers look back at the moments that shaped them — from the Red Bull BC One archives.',
+    publication: 'Red Bull',
+    url: 'https://www.redbull.com/in-en/red-bull-bc-one-indian-breakers-favourite-moments',
+  },
+  {
+    id: 180, slug: 'rb-karan-bagri-shaolin-stretches',
+    image: '/images/redbull/rb-karan-bagri-shaolin-stretches.jpg',
+    title: 'Karan Bagri\'s Shaolin Stretches for Fitness and Flexibility',
+    date: '2023', read: '4 min', tag: 'Fitness', type: 'article',
+    excerpt: 'Martial artist Karan Bagri breaks down the Shaolin stretching routine that builds the mobility and flexibility serious athletes need.',
+    publication: 'Red Bull',
+    url: 'https://www.redbull.com/in-en/shaolin-stretches-fitness-mobility-flexibility',
+  },
+  {
+    id: 181, slug: 'rb-garba-songs-ishani-dave',
+    image: '/images/redbull/rb-garba-songs-ishani-dave.jpg',
+    title: 'Best Garba Songs, with Ishani Dave',
+    date: '2023', read: '3 min', tag: 'Music', type: 'article',
+    excerpt: 'Dancer and choreographer Ishani Dave picks the garba songs that get every floor moving — from classics to contemporary.',
+    publication: 'Red Bull',
+    url: 'https://www.redbull.com/in-en/best-garba-songs',
+  },
+  {
+    id: 182, slug: 'rb-spindoctor-street-dance-playlist',
+    image: '/images/redbull/rb-spindoctor-street-dance-playlist.jpg',
+    title: 'The Ultimate Street Dance Playlist, with Spindoctor',
+    date: '2023', read: '3 min', tag: 'Music', type: 'article',
+    excerpt: 'DJ and b-boy Spindoctor curates the definitive street dance playlist — the tracks that move bodies and battles.',
+    publication: 'Red Bull',
+    url: 'https://www.redbull.com/in-en/ultimate-street-dance-playlist-songs',
+  },
+  {
+    id: 183, slug: 'rb-street-dance-uprock-rocking',
+    image: '/images/redbull/rb-street-dance-uprock-rocking.jpg',
+    title: 'Street Dance Style: Uprock and Rocking',
+    date: '2023', read: '4 min', tag: 'Dance', type: 'article',
+    excerpt: 'A deep dive into uprock and rocking — the New York street dance styles that predate breaking and still define its attitude.',
+    publication: 'Red Bull',
+    url: 'https://www.redbull.com/in-en/street-dance-style-uprock-rocking-rock-dance',
+  },
+  {
+    id: 184, slug: 'rb-street-dance-fitness',
+    image: '/images/redbull/rb-street-dance-fitness.jpg',
+    title: 'Street Dance for Fitness: Strength, Stamina, Flexibility',
+    date: '2023', read: '4 min', tag: 'Fitness', type: 'article',
+    excerpt: 'Why street dance is one of the most complete full-body workouts — breaking down the strength, stamina, and flexibility it builds.',
+    publication: 'Red Bull',
+    url: 'https://www.redbull.com/in-en/street-dance-fitness-strength-stamina-flexibility',
+  },
+  {
+    id: 185, slug: 'rb-best-shoes-for-dance',
+    image: '/images/redbull/rb-best-shoes-for-dance.jpg',
+    title: 'The Best Shoes for Dance',
+    date: '2023', read: '3 min', tag: 'Dance', type: 'article',
+    excerpt: 'From breaking to hip-hop to waacking — a guide to the footwear that performs when the music drops.',
+    publication: 'Red Bull',
+    url: 'https://www.redbull.com/in-en/best-shoes-for-dance',
+  },
+  {
+    id: 186, slug: 'rb-bnd-race-wars-harnit',
+    image: '/images/redbull/rb-bnd-race-wars-harnit.jpg',
+    title: 'BND Motorsport Race Wars India: Harnit\'s Story',
+    date: '2023', read: '4 min', tag: 'Motorsport', type: 'article',
+    excerpt: 'Harnit at the BND Motorsport Race Wars India — the story behind the speed, the build, and the drive to compete.',
+    publication: 'Red Bull',
+    url: 'https://www.redbull.com/in-en/bnd-motorsport-race-wars-india',
   },
 
 ];
