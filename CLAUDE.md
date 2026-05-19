@@ -24,7 +24,7 @@
 - `cat` values: `performance | brand | installation | activism | production | art | education`
 - `url?` — if set, card links externally (no internal page generated, excluded from static params)
 - `yt?` — YouTube video ID; renders an embed at top of project page
-- `article` — plain text with `[link text](url)` markdown links supported
+- `article` — plain text; supports `[link text](url)` markdown links, `**bold**`, and `## Heading` blocks
 
 ## Note type
 ```ts
@@ -74,21 +74,41 @@
 - `components/AboutPage.tsx` — /about page
 - `components/StoryMap.tsx` — /story page timeline
 - `components/Hero.tsx` — homepage hero
+- `components/ReadingProgress.tsx` — thin gold progress bar (client, fixed at top of article pages)
+- `components/CredStrip.tsx` — auto-scrolling marquee of client/press logos
 
 ## Routing
 - `/` — homepage (TabShell with Work/Media/Press + Notes preview above)
 - `/work/[slug]` — project detail (static, skips items with `url` set)
 - `/writing/essays` `/writing/redbull` `/writing/poems` — full writing lists
-- `/writing/[slug]` — individual writing page (skips items with `url` set)
-- `/about` `/story` `/press` `/contact` — static pages
+- `/writing/[slug]` — individual writing page (skips items with `url` set); has next/prev navigation within section
+- `/about` `/story` `/press` `/contact` `/media` — static pages
+- `/writing/articles` `/writing/short-stories` — redirect to `/writing/essays`
+
+## SEO patterns
+- Every page has `generateMetadata` with `canonical`, `openGraph` (title, description, url, images), and `twitter` card
+- Article pages (`work/[slug]`, `writing/[slug]`) emit two JSON-LD scripts: CreativeWork/Article + BreadcrumbList
+- Homepage and layout emit Person schema in `<head>` via layout.tsx
+- Press page emits CollectionPage + NewsArticle schema
+- Fallback OG image: `/public/og-image.jpg` (used when no page-specific image exists)
 
 ## Git workflow
 - Branch: `main` — push directly
 - Always `git pull origin main --rebase` before pushing if push fails
 - Commit format: short imperative summary + blank line + detail if needed
 
+## Accessibility patterns
+- `.sr-only` class in globals.css for screen-reader-only text
+- Skip-to-content link rendered before `<Nav />` in layout.tsx, targets `#main-content`
+- Filter chip groups: add `role="group"` + `aria-label` + `aria-pressed` to each button
+- Tab panels: `role="tabpanel"` + `aria-labelledby` pointing to controlling tab button
+- Tab buttons: `role="tab"` + `aria-selected` + `tabIndex={active ? 0 : -1}` + keyboard arrow nav
+- Marquee/decorative elements: `aria-hidden="true"`
+- Animated content: `aria-live="polite"` on container
+
 ## Things NOT to do
 - Don't modify `next.config.ts` or `tsconfig.json` without good reason
 - Don't add Tailwind — all styling via globals.css and inline styles
 - Don't create new component files for one-off page sections — inline in page.tsx
 - Don't fetch external APIs at build time — all data is static in /data/
+- Don't add `priority` to more than the first 1-2 images per page (causes unnecessary preloads)

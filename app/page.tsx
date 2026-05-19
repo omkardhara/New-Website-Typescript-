@@ -17,6 +17,13 @@ export const metadata: Metadata = {
     title: 'Omkar Dhareshwar — Flow Artist, Performer & Storyteller',
     description: 'Fire, flow, and stories that actually mean something.',
     url: 'https://www.omkardhareshwar.com',
+    images: ['/og-image.jpg'],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Omkar Dhareshwar — Flow Artist, Performer & Storyteller',
+    description: 'Fire, flow, and stories that actually mean something.',
+    images: ['/og-image.jpg'],
   },
   alternates: {
     canonical: 'https://www.omkardhareshwar.com',
