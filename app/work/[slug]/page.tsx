@@ -8,17 +8,41 @@ export function generateStaticParams() {
   return WORK.filter((w) => !w.url).map((w) => ({ slug: w.slug }));
 }
 
+const SITE_URL = 'https://www.omkardhareshwar.com';
+
 export function generateMetadata({ params }: { params: { slug: string } }): Metadata {
   const item = getWorkBySlug(params.slug);
   if (!item) return { title: 'Project not found' };
   return {
     title: item.title,
     description: item.desc,
+    alternates: { canonical: `${SITE_URL}/work/${item.slug}` },
     openGraph: {
+      type: 'article',
       title: item.title,
       description: item.desc,
-      images: item.image ? [item.image] : undefined,
+      url: `${SITE_URL}/work/${item.slug}`,
+      images: item.image ? [`${SITE_URL}${item.image}`] : [`${SITE_URL}/og-image.jpg`],
     },
+    twitter: {
+      card: 'summary_large_image',
+      title: item.title,
+      description: item.desc,
+      images: item.image ? [`${SITE_URL}${item.image}`] : [`${SITE_URL}/og-image.jpg`],
+    },
+  };
+}
+
+function buildWorkSchema(item: ReturnType<typeof getWorkBySlug>) {
+  if (!item) return null;
+  return {
+    '@context': 'https://schema.org',
+    '@type': 'CreativeWork',
+    name: item.title,
+    description: item.desc,
+    url: `${SITE_URL}/work/${item.slug}`,
+    creator: { '@type': 'Person', name: 'Omkar Dhareshwar', url: SITE_URL },
+    ...(item.image ? { image: `${SITE_URL}${item.image}` } : {}),
   };
 }
 
@@ -49,6 +73,7 @@ type Block =
 export default function ProjectPage({ params }: { params: { slug: string } }) {
   const item = getWorkBySlug(params.slug);
   if (!item) notFound();
+  const schema = buildWorkSchema(item);
 
   const paragraphs = item.article
     ? item.article.split('\n\n').map((p) => p.trim()).filter(Boolean)
@@ -70,6 +95,12 @@ export default function ProjectPage({ params }: { params: { slug: string } }) {
 
   return (
     <article style={{ background: 'var(--bg-cream)', minHeight: '100vh' }}>
+      {schema && (
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
+        />
+      )}
       {/* #10: prominent sticky back button */}
       <div
         style={{
@@ -175,10 +206,10 @@ export default function ProjectPage({ params }: { params: { slug: string } }) {
               <p
                 key={`t-${i}`}
                 style={{
-                  fontSize: block.first ? '17px' : '15.5px',
-                  fontWeight: block.first ? 400 : 300,
+                  fontSize: '17px',
+                  fontWeight: 400,
                   lineHeight: 1.85,
-                  color: block.first ? 'var(--text-dark)' : 'var(--text-dark-2)',
+                  color: 'var(--text-dark)',
                   maxWidth: '720px',
                   margin: '0 auto',
                   marginTop: i === 0 ? '0' : 'clamp(28px,4vw,44px)',

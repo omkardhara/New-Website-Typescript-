@@ -14,7 +14,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${BASE}/writing/essays`,   lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
     { url: `${BASE}/writing/redbull`,  lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
     { url: `${BASE}/writing/poems`,    lastModified: new Date(), changeFrequency: 'monthly', priority: 0.7 },
-    ...WORK.map((w) => ({
+    ...WORK.filter((w) => !w.url).map((w) => ({
       url: `${BASE}/work/${w.slug}`,
       lastModified: new Date(),
       changeFrequency: 'monthly' as const,

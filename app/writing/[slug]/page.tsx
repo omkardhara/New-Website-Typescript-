@@ -8,20 +8,44 @@ export function generateStaticParams() {
   return NOTES.filter((n) => !n.url).map((n) => ({ slug: n.slug }));
 }
 
+const SITE_URL = 'https://www.omkardhareshwar.com';
+
 export function generateMetadata({ params }: { params: { slug: string } }): Metadata {
   const note = getNoteBySlug(params.slug);
   if (!note) return { title: 'Not found' };
   return {
     title: note.title,
     description: note.excerpt,
+    alternates: { canonical: `${SITE_URL}/writing/${note.slug}` },
     openGraph: {
+      type: 'article',
       title: note.title,
       description: note.excerpt,
-      images: note.image ? [note.image] : undefined,
+      url: `${SITE_URL}/writing/${note.slug}`,
+      images: note.image ? [`${SITE_URL}${note.image}`] : [`${SITE_URL}/og-image.jpg`],
     },
-    alternates: {
-      canonical: `https://www.omkardhareshwar.com/writing/${note.slug}`,
+    twitter: {
+      card: 'summary_large_image',
+      title: note.title,
+      description: note.excerpt,
+      images: note.image ? [`${SITE_URL}${note.image}`] : [`${SITE_URL}/og-image.jpg`],
     },
+  };
+}
+
+function buildArticleSchema(note: ReturnType<typeof getNoteBySlug>) {
+  if (!note) return null;
+  return {
+    '@context': 'https://schema.org',
+    '@type': note.type === 'poem' ? 'CreativeWork' : 'Article',
+    headline: note.title,
+    description: note.excerpt,
+    url: `${SITE_URL}/writing/${note.slug}`,
+    datePublished: note.date,
+    author: { '@type': 'Person', name: 'Omkar Dhareshwar', url: SITE_URL },
+    publisher: { '@type': 'Person', name: 'Omkar Dhareshwar', url: SITE_URL },
+    ...(note.image ? { image: `${SITE_URL}${note.image}` } : {}),
+    ...(note.publication ? { isPartOf: { '@type': 'Periodical', name: note.publication } } : {}),
   };
 }
 
@@ -30,20 +54,22 @@ export default function WritingPage({ params }: { params: { slug: string } }) {
   if (!note) notFound();
 
   const isPoem = note.type === 'poem';
-  const backHref =
-    note.type === 'poem' ? '/writing/poems' :
-    note.type === 'short-story' ? '/writing/short-stories' :
-    '/writing/articles';
-  const backLabel =
-    note.type === 'poem' ? 'Poems' :
-    note.type === 'short-story' ? 'Short Stories' :
-    'Articles';
+  const backHref = note.type === 'poem' ? '/writing/poems' : '/writing/essays';
+  const backLabel = note.type === 'poem' ? 'Poems' : 'Essays';
   const blocks = note.content
     ? note.content.split('\n\n').map((b) => b.trim()).filter(Boolean)
     : [];
 
+  const schema = buildArticleSchema(note);
+
   return (
     <article style={{ background: 'var(--bg-cream)', minHeight: '100vh' }}>
+      {schema && (
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
+        />
+      )}
       <div
         style={{
           position: 'sticky',
