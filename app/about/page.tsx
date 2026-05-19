@@ -26,6 +26,7 @@ export const metadata: Metadata = {
     'Omkar Dhareshwar — flow artist, fire performer, and storyteller based in Mumbai. Mechanical engineer by degree; everything else by choice. Featured in Nat Geo, Red Bull, Doordarshan, and Britannia.',
   alternates: { canonical: 'https://www.omkardhareshwar.com/about' },
   openGraph: {
+    type: 'profile',
     title: 'About · Omkar Dhareshwar',
     description: 'Mechanical engineer by degree. Everything else by choice.',
     url: 'https://www.omkardhareshwar.com/about',

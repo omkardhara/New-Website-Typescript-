@@ -31,6 +31,7 @@ export const metadata: Metadata = {
     'Ten years, six chapters. The career arc of Omkar Dhareshwar — engineering to ManWith3Balls. Marol Art Village, Nat Geo, Red Bull, Rickshaw Run, and what came after.',
   alternates: { canonical: `${SITE_URL}/story` },
   openGraph: {
+    type: 'website',
     title: "Story — A decade of building things that didn't exist before",
     description: "Ten years, six chapters. Engineering to ManWith3Balls — Marol Art Village, Nat Geo, Red Bull, and what came after.",
     url: `${SITE_URL}/story`,

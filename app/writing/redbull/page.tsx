@@ -29,6 +29,7 @@ export const metadata: Metadata = {
   description: 'Articles written by Omkar Dhareshwar for Red Bull India — covering breaking, street dance, surfing, and sport.',
   alternates: { canonical: 'https://www.omkardhareshwar.com/writing/redbull' },
   openGraph: {
+    type: 'website',
     title: 'Red Bull Writing · Omkar Dhareshwar',
     description: 'Articles for Red Bull India — covering breaking, street dance, surfing, and sport.',
     url: 'https://www.omkardhareshwar.com/writing/redbull',

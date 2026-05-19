@@ -21,6 +21,7 @@ export const metadata: Metadata = {
   ],
   alternates: { canonical: `${SITE_URL}/press` },
   openGraph: {
+    type: 'website',
     title: 'Press · Omkar Dhareshwar',
     description:
       'Featured in National Geographic Traveller India, World Atlas of Street Art, Mid-Day, Times of India and more — street art, juggling, and activism in Mumbai.',

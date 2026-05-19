@@ -7,6 +7,7 @@ export const metadata: Metadata = {
   description: 'TV commercials, performance reels, documentary features and vlogs by Omkar Dhareshwar.',
   alternates: { canonical: 'https://www.omkardhareshwar.com/media' },
   openGraph: {
+    type: 'website',
     title: 'Videos · Omkar Dhareshwar',
     description: 'TV commercials, performance reels, documentary features and vlogs.',
     url: 'https://www.omkardhareshwar.com/media',

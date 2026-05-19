@@ -28,6 +28,7 @@ export const metadata: Metadata = {
   description: 'Poetry by Omkar Dhareshwar — on time, belief, cities, love, and the edges of consciousness.',
   alternates: { canonical: 'https://www.omkardhareshwar.com/writing/poems' },
   openGraph: {
+    type: 'website',
     title: 'Poems · Omkar Dhareshwar',
     description: 'Poetry on time, belief, cities, love, and the edges of consciousness.',
     url: 'https://www.omkardhareshwar.com/writing/poems',

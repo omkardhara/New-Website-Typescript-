@@ -14,16 +14,17 @@ export const metadata: Metadata = {
   description:
     'Fire performances, corporate flow workshops, and brand storytelling. Featured in Nat Geo Traveller, Red Bull, Britannia, and Doordarshan. Based in Mumbai.',
   openGraph: {
+    type: 'website',
     title: 'Omkar Dhareshwar — Flow Artist, Performer & Storyteller',
     description: 'Fire, flow, and stories that actually mean something.',
     url: 'https://www.omkardhareshwar.com',
-    images: ['/og-image.jpg'],
+    images: [{ url: '/og-image.jpg', alt: 'Omkar Dhareshwar — Flow Artist, Performer & Storyteller' }],
   },
   twitter: {
     card: 'summary_large_image',
     title: 'Omkar Dhareshwar — Flow Artist, Performer & Storyteller',
     description: 'Fire, flow, and stories that actually mean something.',
-    images: ['/og-image.jpg'],
+    images: [{ url: '/og-image.jpg', alt: 'Omkar Dhareshwar — Flow Artist, Performer & Storyteller' }],
   },
   alternates: {
     canonical: 'https://www.omkardhareshwar.com',

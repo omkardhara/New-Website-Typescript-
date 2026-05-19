@@ -23,6 +23,7 @@ export const metadata: Metadata = {
   description: 'Get in touch with Omkar Dhareshwar — performances, workshops, brand collaborations.',
   alternates: { canonical: 'https://www.omkardhareshwar.com/contact' },
   openGraph: {
+    type: 'website',
     title: 'Contact · Omkar Dhareshwar',
     description: 'Brands, agencies, curators — reach out for performances, workshops, or brand collaborations.',
     url: 'https://www.omkardhareshwar.com/contact',
