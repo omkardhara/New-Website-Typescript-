@@ -1,5 +1,5 @@
 'use client';
-import { useEffect, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import { usePathname } from 'next/navigation';
 import Link from 'next/link';
 
@@ -14,6 +14,7 @@ export function Nav() {
   const [menuOpen, setMenuOpen] = useState(false);
   const pathname = usePathname();
   const isHome = pathname === '/';
+  const hamburgerRef = useRef<HTMLButtonElement>(null);
 
   useEffect(() => {
     if (!isHome) {
@@ -33,7 +34,9 @@ export function Nav() {
   useEffect(() => {
     document.body.style.overflow = menuOpen ? 'hidden' : '';
     if (!menuOpen) return () => { document.body.style.overflow = ''; };
-    const onKey = (e: KeyboardEvent) => { if (e.key === 'Escape') setMenuOpen(false); };
+    const onKey = (e: KeyboardEvent) => {
+      if (e.key === 'Escape') { setMenuOpen(false); hamburgerRef.current?.focus(); }
+    };
     document.addEventListener('keydown', onKey);
     return () => {
       document.body.style.overflow = '';
@@ -65,9 +68,12 @@ export function Nav() {
           </Link>
           {/* Hamburger — mobile only */}
           <button
+            ref={hamburgerRef}
             className={`nav-hamburger${cream ? ' cream' : ''}${menuOpen ? ' open' : ''}`}
             onClick={() => setMenuOpen((o) => !o)}
             aria-label={menuOpen ? 'Close menu' : 'Open menu'}
+            aria-expanded={menuOpen}
+            aria-controls="nav-mobile-menu"
           >
             <span />
             <span />
@@ -85,7 +91,7 @@ export function Nav() {
           aria-modal="true"
           aria-label="Navigation menu"
         >
-          <div className="nav-mobile-menu" onClick={(e) => e.stopPropagation()}>
+          <div id="nav-mobile-menu" className="nav-mobile-menu" onClick={(e) => e.stopPropagation()}>
             <div className="nav-mobile-links">
               {NAV_LINKS.map((l) => (
                 <Link
