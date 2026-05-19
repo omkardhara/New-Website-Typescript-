@@ -5,6 +5,18 @@ import Image from 'next/image';
 import { NOTES } from '@/data/site';
 import type { WritingSection } from '@/components/WritingListPage';
 
+function Excerpt({ text }: { text: string }) {
+  if (!text.includes(' / ')) return <>{text}</>;
+  const lines = text.split(' / ');
+  return (
+    <>
+      {lines.map((line, i) => (
+        <span key={i}>{line}{i < lines.length - 1 && <br />}</span>
+      ))}
+    </>
+  );
+}
+
 const SUB_TABS: { id: WritingSection; label: string; href: string }[] = [
   { id: 'essays',  label: 'Essays',   href: '/writing/essays'  },
   { id: 'redbull', label: 'Red Bull', href: '/writing/redbull' },
@@ -98,7 +110,7 @@ export function NotesTab() {
                   )}
                 </div>
                 <h3 className="note-title">{featured.title}</h3>
-                <p className="note-excerpt">{featured.excerpt}</p>
+                <p className="note-excerpt"><Excerpt text={featured.excerpt} /></p>
                 <div className="note-read">
                   {featured.url ? `Read on ${featured.publication ?? 'site'} →` : 'Read the piece →'}
                 </div>
@@ -135,7 +147,7 @@ export function NotesTab() {
                     )}
                   </div>
                   <h3 className="note-title">{n.title}</h3>
-                  <p className="note-excerpt">{n.excerpt}</p>
+                  <p className="note-excerpt"><Excerpt text={n.excerpt} /></p>
                   <div className="note-read">
                     {n.url ? `Read on ${n.publication ?? 'site'} →` : 'Read →'}
                   </div>

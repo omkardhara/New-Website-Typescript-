@@ -2,6 +2,18 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { NOTES } from '@/data/site';
 
+function Excerpt({ text }: { text: string }) {
+  if (!text.includes(' / ')) return <>{text}</>;
+  const lines = text.split(' / ');
+  return (
+    <>
+      {lines.map((line, i) => (
+        <span key={i}>{line}{i < lines.length - 1 && <br />}</span>
+      ))}
+    </>
+  );
+}
+
 export type WritingSection = 'essays' | 'redbull' | 'poems';
 
 const SECTIONS: { id: WritingSection; label: string; href: string }[] = [
@@ -160,7 +172,7 @@ export function WritingListPage({ section }: { section: WritingSection }) {
                   )}
                 </div>
                 <h3 className="note-title">{n.title}</h3>
-                <p className="note-excerpt">{n.excerpt}</p>
+                <p className="note-excerpt"><Excerpt text={n.excerpt} /></p>
                 <div className="note-read">
                   {n.url ? `Read on ${n.publication ?? 'site'} →` : 'Read →'}
                 </div>
