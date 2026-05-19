@@ -15,6 +15,7 @@ export function PressLightbox({ items, index, onClose, onChange }: Props) {
   const item = items[index];
   const closingRef = useRef(false);
   const imgWrapRef = useRef<HTMLDivElement>(null);
+  const closeButtonRef = useRef<HTMLButtonElement>(null);
   const [showScrollHint, setShowScrollHint] = useState(false);
 
   const allImages = item ? [item.src, ...(item.images ?? [])] : [];
@@ -34,6 +35,8 @@ export function PressLightbox({ items, index, onClose, onChange }: Props) {
   }, [index]);
 
   useEffect(() => {
+    // Move focus into the dialog when it opens
+    closeButtonRef.current?.focus();
     // Push a dummy history entry so mobile back-swipe closes the lightbox
     window.history.pushState({ pressLightbox: true }, '');
     closingRef.current = false;
@@ -83,7 +86,7 @@ export function PressLightbox({ items, index, onClose, onChange }: Props) {
       aria-label={item.title}
       onClick={handleClose}
     >
-      <button className="press-lightbox-close" onClick={handleClose} aria-label="Close lightbox">✕</button>
+      <button ref={closeButtonRef} className="press-lightbox-close" onClick={handleClose} aria-label="Close lightbox">✕</button>
       <div className="press-lightbox-inner" onClick={(e) => e.stopPropagation()}>
 
         <div

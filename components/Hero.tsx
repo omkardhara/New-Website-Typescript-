@@ -30,6 +30,15 @@ export function Hero() {
   const statsRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
+    const reduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    if (reduced) {
+      statsRef.current?.querySelectorAll<HTMLElement>('[data-target]').forEach((el) => {
+        const target = parseFloat(el.dataset.target || '0');
+        const suffix = el.dataset.suffix || '';
+        el.textContent = target.toLocaleString() + suffix;
+      });
+      return;
+    }
     const t = setTimeout(() => {
       statsRef.current?.querySelectorAll<HTMLElement>('[data-target]').forEach((el) => {
         const target = parseFloat(el.dataset.target || '0');
