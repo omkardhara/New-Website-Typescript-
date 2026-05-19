@@ -92,7 +92,7 @@ export function Hero() {
             <span className="offering-chip"><span className="offering-chip-num">03</span> Brand Collaborations</span>
           </div>
 
-          <div className="hero-stats" ref={statsRef} aria-live="polite" aria-atomic="false">
+          <div className="hero-stats" ref={statsRef}>
             {STATS.map((s) => (
               <div className="hero-stat" key={s.label}>
                 <span className="hero-stat-num" data-target={s.num} data-suffix={s.suffix || ''}>
