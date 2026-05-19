@@ -14,7 +14,7 @@ export function WorkTab() {
         <div className="panel-head-left">
           <div className="panel-dispatch">Case Files · 2014–2025</div>
           <h2>
-            Things I&apos;ve made,
+            Things I&apos;ve created,
             <br />
             <em>done, and survived.</em>
           </h2>

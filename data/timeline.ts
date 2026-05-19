@@ -84,7 +84,7 @@ export const TIMELINE: TimelineEvent[] = [
     title: 'Flow Simulator at Museum of Goa · Bollywood Meme activism',
     desc: "Built an interactive juggling installation from PVC pipes for the Museum of Goa's Homo Ludens exhibition. The build inspired a new chapter on the streets — Bollywood memes as activism against littering in Marol.",
     tag: 'Installation · Activism',
-    image: '/images/flow-sim-2.jpg.png',
+    image: '/images/flow-sim-2.png',
   },
   {
     year: '2024',

@@ -1,7 +1,7 @@
 export type WorkItem = {
   id: number;
   slug: string;
-  cat: 'performance' | 'brand' | 'installation' | 'activism' | 'production';
+  cat: 'performance' | 'brand' | 'installation' | 'activism' | 'production' | 'art' | 'education';
   tag: string;
   title: string;
   desc: string;
@@ -12,6 +12,7 @@ export type WorkItem = {
   images?: string[];
   captions?: string[];
   article?: string;
+  yt?: string;
 };
 
 export type Video = {
