@@ -12,15 +12,38 @@ export function generateStaticParams() {
 export function generateMetadata({ params }: { params: { slug: string } }): Metadata {
   const item = getPressItemBySlug(params.slug);
   if (!item) return { title: 'Not found' };
+  const desc = `${item.publication} feature on Omkar Dhareshwar: "${item.title}" (${item.year})`;
   return {
     title: `${item.publication} — ${item.title}`,
-    description: `${item.publication} feature on Omkar Dhareshwar: "${item.title}" (${item.year})`,
-    openGraph: {
-      title: `${item.publication} — ${item.title}`,
-      images: [item.src],
-      url: `${SITE_URL}/press/${item.slug}`,
-    },
+    description: desc,
     alternates: { canonical: `${SITE_URL}/press/${item.slug}` },
+    openGraph: {
+      type: 'article',
+      title: `${item.publication} — ${item.title}`,
+      description: desc,
+      url: `${SITE_URL}/press/${item.slug}`,
+      images: [item.src.startsWith('http') ? item.src : `${SITE_URL}${item.src}`],
+    },
+    twitter: {
+      card: 'summary_large_image',
+      title: `${item.publication} — ${item.title}`,
+      description: desc,
+      images: [item.src.startsWith('http') ? item.src : `${SITE_URL}${item.src}`],
+    },
+  };
+}
+
+function buildPressSchema(item: ReturnType<typeof getPressItemBySlug>) {
+  if (!item) return null;
+  return {
+    '@context': 'https://schema.org',
+    '@type': item.publication === 'World Atlas of Street Art' ? 'Book' : 'NewsArticle',
+    headline: item.title,
+    datePublished: item.year,
+    publisher: { '@type': 'Organization', name: item.publication },
+    about: { '@type': 'Person', name: 'Omkar Dhareshwar', url: SITE_URL },
+    image: item.src.startsWith('http') ? item.src : `${SITE_URL}${item.src}`,
+    ...(item.url ? { url: item.url } : {}),
   };
 }
 
@@ -29,9 +52,16 @@ export default function PressArticlePage({ params }: { params: { slug: string } 
   if (!item) notFound();
 
   const allImages = [item.src, ...(item.images ?? [])];
+  const schema = buildPressSchema(item);
 
   return (
-    <article style={{ background: 'var(--bg-cream)', minHeight: '100vh' }}>
+    <article style={{ background: 'var(--bg-cream)', minHeight: '100vh' }} aria-labelledby="press-title">
+      {schema && (
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
+        />
+      )}
       <div
         style={{
           position: 'sticky',
@@ -89,6 +119,7 @@ export default function PressArticlePage({ params }: { params: { slug: string } 
         </div>
 
         <h1
+          id="press-title"
           style={{
             fontFamily: 'var(--font-serif)',
             fontSize: 'clamp(28px,4.5vw,52px)',

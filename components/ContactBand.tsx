@@ -4,7 +4,7 @@ const WHATSAPP_NUMBER = '919920499089';
 
 export function ContactBand() {
   return (
-    <section className="contact-band" id="contact">
+    <section className="contact-band" id="contact" aria-labelledby="contact-band-heading">
       <div className="contact-inner">
         <div>
           <div
@@ -13,7 +13,7 @@ export function ContactBand() {
           >
             Work With Me
           </div>
-          <h2>
+          <h2 id="contact-band-heading">
             Got something worth
             <br />
             <em>building together?</em>
