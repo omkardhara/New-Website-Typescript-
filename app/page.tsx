@@ -40,11 +40,11 @@ const TABS: TabDef[] = [
 
 export default function HomePage() {
   return (
-    <>
+    <main style={{ display: 'contents' }}>
       <Hero />
       <CredStrip />
       <TabShell tabs={TABS} />
       <ContactBand />
-    </>
+    </main>
   );
 }

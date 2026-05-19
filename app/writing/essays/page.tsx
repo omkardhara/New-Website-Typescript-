@@ -45,12 +45,12 @@ export const metadata: Metadata = {
 
 export default function EssaysPage() {
   return (
-    <>
+    <main style={{ display: 'contents' }}>
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(essaysSchema) }}
       />
       <WritingListPage section="essays" />
-    </>
+    </main>
   );
 }

@@ -79,12 +79,12 @@ export default function PressPage({
     : 'all';
 
   return (
-    <>
+    <main style={{ display: 'contents' }}>
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(buildSchema()) }}
       />
       <PressListPage defaultCategory={defaultCat} />
-    </>
+    </main>
   );
 }

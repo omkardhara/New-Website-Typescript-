@@ -44,12 +44,12 @@ export const metadata: Metadata = {
 
 export default function RedBullPage() {
   return (
-    <>
+    <main style={{ display: 'contents' }}>
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(redbullSchema) }}
       />
       <WritingListPage section="redbull" />
-    </>
+    </main>
   );
 }
