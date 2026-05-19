@@ -65,7 +65,7 @@ export function PressTab() {
             key={p.id}
             href={`/press/${p.slug}`}
             className="press-card"
-            aria-label={`${p.publication} — ${p.title}`}
+            aria-label={`${p.publication} — ${p.title}, ${p.year}`}
           >
             <div className="press-card-bg">
               <Image

@@ -19,7 +19,7 @@ export function DispatchesTab() {
       <div className="dispatch-feature">
         <div className="dispatch-img">
           <span className="dispatch-img-glyph">🛺</span>
-          <svg className="dispatch-svg" viewBox="0 0 400 500" preserveAspectRatio="none">
+          <svg className="dispatch-svg" viewBox="0 0 400 500" preserveAspectRatio="none" aria-hidden="true">
             <path
               d="M 80 80 Q 200 120 160 200 Q 120 280 220 340 Q 300 380 280 440"
               stroke="#F8F6F1"

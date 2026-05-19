@@ -182,7 +182,7 @@ export function StoryMap() {
           {/* The illustrated map + detail panel overlay */}
           <div className={s.canvasWrap}>
             {!isMobile && (
-              <svg className={s.svg} viewBox="0 0 1400 900" preserveAspectRatio="none">
+              <svg className={s.svg} viewBox="0 0 1400 900" preserveAspectRatio="none" aria-hidden="true">
                 <defs>
                   {/* Each chapter has a radial gradient zone */}
                   {CHAPTERS_FULL.map((c) => {
@@ -340,7 +340,7 @@ export function StoryMap() {
               </svg>
             )}
 
-            {isMobile && <div className={s.nodesMobileLine} />}
+            {isMobile && <div className={s.nodesMobileLine} aria-hidden="true" />}
 
             {/* Nodes */}
             <div className={isMobile ? s.nodes : undefined}>
