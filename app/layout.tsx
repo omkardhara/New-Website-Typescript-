@@ -13,6 +13,10 @@ export const metadata: Metadata = {
     default: 'Omkar Dhareshwar — Flow Artist, Performer & Storyteller',
     template: '%s · Omkar Dhareshwar',
   },
+  icons: {
+    icon: '/favicon.png',
+    apple: '/apple-touch-icon.png',
+  },
   description:
     'Fire performances, corporate flow workshops, and brand storytelling. Featured in Nat Geo Traveller, Red Bull, Britannia, and Doordarshan. Based in Mumbai.',
   keywords: [
