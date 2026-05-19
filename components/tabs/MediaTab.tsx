@@ -25,9 +25,14 @@ export function MediaTab() {
 
   useEffect(() => {
     if (!activeVideo) return;
+    const prev = document.body.style.overflow;
+    document.body.style.overflow = 'hidden';
     const onKey = (e: KeyboardEvent) => { if (e.key === 'Escape') closeVideo(); };
     window.addEventListener('keydown', onKey);
-    return () => window.removeEventListener('keydown', onKey);
+    return () => {
+      document.body.style.overflow = prev;
+      window.removeEventListener('keydown', onKey);
+    };
   // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [activeVideo]);
 
