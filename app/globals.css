@@ -736,6 +736,9 @@ body::before {
   .writings-sub-tabs { width: 100%; }
   .writings-sub-tab { flex: 1; justify-content: center; padding: 13px 12px; font-size: 10px; letter-spacing: 0.12em; }
   .writings-sub-tab-count { display: none; }
+  .filter-row { flex-wrap: nowrap; overflow-x: auto; -webkit-overflow-scrolling: touch; scrollbar-width: none; padding-bottom: 4px; }
+  .filter-row::-webkit-scrollbar { display: none; }
+  .filter-chip { flex-shrink: 0; }
 }
 
 /* ── About page ─────────────────────────────────────────── */
