@@ -94,11 +94,15 @@ export function Hero() {
 
           <div className="hero-stats" ref={statsRef}>
             {STATS.map((s) => (
-              <div className="hero-stat" key={s.label}>
-                <span className="hero-stat-num" data-target={s.num} data-suffix={s.suffix || ''}>
+              <div
+                className="hero-stat"
+                key={s.label}
+                aria-label={`${s.num.toLocaleString()}${s.suffix ?? ''} ${s.label}`}
+              >
+                <span className="hero-stat-num" data-target={s.num} data-suffix={s.suffix || ''} aria-hidden="true">
                   0
                 </span>
-                <span className="hero-stat-label">{s.label}</span>
+                <span className="hero-stat-label" aria-hidden="true">{s.label}</span>
               </div>
             ))}
           </div>
