@@ -31,7 +31,7 @@ export function ContactBand() {
           </div>
         </div>
 
-        <div>
+        <address style={{ fontStyle: 'normal' }}>
           <div className="contact-meta-label">Email</div>
           <a href="mailto:omkar.dhara@gmail.com" className="contact-email">
             omkar.dhara@gmail.com
@@ -62,7 +62,7 @@ export function ContactBand() {
               </a>
             ))}
           </div>
-        </div>
+        </address>
       </div>
     </section>
   );
