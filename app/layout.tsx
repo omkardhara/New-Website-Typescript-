@@ -44,14 +44,14 @@ export const metadata: Metadata = {
     title: 'Omkar Dhareshwar — Flow Artist & Performer',
     description: 'Fire, flow, and stories that actually mean something.',
     siteName: 'Omkar Dhareshwar',
-    images: [{ url: '/og-image.jpg', alt: 'Omkar Dhareshwar — Flow Artist, Performer & Storyteller' }],
+    images: [{ url: '/og-2025.jpg', alt: 'Omkar Dhareshwar — Flow Artist, Performer & Storyteller' }],
     locale: 'en_IN',
   },
   twitter: {
     card: 'summary_large_image',
     title: 'Omkar Dhareshwar — Flow Artist & Performer',
     description: 'Fire, flow, and stories that actually mean something.',
-    images: [{ url: '/og-image.jpg', alt: 'Omkar Dhareshwar — Flow Artist, Performer & Storyteller' }],
+    images: [{ url: '/og-2025.jpg', alt: 'Omkar Dhareshwar — Flow Artist, Performer & Storyteller' }],
   },
   alternates: {
     canonical: SITE_URL,

@@ -22,13 +22,32 @@ const ITEM: React.CSSProperties = {
   whiteSpace: 'nowrap',
 };
 
+function ShareIcon() {
+  return (
+    <svg
+      width="13" height="13"
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="2.2"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      aria-hidden="true"
+      style={{ flexShrink: 0 }}
+    >
+      <path d="M4 12v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-8" />
+      <polyline points="16 6 12 2 8 6" />
+      <line x1="12" y1="2" x2="12" y2="15" />
+    </svg>
+  );
+}
+
 export function ShareButton({ title, text }: Props) {
   const [open, setOpen] = useState(false);
   const [copied, setCopied] = useState(false);
   const [pageUrl, setPageUrl] = useState('');
   const wrapRef = useRef<HTMLDivElement>(null);
 
-  // Close dropdown on outside click or Escape
   useEffect(() => {
     if (!open) return;
     const onMouse = (e: MouseEvent) => {
@@ -45,7 +64,6 @@ export function ShareButton({ title, text }: Props) {
 
   async function handleClick() {
     const url = window.location.href;
-    // Mobile: use native share sheet
     if (navigator.share) {
       try {
         await navigator.share({ title, text, url });
@@ -56,7 +74,6 @@ export function ShareButton({ title, text }: Props) {
         }
       }
     } else {
-      // Desktop: open dropdown
       setPageUrl(url);
       setOpen((o) => !o);
     }
@@ -94,15 +111,16 @@ export function ShareButton({ title, text }: Props) {
           fontSize: '10px',
           letterSpacing: '0.2em',
           textTransform: 'uppercase',
-          color: open ? 'var(--gold)' : 'var(--text-dark)',
-          padding: '10px 16px',
-          border: `1px solid ${open ? 'var(--gold)' : 'var(--line-dark)'}`,
-          background: 'var(--surface)',
+          color: 'var(--bg-cream)',
+          padding: '10px 18px',
+          background: open ? 'var(--gold-bright)' : 'var(--gold)',
+          border: 'none',
           cursor: 'pointer',
-          transition: 'color 0.2s, border-color 0.2s',
+          transition: 'background 0.2s',
         }}
       >
-        Share ↗
+        <ShareIcon />
+        Share
       </button>
 
       {open && (
