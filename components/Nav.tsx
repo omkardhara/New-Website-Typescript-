@@ -23,10 +23,21 @@ export function Nav() {
       setCream(true);
       return;
     }
-    const onScroll = () => setCream(window.scrollY > window.innerHeight - 64);
-    onScroll();
-    window.addEventListener('scroll', onScroll, { passive: true });
-    return () => window.removeEventListener('scroll', onScroll);
+    const hero = document.querySelector('.hero');
+    if (!hero) {
+      // fallback: no hero element found
+      const onScroll = () => setCream(window.scrollY > window.innerHeight - 64);
+      onScroll();
+      window.addEventListener('scroll', onScroll, { passive: true });
+      return () => window.removeEventListener('scroll', onScroll);
+    }
+    // Go cream when the hero section has fully scrolled behind the nav
+    const obs = new IntersectionObserver(
+      ([entry]) => setCream(!entry.isIntersecting),
+      { threshold: 0, rootMargin: '-74px 0px 0px 0px' }
+    );
+    obs.observe(hero);
+    return () => obs.disconnect();
   }, [isHome]);
 
   // Close menu on route change
