@@ -226,12 +226,37 @@ Over the next two weeks, the campaign unexpectedly snowballed. It was covered in
     slug: 'phantom-films-art-direction',
     cat: 'production',
     tag: 'Art Direction · Production · Phantom Films',
-    title: 'Phantom Films — Art Direction',
-    desc: 'Art directed and hand-built 17 DIY prop devices for a Phantom Films production — every device designed and fabricated from scratch.',
-    stat: '17 DIY devices',
+    title: 'Building Survival, One Broken Appliance at a Time — Trapped',
+    desc: 'Jr. Art Director on Vikramaditya Motwane\'s Trapped — reverse-engineered and hand-built 17 DIY survival devices for Rajkumaar Rao\'s one-man performance.',
+    stat: '17 DIY devices · 4 in final cut',
     glyph: '🎬',
     gradient: 'radial-gradient(ellipse at 45% 55%, rgba(150,50,200,0.2), rgba(15,15,13,0.12) 65%, var(--bg-cream))',
-    article: `Details and images coming soon.`,
+    image: '/images/trapped/omkar-with-rajkumaar-rao.jpg',
+    images: [
+      '/images/trapped/omkar-diy-guitar.jpg',
+      '/images/trapped/rooftop-water-collector.jpg',
+      '/images/trapped/rat-trap-prop.jpg',
+      '/images/trapped/phrew-crew-badge.jpg',
+    ],
+    article: `In 2015, I was supposed to be in Germany on an exchange programme, studying automobile engineering. Instead, I was on the 30th floor of a vacant Mumbai high-rise, taking apart a television with my bare hands.
+
+The film was **Trapped** — [Vikramaditya Motwane](https://en.wikipedia.org/wiki/Vikramaditya_Motwane)'s survival thriller about a man sealed inside a locked apartment with no food, no water, and no way out. Rajkumaar Rao played the lead entirely alone for most of the film's runtime, and every object he improvised to stay alive had to exist as a real, working prop. My job was to make his survival believable, one reverse-engineered device at a time.
+
+I was 22, freshly graduated as a Mechanical Engineer. My job title was Jr. Associate Art Director. I barely understood what that meant at the time — but I understood machines, materials, and how things come apart.
+
+Over the course of a month, I designed and fabricated 17 DIY survival devices: a rainwater collector rigged on a high-rise balcony, a catapult, a firestarter fashioned from steel wool and a dead battery, a rat trap, a urine-powered battery, and a guitar made from wooden sticks and a paint can with rope for strings. Four of the seventeen made the final cut of the film.
+
+## The Film and the People Behind It
+
+[Vikramaditya Motwane](https://en.wikipedia.org/wiki/Vikramaditya_Motwane) had already established himself as one of Hindi cinema's most precise directors — **Udaan** (2010) announced him as a filmmaker of rare emotional intelligence, **Lootera** (2013) cemented his eye for period detail, and **Bombay Velvet** put him inside a Phantom Films production of enormous ambition. Trapped was a different kind of bet: a claustrophobic, almost dialogue-free survival film shot almost entirely in a single location.
+
+[Rajkumaar Rao](https://en.wikipedia.org/wiki/Rajkummar_Rao) brought the physicality that the script demanded. By the time Trapped released, he had already won a National Award for **Shahid** (2013) and delivered one of the decade's most talked-about ensemble performances in **Kai Po Che** (2013). In Trapped, he lost significant weight for the role and carried almost every scene entirely on his body — his performance and the props around him were the entire film.
+
+## How the Film Was Received
+
+Trapped released in 2017 to widespread critical acclaim. Critics called it a masterclass in minimalist filmmaking — a survival thriller that worked not through spectacle but through the slow, grinding logic of a man forced to improvise his way back to life. Rao's performance was recognised at multiple award ceremonies, and the film has since been cited as one of the more formally ambitious Indian films of that decade.
+
+None of it worked without the props being real. You cannot fake a firestarter in close-up. The rainwater collector had to actually collect water. The guitar had to have strings that vibrated. That is what the month on the 30th floor was for.`,
   },
   {
     id: 9,
