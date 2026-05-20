@@ -14,6 +14,7 @@ export type WorkItem = {
   article?: string;
   yt?: string;
   url?: string;
+  linkLabel?: string;
 };
 
 export type Video = {

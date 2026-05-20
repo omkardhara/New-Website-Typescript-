@@ -204,6 +204,7 @@ Over the next two weeks, the campaign unexpectedly snowballed. It was covered in
     glyph: '🎬',
     gradient: 'radial-gradient(ellipse at 50% 40%, rgba(200,20,20,0.22), rgba(15,15,13,0.12) 65%, var(--bg-cream))',
     url: 'https://redbull.tv/en_IN/page/page:rrn:content:episode-videos:a67100ad-399c-4546-a386-454b1d4b7a5b/this-is-my-hood-s1-e1',
+    linkLabel: 'View on Red Bull',
   },
 
   // ── New projects ─────────────────────────────────────────
