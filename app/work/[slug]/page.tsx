@@ -89,7 +89,7 @@ function renderWithLinks(text: string) {
 
 type Block =
   | { kind: 'text'; value: string; first: boolean }
-  | { kind: 'image'; src: string; idx: number; caption?: string };
+  | { kind: 'image'; src: string; idx: number; caption?: string; position?: string };
 
 export default function ProjectPage({ params }: { params: { slug: string } }) {
   const item = getWorkBySlug(params.slug);
@@ -112,6 +112,7 @@ export default function ProjectPage({ params }: { params: { slug: string } }) {
         src: images[i],
         idx: i,
         caption: item.captions?.[i],
+        position: item.imagePositions?.[i],
       });
   }
 
@@ -283,7 +284,7 @@ export default function ProjectPage({ params }: { params: { slug: string } }) {
                   alt={block.caption || `${item.title} — image ${block.idx + 1}`}
                   fill
                   sizes="(max-width: 960px) 100vw, 960px"
-                  style={{ objectFit: 'cover' }}
+                  style={{ objectFit: 'cover', objectPosition: block.position || 'center' }}
                 />
               </div>
               <figcaption

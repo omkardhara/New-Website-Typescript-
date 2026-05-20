@@ -255,6 +255,7 @@ None of it worked without the props being real. You cannot fake a firestarter in
       '/images/lee-denims/omkar-nano.jpg',
       '/images/lee-denims/quote-one-wall.jpg',
     ],
+    imagePositions: ['', '', '', '', 'top', ''],
     yt: 'RonBTMdFFq0',
     article: `Lee Jeans built **Stand Tall For All** on a simple premise: the most compelling brand stories don't come from celebrities — they come from people who are actually doing the work. The campaign sought out advocates, artists, and community builders whose impact was felt in neighbourhoods and lives, not just on screens.
 

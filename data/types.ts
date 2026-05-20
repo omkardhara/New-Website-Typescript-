@@ -11,6 +11,7 @@ export type WorkItem = {
   image?: string;
   imagePosition?: string;
   images?: string[];
+  imagePositions?: string[];
   captions?: string[];
   article?: string;
   yt?: string;
