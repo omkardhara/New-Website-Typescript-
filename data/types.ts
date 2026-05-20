@@ -9,6 +9,7 @@ export type WorkItem = {
   glyph: string;
   gradient?: string;
   image?: string;
+  imagePosition?: string;
   images?: string[];
   captions?: string[];
   article?: string;

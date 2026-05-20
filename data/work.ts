@@ -179,18 +179,6 @@ What made that night special was the sheer scale of collective effort. People fr
 
 Over the next two weeks, the campaign unexpectedly snowballed. It was covered in multiple newspaper articles, discussed on radio shows, and widely shared online. Some roads were repaired soon after. But the bigger takeaway was seeing how strongly people connected with the act itself. Sometimes all it takes is one simple visual idea to make an entire city stop and pay attention.`,
   },
-  {
-    id: 6,
-    slug: 'flying-machine-denims',
-    cat: 'production',
-    tag: 'Ad Shoot · Flying Machine Denims · 2019',
-    title: 'Underground Street Culture Ended Up Selling Denim for Flying Machine',
-    desc: 'A story about timing, youth culture, and how a Bboy named Flying Machine became the perfect face for a brand called Flying Machine.',
-    stat: '3 shoots · 7 athletes',
-    glyph: '👖',
-    gradient: 'radial-gradient(ellipse at 60% 40%, rgba(46,107,79,0.22), rgba(15,15,13,0.12) 65%, var(--bg-cream))',
-    article: `Story coming soon.`,
-  },
 
   // ── Documentary ──────────────────────────────────────────
   {
@@ -207,20 +195,6 @@ Over the next two weeks, the campaign unexpectedly snowballed. It was covered in
     url: 'https://redbull.tv/en_IN/page/page:rrn:content:episode-videos:a67100ad-399c-4546-a386-454b1d4b7a5b/this-is-my-hood-s1-e1',
     linkLabel: 'View on Red Bull',
   },
-
-  // ── New projects ─────────────────────────────────────────
-  {
-    id: 7,
-    slug: 'bmw-joytown',
-    cat: 'performance',
-    tag: 'Performance · Brand · BMW',
-    title: 'BMW Joytown',
-    desc: 'A live performance experience across Mumbai and Bengaluru for BMW — blending flow arts and movement to bring the brand to life on stage.',
-    stat: '2 cities',
-    glyph: '🚗',
-    gradient: 'radial-gradient(ellipse at 50% 40%, rgba(0,100,200,0.22), rgba(15,15,13,0.12) 65%, var(--bg-cream))',
-    article: `Details and images coming soon.`,
-  },
   {
     id: 8,
     slug: 'phantom-films-art-direction',
@@ -231,13 +205,16 @@ Over the next two weeks, the campaign unexpectedly snowballed. It was covered in
     stat: '17 DIY devices · 4 in final cut',
     glyph: '🎬',
     gradient: 'radial-gradient(ellipse at 45% 55%, rgba(150,50,200,0.2), rgba(15,15,13,0.12) 65%, var(--bg-cream))',
+    imagePosition: 'top',
     image: '/images/trapped/omkar-with-rajkumaar-rao.jpg',
     images: [
       '/images/trapped/omkar-diy-guitar.jpg',
       '/images/trapped/rooftop-water-collector.jpg',
       '/images/trapped/rat-trap-prop.jpg',
       '/images/trapped/phrew-crew-badge.jpg',
-      '/images/trapped/diy-trap-device.jpg',
+      '/images/trapped/ice-cube-battery.jpg',
+      '/images/trapped/fan-generator.jpg',
+      '/images/trapped/wire-cage-trap.jpg',
     ],
     article: `In 2015, I was supposed to be in Germany on an exchange programme, studying automobile engineering. Instead, I was on the 30th floor of a vacant Mumbai high-rise, taking apart a television with my bare hands.
 
@@ -249,53 +226,15 @@ Over the course of a month, I designed and fabricated 17 DIY survival devices: a
 
 ## The Film and the People Behind It
 
-[Vikramaditya Motwane](https://en.wikipedia.org/wiki/Vikramaditya_Motwane) had already established himself as one of Hindi cinema's most precise directors — **Udaan** (2010) announced him as a filmmaker of rare emotional intelligence, **Lootera** (2013) cemented his eye for period detail, and **Bombay Velvet** put him inside a Phantom Films production of enormous ambition. Trapped was a different kind of bet: a claustrophobic, almost dialogue-free survival film shot almost entirely in a single location.
+[Vikramaditya Motwane](https://en.wikipedia.org/wiki/Vikramaditya_Motwane) is one of Hindi cinema's most precise directors — the mind behind **Udaan**, **Lootera**, and **AK vs AK**. Trapped was his most stripped-down work: a near-dialogue-free survival film set almost entirely in one locked apartment.
 
-[Rajkumaar Rao](https://en.wikipedia.org/wiki/Rajkummar_Rao) brought the physicality that the script demanded. By the time Trapped released, he had already won a National Award for **Shahid** (2013) and delivered one of the decade's most talked-about ensemble performances in **Kai Po Che** (2013). In Trapped, he lost significant weight for the role and carried almost every scene entirely on his body — his performance and the props around him were the entire film.
+[Rajkumaar Rao](https://en.wikipedia.org/wiki/Rajkummar_Rao) had already won a National Award for **Shahid** before Trapped. Here he lost significant weight for the role and carried almost every frame alone — his performance and the props around him were the entire movie.
 
 ## How the Film Was Received
 
 Trapped released in 2017 to widespread critical acclaim. Critics called it a masterclass in minimalist filmmaking — a survival thriller that worked not through spectacle but through the slow, grinding logic of a man forced to improvise his way back to life. Rao's performance was recognised at multiple award ceremonies, and the film has since been cited as one of the more formally ambitious Indian films of that decade.
 
 None of it worked without the props being real. You cannot fake a firestarter in close-up. The rainwater collector had to actually collect water. The guitar had to have strings that vibrated. That is what the month on the 30th floor was for.`,
-  },
-  {
-    id: 9,
-    slug: 'under-neon-sky',
-    cat: 'installation',
-    tag: 'Installation · Light Art',
-    title: 'Under Neon Sky',
-    desc: 'A neon-lit installation exploring the intersection of light, movement, and urban space. Images coming soon.',
-    stat: 'Installation',
-    glyph: '💡',
-    gradient: 'radial-gradient(ellipse at 50% 50%, rgba(255,50,150,0.2), rgba(15,15,13,0.12) 65%, var(--bg-cream))',
-    yt: 'M8aD0NU1akw',
-    article: `Details and images coming soon.`,
-  },
-  {
-    id: 10,
-    slug: 'indias-first-graffiti-hyperlapse',
-    cat: 'production',
-    tag: 'Production · Graffiti · Hyperlapse',
-    title: "India's First Graffiti Hyperlapse",
-    desc: "A pioneering hyperlapse capturing the making of a graffiti mural from blank wall to finished piece — a first for India.",
-    stat: 'First in India',
-    glyph: '🎥',
-    gradient: 'radial-gradient(ellipse at 55% 45%, rgba(200,100,50,0.22), rgba(15,15,13,0.12) 65%, var(--bg-cream))',
-    yt: 'fP4Xm5gmTGI',
-    article: `Details and images coming soon.`,
-  },
-  {
-    id: 11,
-    slug: 'now-we-here-podcast',
-    cat: 'production',
-    tag: 'Production · Podcast',
-    title: 'Now We Here Podcast',
-    desc: '21 days, 21 interviews. A rapid-fire podcast series documenting creative voices and untold stories — filmed and released daily.',
-    stat: '21 days · 21 interviews',
-    glyph: '🎙️',
-    gradient: 'radial-gradient(ellipse at 40% 60%, rgba(46,107,79,0.2), rgba(15,15,13,0.12) 65%, var(--bg-cream))',
-    article: `Details and video links coming soon.`,
   },
   {
     id: 12,
@@ -340,6 +279,70 @@ The campaign was a collective, not a solo feature. Wicked Broz shared the series
 [Arnab Biswas](https://www.instagram.com/urnavishwas/) is a finance professional and LGBTIQA+ inclusion evangelist whose candid, personal storytelling on social media gave visibility to a community rarely seen in mainstream brand campaigns.
 
 [Amit Vaidya](http://www.live4todayamit.com/) is the author of **Holy Cancer: How A Cow Saved My Life** — a stage IV cancer survivor who turned remission into a life's purpose. Through the Healing Vaidya Foundation, he has supported over 35,000 patients across the globe as a wellness advocate, speaker, and motivator.`,
+  },
+
+  // ── Placeholders ──────────────────────────────────────────
+  {
+    id: 6,
+    slug: 'flying-machine-denims',
+    cat: 'production',
+    tag: 'Ad Shoot · Flying Machine Denims · 2019',
+    title: 'Underground Street Culture Ended Up Selling Denim for Flying Machine',
+    desc: 'A story about timing, youth culture, and how a Bboy named Flying Machine became the perfect face for a brand called Flying Machine.',
+    stat: '3 shoots · 7 athletes',
+    glyph: '👖',
+    gradient: 'radial-gradient(ellipse at 60% 40%, rgba(46,107,79,0.22), rgba(15,15,13,0.12) 65%, var(--bg-cream))',
+    article: `Story coming soon.`,
+  },
+  {
+    id: 7,
+    slug: 'bmw-joytown',
+    cat: 'performance',
+    tag: 'Performance · Brand · BMW',
+    title: 'BMW Joytown',
+    desc: 'A live performance experience across Mumbai and Bengaluru for BMW — blending flow arts and movement to bring the brand to life on stage.',
+    stat: '2 cities',
+    glyph: '🚗',
+    gradient: 'radial-gradient(ellipse at 50% 40%, rgba(0,100,200,0.22), rgba(15,15,13,0.12) 65%, var(--bg-cream))',
+    article: `Details and images coming soon.`,
+  },
+  {
+    id: 9,
+    slug: 'under-neon-sky',
+    cat: 'installation',
+    tag: 'Installation · Light Art',
+    title: 'Under Neon Sky',
+    desc: 'A neon-lit installation exploring the intersection of light, movement, and urban space. Images coming soon.',
+    stat: 'Installation',
+    glyph: '💡',
+    gradient: 'radial-gradient(ellipse at 50% 50%, rgba(255,50,150,0.2), rgba(15,15,13,0.12) 65%, var(--bg-cream))',
+    yt: 'M8aD0NU1akw',
+    article: `Details and images coming soon.`,
+  },
+  {
+    id: 10,
+    slug: 'indias-first-graffiti-hyperlapse',
+    cat: 'production',
+    tag: 'Production · Graffiti · Hyperlapse',
+    title: "India's First Graffiti Hyperlapse",
+    desc: "A pioneering hyperlapse capturing the making of a graffiti mural from blank wall to finished piece — a first for India.",
+    stat: 'First in India',
+    glyph: '🎥',
+    gradient: 'radial-gradient(ellipse at 55% 45%, rgba(200,100,50,0.22), rgba(15,15,13,0.12) 65%, var(--bg-cream))',
+    yt: 'fP4Xm5gmTGI',
+    article: `Details and images coming soon.`,
+  },
+  {
+    id: 11,
+    slug: 'now-we-here-podcast',
+    cat: 'production',
+    tag: 'Production · Podcast',
+    title: 'Now We Here Podcast',
+    desc: '21 days, 21 interviews. A rapid-fire podcast series documenting creative voices and untold stories — filmed and released daily.',
+    stat: '21 days · 21 interviews',
+    glyph: '🎙️',
+    gradient: 'radial-gradient(ellipse at 40% 60%, rgba(46,107,79,0.2), rgba(15,15,13,0.12) 65%, var(--bg-cream))',
+    article: `Details and video links coming soon.`,
   },
   {
     id: 13,

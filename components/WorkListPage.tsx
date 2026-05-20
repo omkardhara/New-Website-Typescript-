@@ -110,7 +110,7 @@ export function WorkListPage() {
                     alt={item.title}
                     fill
                     sizes="(max-width: 720px) 100vw, (max-width: 1024px) 50vw, 33vw"
-                    style={{ objectFit: 'cover' }}
+                    style={{ objectFit: 'cover', objectPosition: item.imagePosition || 'center' }}
                     priority={idx === 0}
                   />
                 ) : (
