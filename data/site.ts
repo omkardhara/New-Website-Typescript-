@@ -355,6 +355,7 @@ export const NOTES: Note[] = [
     type: 'poem',
     excerpt: 'In a world bound by rules / Forced to trudge down a paved path / My mind still wanders free.',
     content: WRITING_CONTENT['my-mind-wanders-free'],
+    image: '/images/writing/my-mind-wanders-free.jpg',
   },
   {
     id: 31,
@@ -366,6 +367,7 @@ export const NOTES: Note[] = [
     type: 'poem',
     excerpt: 'For time and tide shall wait for no man / Alas! What has to go will go!',
     content: WRITING_CONTENT['the-reapers-call'],
+    image: '/images/writing/the-reapers-call.jpg',
   },
   {
     id: 32,
@@ -377,6 +379,7 @@ export const NOTES: Note[] = [
     type: 'poem',
     excerpt: 'The boy was walking. Alone in the desert / Walking. Despair stalking. Demons talking / Not a soul in sight.',
     content: WRITING_CONTENT['the-refugee'],
+    image: '/images/writing/the-refugee.jpg',
   },
   {
     id: 15,
@@ -388,6 +391,7 @@ export const NOTES: Note[] = [
     type: 'poem',
     excerpt: 'Years have flown by / but the dream remains the same / Create magic everyday / Keep nurturing the flame.',
     content: WRITING_CONTENT['new-year-2026'],
+    image: '/images/writing/new-year-2026.jpg',
   },
   {
     id: 16,
@@ -399,6 +403,7 @@ export const NOTES: Note[] = [
     type: 'poem',
     excerpt: 'Weaving chains of lies / Like vines growing on trees / I keep growing older / But the habit doesn\'t cease.',
     content: WRITING_CONTENT['the-lies'],
+    image: '/images/writing/the-lies.jpg',
   },
   {
     id: 17,
@@ -410,6 +415,7 @@ export const NOTES: Note[] = [
     type: 'poem',
     excerpt: 'Am I waking up from a dream? / Or am I falling into one / Reality has coagulated with illusion.',
     content: WRITING_CONTENT['duality'],
+    image: '/images/writing/duality.jpg',
   },
   {
     id: 18,
@@ -421,6 +427,7 @@ export const NOTES: Note[] = [
     type: 'poem',
     excerpt: 'Everyday like clockwork / We come to be / Under artificial lights / To work like bees.',
     content: WRITING_CONTENT['under-artificial-lights'],
+    image: '/images/writing/under-artificial-lights.jpg',
   },
   {
     id: 19,
@@ -432,6 +439,7 @@ export const NOTES: Note[] = [
     type: 'poem',
     excerpt: 'Everyday flows by like the transient wind / Like mice, we are chasing happiness / Scurrying helplessly in this rat race.',
     content: WRITING_CONTENT['the-city-of-doom'],
+    image: '/images/writing/the-city-of-doom.jpg',
   },
   {
     id: 21,
