@@ -2,6 +2,7 @@ import type { Metadata, Viewport } from 'next';
 import { cormorant, dmSans, dmMono } from '@/lib/fonts';
 import { Nav } from '@/components/Nav';
 import { Footer } from '@/components/Footer';
+import { ScrollToTop } from '@/components/ScrollToTop';
 import { SOCIALS } from '@/data/site';
 import './globals.css';
 
@@ -114,6 +115,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         />
       </head>
       <body>
+        <ScrollToTop />
         <a className="skip-to-content" href="#main-content">Skip to main content</a>
         <Nav />
         <div id="main-content" tabIndex={-1} style={{ outline: 'none' }}>
