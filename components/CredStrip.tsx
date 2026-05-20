@@ -93,6 +93,7 @@ export function CredStrip() {
         onTouchStart={handleTouchStart}
         onTouchMove={handleTouchMove}
         onTouchEnd={handleTouchEnd}
+        role="region"
         aria-label="Featured publications and clients"
       >
         <div style={{ transform: `translateX(${swipeX}px)` }}>
