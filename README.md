@@ -1,6 +1,6 @@
 # omkardhareshwar.com — Next.js 14
 
-Personal website for Omkar Dhareshwar — flow artist, performer, storyteller. Built on Next.js 14 (App Router), TypeScript, Tailwind CSS, and Framer Motion.
+Personal website for Omkar Dhareshwar — flow artist, performer, storyteller. Built on Next.js 14 (App Router), TypeScript, and plain CSS (no Tailwind — all styles in `globals.css`).
 
 ## Quick start
 
@@ -119,7 +119,7 @@ npm run lint     # next lint
 | ----------- | ------------------------------------- |
 | Framework   | Next.js 14 (App Router)               |
 | Language    | TypeScript (strict)                   |
-| Styling     | Tailwind CSS 3 + bespoke CSS in globals.css |
+| Styling     | Plain CSS in `globals.css` — CSS custom properties, no Tailwind |
 | Fonts       | Cormorant Garamond, DM Sans, DM Mono via next/font |
 | Animation   | CSS keyframes (Framer Motion installed for Story map) |
 | Hosting     | Vercel (recommended)                  |
