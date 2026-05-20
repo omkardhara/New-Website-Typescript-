@@ -274,13 +274,49 @@ Over the next two weeks, the campaign unexpectedly snowballed. It was covered in
     id: 12,
     slug: 'stand-tall-lee-denims',
     cat: 'brand',
-    tag: 'Brand · Campaign · Lee Denims',
-    title: 'Stand Tall — Lee Denims',
-    desc: 'Conceptualised and performed for the Stand Tall campaign by Lee Denims — a brand activation anchored in authentic movement and self-expression.',
-    stat: 'Campaign',
+    tag: 'Brand · Influencer Campaign · Lee Jeans',
+    title: 'Stand Tall For All — Lee Jeans',
+    desc: 'Featured as an opinion leader in Lee Jeans\' Stand Tall For All campaign — spotlighting changemakers, artists, and community builders across India.',
+    stat: 'National Campaign',
     glyph: '👕',
     gradient: 'radial-gradient(ellipse at 50% 40%, rgba(191,155,69,0.2), rgba(15,15,13,0.12) 65%, var(--bg-cream))',
-    article: `Details and images coming soon.`,
+    image: '/images/lee-denims/omkar-yellow-shirt.jpg',
+    images: [
+      '/images/lee-denims/omkar-blue-mural.jpg',
+      '/images/lee-denims/quote-street-art.jpg',
+      '/images/lee-denims/quote-inclusive.jpg',
+      '/images/lee-denims/quote-one-wall.jpg',
+      '/images/lee-denims/omkar-spray-can.jpg',
+      '/images/lee-denims/omkar-nano.jpg',
+    ],
+    yt: 'RonBTMdFFq0',
+    article: `Lee Jeans launched **Stand Tall For All** to spotlight individuals and communities who embody a unique, responsible creative vision — people who transcend their circumstances or actively work to improve society. Rather than leaning on mainstream celebrities, the campaign chose real-life advocates, artists, and innovators who stand tall in their own fields.
+
+Wicked Broz — the street art collective co-founded by Omkar Dhareshwar and Zain Siddiqui — was featured as one of the campaign's central changemakers. The campaign ran as a collective series, weaving together a set of opinion leaders who each brought a distinct lens.
+
+## The Changemakers
+
+**Wicked Broz (Omkar Dhareshwar & Zain Siddiqui)** — Art activists using murals as a tool for community building across Mumbai's streets and neighbourhoods.
+
+**Malhar Kalambe** — Environmentalist and founder of Beach Please, leading large-scale beach and river clean-up drives.
+
+**Taba Chake** — Indie musician from Arunachal Pradesh, using his music to transcend borders and celebrate his roots.
+
+**Arnab Biswas** — Finance professional and active advocate for LGBTIQA+ inclusion.
+
+**Amit Vaidya** — Cancer survivor, author, and wellness expert championing better lifestyle choices.
+
+## The Format
+
+The campaign ran as an influencer series across social platforms — each featured changemaker sharing their story through quote cards, portrait shoots, and personal narratives under the hashtag [#standtallforall](https://www.instagram.com/explore/tags/standtallforall/). It was anchored by a podcast that brought these voices into longer conversation.
+
+## In Their Own Words
+
+*"Street art is like a living being. It never fades away. We grow alongside it. It becomes a part of the community. Within it, we find our space, our expression."*
+
+*"In the beginning, we wanted to make art more inclusive. In our case, walls brought people together, rather than pulling them apart."*
+
+*"All it takes for a street artist to stand tall — all you really need, is to believe in yourself. You can change the world, one wall at a time."*`,
   },
   {
     id: 13,
