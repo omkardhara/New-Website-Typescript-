@@ -203,6 +203,7 @@ Over the next two weeks, the campaign unexpectedly snowballed. It was covered in
     stat: 'Best Series Award',
     glyph: '🎬',
     gradient: 'radial-gradient(ellipse at 50% 40%, rgba(200,20,20,0.22), rgba(15,15,13,0.12) 65%, var(--bg-cream))',
+    image: '/images/this-is-my-hood-cover.jpg',
     url: 'https://redbull.tv/en_IN/page/page:rrn:content:episode-videos:a67100ad-399c-4546-a386-454b1d4b7a5b/this-is-my-hood-s1-e1',
     linkLabel: 'View on Red Bull',
   },
@@ -283,40 +284,36 @@ Over the next two weeks, the campaign unexpectedly snowballed. It was covered in
     image: '/images/lee-denims/omkar-yellow-shirt.jpg',
     images: [
       '/images/lee-denims/omkar-blue-mural.jpg',
+      '/images/lee-denims/omkar-spray-can.jpg',
       '/images/lee-denims/quote-street-art.jpg',
       '/images/lee-denims/quote-inclusive.jpg',
-      '/images/lee-denims/quote-one-wall.jpg',
-      '/images/lee-denims/omkar-spray-can.jpg',
       '/images/lee-denims/omkar-nano.jpg',
+      '/images/lee-denims/quote-one-wall.jpg',
     ],
     yt: 'RonBTMdFFq0',
-    article: `Lee Jeans launched **Stand Tall For All** to spotlight individuals and communities who embody a unique, responsible creative vision — people who transcend their circumstances or actively work to improve society. Rather than leaning on mainstream celebrities, the campaign chose real-life advocates, artists, and innovators who stand tall in their own fields.
+    article: `Lee Jeans built **Stand Tall For All** on a simple premise: the most compelling brand stories don't come from celebrities — they come from people who are actually doing the work. The campaign sought out advocates, artists, and community builders whose impact was felt in neighbourhoods and lives, not just on screens.
 
-Wicked Broz — the street art collective co-founded by Omkar Dhareshwar and Zain Siddiqui — was featured as one of the campaign's central changemakers. The campaign ran as a collective series, weaving together a set of opinion leaders who each brought a distinct lens.
+Wicked Broz — the Marol-based street art collective co-founded by Omkar Dhareshwar and Zain Siddiqui — were chosen as one of the campaign's central voices. For years, the collective had been transforming blank walls across Mumbai into living, breathing conversation pieces: works that grew with the communities around them, absorbed their stories, and gave people something to recognise themselves in.
 
-## The Changemakers
+For Wicked Broz, street art was never decoration. It was dialogue. Every wall they touched became a shared space — something the neighbourhood could claim as its own. As Omkar put it: "Street art is like a living being. It never fades away. We grow alongside it. It becomes a part of the community. Within it, we find our space, our expression."
 
-**Wicked Broz (Omkar Dhareshwar & Zain Siddiqui)** — Art activists using murals as a tool for community building across Mumbai's streets and neighbourhoods.
+The driving idea behind their work was radical in its simplicity — make art available to everyone, not just those with access to galleries. By painting in public spaces, they turned the street itself into a democratic canvas. "In the beginning, we wanted to make art more inclusive. In our case, walls brought people together, rather than pulling them apart."
 
-**Malhar Kalambe** — Environmentalist and founder of Beach Please, leading large-scale beach and river clean-up drives.
+The campaign ran as an influencer series across Instagram under [#standtallforall](https://www.instagram.com/explore/tags/standtallforall/), with each changemaker sharing their story through portrait shoots, quote cards, and personal narratives. It was anchored by a podcast — embedded above — that gave these voices room to speak at length about what standing tall actually looks like from the inside.
 
-**Taba Chake** — Indie musician from Arunachal Pradesh, using his music to transcend borders and celebrate his roots.
+What Lee Jeans captured in the campaign was something Wicked Broz had always understood: you don't need a stage, a grant, or a gallery to make something meaningful. A can of paint and the conviction that one wall can shift how a neighbourhood sees itself — that's enough to start. "All it takes for a street artist to stand tall — all you really need, is to believe in yourself. You can change the world, one wall at a time."
 
-**Arnab Biswas** — Finance professional and active advocate for LGBTIQA+ inclusion.
+## The Other Changemakers
 
-**Amit Vaidya** — Cancer survivor, author, and wellness expert championing better lifestyle choices.
+The campaign was a collective, not a solo feature. Wicked Broz shared the series with four others, each standing tall in a completely different arena.
 
-## The Format
+[Malhar Kalambe](https://www.instagram.com/kalambemalhar/) is an environmentalist and the founder of **Beach Please** — a grassroots weekly clean-up movement that has removed over 8.5 million kilograms of waste from Mumbai's beaches and rivers since 2017. Recognised by Forbes India, awarded by the UN, and honoured with the National Creators Award 2024 by the Prime Minister of India.
 
-The campaign ran as an influencer series across social platforms — each featured changemaker sharing their story through quote cards, portrait shoots, and personal narratives under the hashtag [#standtallforall](https://www.instagram.com/explore/tags/standtallforall/). It was anchored by a podcast that brought these voices into longer conversation.
+[Taba Chake](https://www.instagram.com/taba.chake/) is a singer-songwriter from Arunachal Pradesh whose finger-style guitar and multilingual songwriting has carried the sounds of India's Northeast to a national audience. The first artist from his state to make his Bollywood playback debut, he now serves as the Government of Arunachal Pradesh's official Ambassador for Art and Culture.
 
-## In Their Own Words
+[Arnab Biswas](https://www.instagram.com/urnavishwas/) is a finance professional and LGBTIQA+ inclusion evangelist whose candid, personal storytelling on social media gave visibility to a community rarely seen in mainstream brand campaigns.
 
-*"Street art is like a living being. It never fades away. We grow alongside it. It becomes a part of the community. Within it, we find our space, our expression."*
-
-*"In the beginning, we wanted to make art more inclusive. In our case, walls brought people together, rather than pulling them apart."*
-
-*"All it takes for a street artist to stand tall — all you really need, is to believe in yourself. You can change the world, one wall at a time."*`,
+[Amit Vaidya](http://www.live4todayamit.com/) is the author of **Holy Cancer: How A Cow Saved My Life** — a stage IV cancer survivor who turned remission into a life's purpose. Through the Healing Vaidya Foundation, he has supported over 35,000 patients across the globe as a wellness advocate, speaker, and motivator.`,
   },
   {
     id: 13,
