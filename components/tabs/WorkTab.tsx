@@ -4,9 +4,12 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { WORK, WORK_FILTERS } from '@/data/work';
 
+const PREVIEW_COUNT = 3;
+
 export function WorkTab() {
   const [active, setActive] = useState<string>('all');
   const filtered = active === 'all' ? WORK : WORK.filter((w) => w.cat === active);
+  const preview = filtered.slice(0, PREVIEW_COUNT);
 
   return (
     <>
@@ -42,7 +45,7 @@ export function WorkTab() {
       </div>
 
       <div className="work-grid">
-        {filtered.map((item, idx) => (
+        {preview.map((item, idx) => (
           <Link
             key={item.id}
             href={item.url ?? `/work/${item.slug}`}
@@ -79,6 +82,14 @@ export function WorkTab() {
           </Link>
         ))}
       </div>
+
+      {filtered.length > PREVIEW_COUNT && (
+        <div className="writings-see-all">
+          <Link href="/work" className="writings-see-all-btn">
+            See all {filtered.length} projects →
+          </Link>
+        </div>
+      )}
     </>
   );
 }
