@@ -84,7 +84,8 @@ export function WritingListPage({ section }: { section: WritingSection }) {
             </Link>
           </div>
 
-          <div
+          <nav
+            aria-label="Writing sections"
             style={{
               display: 'flex',
               alignItems: 'center',
@@ -117,7 +118,7 @@ export function WritingListPage({ section }: { section: WritingSection }) {
                 {s.label}
               </Link>
             ))}
-          </div>
+          </nav>
         </div>
       </div>
 

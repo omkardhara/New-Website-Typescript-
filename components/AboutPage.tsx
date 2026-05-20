@@ -323,10 +323,11 @@ export function AboutPage() {
             padding: 'clamp(56px,7vw,96px) clamp(20px,5vw,64px)',
           }}
         >
-          <div
+          <h2
             style={{
               fontFamily: 'var(--font-mono)',
               fontSize: '11px',
+              fontWeight: 400,
               letterSpacing: '0.28em',
               textTransform: 'uppercase',
               color: 'var(--gold-light)',
@@ -338,7 +339,7 @@ export function AboutPage() {
           >
             What I do
             <span style={{ flex: 1, height: '1px', background: 'linear-gradient(to right, var(--gold), transparent)', maxWidth: '200px', display: 'block' }} />
-          </div>
+          </h2>
 
           <div className="about-offers-grid">
             {OFFERS.map((o) => (
@@ -367,10 +368,11 @@ export function AboutPage() {
             padding: 'clamp(56px,7vw,80px) clamp(20px,5vw,64px)',
           }}
         >
-          <div
+          <h2
             style={{
               fontFamily: 'var(--font-mono)',
               fontSize: '11px',
+              fontWeight: 400,
               letterSpacing: '0.28em',
               textTransform: 'uppercase',
               color: 'var(--text-dark-3)',
@@ -378,7 +380,7 @@ export function AboutPage() {
             }}
           >
             As seen in
-          </div>
+          </h2>
 
           <div className="about-press-row">
             {PRESS.slice(0, 6).map((p) => (
