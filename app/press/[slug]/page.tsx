@@ -47,12 +47,26 @@ function buildPressSchema(item: ReturnType<typeof getPressItemBySlug>) {
   };
 }
 
+function buildBreadcrumb(item: ReturnType<typeof getPressItemBySlug>) {
+  if (!item) return null;
+  return {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: [
+      { '@type': 'ListItem', position: 1, name: 'Home', item: SITE_URL },
+      { '@type': 'ListItem', position: 2, name: 'Press', item: `${SITE_URL}/press` },
+      { '@type': 'ListItem', position: 3, name: `${item.publication} — ${item.title}` },
+    ],
+  };
+}
+
 export default function PressArticlePage({ params }: { params: { slug: string } }) {
   const item = getPressItemBySlug(params.slug);
   if (!item) notFound();
 
   const allImages = [item.src, ...(item.images ?? [])];
   const schema = buildPressSchema(item);
+  const breadcrumb = buildBreadcrumb(item);
 
   return (
     <main style={{ display: 'contents' }}>
@@ -61,6 +75,12 @@ export default function PressArticlePage({ params }: { params: { slug: string } 
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
+        />
+      )}
+      {breadcrumb && (
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumb) }}
         />
       )}
       <div
