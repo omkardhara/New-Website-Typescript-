@@ -32,6 +32,13 @@ export function Nav() {
   // Close menu on route change
   useEffect(() => { setMenuOpen(false); }, [pathname]);
 
+  // Move focus into the mobile menu when it opens
+  useEffect(() => {
+    if (!menuOpen || !menuRef.current) return;
+    const first = menuRef.current.querySelector<HTMLElement>(FOCUSABLE);
+    first?.focus();
+  }, [menuOpen]);
+
   // Lock body scroll when menu is open + Escape to close
   useEffect(() => {
     document.body.style.overflow = menuOpen ? 'hidden' : '';
