@@ -237,6 +237,7 @@ Over the next two weeks, the campaign unexpectedly snowballed. It was covered in
       '/images/trapped/rooftop-water-collector.jpg',
       '/images/trapped/rat-trap-prop.jpg',
       '/images/trapped/phrew-crew-badge.jpg',
+      '/images/trapped/diy-trap-device.jpg',
     ],
     article: `In 2015, I was supposed to be in Germany on an exchange programme, studying automobile engineering. Instead, I was on the 30th floor of a vacant Mumbai high-rise, taking apart a television with my bare hands.
 
