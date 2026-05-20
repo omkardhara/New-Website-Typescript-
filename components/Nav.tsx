@@ -81,7 +81,7 @@ export function Nav() {
         <Link className="nav-logo" href="/" onClick={() => setMenuOpen(false)} aria-current={pathname === '/' ? 'page' : undefined}>
           <span>Omkar</span>
           <span className="nav-logo-mark">×</span>
-          <span className="nav-logo-mark">MW3B</span>
+          <span className="nav-logo-mark">ManWith3Balls</span>
         </Link>
         <div className="nav-right">
           {NAV_LINKS.map((l) => (
