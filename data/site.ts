@@ -547,6 +547,7 @@ export const NOTES: Note[] = [
     type: 'poem',
     excerpt: 'And joy rushed through his pierced heart / Where sorrow and regret should\'ve been / At last, he was free, truly.',
     content: WRITING_CONTENT['a-warriors-tale'],
+    image: '/images/writing/a-warriors-tale.jpg',
   },
   {
     id: 30,
@@ -558,6 +559,7 @@ export const NOTES: Note[] = [
     type: 'poem',
     excerpt: 'He loved her much, but had to let go / He bore her mark as she waved goodbye / For he loved the daughter of the moon.',
     content: WRITING_CONTENT['daughter-of-the-moon'],
+    image: '/images/writing/daughter-of-the-moon.jpg',
   },
   {
     id: 33,
@@ -569,6 +571,7 @@ export const NOTES: Note[] = [
     type: 'poem',
     excerpt: 'I\'m walking down this path / Poetry written by Thou, my Lord / And with every turn I take / A new stanza of your song unfolds.',
     content: WRITING_CONTENT['loving-union'],
+    image: '/images/writing/loving-union.jpg',
   },
   {
     id: 34,
@@ -592,6 +595,7 @@ export const NOTES: Note[] = [
     type: 'poem',
     excerpt: 'There was a time in my life / Smokes and booze were far away / Everything was warm and cosy / When at home, I used to stay.',
     content: WRITING_CONTENT['sit'],
+    image: '/images/writing/sit.jpg',
   },
   {
     id: 36,
@@ -603,6 +607,7 @@ export const NOTES: Note[] = [
     type: 'poem',
     excerpt: 'My eyelids heavy as lead / A great turmoil in my head / Piercing our passions with ignorant shards / Shattering our hopes.',
     content: WRITING_CONTENT['engineering'],
+    image: '/images/writing/engineering.jpg',
   },
   {
     id: 37,
@@ -614,6 +619,7 @@ export const NOTES: Note[] = [
     type: 'poem',
     excerpt: 'Like warriors from a losing battle / But their hopes still flying high / When they\'ve heard the legend of / The mighty Bakchod FC!',
     content: WRITING_CONTENT['legend-of-bfc'],
+    image: '/images/writing/legend-of-bfc.jpg',
   },
   {
     id: 38,
@@ -625,6 +631,7 @@ export const NOTES: Note[] = [
     type: 'poem',
     excerpt: 'I want to run, I want to play / I want to get out / On a rainy day.',
     content: WRITING_CONTENT['ut'],
+    image: '/images/writing/ut.jpg',
   },
 ];
 
