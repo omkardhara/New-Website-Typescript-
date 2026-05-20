@@ -1,6 +1,6 @@
 'use client';
 import { useState, useEffect, useRef } from 'react';
-import { motion, AnimatePresence } from 'framer-motion';
+import { motion, AnimatePresence, MotionConfig } from 'framer-motion';
 import Image from 'next/image';
 import Link from 'next/link';
 import { CHAPTERS_FULL, eventsForChapter, type TimelineEvent } from '@/data/timeline';
@@ -131,6 +131,7 @@ export function StoryMap() {
   }
 
   return (
+    <MotionConfig reducedMotion="user">
     <>
       {/* Sticky back-to-home strip */}
       <div className={s.stickyBack}>
@@ -529,5 +530,6 @@ export function StoryMap() {
         </div>
       </div>
     </>
+    </MotionConfig>
   );
 }
