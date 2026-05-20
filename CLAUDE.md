@@ -6,128 +6,37 @@
 - CSS: plain globals.css with CSS variables (no Tailwind)
 - Images: `/public/images/` (static), `/public/images/redbull/` (Red Bull article covers)
 
-## Key data files — edit these for content changes
-
+## Data files — where content lives
 | File | What it controls |
 |---|---|
-| `data/work.ts` | Work project cards + articles. `WORK_FILTERS` array controls filter chips. `WorkItem.cat` must match a filter id. |
-| `data/redbull-notes.ts` | 78 Red Bull article cards (external links). All have `publication: 'Red Bull'` and `url`. |
-| `data/site.ts` | Notes (essays/poems), Press items, Offerings, Socials. `NOTES` array is the source of truth for writing. |
-| `data/videos.ts` | Media tab video cards. Each needs `title`, `sub`, `yt` (YouTube ID), `thumb`. |
-| `data/timeline.ts` | Story page timeline events. Each has `year`, `title`, `desc`, `tag`, `image?`. |
-| `data/types.ts` | All TypeScript types. Edit here when adding new fields. |
+| `data/work.ts` | Work project cards. `WORK_FILTERS` controls filter chips. |
+| `data/redbull-notes.ts` | Red Bull article cards (external links). |
+| `data/site.ts` | Notes (essays/poems), Press items, Offerings, Socials. |
+| `data/videos.ts` | Media tab video cards. |
+| `data/timeline.ts` | Story page timeline events. |
+| `data/types.ts` | All TypeScript types — edit here when adding new fields. |
 
-## WorkItem type
-```ts
-{ id, slug, cat, tag, title, desc, stat, glyph, gradient?, image?, images?, captions?, article?, yt?, url? }
-```
-- `cat` values: `performance | brand | installation | activism | production | art | education`
-- `url?` — if set, card links externally (no internal page generated, excluded from static params)
-- `yt?` — YouTube video ID; renders an embed at top of project page
-- `article` — plain text; supports `[link text](url)` markdown links, `**bold**`, and `## Heading` blocks
-
-## Note type
-```ts
-{ id, slug, title, date, read, tag, excerpt, type, image?, imagePosition?, content?, aiAssisted?, url?, publication? }
-```
-- `type`: `article | poem | short-story`
-- Writing sections: `essays` = articles+short-stories where publication ≠ Red Bull; `redbull` = publication === 'Red Bull'; `poems` = type === poem
-- External notes (`url` set) don't get internal pages — excluded from generateStaticParams
+See `data/CLAUDE.md` for type schemas and step-by-step content instructions.
 
 ## Homepage tab preview counts — DO NOT change these
-Each tab on the homepage shows a fixed preview and links to a full list page. These limits are intentional and must not be increased, even when new cards are added to the data files.
+Each tab shows exactly 3 items and links to a full list page. These limits are intentional and must not be increased, even when new cards are added.
 | Tab | Preview count | Full list page | Constant |
 |---|---|---|---|
 | Work | 3 | `/work` | `PREVIEW_COUNT` in `components/tabs/WorkTab.tsx` |
 | Media | 3 | `/media` | `PREVIEW_COUNT` in `components/tabs/MediaTab.tsx` |
 | Notes | 3 per section | `/writing/essays` etc. | `PREVIEW_COUNT` in `components/tabs/NotesTab.tsx` |
 
-Adding new cards to `data/work.ts`, `data/videos.ts`, or `data/site.ts` will automatically update the "See all N →" count but will never add more cards to the homepage tab.
-
-## Adding a new work card
-1. Add entry to `WORK` array in `data/work.ts` with next sequential id
-2. The first 3 entries (or first 3 matching the active filter) automatically appear on the homepage tab; all entries appear on `/work`
-3. If new category needed: add to `cat` union in `data/types.ts` AND add to `WORK_FILTERS` in `data/work.ts`
-4. If external URL: add `url` field — no page.tsx needed
-5. If video: add `yt: 'YOUTUBE_ID'` — embed appears automatically on project page
-
-## Adding a new Red Bull article
-1. Add to `data/redbull-notes.ts` with `publication: 'Red Bull'`, `url`, and `image: '/images/redbull/[slug].jpg'`
-2. Drop image into `/public/images/redbull/[slug].jpg`
-
-## Adding a writing piece (essay/poem)
-1. Add to `NOTES` in `data/site.ts`
-2. For internal pages: add content to `data/writing-content.ts`, reference via `content: WRITING_CONTENT['slug']`
-3. For external: add `url` field
-
-## Press items
-- Stored in `PRESS` array in `data/site.ts`
-- Images go in `/public/images/press/`
-- `featured: true` items appear on the About page
-
-## CSS variables (globals.css)
-```
---bg-cream, --bg-dark, --text-dark, --text-dark-2, --text-dark-3, --text-dark-4
---text-light, --text-light-2, --text-light-3
---gold, --gold-light, --ember, --ember-light
---line-dark, --line-faint, --line-light
---font-serif, --font-mono, --font-sans
---surface, --surface-3
-```
-
-## Component map
-- `components/TabShell.tsx` — the sticky Work/Media/Press tab bar on homepage
-- `components/tabs/WorkTab.tsx` — work grid + filter chips
-- `components/tabs/NotesTab.tsx` — writing preview (3 cards per section)
-- `components/tabs/MediaTab.tsx` — video grid
-- `components/tabs/PressTab.tsx` — press grid + lightbox
-- `components/WritingListPage.tsx` — full writing list pages (/writing/essays etc.)
-- `components/AboutPage.tsx` — /about page
-- `components/StoryMap.tsx` — /story page timeline
-- `components/Hero.tsx` — homepage hero
-- `components/ReadingProgress.tsx` — thin gold progress bar (client, fixed at top of article pages)
-- `components/CredStrip.tsx` — auto-scrolling marquee of client/press logos
-
-## Routing
-- `/` — homepage (TabShell with Work/Media/Press + Notes preview above)
-- `/work/[slug]` — project detail (static, skips items with `url` set)
-- `/writing/essays` `/writing/redbull` `/writing/poems` — full writing lists
-- `/writing/[slug]` — individual writing page (skips items with `url` set); has next/prev navigation within section
-- `/about` `/story` `/press` `/contact` `/media` — static pages
-- `/writing/articles` `/writing/short-stories` — redirect to `/writing/essays`
-
-## SEO patterns
-- Every page has `generateMetadata` with `canonical`, `openGraph` (title, description, url, images), and `twitter` card
-- Article pages (`work/[slug]`, `writing/[slug]`, `press/[slug]`) emit two JSON-LD scripts: schema + BreadcrumbList
-- Homepage and layout emit Person schema in `<head>` via layout.tsx
-- Press page emits CollectionPage + NewsArticle/Book schema per item
-- Writing section pages (essays/poems/redbull) emit CollectionPage schema with hasPart items
-- About page emits AboutPage schema; Contact page emits ContactPage schema
-- Media page emits ItemList + VideoObject schema
-- Fallback OG image: `/public/og-image.jpg` (used when no page-specific image exists)
+Adding new cards updates the "See all N →" count automatically but never adds more to the homepage tab.
 
 ## Git workflow
 - Branch: `main` — push directly
 - Always `git pull origin main --rebase` before pushing if push fails
 - Commit format: short imperative summary + blank line + detail if needed
 
-## Accessibility patterns
-- `.sr-only` class in globals.css for screen-reader-only text
-- Skip-to-content link rendered before `<Nav />` in layout.tsx, targets `#main-content`
-- Article/media pages: `<main style={{display:'contents'}}>` wrapper adds the main landmark without visual impact
-- Filter chip groups: `role="group"` + `aria-label` + `aria-pressed`; add `<div class="sr-only" aria-live="polite">` after for result count
-- Tab panels: `role="tabpanel"` + `aria-labelledby` pointing to controlling tab button
-- Tab buttons: `role="tab"` + `aria-selected` + `tabIndex={active ? 0 : -1}` + keyboard arrow nav
-- Marquee/decorative elements: `aria-hidden="true"`; duplicate items also get `aria-hidden`
-- Animated content: `aria-live="polite"` on container
-- Dialog pattern: `role="dialog"` + `aria-modal="true"` + `aria-label` + Escape key handler + focus return
-- Nav hamburger: `aria-expanded` + `aria-controls` pointing to menu id; Escape returns focus to hamburger
-- `<article>` elements: `aria-labelledby` pointing to the page `<h1 id>`
-- `<section>` landmarks: `aria-labelledby` pointing to the section `<h2 id>` for named landmark
-
 ## Things NOT to do
 - Don't modify `next.config.ts` or `tsconfig.json` without good reason
 - Don't add Tailwind — all styling via globals.css and inline styles
 - Don't create new component files for one-off page sections — inline in page.tsx
 - Don't fetch external APIs at build time — all data is static in /data/
-- Don't add `priority` to more than the first 1-2 images per page (causes unnecessary preloads)
+- Don't add `priority` to more than the first 1-2 images per page
+- Don't increase homepage tab preview counts (see rule above)
