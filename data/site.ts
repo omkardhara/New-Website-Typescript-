@@ -451,6 +451,7 @@ export const NOTES: Note[] = [
     type: 'poem',
     excerpt: 'First steps into the outside world / A fledgling just out of its nest / He is ... just another student.',
     content: WRITING_CONTENT['the-student'],
+    image: '/images/writing/the-student.jpg',
   },
   {
     id: 22,
@@ -462,6 +463,7 @@ export const NOTES: Note[] = [
     type: 'poem',
     excerpt: 'Old and new, new and old / Corpses were once statues of gold / None can see, what\'s been consumed / In the eerie depths of time.',
     content: WRITING_CONTENT['time-and-tide'],
+    image: '/images/writing/time-and-tide.jpg',
   },
   {
     id: 23,
@@ -473,6 +475,7 @@ export const NOTES: Note[] = [
     type: 'poem',
     excerpt: 'The train rumbles, the train rocks / Seeing hopes and aspirations run amok / Wings of dreams soar where logic creeps.',
     content: WRITING_CONTENT['train-and-man'],
+    image: '/images/writing/train-and-man.jpg',
   },
   {
     id: 24,
@@ -484,6 +487,7 @@ export const NOTES: Note[] = [
     type: 'poem',
     excerpt: 'For now I found pleasure in my sorrow / In darkness I found hope / I found Nirvana in my dope.',
     content: WRITING_CONTENT['my-dope'],
+    image: '/images/writing/my-dope.jpg',
   },
   {
     id: 25,
@@ -495,6 +499,7 @@ export const NOTES: Note[] = [
     type: 'poem',
     excerpt: 'Like a sword in a losing battle / Relentlessly inspiring to give all you\'ve got / For nothing can be accomplished without belief.',
     content: WRITING_CONTENT['belief'],
+    image: '/images/writing/belief.jpg',
   },
   {
     id: 26,
@@ -506,6 +511,7 @@ export const NOTES: Note[] = [
     type: 'poem',
     excerpt: 'When the power of love overcomes / The love for power / Only peace and truth / Will stand like a tower.',
     content: WRITING_CONTENT['religion'],
+    image: '/images/writing/religion.jpg',
   },
   {
     id: 27,
@@ -517,6 +523,7 @@ export const NOTES: Note[] = [
     type: 'poem',
     excerpt: 'Take a moment to introspect / How queer is the human mind / Ruthless like the raging seas at times / Or innocent like a cherubic child.',
     content: WRITING_CONTENT['a-beautiful-mind'],
+    image: '/images/writing/a-beautiful-mind.jpg',
   },
   {
     id: 28,
@@ -528,6 +535,7 @@ export const NOTES: Note[] = [
     type: 'poem',
     excerpt: 'Fortune favors the brave — on what lies just beyond the path everyone takes.',
     content: WRITING_CONTENT['beaten-path'],
+    image: '/images/writing/beaten-path.jpg',
   },
   {
     id: 29,
