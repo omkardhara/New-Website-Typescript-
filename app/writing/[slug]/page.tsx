@@ -3,6 +3,7 @@ import type React from 'react';
 import { notFound } from 'next/navigation';
 import Link from 'next/link';
 import Image from 'next/image';
+import { ShareButton } from '@/components/ShareButton';
 import { NOTES, getNoteBySlug } from '@/data/site';
 import { ReadingProgress } from '@/components/ReadingProgress';
 
@@ -131,7 +132,7 @@ export default function WritingPage({ params }: { params: { slug: string } }) {
           padding: '74px clamp(20px,5vw,32px) 14px',
         }}
       >
-        <div style={{ maxWidth: '780px', margin: '0 auto' }}>
+        <div style={{ maxWidth: '780px', margin: '0 auto', display: 'flex', alignItems: 'center', justifyContent: 'space-between', gap: '12px' }}>
           <Link
             href={backHref}
             style={{
@@ -153,6 +154,7 @@ export default function WritingPage({ params }: { params: { slug: string } }) {
           >
             <span style={{ fontSize: '14px' }}>←</span> Back to {backLabel}
           </Link>
+          <ShareButton title={note.title} text={note.excerpt} />
         </div>
       </div>
 

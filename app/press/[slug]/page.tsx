@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import { notFound } from 'next/navigation';
 import Link from 'next/link';
 import { PRESS, getPressItemBySlug } from '@/data/site';
+import { ShareButton } from '@/components/ShareButton';
 
 const SITE_URL = 'https://www.omkardhareshwar.com';
 
@@ -94,7 +95,7 @@ export default function PressArticlePage({ params }: { params: { slug: string } 
           padding: '74px clamp(20px,5vw,32px) 14px',
         }}
       >
-        <div style={{ maxWidth: '960px', margin: '0 auto' }}>
+        <div style={{ maxWidth: '960px', margin: '0 auto', display: 'flex', alignItems: 'center', justifyContent: 'space-between', gap: '12px' }}>
           <Link
             href="/press"
             style={{
@@ -116,6 +117,7 @@ export default function PressArticlePage({ params }: { params: { slug: string } 
           >
             <span style={{ fontSize: '14px' }}>←</span> Back to Press
           </Link>
+          <ShareButton title={`${item.publication} — ${item.title}`} />
         </div>
       </div>
 

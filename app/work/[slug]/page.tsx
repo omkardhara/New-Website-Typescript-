@@ -3,6 +3,7 @@ import { notFound } from 'next/navigation';
 import Link from 'next/link';
 import Image from 'next/image';
 import { WORK, getWorkBySlug } from '@/data/work';
+import { ShareButton } from '@/components/ShareButton';
 import { ReadingProgress } from '@/components/ReadingProgress';
 
 export function generateStaticParams() {
@@ -136,7 +137,7 @@ export default function ProjectPage({ params }: { params: { slug: string } }) {
           padding: '74px clamp(20px,5vw,32px) 14px',
         }}
       >
-        <div style={{ maxWidth: '960px', margin: '0 auto' }}>
+        <div style={{ maxWidth: '960px', margin: '0 auto', display: 'flex', alignItems: 'center', justifyContent: 'space-between', gap: '12px' }}>
           <Link
             href="/#tab-work"
             style={{
@@ -158,6 +159,7 @@ export default function ProjectPage({ params }: { params: { slug: string } }) {
           >
             <span style={{ fontSize: '14px' }}>←</span> Back to all work
           </Link>
+          <ShareButton title={item.title} text={item.desc} />
         </div>
       </div>
 
