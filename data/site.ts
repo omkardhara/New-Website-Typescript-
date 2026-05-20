@@ -580,6 +580,7 @@ export const NOTES: Note[] = [
     type: 'poem',
     excerpt: 'Can\'t you all see / The truth is infinite / The only one stopping you / Are the cages within.',
     content: WRITING_CONTENT['infinite'],
+    image: '/images/writing/infinite.jpg',
   },
   {
     id: 35,
