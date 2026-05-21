@@ -78,9 +78,9 @@ export function Nav() {
   return (
     <>
       <nav className={`nav${cream ? ' scrolled-into-cream' : ''}`} aria-label="Main navigation">
-        <Link className="nav-logo" href="/" onClick={() => setMenuOpen(false)} aria-current={pathname === '/' ? 'page' : undefined}>
+        <Link className="nav-logo" href="/" onClick={() => setMenuOpen(false)} aria-current={pathname === '/' ? 'page' : undefined} aria-label="Omkar Dhareshwar — ManWith3Balls — home">
           <span>Omkar</span>
-          <span className="nav-logo-mark">×</span>
+          <span className="nav-logo-mark" aria-hidden="true">×</span>
           <span className="nav-logo-mark">ManWith3Balls</span>
         </Link>
         <div className="nav-right">

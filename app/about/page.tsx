@@ -30,13 +30,13 @@ export const metadata: Metadata = {
     title: 'About · Omkar Dhareshwar',
     description: 'Mechanical engineer by degree. Everything else by choice.',
     url: 'https://www.omkardhareshwar.com/about',
-    images: [{ url: '/og-image.jpg', alt: 'Omkar Dhareshwar — Flow Artist, Performer & Storyteller' }],
+    images: [{ url: '/og-2025.jpg', alt: 'Omkar Dhareshwar — Flow Artist, Performer & Storyteller' }],
   },
   twitter: {
     card: 'summary_large_image',
     title: 'About · Omkar Dhareshwar',
     description: 'Mechanical engineer by degree. Everything else by choice.',
-    images: [{ url: '/og-image.jpg', alt: 'Omkar Dhareshwar — Flow Artist, Performer & Storyteller' }],
+    images: [{ url: '/og-2025.jpg', alt: 'Omkar Dhareshwar — Flow Artist, Performer & Storyteller' }],
   },
 };
 

@@ -27,13 +27,13 @@ export const metadata: Metadata = {
     title: 'Contact · Omkar Dhareshwar',
     description: 'Brands, agencies, curators — reach out for performances, workshops, or brand collaborations.',
     url: 'https://www.omkardhareshwar.com/contact',
-    images: [{ url: '/og-image.jpg', alt: 'Omkar Dhareshwar — Flow Artist, Performer & Storyteller' }],
+    images: [{ url: '/og-2025.jpg', alt: 'Omkar Dhareshwar — Flow Artist, Performer & Storyteller' }],
   },
   twitter: {
     card: 'summary_large_image',
     title: 'Contact · Omkar Dhareshwar',
     description: 'Brands, agencies, curators — reach out for performances, workshops, or brand collaborations.',
-    images: [{ url: '/og-image.jpg', alt: 'Omkar Dhareshwar — Flow Artist, Performer & Storyteller' }],
+    images: [{ url: '/og-2025.jpg', alt: 'Omkar Dhareshwar — Flow Artist, Performer & Storyteller' }],
   },
 };
 

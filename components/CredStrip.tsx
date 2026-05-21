@@ -103,7 +103,7 @@ export function CredStrip() {
             style={{ animationPlayState: paused ? 'paused' : 'running' }}
           >
             {items.map((logo, i) => (
-              <span className="cred-strip-item" key={i} aria-hidden={logo._aria || undefined}>
+              <span className="cred-strip-item" key={`${logo.name}-${logo._aria ? 'b' : 'a'}`} aria-hidden={logo._aria || undefined}>
                 {logo.type === 'icon' ? (
                   <span className="cred-strip-icon-wrap">
                     {/* eslint-disable-next-line @next/next/no-img-element */}

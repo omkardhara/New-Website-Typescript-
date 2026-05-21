@@ -33,13 +33,13 @@ export const metadata: Metadata = {
     title: 'Red Bull Writing · Omkar Dhareshwar',
     description: 'Articles for Red Bull India — covering breaking, street dance, surfing, and sport.',
     url: 'https://www.omkardhareshwar.com/writing/redbull',
-    images: [{ url: '/og-image.jpg', alt: 'Omkar Dhareshwar — Flow Artist, Performer & Storyteller' }],
+    images: [{ url: '/og-2025.jpg', alt: 'Omkar Dhareshwar — Flow Artist, Performer & Storyteller' }],
   },
   twitter: {
     card: 'summary_large_image',
     title: 'Red Bull Writing · Omkar Dhareshwar',
     description: 'Articles for Red Bull India — covering breaking, street dance, surfing, and sport.',
-    images: [{ url: '/og-image.jpg', alt: 'Omkar Dhareshwar — Flow Artist, Performer & Storyteller' }],
+    images: [{ url: '/og-2025.jpg', alt: 'Omkar Dhareshwar — Flow Artist, Performer & Storyteller' }],
   },
 };
 

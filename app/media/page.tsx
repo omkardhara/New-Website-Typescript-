@@ -11,13 +11,13 @@ export const metadata: Metadata = {
     title: 'Videos · Omkar Dhareshwar',
     description: 'TV commercials, performance reels, documentary features and vlogs.',
     url: 'https://www.omkardhareshwar.com/media',
-    images: [{ url: '/og-image.jpg', alt: 'Omkar Dhareshwar — Flow Artist, Performer & Storyteller' }],
+    images: [{ url: '/og-2025.jpg', alt: 'Omkar Dhareshwar — Flow Artist, Performer & Storyteller' }],
   },
   twitter: {
     card: 'summary_large_image',
     title: 'Videos · Omkar Dhareshwar',
     description: 'TV commercials, performance reels, documentary features and vlogs.',
-    images: [{ url: '/og-image.jpg', alt: 'Omkar Dhareshwar — Flow Artist, Performer & Storyteller' }],
+    images: [{ url: '/og-2025.jpg', alt: 'Omkar Dhareshwar — Flow Artist, Performer & Storyteller' }],
   },
 };
 

@@ -234,7 +234,7 @@ body::before {
 
 /* Filter chips */
 .filter-row { display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 24px; }
-.filter-chip { font-family: var(--font-mono); font-size: 10px; letter-spacing: 0.18em; text-transform: uppercase; color: var(--text-dark-3); background: transparent; border: 1px solid var(--line-dark); padding: 9px 18px; cursor: pointer; transition: all 0.25s; }
+.filter-chip { font-family: var(--font-mono); font-size: 10px; letter-spacing: 0.18em; text-transform: uppercase; color: var(--text-dark-3); background: transparent; border: 1px solid var(--line-dark); padding: 14px 18px; min-height: 44px; cursor: pointer; transition: all 0.25s; }
 .filter-chip:hover { border-color: var(--gold); color: var(--gold); }
 .filter-chip.active { background: var(--gold); color: var(--bg-cream); border-color: var(--gold); }
 

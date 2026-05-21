@@ -35,13 +35,13 @@ export const metadata: Metadata = {
     title: "Story — A decade of building things that didn't exist before",
     description: "Ten years, six chapters. Engineering to ManWith3Balls — Marol Art Village, Nat Geo, Red Bull, and what came after.",
     url: `${SITE_URL}/story`,
-    images: [{ url: '/og-image.jpg', alt: 'Omkar Dhareshwar — Flow Artist, Performer & Storyteller' }],
+    images: [{ url: '/og-2025.jpg', alt: 'Omkar Dhareshwar — Flow Artist, Performer & Storyteller' }],
   },
   twitter: {
     card: 'summary_large_image',
     title: "Story · Omkar Dhareshwar",
     description: "A decade of building things that didn't exist before.",
-    images: [{ url: '/og-image.jpg', alt: 'Omkar Dhareshwar — Flow Artist, Performer & Storyteller' }],
+    images: [{ url: '/og-2025.jpg', alt: 'Omkar Dhareshwar — Flow Artist, Performer & Storyteller' }],
   },
 };
 

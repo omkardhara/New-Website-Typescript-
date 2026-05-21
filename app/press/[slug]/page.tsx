@@ -1,7 +1,9 @@
 import type { Metadata } from 'next';
 import { notFound } from 'next/navigation';
 import Link from 'next/link';
+import Image from 'next/image';
 import { PRESS, getPressItemBySlug } from '@/data/site';
+import { PRESS_IMAGE_DIMS } from '@/data/press-dims';
 import { ShareButton } from '@/components/ShareButton';
 
 const SITE_URL = 'https://www.omkardhareshwar.com';
@@ -202,18 +204,22 @@ export default function PressArticlePage({ params }: { params: { slug: string } 
           paddingBottom: 'clamp(48px,6vw,80px)',
         }}
       >
-        {allImages.map((src, i) => (
+        {allImages.map((src, i) => {
+          const dims = PRESS_IMAGE_DIMS[src];
+          return (
           <figure
             key={i}
             style={{
               margin: i === 0 ? '40px 0 0' : 'clamp(4px,1vw,8px) 0 0',
             }}
           >
-            {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img
+            <Image
               src={src}
               alt={i === 0 ? item.title : `${item.title} — page ${i + 1}`}
-              loading={i === 0 ? undefined : 'lazy'}
+              width={dims?.w ?? 1200}
+              height={dims?.h ?? 1500}
+              sizes="(max-width: 780px) 100vw, 780px"
+              priority={i === 0}
               style={{ width: '100%', height: 'auto', display: 'block' }}
             />
             {allImages.length > 1 && (
@@ -231,7 +237,8 @@ export default function PressArticlePage({ params }: { params: { slug: string } 
               </figcaption>
             )}
           </figure>
-        ))}
+          );
+        })}
       </div>
 
       <div
