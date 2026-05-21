@@ -1,5 +1,7 @@
 'use client';
-import { useState, useEffect, useRef, type ReactNode } from 'react';
+import { useState, useEffect, useLayoutEffect, useRef, type ReactNode } from 'react';
+
+const useBrowserLayoutEffect = typeof window !== 'undefined' ? useLayoutEffect : useEffect;
 
 const NAV_H = 74;
 
@@ -25,19 +27,17 @@ export function TabShell({ tabs }: { tabs: TabDef[] }) {
     return () => obs.disconnect();
   }, []);
 
-  // Activate the tab matching the URL hash and scroll to the tab bar
-  useEffect(() => {
+  // Activate the tab matching the URL hash and jump to the tab bar before first paint
+  useBrowserLayoutEffect(() => {
     const hash = window.location.hash; // e.g. "#tab-notes"
     if (!hash.startsWith('#tab-')) return;
     const tabId = hash.slice('#tab-'.length);
     const match = tabs.find((t) => t.id === tabId);
     if (!match) return;
     setActive(match.id);
-    setTimeout(() => {
-      if (!sentinelRef.current) return;
-      const y = sentinelRef.current.getBoundingClientRect().top + window.scrollY - NAV_H;
-      window.scrollTo({ top: y, behavior: 'smooth' });
-    }, 80);
+    if (!sentinelRef.current) return;
+    const y = sentinelRef.current.getBoundingClientRect().top + window.scrollY - NAV_H;
+    window.scrollTo({ top: y, behavior: 'instant' });
   // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
