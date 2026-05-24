@@ -27,6 +27,7 @@ export const PRESS_IMAGE_DIMS: Record<string, { w: number; h: number }> = {
   '/images/press/mid-day-ladies-first.jpg': { w: 1123, h: 1301 },
   '/images/press/mid-day-lessons-downunder.jpg': { w: 1147, h: 1406 },
   '/images/press/mid-day-lessons-juggling.jpg': { w: 1176, h: 1965 },
+  '/images/press/mid-day-memes-matter.jpg': { w: 1159, h: 1279 },
   '/images/press/mid-day-munna-circuit.jpg': { w: 1179, h: 1877 },
   '/images/press/mid-day-rickshaw-run.jpg': { w: 1158, h: 1913 },
   '/images/press/mid-day-spray-dont-say.jpg': { w: 1137, h: 1741 },
