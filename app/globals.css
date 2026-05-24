@@ -454,8 +454,10 @@ body::before {
   .hero-eyebrow::after { display: none; }
   .hero-headline { font-size: clamp(40px, 11vw, 60px); line-height: 0.98; }
   .hero-sub { font-size: 14.5px; }
-  .hero-stats { gap: 16px 28px; }
-  .hero-stat-num { font-size: 26px; }
+  .hero-stats { gap: 8px; flex-wrap: nowrap; }
+  .hero-stat { flex: 1; min-width: 0; }
+  .hero-stat-num { font-size: 22px; }
+  .hero-stat-label { font-size: 8px; letter-spacing: 0.12em; }
   .work-grid, .media-grid, .media-list-grid, .press-grid, .notes-grid, .writing-list-grid { grid-template-columns: 1fr; }
   .note-card.featured { grid-column: auto; }
   .story-rail { flex-direction: column; gap: 24px; padding: 24px 0; }
