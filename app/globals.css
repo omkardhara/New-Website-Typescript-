@@ -428,9 +428,10 @@ body::before {
   .hero-aside { order: 5; margin-bottom: 0; }
   .hero-ctas { order: 6; margin-bottom: 0; }
   .hero-stats { order: 7; padding-top: 14px; }
-  .hero-offerings { order: 8; }
-  .offering-label { width: 100%; margin-bottom: 2px; }
-  .offering-chip { flex: 1; min-width: 0; justify-content: center; padding: 9px 8px; }
+  /* Offerings: CSS grid so all 3 chips are exactly equal width, label spans full row */
+  .hero-offerings { order: 8; display: grid; grid-template-columns: repeat(3, 1fr); margin-top: 0; }
+  .offering-label { grid-column: 1 / -1; width: auto; margin-bottom: 4px; }
+  .offering-chip { justify-content: flex-start; padding: 9px 6px; font-size: 9px; letter-spacing: 0.1em; }
   .btn-primary, .hero-ctas .btn-ghost { flex: 1; justify-content: center; }
   .story-link { margin-left: 0; width: 100%; text-align: center; }
   .portrait-frame { aspect-ratio: 4 / 5; }
@@ -456,9 +457,15 @@ body::before {
   .hero-eyebrow::after { display: none; }
   .hero-headline { font-size: clamp(40px, 11vw, 60px); line-height: 0.98; }
   .hero-sub { font-size: 14.5px; }
-  .hero-stats { gap: 8px; flex-wrap: nowrap; }
+  /* Buttons: smaller padding + nowrap so text stays one line */
+  .btn-primary, .hero-ctas .btn-ghost { padding: 12px 10px; font-size: 11px; letter-spacing: 0.14em; white-space: nowrap; }
+  /* Remove the duplicate divider lines around the stats block */
+  .hero-stats { gap: 8px; flex-wrap: nowrap; border-top: none; padding-top: 0; }
+  .story-link { border-bottom: none; padding-bottom: 0; }
+  /* Tighten gap between stats and offerings */
+  .hero-offerings { margin-top: 0; gap: 6px; }
   .hero-stat { flex: 1; min-width: 0; }
-  .hero-stat-num { font-size: 22px; }
+  .hero-stat-num { font-size: 20px; }
   .hero-stat-label { font-size: 8px; letter-spacing: 0.12em; }
   .work-grid, .media-grid, .media-list-grid, .press-grid, .notes-grid, .writing-list-grid { grid-template-columns: 1fr; }
   .note-card.featured { grid-column: auto; }
