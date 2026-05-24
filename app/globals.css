@@ -428,9 +428,9 @@ body::before {
   .hero-aside { order: 5; margin-bottom: 0; }
   .hero-ctas { order: 6; margin-bottom: 0; }
   .hero-stats { order: 7; padding-top: 20px; }
-  .hero-offerings { order: 8; flex-direction: column; align-items: stretch; }
-  .offering-label { align-self: flex-start; margin-bottom: 4px; }
-  .offering-chip { justify-content: flex-start; }
+  .hero-offerings { order: 8; }
+  .offering-label { width: 100%; margin-bottom: 2px; }
+  .offering-chip { flex: 1; justify-content: center; padding: 9px 8px; }
   .portrait-frame { aspect-ratio: 4 / 5; }
   .portrait-frame::before, .portrait-frame::after { width: 40px; height: 40px; }
   .work-grid, .media-grid, .media-list-grid, .press-grid { grid-template-columns: repeat(2, 1fr); }
