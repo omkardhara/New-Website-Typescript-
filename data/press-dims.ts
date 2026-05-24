@@ -27,7 +27,6 @@ export const PRESS_IMAGE_DIMS: Record<string, { w: number; h: number }> = {
   '/images/press/mid-day-ladies-first.jpg': { w: 1123, h: 1301 },
   '/images/press/mid-day-lessons-downunder.jpg': { w: 1147, h: 1406 },
   '/images/press/mid-day-lessons-juggling.jpg': { w: 1176, h: 1965 },
-  '/images/press/mid-day-memes-matter.jpg': { w: 1159, h: 1279 },
   '/images/press/mid-day-munna-circuit.jpg': { w: 1179, h: 1877 },
   '/images/press/mid-day-rickshaw-run.jpg': { w: 1158, h: 1913 },
   '/images/press/mid-day-spray-dont-say.jpg': { w: 1137, h: 1741 },
@@ -35,7 +34,7 @@ export const PRESS_IMAGE_DIMS: Record<string, { w: number; h: number }> = {
   '/images/press/natgeo-marol-p1.jpg': { w: 1244, h: 1623 },
   '/images/press/natgeo-marol-p2.jpg': { w: 1300, h: 1605 },
   '/images/press/toi-brushing-roadblocks.jpg': { w: 1016, h: 1175 },
-  '/images/press/world-atlas-artworks.jpg': { w: 2609, h: 2874 },
+  '/images/press/world-atlas-artworks.jpg': { w: 1920, h: 2115 },
   '/images/press/world-atlas-cover.jpg': { w: 965, h: 1000 },
-  '/images/press/world-atlas-wicked-broz.jpg': { w: 2779, h: 3033 },
+  '/images/press/world-atlas-wicked-broz.jpg': { w: 1920, h: 2095 },
 };
