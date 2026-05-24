@@ -419,7 +419,7 @@ body::before {
 
 /* Responsive */
 @media (max-width: 1024px) {
-  .hero-grid { display: flex; flex-direction: column; gap: 28px; max-width: 100%; margin-top: 48px; }
+  .hero-grid { display: flex; flex-direction: column; gap: 20px; max-width: 100%; margin-top: 48px; }
   .hero-left { display: contents; }
   .hero-right { order: 3; max-width: 380px; width: 100%; margin: 4px auto 8px; }
   .hero-eyebrow { order: 1; margin-bottom: 0; }
@@ -427,10 +427,12 @@ body::before {
   .hero-sub { order: 4; margin-bottom: 0; }
   .hero-aside { order: 5; margin-bottom: 0; }
   .hero-ctas { order: 6; margin-bottom: 0; }
-  .hero-stats { order: 7; padding-top: 20px; }
+  .hero-stats { order: 7; padding-top: 14px; }
   .hero-offerings { order: 8; }
   .offering-label { width: 100%; margin-bottom: 2px; }
-  .offering-chip { flex: 1; justify-content: center; padding: 9px 8px; }
+  .offering-chip { flex: 1; min-width: 0; justify-content: center; padding: 9px 8px; }
+  .btn-primary, .hero-ctas .btn-ghost { flex: 1; justify-content: center; }
+  .story-link { margin-left: 0; width: 100%; text-align: center; }
   .portrait-frame { aspect-ratio: 4 / 5; }
   .portrait-frame::before, .portrait-frame::after { width: 40px; height: 40px; }
   .work-grid, .media-grid, .media-list-grid, .press-grid { grid-template-columns: repeat(2, 1fr); }
@@ -449,7 +451,7 @@ body::before {
   .hero { padding: 84px 20px 50px; }
   .hero-coord { font-size: 9px; top: 90px; }
   .hero-coord-block { gap: 12px; }
-  .hero-grid { margin-top: 12px; }
+  .hero-grid { margin-top: 12px; gap: 16px; }
   .hero-eyebrow { letter-spacing: 0.12em; flex-wrap: wrap; }
   .hero-eyebrow::after { display: none; }
   .hero-headline { font-size: clamp(40px, 11vw, 60px); line-height: 0.98; }
