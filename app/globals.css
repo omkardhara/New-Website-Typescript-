@@ -449,7 +449,7 @@ body::before {
   .nav-cta { display: none; }
   .nav-hamburger { display: flex; }
   .nav-mobile-overlay { display: block; }
-  .hero { padding: 84px 20px 50px; }
+  .hero { padding: 84px 20px 24px; }
   .hero-coord { font-size: 9px; top: 90px; }
   .hero-coord-block { gap: 12px; }
   .hero-grid { margin-top: 12px; gap: 16px; }
