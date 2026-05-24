@@ -9,7 +9,7 @@ const STATS: Stat[] = [
   { num: 10, label: 'Years' },
   { num: 500, label: 'Murals' },
   { num: 12, label: 'Press Features' },
-  { num: 3000, label: 'Rickshaw Run', suffix: ' km' },
+  { num: 4000, label: 'Rickshaw Run', suffix: ' km' },
 ];
 
 function animateCounter(el: HTMLElement, target: number, suffix = '') {
