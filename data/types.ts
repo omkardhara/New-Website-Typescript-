@@ -26,6 +26,7 @@ export type Video = {
   thumb: string;
   portrait?: boolean;
   category?: string;
+  startTime?: number; // seconds — embed starts at this offset
 };
 
 export type PressCategory = 'street-art' | 'juggling' | 'activism' | 'installation';

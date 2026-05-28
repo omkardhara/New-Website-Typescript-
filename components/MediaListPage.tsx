@@ -169,7 +169,7 @@ export function MediaListPage() {
             }}
           >
             <iframe
-              src={`https://www.youtube.com/embed/${activeVideo.yt}?autoplay=1&rel=0`}
+              src={`https://www.youtube.com/embed/${activeVideo.yt}?autoplay=1&rel=0${activeVideo.startTime ? `&start=${activeVideo.startTime}` : ''}`}
               title={activeVideo.title}
               allow="autoplay; encrypted-media; fullscreen"
               allowFullScreen
