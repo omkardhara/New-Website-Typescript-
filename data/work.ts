@@ -308,7 +308,7 @@ The campaign was a collective, not a solo feature. Wicked Broz shared the series
       '',
       'Zake with his predator inspired character',
       'Buyu adding the finishing touches',
-      'Lobster in with his psychedelic character',
+      'Lobster with his psychedelic character',
       '',
     ],
     yt: 'nJsgRSVcq5g',
