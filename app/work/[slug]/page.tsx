@@ -103,17 +103,20 @@ export default function ProjectPage({ params }: { params: { slug: string } }) {
   const images = item.images || [];
 
   const blocks: Block[] = [];
-  const len = Math.max(paragraphs.length, images.length);
-  for (let i = 0; i < len; i++) {
-    if (paragraphs[i]) blocks.push({ kind: 'text', value: paragraphs[i], first: i === 0 });
-    if (images[i])
-      blocks.push({
-        kind: 'image',
-        src: images[i],
-        idx: i,
-        caption: item.captions?.[i],
-        position: item.imagePositions?.[i],
-      });
+  let imgIdx = 0;
+  for (let i = 0; i < paragraphs.length; i++) {
+    const p = paragraphs[i];
+    blocks.push({ kind: 'text', value: p, first: i === 0 });
+    const isBoldHeading = p.startsWith('**') && p.endsWith('**');
+    const isH2Heading = p.startsWith('## ') || p.startsWith('# ');
+    if (!isBoldHeading && !isH2Heading && imgIdx < images.length) {
+      blocks.push({ kind: 'image', src: images[imgIdx], idx: imgIdx, caption: item.captions?.[imgIdx], position: item.imagePositions?.[imgIdx] });
+      imgIdx++;
+    }
+  }
+  while (imgIdx < images.length) {
+    blocks.push({ kind: 'image', src: images[imgIdx], idx: imgIdx, caption: item.captions?.[imgIdx], position: item.imagePositions?.[imgIdx] });
+    imgIdx++;
   }
 
   return (
