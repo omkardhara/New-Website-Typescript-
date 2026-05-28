@@ -282,6 +282,58 @@ The campaign was a collective, not a solo feature. Wicked Broz shared the series
 [Amit Vaidya](http://www.live4todayamit.com/) is the author of **Holy Cancer: How A Cow Saved My Life** — a stage IV cancer survivor who turned remission into a life's purpose. Through the Healing Vaidya Foundation, he has supported over 35,000 patients across the globe as a wellness advocate, speaker, and motivator.`,
   },
 
+  {
+    id: 10,
+    slug: 'indias-first-graffiti-hyperlapse',
+    cat: 'production',
+    tag: 'Production · Graffiti · Hyperlapse',
+    title: "India's First Graffiti Hyperlapse",
+    desc: "A pioneering hyperlapse capturing the making of a 130x25 ft graffiti mural at IIT Techfest 2016. A first for India.",
+    stat: 'First in India',
+    glyph: '🎥',
+    gradient: 'radial-gradient(ellipse at 55% 45%, rgba(200,100,50,0.22), rgba(15,15,13,0.12) 65%, var(--bg-cream))',
+    image: '/images/graffiti-hyperlapse/mural-in-progress.jpg',
+    images: [
+      '/images/graffiti-hyperlapse/space-expedition-panel.jpg',
+      '/images/graffiti-hyperlapse/astronaut-detail.jpg',
+      '/images/graffiti-hyperlapse/warrior-panel.jpg',
+      '/images/graffiti-hyperlapse/artist-detailing.jpg',
+      '/images/graffiti-hyperlapse/buyu-finishing-touches.jpg',
+      '/images/graffiti-hyperlapse/full-wall-portrait.jpg',
+      '/images/graffiti-hyperlapse/characters-panel.jpg',
+    ],
+    captions: [
+      '',
+      '',
+      '',
+      'Zake with his predator inspired character',
+      'Buyu adding the finishing touches',
+      'Lobster in with his psychedelic character',
+      '',
+    ],
+    yt: 'nJsgRSVcq5g',
+    ytCaption: 'Watch the Video',
+    article: `In 2016, six artists, a 130 by 25-foot wall, and seven days of spray cans came together at IIT Techfest in Powai, Mumbai. It was Asia's largest science and technology festival, and what came out of that week became India's first graffiti hyperlapse. The project was curated by [Wicked Broz](https://www.instagram.com/wickedbroz).
+
+**The Wall**
+
+Stretching 130 feet across and rising 25 feet high, the canvas was one of the largest walls ever handed to graffiti artists in India. The theme was space exploration and futurism, painted live across seven days as tens of thousands of Techfest attendees watched the mural grow in real time.
+
+**The Artists**
+
+Five artists built the wall: [NME](https://www.instagram.com/nmegraffiti), [Lobster](https://www.instagram.com/lobster__l), [Mooz](https://www.instagram.com/mooz.one), [Zake](https://www.instagram.com/zake_india), and Brazilian artist [Julio Torquetti](https://www.instagram.com/juliotorquetti) (known as Buyu). Indian street art talent alongside international energy. Each claimed a section of the narrative: robots, astronauts, cosmic warriors, and cartoon characters that turned a campus wall into an intergalactic world.
+
+**The Grind**
+
+Working at that scale came with its own set of problems. The heat was relentless. The wall was 130 feet wide and 25 feet tall, and we had only two scaffolding units to cover the entire stretch. Every few hours, we had to physically break down the platforms, shift them across, and reassemble. It sounds like a small thing until you have done it ten times in the afternoon sun. The artists absorbed it and kept painting.
+
+**The Film**
+
+Cinematographers [Bhumesh Das](https://www.instagram.com/bhumeshdas10) and [Jonnas Moirangthem](https://www.instagram.com/jonnasmoirangthem) of [EMA Films](https://youtube.com/@emafilmsofficial697) captured the entire seven-day process in a hyperlapse, compressing days of sketching, layering and colour-filling into a single fluid sequence. It was the first time something like this had been done for Indian street art. Seven days of work, collapsed into minutes.
+
+**IIT Techfest · Powai · 2016**`,
+  },
+
   // ── Placeholders ──────────────────────────────────────────
   {
     id: 6,
@@ -319,53 +371,6 @@ The campaign was a collective, not a solo feature. Wicked Broz shared the series
     gradient: 'radial-gradient(ellipse at 50% 50%, rgba(255,50,150,0.2), rgba(15,15,13,0.12) 65%, var(--bg-cream))',
     yt: 'M8aD0NU1akw',
     article: `Details and images coming soon.`,
-  },
-  {
-    id: 10,
-    slug: 'indias-first-graffiti-hyperlapse',
-    cat: 'production',
-    tag: 'Production · Graffiti · Hyperlapse',
-    title: "India's First Graffiti Hyperlapse",
-    desc: "A pioneering hyperlapse capturing the making of a 130×25 ft graffiti mural at IIT Techfest 2016 — a first for India.",
-    stat: 'First in India',
-    glyph: '🎥',
-    gradient: 'radial-gradient(ellipse at 55% 45%, rgba(200,100,50,0.22), rgba(15,15,13,0.12) 65%, var(--bg-cream))',
-    image: '/images/graffiti-hyperlapse/mural-in-progress.jpg',
-    images: [
-      '/images/graffiti-hyperlapse/space-expedition-panel.jpg',
-      '/images/graffiti-hyperlapse/astronaut-detail.jpg',
-      '/images/graffiti-hyperlapse/warrior-panel.jpg',
-      '/images/graffiti-hyperlapse/artist-detailing.jpg',
-      '/images/graffiti-hyperlapse/buyu-finishing-touches.jpg',
-      '/images/graffiti-hyperlapse/full-wall-portrait.jpg',
-      '/images/graffiti-hyperlapse/characters-panel.jpg',
-    ],
-    captions: [
-      '',
-      '',
-      '',
-      'Zake with his predator inspired character',
-      'Buyu adding the finishing touches',
-      'Lobster in with his psychedelic character',
-      '',
-    ],
-    yt: 'nJsgRSVcq5g',
-    ytCaption: 'Watch the Video',
-    article: `In 2016, six artists, a 130 by 25-foot wall, and seven days of spray cans came together at IIT Techfest in Powai, Mumbai — Asia's largest science and technology festival — to create what became India's first graffiti hyperlapse. The project was curated by [Wicked Broz](https://www.instagram.com/wickedbroz).
-
-**The Wall**
-
-Stretching 130 feet across and rising 25 feet high, the canvas was one of the largest walls ever handed to graffiti artists in India. The theme — space exploration and futurism — was painted live across seven days as tens of thousands of Techfest attendees watched the mural grow in real time.
-
-**The Artists**
-
-Five artists built the wall — [NME](https://www.instagram.com/nmegraffiti), [Lobster](https://www.instagram.com/lobster__l), [Mooz](https://www.instagram.com/mooz.one), [Zake](https://www.instagram.com/zake_india), and Brazilian artist [Julio Torquetti](https://www.instagram.com/juliotorquetti) (known as Buyu) — bringing Indian street art talent alongside international energy. Each claimed a section of the narrative: robots, astronauts, cosmic warriors, and cartoon characters that turned a campus wall into an intergalactic world.
-
-**The Film**
-
-Cinematographers [Bhumesh Das](https://www.instagram.com/bhumeshdas10) and [Jonnas Moirangthem](https://www.instagram.com/jonnasmoirangthem) of [EMA Films](https://youtube.com/@emafilmsofficial697) captured the entire seven-day process in a hyperlapse, compressing days of sketching, layering and colour-filling into a single fluid sequence. The result was a first for Indian street art: a time-collapse document of a living mural being born.
-
-**IIT Techfest · Powai · 2016**`,
   },
   {
     id: 11,
