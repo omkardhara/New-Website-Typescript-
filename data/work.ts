@@ -351,11 +351,11 @@ Stretching 130 feet across and rising 25 feet high, the canvas was one of the la
 
 **The Artists**
 
-Five artists built the wall — NME, Lobster, Mooz, Zake, and Brazilian artist Julio Torquetti (known as Buyu) — bringing Indian street art talent alongside international energy. Each claimed a section of the narrative: robots, astronauts, cosmic warriors, and cartoon characters that turned a campus wall into an intergalactic world.
+Five artists built the wall — [NME](https://www.instagram.com/nmegraffiti), [Lobster](https://www.instagram.com/lobster__l), [Mooz](https://www.instagram.com/mooz.one), [Zake](https://www.instagram.com/zake_india), and Brazilian artist [Julio Torquetti](https://www.instagram.com/juliotorquetti) (known as Buyu) — bringing Indian street art talent alongside international energy. Each claimed a section of the narrative: robots, astronauts, cosmic warriors, and cartoon characters that turned a campus wall into an intergalactic world.
 
 **The Film**
 
-Cinematographers Bhumesh Das and Jonnas Moirangthem of EMA Films captured the entire seven-day process in a hyperlapse, compressing days of sketching, layering and colour-filling into a single fluid sequence. The result was a first for Indian street art: a time-collapse document of a living mural being born.
+Cinematographers [Bhumesh Das](https://www.instagram.com/bhumeshdas10) and [Jonnas Moirangthem](https://www.instagram.com/jonnasmoirangthem) of [EMA Films](https://youtube.com/@emafilmsofficial697) captured the entire seven-day process in a hyperlapse, compressing days of sketching, layering and colour-filling into a single fluid sequence. The result was a first for Indian street art: a time-collapse document of a living mural being born.
 
 **IIT Techfest · Powai · 2016**`,
   },
