@@ -225,6 +225,25 @@ export default function ProjectPage({ params }: { params: { slug: string } }) {
                 style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', border: 'none' }}
               />
             </div>
+            {item.ytCaption && (
+              <figcaption
+                style={{
+                  padding: '8px 14px',
+                  borderTop: '1px solid var(--line-faint)',
+                  borderLeft: '1px solid var(--line-faint)',
+                  borderRight: '1px solid var(--line-faint)',
+                  borderBottom: '1px solid var(--line-faint)',
+                  background: 'var(--surface)',
+                  fontFamily: 'var(--font-mono)',
+                  fontSize: '11px',
+                  fontStyle: 'italic',
+                  color: 'var(--text-dark-3)',
+                  letterSpacing: '0.08em',
+                }}
+              >
+                {item.ytCaption}
+              </figcaption>
+            )}
           </figure>
         )}
         {blocks.map((block, i) => {

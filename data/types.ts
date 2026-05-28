@@ -15,6 +15,7 @@ export type WorkItem = {
   captions?: string[];
   article?: string;
   yt?: string;
+  ytCaption?: string;
   url?: string;
   linkLabel?: string;
 };

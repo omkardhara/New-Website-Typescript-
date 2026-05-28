@@ -332,18 +332,26 @@ The campaign was a collective, not a solo feature. Wicked Broz shared the series
     gradient: 'radial-gradient(ellipse at 55% 45%, rgba(200,100,50,0.22), rgba(15,15,13,0.12) 65%, var(--bg-cream))',
     image: '/images/graffiti-hyperlapse/mural-in-progress.jpg',
     images: [
-      '/images/graffiti-hyperlapse/characters-panel.jpg',
-      '/images/graffiti-hyperlapse/astronaut-detail.jpg',
       '/images/graffiti-hyperlapse/space-expedition-panel.jpg',
+      '/images/graffiti-hyperlapse/astronaut-detail.jpg',
       '/images/graffiti-hyperlapse/warrior-panel.jpg',
       '/images/graffiti-hyperlapse/artist-detailing.jpg',
-      '/images/graffiti-hyperlapse/artist-at-work.jpg',
+      '/images/graffiti-hyperlapse/buyu-finishing-touches.jpg',
       '/images/graffiti-hyperlapse/full-wall-portrait.jpg',
+      '/images/graffiti-hyperlapse/characters-panel.jpg',
+    ],
+    captions: [
+      '',
+      '',
+      '',
+      'Zake with his predator inspired character',
+      'Buyu adding the finishing touches',
+      'Lobster in with his psychedelic character',
+      '',
     ],
     yt: 'nJsgRSVcq5g',
-    article: `## India's First Graffiti Hyperlapse
-
-In 2016, six artists, a 130 by 25-foot wall, and seven days of spray cans came together at IIT Techfest in Powai, Mumbai — Asia's largest science and technology festival — to create what became India's first graffiti hyperlapse. The project was curated by [Wicked Broz](https://www.instagram.com/wickedbroz).
+    ytCaption: 'Watch the Video',
+    article: `In 2016, six artists, a 130 by 25-foot wall, and seven days of spray cans came together at IIT Techfest in Powai, Mumbai — Asia's largest science and technology festival — to create what became India's first graffiti hyperlapse. The project was curated by [Wicked Broz](https://www.instagram.com/wickedbroz).
 
 **The Wall**
 
