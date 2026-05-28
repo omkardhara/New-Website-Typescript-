@@ -343,7 +343,7 @@ The campaign was a collective, not a solo feature. Wicked Broz shared the series
     yt: 'nJsgRSVcq5g',
     article: `## India's First Graffiti Hyperlapse
 
-In 2016, six artists, a 130 by 25-foot wall, and seven days of spray cans came together at IIT Techfest in Powai, Mumbai — Asia's largest science and technology festival — to create what became India's first graffiti hyperlapse.
+In 2016, six artists, a 130 by 25-foot wall, and seven days of spray cans came together at IIT Techfest in Powai, Mumbai — Asia's largest science and technology festival — to create what became India's first graffiti hyperlapse. The project was curated by [Wicked Broz](https://www.instagram.com/wickedbroz).
 
 **The Wall**
 
