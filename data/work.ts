@@ -331,7 +331,9 @@ Working at that scale came with its own set of problems. The heat was relentless
 
 Cinematographers [Bhumesh Das](https://www.instagram.com/bhumeshdas10) and [Jonnas Moirangthem](https://www.instagram.com/jonnasmoirangthem) of [EMA Films](https://youtube.com/@emafilmsofficial697) captured the entire seven-day process in a hyperlapse, compressing days of sketching, layering and colour-filling into a single fluid sequence. It was the first time something like this had been done for Indian street art. Seven days of work, collapsed into minutes.
 
-**IIT Techfest · Powai · 2016**`,
+Julio put the finishing touches on his section as the festival wound into its final days. IIT Techfest draws over 150,000 visitors each year and is one of Asia's biggest cultural events. Having a mural of this scale painted live in front of that crowd made the whole thing feel less like a commission and more like a shared moment. Something tens of thousands of people watched happen, start to finish.
+
+That wall set the tone for what came next. Wicked Broz went on to curate the main wall at IIT Techfest every year after that, all the way until 2022. Each edition brought new artists, new themes, and a wall that kept getting bigger.`,
   },
 
   // ── Placeholders ──────────────────────────────────────────
