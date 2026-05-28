@@ -326,12 +326,38 @@ The campaign was a collective, not a solo feature. Wicked Broz shared the series
     cat: 'production',
     tag: 'Production · Graffiti · Hyperlapse',
     title: "India's First Graffiti Hyperlapse",
-    desc: "A pioneering hyperlapse capturing the making of a graffiti mural from blank wall to finished piece — a first for India.",
+    desc: "A pioneering hyperlapse capturing the making of a 130×25 ft graffiti mural at IIT Techfest 2016 — a first for India.",
     stat: 'First in India',
     glyph: '🎥',
     gradient: 'radial-gradient(ellipse at 55% 45%, rgba(200,100,50,0.22), rgba(15,15,13,0.12) 65%, var(--bg-cream))',
-    yt: 'fP4Xm5gmTGI',
-    article: `Details and images coming soon.`,
+    image: '/images/graffiti-hyperlapse/mural-in-progress.jpg',
+    images: [
+      '/images/graffiti-hyperlapse/characters-panel.jpg',
+      '/images/graffiti-hyperlapse/astronaut-detail.jpg',
+      '/images/graffiti-hyperlapse/space-expedition-panel.jpg',
+      '/images/graffiti-hyperlapse/warrior-panel.jpg',
+      '/images/graffiti-hyperlapse/artist-detailing.jpg',
+      '/images/graffiti-hyperlapse/artist-at-work.jpg',
+      '/images/graffiti-hyperlapse/full-wall-portrait.jpg',
+    ],
+    yt: 'nJsgRSVcq5g',
+    article: `## India's First Graffiti Hyperlapse
+
+In 2016, six artists, a 130 by 25-foot wall, and seven days of spray cans came together at IIT Techfest in Powai, Mumbai — Asia's largest science and technology festival — to create what became India's first graffiti hyperlapse.
+
+**The Wall**
+
+Stretching 130 feet across and rising 25 feet high, the canvas was one of the largest walls ever handed to graffiti artists in India. The theme — space exploration and futurism — was painted live across seven days as tens of thousands of Techfest attendees watched the mural grow in real time.
+
+**The Artists**
+
+Five artists built the wall — NME, Lobster, Mooz, Zake, and Brazilian artist Julio Torquetti (known as Buyu) — bringing Indian street art talent alongside international energy. Each claimed a section of the narrative: robots, astronauts, cosmic warriors, and cartoon characters that turned a campus wall into an intergalactic world.
+
+**The Film**
+
+Cinematographers Bhumesh Das and Jonnas Moirangthem of EMA Films captured the entire seven-day process in a hyperlapse, compressing days of sketching, layering and colour-filling into a single fluid sequence. The result was a first for Indian street art: a time-collapse document of a living mural being born.
+
+**IIT Techfest · Powai · 2016**`,
   },
   {
     id: 11,
