@@ -64,7 +64,7 @@ export function Hero() {
           </h1>
 
           <p className="hero-sub">
-            Eleven years spent between painting walls, juggling knives, and managing ₹80 crore taught me one thing: what actually connects with people. That&apos;s what I bring to any brief.
+            Eleven years spent between painting walls, juggling knives, and managing ₹80 crore in live event sponsorships taught me one thing: what actually connects with people. That&apos;s what I bring to any brief.
           </p>
 
           <div className="hero-aside">

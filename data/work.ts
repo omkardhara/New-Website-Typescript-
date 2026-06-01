@@ -428,14 +428,14 @@ That wall set the tone for what came next. Wicked Broz went on to curate the mai
       '/images/chitrapur-workshop/procession.jpg',
     ],
     captions: [
-      'Panchavati, Shiral',
+      'Panchavati, Shirali',
       'Dapo star passing drill',
       'Workshop in progress under the trees',
       'Yuvadhara Sammelan proceedings',
     ],
     yt: '7TiL9bafibs',
     ytCaption: 'Full workshop session',
-    article: `Panchavati, Shiral. Two days. Sixty participants seated on dhurries under open sky, most of them under thirty. The supervisors and volunteers who came to watch were between forty-five and sixty. Nobody expected to be juggling by the end of it.
+    article: `Panchavati, Shirali. Two days, sixty people on dhurries under open sky. Most were under thirty. The supervisors and volunteers who came with them ranged from forty-five to sixty. None of them had juggled before.
 
 The workshop ran as part of Yuvadhara Sammelan, Shri Chitrapur Math's annual youth gathering, held under the guidance of His Holiness Shri Sadyojat Shankarashrama Swamiji. The brief was specific: use movement as a tool to deepen japa practice. Help participants find focus, learn to breathe, stay present.
 
@@ -445,7 +445,7 @@ By day two, seven participants were juggling three balls. Fifteen were playing p
 
 I ran a separate session for the vaidiks — six students aged seven to fifteen, training to become priests. Same tools, scaled down. Same idea: that the state you reach mid-juggling and the state you reach mid-japa are closer than they look.
 
-The video below is the full session.`,
+The video above is the full session.`,
   },
   {
     id: 16,
@@ -481,21 +481,76 @@ The video below is the full session.`,
     stat: 'Uttarakhand · 2024',
     glyph: '🏔️',
     gradient: 'radial-gradient(ellipse at 50% 40%, rgba(100,160,220,0.22), rgba(15,15,13,0.12) 65%, var(--bg-cream))',
+    image: '/images/adventures/panchachuli-peaks.jpg',
+    images: [
+      '/images/adventures/departure.jpg',
+      '/images/adventures/khati-village.jpg',
+      '/images/adventures/trail-flora.jpg',
+      '/images/adventures/pindari-trail.jpg',
+      '/images/adventures/rain-trek.jpg',
+      '/images/adventures/pindari-glacier.jpg',
+      '/images/adventures/jeep-road-1.jpg',
+      '/images/adventures/jeep-roof.jpg',
+      '/images/adventures/jeep-road-2.jpg',
+      '/images/adventures/treeline.jpg',
+      '/images/adventures/snow-trail.jpg',
+      '/images/adventures/panchachuli-snow.jpg',
+      '/images/adventures/high-camp.jpg',
+      '/images/adventures/panchachuli-peaks.jpg',
+    ],
+    captions: [
+      'Ready to leave. Mumbai to Kathgodam.',
+      'Khati village, Bageshwar',
+      'Wild bhang on the trail. Uttarakhand has no shortage of it.',
+      'The trail to Pindari. Stone-paved and mostly quiet.',
+      'Rain on the way up. This is normal.',
+      'At the Pindari Glacier snout',
+      'The Dharchula-Dugtu road, seen from the roof of a jeep',
+      'On the roof to Dugtu',
+      'The road does not get wider',
+      'Near treeline, approaching Panchachuli',
+      'Snow starting on the trail up',
+      'Morning near Panchachuli base',
+      'Looking back toward the valley',
+      'Panchachuli. Tent pitched below the five peaks.',
+    ],
     yt: 'jKgetBYGMbU',
     ytCaption: 'Uttarakhand — the full trip',
-    article: `Train to Kathgodam. Then a car through the hills to Khati, a small village in the Bageshwar district that most people have never heard of. From there, on foot to Pindari Glacier.
+    article: `Train to Kathgodam, overnight. Then a car through winding roads into the Bageshwar district. The plan was Pindari Glacier first, then Dharchula, then as far north as we could get before the snow stopped us.
+
+Khati is the last village before the glacier trail begins. It sits at around 2,200 metres, in a valley where the Pindar river runs loud and cold. Most people passing through are trekkers. We stayed a night.
 
 **Pindari**
-Pindari sits at around 3,660 metres. The trek in takes two days from Khati, through pine forest and along the Pindar river. The glacier itself is quieter than you expect — a long blue-grey tongue of ice coming off Nanda Kot. I juggled at the base of it. The altitude makes everything harder, including keeping three balls in the air.
+
+The trail from Khati to Pindari is roughly 25 kilometres one way. It goes through oak and rhododendron forest, past waterfalls and small settlements. Uttarakhand grows wild bhang everywhere at this elevation. You notice it after the first hour.
+
+Rain hit on day two. The trail becomes mud. You put your head down and keep moving.
+
+Pindari Glacier sits at around 3,660 metres, off the flanks of Nanda Kot. Quieter than you expect for something that size. Rock, ice, and the sound of meltwater running underneath.
+
+I juggled at the base. Altitude makes everything harder. Lungs work at about 70 percent. The balls go up the same as always but the arms feel heavier than they should.
 
 **Dharchula and Dugtu**
-From Pindari we came back down and drove west to Dharchula, a border town on the Kali river that sits right on the India-Nepal line. From there, the road to Dugtu doesn't really exist in the conventional sense. We went on the roof of a jeep. The kind of road where you hold on and don't look down.
+
+From Pindari we came back down and drove west to Dharchula, a border town on the Kali river. India on one bank, Nepal on the other. From Dharchula, the road north to Dugtu is not a road in any conventional sense.
+
+We rode on the roof of a jeep. The driver did not slow down for the places where it had partially fallen away. You hold on to whatever is strapped above the wheel arch.
+
+Two hours of that. The valley opens up as you gain elevation. The peaks start to show.
 
 **Panchachuli**
-The trek from Dugtu goes up to the Panchachuli base camp area, below the five peaks the region is named for. Snow at this elevation is different from anything lower. I juggled with snowballs. They don't hold shape past the third throw.
+
+The trek from Dugtu climbs through forest before breaking into high alpine meadow. Tree cover thins and then stops. Above treeline it is rock, scrub, and snow.
+
+Snow comes in patches first, then covers everything. The trail markers get harder to follow.
+
+I juggled with snowballs near the base camp. They compact enough for two throws, maybe three. After that they fall apart.
+
+The Panchachuli peaks, five of them, sit in a row above the camp. At that hour, with the light low, they look like something from another country. I stayed until it got too cold to stand still.
 
 **The kids**
-At every stop along the way — Khati, Dharchula, the villages between — there were kids. Juggling travels well. You don't need a common language. You hand someone a ball and they either want to try or they don't. Most of them did.`,
+
+At every stop along the way, Khati, Dharchula, the villages between, there were kids. Juggling travels well. You do not need a common language. You hand someone a ball and they either want to try or they do not. Most of them did.`,
   },
 ];
 
