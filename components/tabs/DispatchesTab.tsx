@@ -88,9 +88,9 @@ export function DispatchesTab() {
             <em>Juggled with snowballs.</em>
           </h3>
           <p className="dispatch-desc">
-            Train to Kathgodam. Car to Khati. Trek to Pindari Glacier. Jeep roof to Dugtu.
-            Trek to Panchachuli where the snowballs fell apart after the third throw.
-            Juggled with kids at every stop along the way.
+            Train to Kathgodam. Car to Khati. Trek to Pindari. Jeep roof to Dugtu.
+            Trek to Panchachuli. Juggled everything I could find — balls, rocks, snowballs, acorns.
+            Kids at every stop along the way.
           </p>
           <div className="dispatch-stats">
             <div>
