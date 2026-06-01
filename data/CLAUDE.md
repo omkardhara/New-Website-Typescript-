@@ -8,6 +8,10 @@
 - `url?` — if set, card links externally; no internal page is generated
 - `yt?` — YouTube video ID; renders an embed at top of the project page
 - `linkLabel?` — overrides the "View project" link text (e.g. "View on Red Bull")
+- `hidden?: boolean` — hides card from Work tab and /work list, but still generates article page (used for Adventures cards)
+
+## Card ordering rule
+Cards with an `image` field automatically sort before cards without one. No manual reordering needed — adding a photo to a card moves it above all placeholders.
 - `article` — plain text; supports `[link text](url)` markdown links, `**bold**`, `## Heading`
 
 ## Note type

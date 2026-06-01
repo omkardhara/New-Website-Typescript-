@@ -6,7 +6,7 @@ import { WORK, WORK_FILTERS } from '@/data/work';
 
 export function WorkListPage() {
   const [active, setActive] = useState<string>('all');
-  const visible = WORK.filter((w) => !w.hidden);
+  const visible = WORK.filter((w) => !w.hidden).sort((a, b) => (a.image ? 0 : 1) - (b.image ? 0 : 1));
   const filtered = active === 'all' ? visible : visible.filter((w) => w.cat === active);
 
   return (
