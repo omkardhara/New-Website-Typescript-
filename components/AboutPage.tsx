@@ -215,13 +215,14 @@ export function AboutPage() {
           </p>
 
           <p className="about-bio-p">
-            That was 2022. Since then: appeared on{' '}
-            <a {...extLink('https://www.youtube.com/watch?v=5A9IgNfa7Wg')} style={linkStyle}>Doordarshan</a>,
-            drove a 2-stroke autorickshaw 3,600 km from Gangtok to Kochi, built a street art district in Mumbai that{' '}
+            That was 2022. The fuller picture: started building a street art district in Mumbai in 2015,{' '}
             <Link href="/press/natgeo-marol" style={linkStyle}>National Geographic</Link>{' '}
-            covered, managed ₹80 crore in live event sponsorships at BookMyShow, and appeared in a{' '}
+            covered it in 2019, drove a 2-stroke autorickshaw 3,600 km from Gangtok to Kochi in 2024,
+            appeared on{' '}
+            <a {...extLink('https://www.youtube.com/watch?v=5A9IgNfa7Wg')} style={linkStyle}>Doordarshan</a>,
+            managed ₹80 crore in live event sponsorships at BookMyShow, and appeared in a{' '}
             <a {...extLink('https://www.youtube.com/watch?v=jyzFUHqmjsQ')} style={linkStyle}>Britannia commercial</a>{' '}
-            somewhere in between.
+            along the way.
           </p>
 
           <p className="about-bio-p">
