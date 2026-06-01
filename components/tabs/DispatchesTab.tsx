@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import Link from 'next/link';
 
 export function DispatchesTab() {
@@ -20,18 +21,13 @@ export function DispatchesTab() {
 
       <div className="dispatch-feature">
         <div className="dispatch-img">
-          <span className="dispatch-img-glyph">🛺</span>
-          <svg className="dispatch-svg" viewBox="0 0 400 500" preserveAspectRatio="none" aria-hidden="true">
-            <path
-              d="M 80 80 Q 200 120 160 200 Q 120 280 220 340 Q 300 380 280 440"
-              stroke="#F8F6F1"
-              strokeWidth="1.5"
-              fill="none"
-              strokeDasharray="6 4"
-            />
-            <circle cx="80" cy="80" r="5" fill="#F8F6F1" />
-            <circle cx="280" cy="440" r="5" fill="#E07A35" />
-          </svg>
+          <Image
+            src="/images/adventures/rickshaw-run-finish.jpg"
+            alt="Rickshaw Run finish line, Kochi"
+            fill
+            style={{ objectFit: 'cover', objectPosition: 'center' }}
+            sizes="(max-width: 1024px) 100vw, 50vw"
+          />
           <span className="dispatch-img-route">Gangtok → Kochi · 3,000 km</span>
         </div>
         <div className="dispatch-text">
@@ -75,18 +71,13 @@ export function DispatchesTab() {
 
       <div className="dispatch-feature" style={{ marginTop: '48px' }}>
         <div className="dispatch-img">
-          <span className="dispatch-img-glyph">🏔️</span>
-          <svg className="dispatch-svg" viewBox="0 0 400 500" preserveAspectRatio="none" aria-hidden="true">
-            <path
-              d="M 200 60 Q 160 140 180 220 Q 200 300 160 380 Q 130 430 150 470"
-              stroke="#F8F6F1"
-              strokeWidth="1.5"
-              fill="none"
-              strokeDasharray="6 4"
-            />
-            <circle cx="200" cy="60" r="5" fill="#F8F6F1" />
-            <circle cx="150" cy="470" r="5" fill="#E07A35" />
-          </svg>
+          <Image
+            src="/images/adventures/panchachuli-peaks.jpg"
+            alt="Panchachuli peaks, Uttarakhand"
+            fill
+            style={{ objectFit: 'cover', objectPosition: 'center' }}
+            sizes="(max-width: 1024px) 100vw, 50vw"
+          />
           <span className="dispatch-img-route">Kathgodam → Panchachuli · 2024</span>
         </div>
         <div className="dispatch-text">
