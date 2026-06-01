@@ -204,7 +204,8 @@ body::before {
 .hero-stat-num { font-family: var(--font-serif); font-size: clamp(28px, 3.2vw, 38px); font-weight: 400; color: var(--gold-light); line-height: 1; }
 .hero-stat-label { font-family: var(--font-mono); font-size: 10px; letter-spacing: 0.18em; text-transform: uppercase; color: var(--text-light-3); }
 
-.hero-right { position: relative; display: flex; justify-content: center; align-items: center; opacity: 0; animation: rise-up 1.3s cubic-bezier(0.16,1,0.3,1) 0.4s forwards; }
+.hero-right { position: relative; display: flex; flex-direction: column; align-items: center; justify-content: center; opacity: 0; animation: rise-up 1.3s cubic-bezier(0.16,1,0.3,1) 0.4s forwards; }
+.hero-portrait-caption { display: none; }
 .portrait-frame { position: relative; width: 100%; max-width: 480px; aspect-ratio: 4 / 5; }
 .portrait-frame::before { content: ''; position: absolute; top: -16px; left: -16px; width: 60px; height: 60px; border-top: 1px solid var(--gold-light); border-left: 1px solid var(--gold-light); z-index: 2; }
 .portrait-frame::after { content: ''; position: absolute; bottom: -16px; right: -16px; width: 60px; height: 60px; border-bottom: 1px solid var(--ember); border-right: 1px solid var(--ember); z-index: 2; }
@@ -436,6 +437,7 @@ body::before {
   .story-link { margin-left: 0; width: 100%; text-align: center; }
   .portrait-frame { aspect-ratio: 4 / 5; }
   .portrait-frame::before, .portrait-frame::after { width: 40px; height: 40px; }
+  .hero-portrait-caption { display: block; font-family: var(--font-sans); font-size: 13px; line-height: 1.6; color: var(--text-light-2); margin-top: 16px; max-width: 340px; text-align: center; }
   .work-grid, .media-grid, .media-list-grid, .press-grid { grid-template-columns: repeat(2, 1fr); }
   .notes-grid { grid-template-columns: 1fr 1fr; }
   .writing-list-grid { grid-template-columns: 1fr 1fr; }

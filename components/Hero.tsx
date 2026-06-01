@@ -56,8 +56,11 @@ export function Hero() {
           <div className="hero-eyebrow">Flow Artist · Performer · Storyteller</div>
 
           <h1 className="hero-headline">
-            Eleven years between juggling and ₹80 crore in brand sponsorships teaches you one thing:{' '}
-            <em>what actually connects with people.</em>
+            Fire, flow,
+            <br />
+            and stories that
+            <br />
+            <em>actually mean something.</em>
           </h1>
 
           <p className="hero-sub">
@@ -117,6 +120,9 @@ export function Hero() {
               className="portrait-img"
             />
           </div>
+          <p className="hero-portrait-caption">
+            Eleven years between juggling and ₹80 crore in brand sponsorships teaches you one thing: what actually connects with people.
+          </p>
         </div>
       </div>
     </section>
