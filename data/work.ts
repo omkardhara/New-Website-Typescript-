@@ -416,12 +416,36 @@ That wall set the tone for what came next. Wicked Broz went on to curate the mai
     cat: 'education',
     tag: 'Workshop · Flow Arts · Community',
     title: 'Flow Arts Workshops',
-    desc: 'Workshops conducted for Shri Chitrapur Math, Agatsu Foundation, and others — using movement as a tool for focus, community, and creative play.',
-    stat: 'Multiple orgs · Ongoing',
+    desc: 'Using juggling, slacklining, and flow tools to help people find focus, breathe, and stay present — in classrooms, ashrams, and open fields.',
+    stat: '60+ participants · Shri Chitrapur Math',
     glyph: '🌀',
     gradient: 'radial-gradient(ellipse at 50% 55%, rgba(100,150,200,0.2), rgba(15,15,13,0.12) 65%, var(--bg-cream))',
+    image: '/images/chitrapur-workshop/intro.jpg',
+    images: [
+      '/images/chitrapur-workshop/group.jpg',
+      '/images/chitrapur-workshop/activity.jpg',
+      '/images/chitrapur-workshop/wide.jpg',
+      '/images/chitrapur-workshop/procession.jpg',
+    ],
+    captions: [
+      'Panchavati, Shiral',
+      'Dapo star passing drill',
+      'Workshop in progress under the trees',
+      'Yuvadhara Sammelan proceedings',
+    ],
     yt: '7TiL9bafibs',
-    article: `Details coming soon.`,
+    ytCaption: 'Full workshop session',
+    article: `Panchavati, Shiral. Two days. Sixty participants seated on dhurries under open sky, most of them under thirty. The supervisors and volunteers who came to watch were between forty-five and sixty. Nobody expected to be juggling by the end of it.
+
+The workshop ran as part of Yuvadhara Sammelan, Shri Chitrapur Math's annual youth gathering, held under the guidance of His Holiness Shri Sadyojat Shankarashrama Swamiji. The brief was specific: use movement as a tool to deepen japa practice. Help participants find focus, learn to breathe, stay present.
+
+The tools were slacklining, juggling balls, poi, the dapo star, and kendama. Each one asks something different from the body. Slacklining demands stillness from the hips. Juggling forces the eyes to stop fixating and start seeing the whole field. Poi builds peripheral vision. Kendama wires the hand to the eye in ways most people have never tried. Together they cover core strength, bilateral coordination, spatial awareness, left-right brain activation, and how to sit with failure without stopping.
+
+By day two, seven participants were juggling three balls. Fifteen were playing passing patterns with the dapo star.
+
+I ran a separate session for the vaidiks — six students aged seven to fifteen, training to become priests. Same tools, scaled down. Same idea: that the state you reach mid-juggling and the state you reach mid-japa are closer than they look.
+
+The video below is the full session.`,
   },
   {
     id: 16,
