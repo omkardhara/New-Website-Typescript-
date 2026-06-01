@@ -162,8 +162,8 @@ export function AboutPage() {
             className="about-portrait-frame"
           >
             <Image
-              src="/images/portrait-river.jpg"
-              alt="Omkar Dhareshwar juggling by a river"
+              src="/images/portrait-nest.jpg"
+              alt="Omkar Dhareshwar juggling inside a circular woven nest structure"
               fill
               sizes="(max-width: 768px) 90vw, 420px"
               style={{ objectFit: 'cover', objectPosition: 'center top' }}
@@ -215,10 +215,9 @@ export function AboutPage() {
           </p>
 
           <p className="about-bio-p">
-            That was 2012. Since then: co-founded India&apos;s first graffiti company, drove a 2-stroke
-            autorickshaw 3,600 km from Gangtok to Kochi, appeared on{' '}
+            That was 2022. Since then: appeared on{' '}
             <a {...extLink('https://www.youtube.com/watch?v=5A9IgNfa7Wg')} style={linkStyle}>Doordarshan</a>,
-            built a street art district in Mumbai that{' '}
+            drove a 2-stroke autorickshaw 3,600 km from Gangtok to Kochi, built a street art district in Mumbai that{' '}
             <Link href="/press/natgeo-marol" style={linkStyle}>National Geographic</Link>{' '}
             covered, managed ₹80 crore in live event sponsorships at BookMyShow, and appeared in a{' '}
             <a {...extLink('https://www.youtube.com/watch?v=jyzFUHqmjsQ')} style={linkStyle}>Britannia commercial</a>{' '}
@@ -226,11 +225,12 @@ export function AboutPage() {
           </p>
 
           <p className="about-bio-p">
-            Wicked Broz, which I started in 2014, ran campaigns for{' '}
+            I spent a decade on Wicked Broz. What started with a paint can and a wall in 2014 became
+            campaigns for{' '}
             <Link href="/writing/redbull" style={linkStyle}>Red Bull</Link>,
-            Puma, NBA, Absolut, and Harley Davidson. I spent four years advising Kokuyo Camlin
+            Puma, NBA, Absolut, and Harley Davidson. Four years of that were advising Kokuyo Camlin
             on India&apos;s first graffiti spray can: pricing, packaging, palette, distribution, all of it.
-            Three years straight of ₹1 crore revenue from a company that started with a paint can and a wall.
+            Three years straight of ₹1 crore revenue.
           </p>
 
           <p className="about-bio-p">
