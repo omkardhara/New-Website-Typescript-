@@ -18,6 +18,7 @@ export type WorkItem = {
   ytCaption?: string;
   url?: string;
   linkLabel?: string;
+  hidden?: boolean;
 };
 
 export type Video = {

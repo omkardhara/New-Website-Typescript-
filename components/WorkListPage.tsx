@@ -6,7 +6,8 @@ import { WORK, WORK_FILTERS } from '@/data/work';
 
 export function WorkListPage() {
   const [active, setActive] = useState<string>('all');
-  const filtered = active === 'all' ? WORK : WORK.filter((w) => w.cat === active);
+  const visible = WORK.filter((w) => !w.hidden);
+  const filtered = active === 'all' ? visible : visible.filter((w) => w.cat === active);
 
   return (
     <div style={{ background: 'var(--bg-cream)', minHeight: '100vh' }}>

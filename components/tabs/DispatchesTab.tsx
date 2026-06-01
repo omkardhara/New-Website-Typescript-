@@ -1,3 +1,5 @@
+import Link from 'next/link';
+
 export function DispatchesTab() {
   return (
     <>
@@ -68,6 +70,54 @@ export function DispatchesTab() {
           >
             Full dispatch coming soon →
           </button>
+        </div>
+      </div>
+
+      <div className="dispatch-feature" style={{ marginTop: '48px' }}>
+        <div className="dispatch-img">
+          <span className="dispatch-img-glyph">🏔️</span>
+          <svg className="dispatch-svg" viewBox="0 0 400 500" preserveAspectRatio="none" aria-hidden="true">
+            <path
+              d="M 200 60 Q 160 140 180 220 Q 200 300 160 380 Q 130 430 150 470"
+              stroke="#F8F6F1"
+              strokeWidth="1.5"
+              fill="none"
+              strokeDasharray="6 4"
+            />
+            <circle cx="200" cy="60" r="5" fill="#F8F6F1" />
+            <circle cx="150" cy="470" r="5" fill="#E07A35" />
+          </svg>
+          <span className="dispatch-img-route">Kathgodam → Panchachuli · 2024</span>
+        </div>
+        <div className="dispatch-text">
+          <div className="dispatch-eyebrow">Uttarakhand · 2024</div>
+          <h3 className="dispatch-title">
+            Pindari to Panchachuli.
+            <br />
+            <em>Juggled with snowballs.</em>
+          </h3>
+          <p className="dispatch-desc">
+            Train to Kathgodam. Car to Khati. Trek to Pindari Glacier. Jeep roof to Dugtu.
+            Trek to Panchachuli where the snowballs fell apart after the third throw.
+            Juggled with kids at every stop along the way.
+          </p>
+          <div className="dispatch-stats">
+            <div>
+              <div className="dispatch-stat-num">3,660</div>
+              <span className="dispatch-stat-label">m at Pindari</span>
+            </div>
+            <div>
+              <div className="dispatch-stat-num">2</div>
+              <span className="dispatch-stat-label">glaciers</span>
+            </div>
+            <div>
+              <div className="dispatch-stat-num">1</div>
+              <span className="dispatch-stat-label">jeep roof</span>
+            </div>
+          </div>
+          <Link href="/work/adventures" className="btn-ghost dark" style={{ alignSelf: 'flex-start' }}>
+            Read the dispatch →
+          </Link>
         </div>
       </div>
     </>

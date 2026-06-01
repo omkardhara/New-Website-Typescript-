@@ -439,7 +439,7 @@ That wall set the tone for what came next. Wicked Broz went on to curate the mai
 
 The workshop ran as part of Yuvadhara Sammelan, Shri Chitrapur Math's annual youth gathering, held under the guidance of His Holiness Shri Sadyojat Shankarashrama Swamiji. The brief was specific: use movement as a tool to deepen japa practice. Help participants find focus, learn to breathe, stay present.
 
-The tools were slacklining, juggling balls, poi, the dapo star, and kendama. Each one asks something different from the body. Slacklining demands stillness from the hips. Juggling forces the eyes to stop fixating and start seeing the whole field. Poi builds peripheral vision. Kendama wires the hand to the eye in ways most people have never tried. Together they cover core strength, bilateral coordination, spatial awareness, left-right brain activation, and how to sit with failure without stopping.
+The tools were slacklining, juggling balls, poi, the dapo star, and kendama. Slacklining keeps you focused on the present moment. On your breath, your core, your eyes on the anchor point. The moment you start thinking about falling, you fall. Juggling changes your relationship with failure and opens up peripheral vision. Poi is closer to dance than juggling: the whole body moves with the object, not just the hands. The dapo star asks you to stay locked on one point while staying alert enough to toss it the instant it lands on your fingers.
 
 By day two, seven participants were juggling three balls. Fifteen were playing passing patterns with the dapo star.
 
@@ -480,6 +480,7 @@ The video above is the full session.`,
     desc: 'Train to Kathgodam. Car to Khati. Trek to Pindari Glacier. Jeep roof to Dugtu. Trek to Panchachuli. Juggled with snowballs at 3,900 metres.',
     stat: 'Uttarakhand · 2024',
     glyph: '🏔️',
+    hidden: true,
     gradient: 'radial-gradient(ellipse at 50% 40%, rgba(100,160,220,0.22), rgba(15,15,13,0.12) 65%, var(--bg-cream))',
     image: '/images/adventures/panchachuli-peaks.jpg',
     images: [
