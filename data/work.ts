@@ -513,9 +513,9 @@ The video above is the full session.`,
       'Snow starting on the trail up',
       'Morning near Panchachuli base',
       'Looking back toward the valley',
-      'Panchachuli. Tent pitched below the five peaks.',
+      'Panchachuli. We went up and came back down the same day.',
     ],
-    imagePositions: ['top'],
+    imagePositions: ['top', '', '', '', '', '', '', '', '', '', '', 'bottom', '', ''],
     yt: 'jKgetBYGMbU',
     ytCaption: 'Uttarakhand — the full trip',
     article: `Train to Kathgodam, overnight. Then a car through winding roads into the Bageshwar district. The plan was Pindari Glacier first, then Dharchula, then as far north as we could get before the snow stopped us.
@@ -548,7 +548,7 @@ Snow comes in patches first, then covers everything. The trail markers get harde
 
 I juggled with snowballs near the base camp. They compact enough for two throws, maybe three. After that they fall apart.
 
-The Panchachuli peaks, five of them, sit in a row above the camp. At that hour, with the light low, they look like something from another country. I stayed until it got too cold to stand still.
+The Panchachuli peaks, five of them, sit in a row above. At that hour, with the light low, they look like something from another country. We went up and came back down the same day. I stayed until it got too cold to stand still.
 
 **The kids**
 
