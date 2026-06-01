@@ -64,7 +64,7 @@ export function Hero() {
           </h1>
 
           <p className="hero-sub">
-            Eleven years between juggling and ₹80 crore in brand sponsorships taught me one thing: what actually connects with people. That&apos;s what I bring to any brief.
+            Eleven years between juggling balls, knives, and ₹80 crore in brand sponsorships taught me one thing: what actually connects with people. That&apos;s what I bring to any brief.
           </p>
 
           <div className="hero-aside">
