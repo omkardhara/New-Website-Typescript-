@@ -471,6 +471,32 @@ The video below is the full session.`,
     gradient: 'radial-gradient(ellipse at 55% 45%, rgba(200,100,80,0.18), rgba(15,15,13,0.12) 65%, var(--bg-cream))',
     article: `Images and details coming soon.`,
   },
+  {
+    id: 19,
+    slug: 'adventures',
+    cat: 'performance',
+    tag: 'Adventures · Travel · Flow',
+    title: 'Adventures',
+    desc: 'Train to Kathgodam. Car to Khati. Trek to Pindari Glacier. Jeep roof to Dugtu. Trek to Panchachuli. Juggled with snowballs at 3,900 metres.',
+    stat: 'Uttarakhand · 2024',
+    glyph: '🏔️',
+    gradient: 'radial-gradient(ellipse at 50% 40%, rgba(100,160,220,0.22), rgba(15,15,13,0.12) 65%, var(--bg-cream))',
+    yt: 'jKgetBYGMbU',
+    ytCaption: 'Uttarakhand — the full trip',
+    article: `Train to Kathgodam. Then a car through the hills to Khati, a small village in the Bageshwar district that most people have never heard of. From there, on foot to Pindari Glacier.
+
+**Pindari**
+Pindari sits at around 3,660 metres. The trek in takes two days from Khati, through pine forest and along the Pindar river. The glacier itself is quieter than you expect — a long blue-grey tongue of ice coming off Nanda Kot. I juggled at the base of it. The altitude makes everything harder, including keeping three balls in the air.
+
+**Dharchula and Dugtu**
+From Pindari we came back down and drove west to Dharchula, a border town on the Kali river that sits right on the India-Nepal line. From there, the road to Dugtu doesn't really exist in the conventional sense. We went on the roof of a jeep. The kind of road where you hold on and don't look down.
+
+**Panchachuli**
+The trek from Dugtu goes up to the Panchachuli base camp area, below the five peaks the region is named for. Snow at this elevation is different from anything lower. I juggled with snowballs. They don't hold shape past the third throw.
+
+**The kids**
+At every stop along the way — Khati, Dharchula, the villages between — there were kids. Juggling travels well. You don't need a common language. You hand someone a ball and they either want to try or they don't. Most of them did.`,
+  },
 ];
 
 export const getWorkBySlug = (slug: string) => WORK.find((w) => w.slug === slug);
