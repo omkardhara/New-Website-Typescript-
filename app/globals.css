@@ -395,9 +395,10 @@ body::before {
 .dispatch-title { font-family: var(--font-serif); font-size: clamp(32px, 4vw, 52px); font-weight: 300; line-height: 1.02; margin-bottom: 24px; color: var(--text-dark); }
 .dispatch-title em { font-style: italic; color: var(--gold); }
 .dispatch-desc { font-size: 14.5px; color: var(--text-dark-2); line-height: 1.85; margin-bottom: 32px; max-width: 460px; }
-.dispatch-stats { display: flex; gap: 36px; flex-wrap: wrap; margin-bottom: 28px; padding-top: 24px; border-top: 1px solid var(--line-faint); }
-.dispatch-stat-num { font-family: var(--font-serif); font-size: 30px; color: var(--gold); font-weight: 400; line-height: 1; }
-.dispatch-stat-label { font-family: var(--font-mono); font-size: 9px; letter-spacing: 0.16em; text-transform: uppercase; color: var(--text-dark-4); margin-top: 6px; display: block; }
+.dispatch-stats { display: flex; gap: 20px; flex-wrap: nowrap; margin-bottom: 28px; padding-top: 16px; border-top: 1px solid var(--line-faint); align-items: baseline; }
+.dispatch-stats > div { display: flex; align-items: baseline; gap: 5px; }
+.dispatch-stat-num { font-family: var(--font-serif); font-size: 18px; color: var(--gold); font-weight: 400; line-height: 1; }
+.dispatch-stat-label { font-family: var(--font-mono); font-size: 9px; letter-spacing: 0.16em; text-transform: uppercase; color: var(--text-dark-4); margin-top: 0; display: inline; }
 
 /* Contact band */
 .contact-band { background: var(--bg-dark); color: var(--text-light); padding: clamp(60px, 8vw, 100px) clamp(20px, 5vw, 64px); position: relative; overflow: hidden; }
