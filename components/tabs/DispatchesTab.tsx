@@ -31,7 +31,7 @@ export function DispatchesTab() {
           <span className="dispatch-img-route">Gangtok → Kochi · 3,000 km</span>
         </div>
         <div className="dispatch-text">
-          <div className="dispatch-eyebrow">The Rickshaw Run · January 2024</div>
+          <div className="dispatch-eyebrow">The Rickshaw Run · September 2023</div>
           <h3 className="dispatch-title">
             Gangtok to Kochi.
             <br />
@@ -78,10 +78,10 @@ export function DispatchesTab() {
             style={{ objectFit: 'cover', objectPosition: 'center' }}
             sizes="(max-width: 1024px) 100vw, 50vw"
           />
-          <span className="dispatch-img-route">Kathgodam → Panchachuli · 2024</span>
+          <span className="dispatch-img-route">Kathgodam → Panchachuli · March 2023</span>
         </div>
         <div className="dispatch-text">
-          <div className="dispatch-eyebrow">Uttarakhand · 2024</div>
+          <div className="dispatch-eyebrow">Uttarakhand · March 2023</div>
           <h3 className="dispatch-title">
             Pindari to Panchachuli.
             <br />
