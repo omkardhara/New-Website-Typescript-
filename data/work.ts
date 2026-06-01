@@ -514,6 +514,7 @@ The video above is the full session.`,
       'Looking back toward the valley',
       'Panchachuli. Tent pitched below the five peaks.',
     ],
+    imagePositions: ['top'],
     yt: 'jKgetBYGMbU',
     ytCaption: 'Uttarakhand — the full trip',
     article: `Train to Kathgodam, overnight. Then a car through winding roads into the Bageshwar district. The plan was Pindari Glacier first, then Dharchula, then as far north as we could get before the snow stopped us.
