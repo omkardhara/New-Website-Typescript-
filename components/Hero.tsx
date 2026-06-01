@@ -64,9 +64,7 @@ export function Hero() {
           </h1>
 
           <p className="hero-sub">
-            That instinct is what I bring. Whether it&apos;s a brand activation, a workshop, a stage, or
-            a brief you wrote last night, I add the creative direction and cultural read that makes it
-            worth remembering.
+            Eleven years between juggling and ₹80 crore in brand sponsorships taught me one thing: what actually connects with people. That&apos;s what I bring to any brief.
           </p>
 
           <div className="hero-aside">
@@ -120,9 +118,6 @@ export function Hero() {
               className="portrait-img"
             />
           </div>
-          <p className="hero-portrait-caption">
-            Eleven years between juggling and ₹80 crore in brand sponsorships teaches you one thing: what actually connects with people.
-          </p>
         </div>
       </div>
     </section>
