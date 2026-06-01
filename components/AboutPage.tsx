@@ -162,8 +162,8 @@ export function AboutPage() {
             className="about-portrait-frame"
           >
             <Image
-              src="/images/portrait.jpg"
-              alt="Omkar Dhareshwar — flow artist and performer, Mumbai"
+              src="/images/portrait-river.jpg"
+              alt="Omkar Dhareshwar juggling by a river"
               fill
               sizes="(max-width: 768px) 90vw, 420px"
               style={{ objectFit: 'cover', objectPosition: 'center top' }}
@@ -211,41 +211,39 @@ export function AboutPage() {
         {/* Bio column */}
         <div className="about-bio-col">
           <p className="about-bio-p">
-            I started out as a mechanical engineer — genuinely curious about how things work, how
-            forces move through systems, how structure and chaos negotiate with each other. I
-            graduated. Got the job. Then discovered juggling, and watched everything I thought I
-            knew about career, identity, and what a life could look like rearrange itself around
-            three objects in the air.
+            I studied mechanical engineering. Then I picked up three balls.
           </p>
 
           <p className="about-bio-p">
-            ManWith3Balls started as a name I gave the thing I was doing on weekends. It became a
-            practice, then a body of work, then — slowly, stubbornly — a brand. Fire poi, contact
-            juggling, flow performance, street art: they&apos;re all the same inquiry in different
-            materials. What does a human body look like when it&apos;s fully absorbed in something?
-            What happens to an audience when they watch that?
+            That was 2012. Since then: co-founded India&apos;s first graffiti company, drove a 2-stroke
+            autorickshaw 3,600 km from Gangtok to Kochi, appeared on{' '}
+            <a {...extLink('https://www.youtube.com/watch?v=5A9IgNfa7Wg')} style={linkStyle}>Doordarshan</a>,
+            built a street art district in Mumbai that{' '}
+            <Link href="/press/natgeo-marol" style={linkStyle}>National Geographic</Link>{' '}
+            covered, managed ₹80 crore in live event sponsorships at BookMyShow, and appeared in a{' '}
+            <a {...extLink('https://www.youtube.com/watch?v=jyzFUHqmjsQ')} style={linkStyle}>Britannia commercial</a>{' '}
+            somewhere in between.
           </p>
 
           <p className="about-bio-p">
-            For a decade I was a fixture at{' '}
-            <Link href="/work/marol-art-village" style={linkStyle}>Marol Art Village</Link>{' '}
-            in Mumbai — painting murals, building community, learning what it means to make art in public rather than for it. Five hundred walls later, I&apos;ve been covered by{' '}
-            <Link href="/press/natgeo-marol" style={linkStyle}>National Geographic</Link>,{' '}
-            Graffiti Magazine (Germany),{' '}
-            <Link href="/press/mid-day-arts-adda" style={linkStyle}>Mid-Day</Link>,{' '}
-            Mumbai Mirror, and{' '}
-            <Link href="/writing/redbull" style={linkStyle}>Red Bull</Link>.{' '}
-            I appeared on{' '}
-            <a {...extLink('https://www.youtube.com/watch?v=5A9IgNfa7Wg')} style={linkStyle}>Doordarshan</a>{' '}
-            and in a{' '}
-            <a {...extLink('https://www.youtube.com/watch?v=jyzFUHqmjsQ')} style={linkStyle}>Britannia commercial</a>.{' '}
-            I drove a rickshaw 3,000 km from Gangtok to Kochi with no plan and one co-driver.
+            Wicked Broz, which I started in 2014, ran campaigns for{' '}
+            <Link href="/writing/redbull" style={linkStyle}>Red Bull</Link>,
+            Puma, NBA, Absolut, and Harley Davidson. I spent four years advising Kokuyo Camlin
+            on India&apos;s first graffiti spray can: pricing, packaging, palette, distribution, all of it.
+            Three years straight of ₹1 crore revenue from a company that started with a paint can and a wall.
           </p>
 
           <p className="about-bio-p">
-            Now I perform for festivals and brands, run flow workshops for teams and schools, and
-            direct culture-led storytelling for organisations that want to say something real. The
-            engineering degree taught me to think in systems. The juggling taught me everything else.
+            In 2025 I joined BookMyShow Live. Three months in, I was running a team of nine and
+            managing ₹80 crore in sponsorships across Lollapalooza India, Coldplay, Ed Sheeran,
+            Guns N&apos; Roses, and Travis Scott. H&amp;M ranked number one in brand recall across all
+            Lollapalooza 2026 sponsors. Liquid IV doubled their in-festival sales. The workflow
+            systems I built were later mandated by Live Nation&apos;s global C3 team.
+          </p>
+
+          <p className="about-bio-p">
+            I still juggle. Still perform. Run flow workshops. Write for{' '}
+            <Link href="/writing/redbull" style={linkStyle}>Red Bull</Link>.
           </p>
 
           <div className="about-bio-actions">

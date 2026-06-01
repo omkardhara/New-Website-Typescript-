@@ -56,16 +56,14 @@ export function Hero() {
           <div className="hero-eyebrow">Flow Artist · Performer · Storyteller</div>
 
           <h1 className="hero-headline">
-            Fire, flow,
-            <br />
-            and stories that
-            <br />
-            <em>actually mean something.</em>
+            Eleven years between juggling and ₹80 crore in brand sponsorships teaches you one thing:{' '}
+            <em>what actually connects with people.</em>
           </h1>
 
           <p className="hero-sub">
-            I perform, run flow workshops, and direct culture-led brand work — for festivals,
-            companies, and brands that want something memorable, not forgettable.
+            That instinct is what I bring. Whether it&apos;s a brand activation, a workshop, a stage, or
+            a brief you wrote last night, I add the creative direction and cultural read that makes it
+            worth remembering.
           </p>
 
           <div className="hero-aside">
