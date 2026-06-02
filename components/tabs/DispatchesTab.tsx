@@ -1,3 +1,6 @@
+import Image from 'next/image';
+import Link from 'next/link';
+
 export function DispatchesTab() {
   return (
     <>
@@ -18,22 +21,17 @@ export function DispatchesTab() {
 
       <div className="dispatch-feature">
         <div className="dispatch-img">
-          <span className="dispatch-img-glyph">🛺</span>
-          <svg className="dispatch-svg" viewBox="0 0 400 500" preserveAspectRatio="none" aria-hidden="true">
-            <path
-              d="M 80 80 Q 200 120 160 200 Q 120 280 220 340 Q 300 380 280 440"
-              stroke="#F8F6F1"
-              strokeWidth="1.5"
-              fill="none"
-              strokeDasharray="6 4"
-            />
-            <circle cx="80" cy="80" r="5" fill="#F8F6F1" />
-            <circle cx="280" cy="440" r="5" fill="#E07A35" />
-          </svg>
+          <Image
+            src="/images/adventures/rickshaw-run-finish.jpg"
+            alt="Rickshaw Run finish line, Kochi"
+            fill
+            style={{ objectFit: 'cover', objectPosition: 'center' }}
+            sizes="(max-width: 1024px) 100vw, 50vw"
+          />
           <span className="dispatch-img-route">Gangtok → Kochi · 3,000 km</span>
         </div>
         <div className="dispatch-text">
-          <div className="dispatch-eyebrow">The Rickshaw Run · January 2024</div>
+          <div className="dispatch-eyebrow">The Rickshaw Run · September 2023</div>
           <h3 className="dispatch-title">
             Gangtok to Kochi.
             <br />
@@ -70,6 +68,49 @@ export function DispatchesTab() {
           </button>
         </div>
       </div>
+
+      <Link href="/work/adventures" className="dispatch-feature" style={{ marginTop: '48px' }}>
+        <div className="dispatch-img">
+          <Image
+            src="/images/adventures/panchachuli-peaks.jpg"
+            alt="Panchachuli peaks, Uttarakhand"
+            fill
+            style={{ objectFit: 'cover', objectPosition: 'center' }}
+            sizes="(max-width: 1024px) 100vw, 50vw"
+          />
+          <span className="dispatch-img-route">Kathgodam → Panchachuli · March 2023</span>
+        </div>
+        <div className="dispatch-text">
+          <div className="dispatch-eyebrow">Uttarakhand · March 2023</div>
+          <h3 className="dispatch-title">
+            Pindari to Panchachuli.
+            <br />
+            <em>Juggled with snowballs.</em>
+          </h3>
+          <p className="dispatch-desc">
+            Train to Kathgodam. Car to Khati. Trek to Pindari. Jeep roof to Dugtu.
+            Trek to Panchachuli. Juggled everything I could find — balls, rocks, snowballs, acorns.
+            Kids at every stop along the way.
+          </p>
+          <div className="dispatch-stats">
+            <div>
+              <div className="dispatch-stat-num">3,660</div>
+              <span className="dispatch-stat-label">m at Pindari</span>
+            </div>
+            <div>
+              <div className="dispatch-stat-num">2</div>
+              <span className="dispatch-stat-label">glaciers</span>
+            </div>
+            <div>
+              <div className="dispatch-stat-num">1</div>
+              <span className="dispatch-stat-label">jeep roof</span>
+            </div>
+          </div>
+          <span className="btn-ghost dark" style={{ alignSelf: 'flex-start' }}>
+            Read the dispatch →
+          </span>
+        </div>
+      </Link>
     </>
   );
 }
