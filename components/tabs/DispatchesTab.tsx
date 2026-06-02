@@ -13,10 +13,6 @@ export function DispatchesTab() {
             <em>completely off-script.</em>
           </h2>
         </div>
-        <div className="panel-meta">
-          <strong>01</strong>
-          Active log
-        </div>
       </div>
 
       <div className="dispatch-feature">
