@@ -53,14 +53,14 @@ export function Hero() {
     <section className="hero" aria-label="Introduction">
       <div className="hero-grid">
         <div className="hero-left">
-          <div className="hero-eyebrow">Flow Artist · Performer · Storyteller</div>
+          <div className="hero-eyebrow">Artist · Story teller · Educator</div>
 
           <h1 className="hero-headline">
-            Fire, flow,
+            I craft stories that bring
             <br />
-            and stories that
+            people together, inspire and
             <br />
-            <em>actually mean something.</em>
+            <em>leave a lasting impression.</em>
           </h1>
 
           <p className="hero-sub">
@@ -119,6 +119,9 @@ export function Hero() {
               className="portrait-img"
             />
           </div>
+          <p className="hero-portrait-quote">
+            &ldquo;Not all those who wander are lost&rdquo;
+          </p>
         </div>
       </div>
     </section>
