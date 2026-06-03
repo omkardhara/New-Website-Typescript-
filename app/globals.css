@@ -462,7 +462,7 @@ a.dispatch-feature:hover { box-shadow: 0 0 0 2px var(--gold); }
   .hero-grid { margin-top: 12px; gap: 16px; }
   .hero-eyebrow { letter-spacing: 0.12em; flex-wrap: wrap; }
   .hero-eyebrow::after { display: none; }
-  .hero-headline { font-size: clamp(13px, 3.5vw, 18px); line-height: 1.5; }
+  .hero-headline { font-size: clamp(20px, 5.5vw, 24px); line-height: 1.5; }
   .hero-headline em { font-size: clamp(32px, 9vw, 48px); }
   .hero-sub { font-size: 14.5px; }
   /* Buttons: smaller padding + nowrap so text stays one line */
