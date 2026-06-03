@@ -58,14 +58,9 @@ export function Hero() {
           <h1 className="hero-headline">
             I craft stories that bring
             <br />
-            people together, inspire and
-            <br />
+            people together, inspire and{' '}
             <em>leave a lasting impression.</em>
           </h1>
-
-          <p className="hero-sub">
-            Eleven years spent between painting walls, juggling knives, and managing ₹80 crore in live event sponsorships taught me one thing: what actually connects with people. That&apos;s what I bring to any brief.
-          </p>
 
           <div className="hero-aside">
             <span className="hero-aside-tag">MW3B ▸</span>Mechanical engineer by degree. Everything

@@ -15,7 +15,50 @@ export function DispatchesTab() {
         </div>
       </div>
 
-      <div className="dispatch-feature">
+      <Link href="/work/adventures" className="dispatch-feature">
+        <div className="dispatch-img">
+          <Image
+            src="/images/adventures/panchachuli-peaks.jpg"
+            alt="Panchachuli peaks, Uttarakhand"
+            fill
+            style={{ objectFit: 'cover', objectPosition: 'center' }}
+            sizes="(max-width: 1024px) 100vw, 50vw"
+          />
+          <span className="dispatch-img-route">Kathgodam → Panchachuli · March 2023</span>
+        </div>
+        <div className="dispatch-text">
+          <div className="dispatch-eyebrow">Uttarakhand · March 2023</div>
+          <h3 className="dispatch-title">
+            Pindari to Panchachuli.
+            <br />
+            <em>Juggled with snowballs.</em>
+          </h3>
+          <p className="dispatch-desc">
+            Train to Kathgodam. Car to Khati. Trek to Pindari. Jeep roof to Dugtu.
+            Trek to Panchachuli. Juggled everything I could find — balls, rocks, snowballs, acorns.
+            Kids at every stop along the way.
+          </p>
+          <div className="dispatch-stats">
+            <div>
+              <div className="dispatch-stat-num">3,660</div>
+              <span className="dispatch-stat-label">m at Pindari</span>
+            </div>
+            <div>
+              <div className="dispatch-stat-num">2</div>
+              <span className="dispatch-stat-label">glaciers</span>
+            </div>
+            <div>
+              <div className="dispatch-stat-num">1</div>
+              <span className="dispatch-stat-label">jeep roof</span>
+            </div>
+          </div>
+          <span className="btn-ghost dark" style={{ alignSelf: 'flex-start' }}>
+            Read the dispatch →
+          </span>
+        </div>
+      </Link>
+
+      <div className="dispatch-feature" style={{ marginTop: '48px' }}>
         <div className="dispatch-img">
           <Image
             src="/images/adventures/rickshaw-run-finish.jpg"
@@ -64,49 +107,6 @@ export function DispatchesTab() {
           </button>
         </div>
       </div>
-
-      <Link href="/work/adventures" className="dispatch-feature" style={{ marginTop: '48px' }}>
-        <div className="dispatch-img">
-          <Image
-            src="/images/adventures/panchachuli-peaks.jpg"
-            alt="Panchachuli peaks, Uttarakhand"
-            fill
-            style={{ objectFit: 'cover', objectPosition: 'center' }}
-            sizes="(max-width: 1024px) 100vw, 50vw"
-          />
-          <span className="dispatch-img-route">Kathgodam → Panchachuli · March 2023</span>
-        </div>
-        <div className="dispatch-text">
-          <div className="dispatch-eyebrow">Uttarakhand · March 2023</div>
-          <h3 className="dispatch-title">
-            Pindari to Panchachuli.
-            <br />
-            <em>Juggled with snowballs.</em>
-          </h3>
-          <p className="dispatch-desc">
-            Train to Kathgodam. Car to Khati. Trek to Pindari. Jeep roof to Dugtu.
-            Trek to Panchachuli. Juggled everything I could find — balls, rocks, snowballs, acorns.
-            Kids at every stop along the way.
-          </p>
-          <div className="dispatch-stats">
-            <div>
-              <div className="dispatch-stat-num">3,660</div>
-              <span className="dispatch-stat-label">m at Pindari</span>
-            </div>
-            <div>
-              <div className="dispatch-stat-num">2</div>
-              <span className="dispatch-stat-label">glaciers</span>
-            </div>
-            <div>
-              <div className="dispatch-stat-num">1</div>
-              <span className="dispatch-stat-label">jeep roof</span>
-            </div>
-          </div>
-          <span className="btn-ghost dark" style={{ alignSelf: 'flex-start' }}>
-            Read the dispatch →
-          </span>
-        </div>
-      </Link>
     </>
   );
 }
