@@ -332,18 +332,6 @@ export const NOTES: Note[] = [
   // ── Red Bull Articles ─────────────────────────────────────
   ...REDBULL_NOTES,
 
-  // ── Short Stories ─────────────────────────────────────────
-  {
-    id: 14,
-    slug: 'the-good-samaritan',
-    title: 'The Good Samaritan',
-    date: '2016',
-    read: '7 min',
-    tag: 'Fiction',
-    type: 'short-story',
-    excerpt: 'A boy leaves home for the city with a dream and a suitcase. Who helps him, and how, turns out to be closer than he ever imagined.',
-    content: WRITING_CONTENT['the-good-samaritan'],
-  },
   // ── Poems ─────────────────────────────────────────────────
   {
     id: 20,
