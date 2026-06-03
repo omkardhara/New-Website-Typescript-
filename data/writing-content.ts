@@ -131,54 +131,6 @@ On reaching the Math at 4pm, prayers were held in the Durga Parmeshwari temple, 
 
 Separation from the Math is always tinted with a little melancholy, but there is always the anxiety for the joy after reunion. All the yuvas rode back, united in the loving experience, written by the beloved Lord.`,
 
-// ─── SHORT STORY ──────────────────────────────────────────
-
-'the-good-samaritan': `It was a Sunday morning, as the youth woke up, taking in the heavenly aroma of what seemed to be a scrumptious breakfast. The youth hadn't had a hearty meal in quite some time, so he jumped off his bed with such agility that would embarrass an Olympic athlete, and raced to the bathroom. Within minutes, he was done with the chores that would've taken him almost an hour on an ordinary day. But this wasn't just any day. Since he was barely 2 feet tall, Sundays were always special. His father was a tailor, and used to make a modest earning. Every Sunday, the family used to go to the local fair, where he used to frolic till his stomach wouldn't allow him to. Then they would go to the local confectionary, where they would buy anything that their little prince's heart desired.
-
-But soon enough, synthetic fabric started being available in the market, and the father was forced to close down his small shop, and work as a machine operator in a nearby factory. His salary was pitiful, but somehow he was just able to make ends meet.
-
-So now, all the Sunday fun had boiled down to a special family breakfast, after which the father would go off to work, only to return late in the night. The son walked into the small kitchen, as his mother was laying the plates neatly on the table.
-
-A man in his forties, with a bald patch, entered the room and sat on a nearby chair. He was dressed modestly. An old, but crisply ironed striped shirt, whose faded colour betrayed that it was much older than the boy himself. The trousers had patches at the knees, which attempted to hide the worn out cloth underneath it. The man looked well beyond his age, as if crippled by a mysterious sickness. But his jolly smile brushed it all away.
-
-The son had prepared for this moment for almost 2 years. His hands on the verge of shaking, from the blood his veins were pumping into them, like one of those oiling machines his father used to operate upon at the factory. The son knew they weren't rich. An old TV set, which worked more erratically than the drunkard milkman, and the towering stack of I.O.U.s (leaning against an old telephone that had ceased to operate a very long time ago), all seemed to nod their heads in agreement.
-
-He said, "Father, I want to be an actor."
-
-The father looked at the boy, with his eyebrows slightly raised, deepening the age lines on his pale forehead. "You will do no such thing. I have spoken to the owner of the factory, and he has agreed to employ you. You start tomorrow morning. And I will have no more of this nonsense," he said sternly.
-
-The son pointed at the safe and said, "I know we have money in there. Then why are you doing this? I want to do something in life. I want to be SUCCESSFUL!!"
-
-The father, again calmly, "You have your entire life to do all of that. But first you must fill your stomach. How many more years are you going to live off us? Besides, the money in the safe is to ensure us a safe and sound future."
-
-"You're lying! You just don't want me to do anything different. And I refuse to step into your footsteps. If I stay here any longer, I'll just end up like you, an old loser!!" And he stormed out of the kitchen.
-
-His mother gasped with horror, and dropped the plates she was carrying. The father got up, visibly tired, even in the morning, and said, "You go have breakfast dear, I'll clean up."
-
-The youth had already taken this possibility into consideration while making his plans. He swung his worn out, but sturdy suitcase over his shoulder and ran towards a nearby cybercafe. From there he e-mailed his friend from the city, telling him the recent events, and left for the city by the 3pm train, without an intention of ever returning. "This place never did any good for me. It's just holding me from achieving greatness," he thought.
-
-When he reached the city though, his dreams were quickly crushed to dust by the powerful fists of destiny. His childhood friend, the only one he knew in the city, gave him the cold shoulder and asked him to return.
-
-With his spirits torn apart, he went to a cybercafe, not knowing what else to do. Just then, he received a friend request on a social networking site. He didn't generally pay any attention to random friend requests from strangers. But his instincts started going wild, so he accepted. Luckily for him, it turned out to be a rich businessman. After the man came to know about the boy's story, he agreed to send him the money the boy needed. After thanking the man, the youth asked him his name, and the man merely answered, "user43", and went offline. The boy let out a deep breath, with the frustration of not knowing the name of this good Samaritan. But these thoughts were quickly drowned by joy, as user43 had sent the money, as promised.
-
-The boy soon got into a few high end parties, and ended up signing a movie with a top director. One day, the boy went online from his plush penthouse suite and got a pleasant surprise when he found user43 online. He asked the boy if he had received the money, and the boy quickly blurted out his surreal fairytale.
-
-user43: I have to go now. I can't postpone this appointment any longer. May you always find success in life. Goodbye.
-
-As the boy started to type, asking user43 what he meant, his screen displayed dismally: "user43 offline."
-
-The boy tried refreshing his page, but the same note kept blinking on the screen with an ominous beep. The frustrated boy ran a check on user43 in despair, only to discover that user43 didn't exist on any other social site, or messenger. The youth signed out dejectedly and left.
-
-As things have a way of turning around, on the day of the boy's debut film's release, the boy received a call from a friend from his village. He bore the bad news that the boy's father had passed away due to cancer. The youth, after attending the red carpet event that evening, left by train the next morning.
-
-As he was reaching his village, the familiar sights sent pangs of guilt through the boy. All these months, he hadn't even thought of his parents once. After reaching home and carrying out his father's last rites, he sat down to settle all the bills left unpaid by his father. As bill after bill was being fished out and being paid, he reached a particular bill. It was a bill of the nearby cybercafe that the boy had visited before he left the village.
-
-The boy angrily stomped to the cafe. As soon as he saw the owner, he barked out, "You scoundrel! I had paid you before leaving the cafe 6 months ago, what is the meaning of this?!", flinging the petty scrap of paper at his face.
-
-The owner examined it, a little flustered, and requested the boy to check the register. As the youth reached for the register and opened it up, his eyes welled up, blurring his vision. His hands trembling as the register dropped onto the floor, slipping from his hands. As a strong gust of wind flew by, the pages of the register ruffled on to reach a particular page. On the fresh page, one line stood embedded next to the youth's address.
-
-user43.`,
-
 // ─── POEMS ────────────────────────────────────────────────
 
 'new-year-2026': `Years have flown by
