@@ -221,7 +221,7 @@ export default function ProjectPage({ params }: { params: { slug: string } }) {
           <figure style={{ margin: 'clamp(40px,5vw,60px) auto', maxWidth: '960px', padding: '0' }}>
             <div style={{ position: 'relative', paddingBottom: '56.25%', height: 0, overflow: 'hidden', background: '#000' }}>
               <iframe
-                src={`https://www.youtube.com/embed/${item.yt}`}
+                src={`https://www.youtube.com/embed/${item.yt}${item.ytStart ? `?start=${item.ytStart}` : ''}`}
                 title={item.title}
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowFullScreen

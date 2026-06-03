@@ -257,6 +257,7 @@ None of it worked without the props being real. You cannot fake a firestarter in
     ],
     imagePositions: ['', '', '', '', 'top', ''],
     yt: 'RonBTMdFFq0',
+    ytStart: 909,
     article: `Lee Jeans built **Stand Tall For All** on a simple premise: the most compelling brand stories don't come from celebrities — they come from people who are actually doing the work. The campaign sought out advocates, artists, and community builders whose impact was felt in neighbourhoods and lives, not just on screens.
 
 Wicked Broz — the Marol-based street art collective co-founded by Omkar Dhareshwar and Zain Siddiqui — were chosen as one of the campaign's central voices. For years, the collective had been transforming blank walls across Mumbai into living, breathing conversation pieces: works that grew with the communities around them, absorbed their stories, and gave people something to recognise themselves in.
