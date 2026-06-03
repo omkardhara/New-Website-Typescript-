@@ -56,7 +56,7 @@ export function Hero() {
           <div className="hero-eyebrow">Artist · Story teller · Educator</div>
 
           <h1 className="hero-headline">
-            I craft stories that bring people together, inspire and
+            I craft experiences that bring people together, inspire and
             <br />
             <em>leave a lasting impression.</em>
           </h1>
