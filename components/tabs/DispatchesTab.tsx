@@ -13,10 +13,6 @@ export function DispatchesTab() {
             <em>completely off-script.</em>
           </h2>
         </div>
-        <div className="panel-meta">
-          <strong>01</strong>
-          Active log
-        </div>
       </div>
 
       <div className="dispatch-feature">
@@ -69,7 +65,7 @@ export function DispatchesTab() {
         </div>
       </div>
 
-      <div className="dispatch-feature" style={{ marginTop: '48px' }}>
+      <Link href="/work/adventures" className="dispatch-feature" style={{ marginTop: '48px' }}>
         <div className="dispatch-img">
           <Image
             src="/images/adventures/panchachuli-peaks.jpg"
@@ -106,11 +102,11 @@ export function DispatchesTab() {
               <span className="dispatch-stat-label">jeep roof</span>
             </div>
           </div>
-          <Link href="/work/adventures" className="btn-ghost dark" style={{ alignSelf: 'flex-start' }}>
+          <span className="btn-ghost dark" style={{ alignSelf: 'flex-start' }}>
             Read the dispatch →
-          </Link>
+          </span>
         </div>
-      </div>
+      </Link>
     </>
   );
 }
