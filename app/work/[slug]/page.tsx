@@ -5,6 +5,7 @@ import Image from 'next/image';
 import { WORK, getWorkBySlug } from '@/data/work';
 import { ShareButton } from '@/components/ShareButton';
 import { ReadingProgress } from '@/components/ReadingProgress';
+import { YoutubeEmbed } from '@/components/YoutubeEmbed';
 
 export function generateStaticParams() {
   return WORK.filter((w) => !w.url).map((w) => ({ slug: w.slug }));
@@ -219,15 +220,7 @@ export default function ProjectPage({ params }: { params: { slug: string } }) {
       <div style={{ paddingBottom: 'clamp(48px,6vw,80px)' }}>
         {item.yt && (
           <figure style={{ margin: 'clamp(40px,5vw,60px) auto', maxWidth: '960px', padding: '0' }}>
-            <div style={{ position: 'relative', paddingBottom: '56.25%', height: 0, overflow: 'hidden', background: '#000' }}>
-              <iframe
-                src={`https://www.youtube.com/embed/${item.yt}${item.ytStart ? `?start=${item.ytStart}` : ''}`}
-                title={item.title}
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowFullScreen
-                style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', border: 'none' }}
-              />
-            </div>
+            <YoutubeEmbed videoId={item.yt} title={item.title} start={item.ytStart} />
             {item.ytCaption && (
               <figcaption
                 style={{
