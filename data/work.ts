@@ -97,7 +97,7 @@ The video crossed 300,000 views on YouTube. MC Altaf went on to join Gully Gang.
       'Visitors enjoyed the simulated juggling experience',
       'Accompanied by a flow workshop',
     ],
-    article: `The Flow Simulator 1.0 is an interactive installation commissioned for 'Khel-Spel HomoLudens: The Art of Play' at the [Museum of Goa](https://www.museumofgoa.com), Pilerne.
+    article: `The Flow Simulator 1.0 is an interactive installation commissioned for 'Khel-Spel HomoLudens: The Art of Play' at the [Museum of Goa](https://share.google/nykQOYi73hPybYTE6), Pilerne.
 
 The Museum of Goa has built a reputation as a space where art feels alive and participatory. Inspired by [Johan Huizinga](https://en.wikipedia.org/wiki/Johan_Huizinga)'s idea that play is central to culture, the exhibition brings together artists from India and the Netherlands to explore how play shapes the way we think, create, and connect.
 
@@ -362,6 +362,9 @@ That wall set the tone for what came next. Wicked Broz went on to curate the mai
       '/images/hermes-displays/process-mountain-layers-green.jpg',
       '/images/hermes-displays/final-mountain-box.jpg',
       '/images/hermes-displays/team-sajid-khalil.jpg',
+      '/images/hermes-displays/final-air-balloon-box.jpg',
+      '/images/hermes-displays/final-clock-box.jpg',
+      '/images/hermes-displays/final-mountain-box.jpg',
     ],
     captions: [
       'Midjourney design: air balloon theme',
@@ -377,6 +380,9 @@ That wall set the tone for what came next. Wicked Broz went on to curate the mai
       'Laser-cut MDF mountain layers before painting',
       'Completed mountain and waterfall box',
       'With Sajid Wajid Shaikh and Khalil bhai',
+      'The air balloon box',
+      'The clock box',
+      'The mountain and waterfall box',
     ],
     article: `In January 2024, an architect came to me with a brief: design five Hermès-style window display boxes across five themes — moon, underwater, clock, air balloon, mountain.
 
@@ -422,7 +428,7 @@ When he finally came back, he said he would not pay. The reason given: no wow ef
 
 That was a loss of ₹14 lakhs — the largest I have taken on a single project. I don't have the boxes and I don't have the money. This was also the best work I had made till that point in terms of craft, materials, and the sheer scale of what we built. That combination is its own kind of heavy.
 
-The one thing that came out of all of this was the relationship with Sajid. When he was later curating 'Khel-Spel HomoLudens: The Art of Play' at the [Museum of Goa](https://www.museumofgoa.com), he called me. That conversation led to [Flow Simulator 1.0](/work/flow-simulator-museum-of-goa) — an installation that ended up in an actual museum, on a pedestal, in front of thousands of visitors.
+The one thing that came out of all of this was the relationship with Sajid. When he was later curating 'Khel-Spel HomoLudens: The Art of Play' at the [Museum of Goa](https://share.google/nykQOYi73hPybYTE6), he called me. That conversation led to [Flow Simulator 1.0](/work/flow-simulator-museum-of-goa) — an installation that ended up in an actual museum, on a pedestal, in front of thousands of visitors.
 
 Some losses open doors you wouldn't have found any other way. The 14 lakhs are gone and I can't undo that. But when things get hard, put your head down, do the work, and keep believing in yourself.`,
   },
