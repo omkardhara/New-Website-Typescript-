@@ -11,7 +11,8 @@ export function YoutubeEmbed({ videoId, title, start }: Props) {
   const [active, setActive] = useState(false);
 
   const src = `https://www.youtube.com/embed/${videoId}?autoplay=1${start ? `&start=${start}` : ''}&rel=0`;
-  const thumb = `https://img.youtube.com/vi/${videoId}/maxresdefault.jpg`;
+  // hqdefault is guaranteed to exist for every public video; maxresdefault is not
+  const thumb = `https://img.youtube.com/vi/${videoId}/hqdefault.jpg`;
 
   return (
     <div
@@ -32,12 +33,6 @@ export function YoutubeEmbed({ videoId, title, start }: Props) {
           <img
             src={thumb}
             alt={title}
-            onError={(e) => {
-              const t = e.currentTarget;
-              if (t.src.includes('maxresdefault')) {
-                t.src = `https://img.youtube.com/vi/${videoId}/hqdefault.jpg`;
-              }
-            }}
             style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', objectFit: 'cover' }}
           />
           <div style={{
