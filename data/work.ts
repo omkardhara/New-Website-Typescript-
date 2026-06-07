@@ -337,6 +337,84 @@ Julio put the finishing touches on his section as the festival wound into its fi
 That wall set the tone for what came next. Wicked Broz went on to curate the main wall at IIT Techfest every year after that, all the way until 2022. Each edition brought new artists, new themes, and a wall that kept getting bigger.`,
   },
 
+  {
+    id: 13,
+    slug: 'hermes-window-displays',
+    cat: 'installation',
+    tag: 'Installation · Window Display · 2024',
+    title: 'Hermès-Styled Window Display Boxes',
+    desc: 'Five Hermès-style window displays designed using Midjourney on Discord, three built in physical form with artist Sajid Wajid Shaikh — fiberglass, 220kg of metal, laser-cut MDF, resin waterfalls. The client never paid.',
+    stat: '3 displays · 10+ materials',
+    glyph: '🖼️',
+    gradient: 'radial-gradient(ellipse at 60% 40%, rgba(180,140,70,0.22), rgba(15,15,13,0.12) 65%, var(--bg-cream))',
+    image: '/images/hermes-displays/final-air-balloon-box.jpg',
+    images: [
+      '/images/hermes-displays/hermes-air-balloon.jpg',
+      '/images/hermes-displays/hermes-clock.jpg',
+      '/images/hermes-displays/hermes-mountain.jpg',
+      '/images/hermes-displays/hermes-moon.jpg',
+      '/images/hermes-displays/hermes-underwater.jpg',
+      '/images/hermes-displays/process-balloon-fiberglass-mold.jpg',
+      '/images/hermes-displays/process-balloon-finished.jpg',
+      '/images/hermes-displays/final-air-balloon-box.jpg',
+      '/images/hermes-displays/process-clock-gears-cutout.jpg',
+      '/images/hermes-displays/final-clock-box.jpg',
+      '/images/hermes-displays/process-mountain-layers-green.jpg',
+      '/images/hermes-displays/final-mountain-box.jpg',
+      '/images/hermes-displays/team-sajid-khalil.jpg',
+    ],
+    captions: [
+      'Midjourney design: air balloon theme',
+      'Midjourney design: clock theme',
+      'Midjourney design: mountain theme',
+      'Midjourney design: moon theme',
+      'Midjourney design: underwater theme',
+      'Fiberglass mould for the balloons',
+      'Finished balloon ready for assembly',
+      'Completed air balloon display box',
+      'Metal gears before assembly',
+      'Completed clock box — 220kg of metal, lit from behind',
+      'Laser-cut MDF mountain layers before painting',
+      'Completed mountain and waterfall box',
+      'With Sajid Wajid Shaikh and Khalil bhai',
+    ],
+    article: `In January 2024, an architect came to me with a brief: design five Hermès-style window display boxes across five themes — moon, underwater, clock, air balloon, mountain.
+
+I had just taken my first Midjourney subscription on Discord. I had never used generative AI as a design tool, and I had never designed for installations. Both those firsts happened on this project.
+
+Midjourney turned ideas into reference images fast. What would have taken days of sketching was now hours of prompting and refining. All five designs got approved by the client.
+
+Then came the question of how to actually build them.
+
+I reached out to [Sajid Wajid Shaikh](https://www.instagram.com/sajidwajidshaikh/), a long-time friend and one of the most skilled artists I know. He said we could do it. His team worked out of a small workshop in New Panvel, led by Sunny Sathe, with Khalil bhai handling the heavy fabrication work. This collaboration also later became the reason I got to take [Flow Simulator 1.0](/work/flow-simulator-museum-of-goa) to the Museum of Goa — Sajid was curating the exhibition there.
+
+We started with the air balloon box.
+
+## Air balloon box
+
+The balloons were made in fiberglass — moulded, laminated, sanded smooth, then painted and striped by hand. The rain drops were carved from wood. The airplane and the houses were cut from sunboard and foam. The wave and mountain backdrop was MDF. It took a month. The finished box had seven balloons at different heights, fiberglass clouds cast from clay moulds, layered painted waves, small houses on the ground floor, and a vintage airplane cutting through the top. [Watch the final result.](https://youtube.com/shorts/K8bAoWlZqko)
+
+## Clock box
+
+We made the clock entirely from metal. Every piece — the outer rings, the clock face, the gears, the hands — was cut and assembled by hand in Khalil bhai's metalwork workshop. He worked with lathes and cutting equipment to get the tolerances the design needed. When finished, the clock weighed over 220 kilograms. The gears were layered and interlocking, lit from behind with blue light. [Watch the final result.](https://youtube.com/shorts/XCtEqt2xAzo)
+
+## Mountain and waterfall box
+
+This had the most steps of the three. We started with CAD drawings for each individual mountain layer, with linking holes so the layers could align and stack correctly. The assembly was simulated before anything was cut. Then each layer was laser-cut from MDF, given a base coat, and painted with a gradient from deep teal at the base to near-white at the peaks. Artificial flowers went in around the edges after assembly. The waterfall was made from transparent resin, poured in stages to get the look of water catching light. [Watch the final result.](https://youtube.com/shorts/UOpMdCnHpVQ)
+
+## What happened after
+
+The client took all three boxes for review. Then went quiet for almost a year.
+
+When he finally came back, he said he would not pay. The reason given: no wow effect.
+
+That was a loss of ₹14 lakhs — the largest I have taken on a single project. I don't have the boxes and I don't have the money. This was also the best work I had made till that point in terms of craft, materials, and the sheer scale of what we built. That combination is its own kind of heavy.
+
+The one thing that came out of all of this was the relationship with Sajid. When he was later curating 'Khel-Spel HomoLudens: The Art of Play' at the [Museum of Goa](https://www.museumofgoa.com), he called me. That conversation led to [Flow Simulator 1.0](/work/flow-simulator-museum-of-goa) — an installation that ended up in an actual museum, on a pedestal, in front of thousands of visitors.
+
+Some losses open doors you wouldn't have found any other way. The 14 lakhs are gone and I can't undo that. But when things get hard, put your head down, do the work, and keep believing in yourself.`,
+  },
+
   // ── Placeholders ──────────────────────────────────────────
   {
     id: 6,
@@ -386,18 +464,6 @@ That wall set the tone for what came next. Wicked Broz went on to curate the mai
     glyph: '🎙️',
     gradient: 'radial-gradient(ellipse at 40% 60%, rgba(46,107,79,0.2), rgba(15,15,13,0.12) 65%, var(--bg-cream))',
     article: `Details and video links coming soon.`,
-  },
-  {
-    id: 13,
-    slug: 'hermes-window-displays',
-    cat: 'installation',
-    tag: 'Installation · Window Display · Design',
-    title: 'Hermès-Styled Window Display Boxes',
-    desc: 'Three display boxes, three distinct themes, 10+ materials. Designed and executed with artist Sajid Wajid Shaikh — meticulous craft in visual storytelling.',
-    stat: '3 displays · 10+ materials',
-    glyph: '🖼️',
-    gradient: 'radial-gradient(ellipse at 60% 40%, rgba(180,140,70,0.22), rgba(15,15,13,0.12) 65%, var(--bg-cream))',
-    article: `Details and images coming soon.`,
   },
   {
     id: 14,
