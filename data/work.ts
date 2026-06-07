@@ -396,15 +396,21 @@ The balloons were made in fiberglass — moulded, laminated, sanded smooth, then
 
 [yt:K8bAoWlZqko]
 
+The air balloon box took a month from start to finish. Then we moved to the clock.
+
 ## Clock box
 
-We made the clock entirely from metal. Every piece — the outer rings, the clock face, the gears, the hands — was cut and assembled by hand in Khalil bhai's metalwork workshop. He worked with lathes and cutting equipment to get the tolerances the design needed. When finished, the clock weighed over 220 kilograms. The gears were layered and interlocking, lit from behind with blue light.
+We made the clock entirely from metal. Every piece — the outer rings, the clock face, the gears, the hands — was cut and assembled by hand in Khalil bhai's metalwork workshop. He worked with lathes and cutting equipment to get the tolerances the design needed.
 
 [yt:XCtEqt2xAzo]
 
+When finished, the clock weighed over 220 kilograms. The gears were layered and interlocking, lit from behind with blue light.
+
 ## Mountain and waterfall box
 
-This had the most steps of the three. We started with CAD drawings for each individual mountain layer, with linking holes so the layers could align and stack correctly. The assembly was simulated before anything was cut. Then each layer was laser-cut from MDF, given a base coat, and painted with a gradient from deep teal at the base to near-white at the peaks. Artificial flowers went in around the edges after assembly. The waterfall was made from transparent resin, poured in stages to get the look of water catching light.
+This had the most steps of the three. We started with CAD drawings for each individual mountain layer, with linking holes so the layers could align and stack correctly. The assembly was simulated before anything was cut. Then each layer was laser-cut from MDF, given a base coat, and painted with a gradient from deep teal at the base to near-white at the peaks. Artificial flowers went in around the edges after assembly.
+
+The waterfall was made from transparent resin, poured in stages to get the look of water catching light.
 
 [yt:UOpMdCnHpVQ]
 
