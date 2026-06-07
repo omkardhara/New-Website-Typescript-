@@ -462,14 +462,41 @@ Some losses open doors you wouldn't have found any other way. The 14 lakhs are g
     id: 9,
     slug: 'under-neon-sky',
     cat: 'installation',
-    tag: 'Installation · Light Art',
-    title: 'Under Neon Sky',
-    desc: 'A neon-lit installation exploring the intersection of light, movement, and urban space. Images coming soon.',
-    stat: 'Installation',
+    tag: 'Installation · Mood Indigo 2015',
+    title: 'Under a Neon Sky',
+    desc: 'Psychedelic decor installation for Mood Indigo 2015 at IIT Powai. 40m × 40m neon canopy built in 12 days sleeping on site with Art Can Feed. The Radio Mirchi silent disco it covered drew crowds.',
+    stat: '40m × 40m · 12 days on site',
     glyph: '💡',
     gradient: 'radial-gradient(ellipse at 50% 50%, rgba(255,50,150,0.2), rgba(15,15,13,0.12) 65%, var(--bg-cream))',
+    image: '/images/neon-sky/neon-sky-crowd-wide.jpg',
+    images: [
+      '/images/neon-sky/neon-sky-setup-night.jpg',
+      '/images/neon-sky/neon-sky-team.jpg',
+      '/images/neon-sky/neon-sky-silhouettes.jpg',
+      '/images/neon-sky/neon-sky-lasers.jpg',
+      '/images/neon-sky/neon-sky-crowd-close.jpg',
+      '/images/neon-sky/neon-sky-crowd-wide.jpg',
+    ],
+    captions: [
+      'Setting up the canopy structure on site',
+      'With the Art Can Feed team under the canopy',
+      'Working through the night on site',
+      'Operating lasers during the silent disco',
+      'Crowd under the neon canopy during Radio Mirchi silent disco',
+      'Full installation at night — Mood Indigo 2015',
+    ],
     yt: 'M8aD0NU1akw',
-    article: `Details and images coming soon.`,
+    article: `After engineering, I wasn't sure what came next. I was working at The Hive, a co-working space in Khar, doing a bit of everything — building furniture out of scrap material, running lights and sound for shows, helping artists set up exhibitions. That's where I met Henry and Pradnya, who were running Art Can Feed decor at the time.
+
+When IIT Powai came to me about painting a wall for Mood Indigo 2015, I didn't just say yes to the wall. I saw an opening and added a second item to the proposal: a full psychedelic decor installation. Something I had never done before, at a scale I had never worked at.
+
+The quote I sent was ₹75,000 for 40 metres by 40 metres of coverage. Of that, we never received the last installment of ₹25,000 — so the actual payment was fifty thousand rupees for a 40×40 installation. The materials alone cost more. This is the part I always skip when telling this story casually, but it's the part that explains everything about how those twelve days went.
+
+My college friend Anirudh Shinde came on to help. We slept on site for 12 days straight, in sleeping bags, working nights into mornings. The Art Can Feed team — Henry, Pradnya and their crew — carried the bulk of the fabrication. Without them, it would not have gone up.
+
+The installation was used for a Radio Mirchi silent disco during Mood Indigo. Crowds came in, put on headphones, and ended up standing under something we had built from scratch in under two weeks. Jonnas Moirangthem and Bhumesh Das from Ema Films shot the event — the video captures what no photo can.
+
+I said yes to this before I knew how to do it. That's the only way I knew how to operate in 2015, and probably still is. The projects I've learnt the most from are always the ones where saying yes came before knowing the answer.`,
   },
   {
     id: 11,
