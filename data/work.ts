@@ -481,7 +481,7 @@ Some losses open doors you wouldn't have found any other way. The 14 lakhs are g
       'Setting up the canopy structure on site',
       'With the Art Can Feed team under the canopy',
       'Working through the night on site',
-      'Operating lasers during the silent disco',
+      'At the anchor point — those streaks are fishing lines, not lasers. We used them to hold the entire canopy in tension.',
       'Crowd under the neon canopy during Radio Mirchi silent disco',
       'Full installation at night — Mood Indigo 2015',
     ],
@@ -490,7 +490,7 @@ Some losses open doors you wouldn't have found any other way. The 14 lakhs are g
 
 When IIT Powai came to me about painting a wall for Mood Indigo 2015, I didn't just say yes to the wall. I saw an opening and added a second item to the proposal: a full psychedelic decor installation. Something I had never done before, at a scale I had never worked at.
 
-The quote I sent was ₹75,000 for 40 metres by 40 metres of coverage. Of that, we never received the last installment of ₹25,000 — so the actual payment was fifty thousand rupees for a 40×40 installation. The materials alone cost more. This is the part I always skip when telling this story casually, but it's the part that explains everything about how those twelve days went.
+The quote I sent was ₹75,000 for 40 metres by 40 metres of coverage. A job of that scale in 2015 should have run ₹3 to 4 lakhs at minimum. Of that ₹75,000, we never received the last installment of ₹25,000 — so the actual payment was fifty thousand rupees. The materials alone cost more. This is the part I always skip when telling this story casually, but it's the part that explains everything about how those twelve days went.
 
 My college friend Anirudh Shinde came on to help. We slept on site for 12 days straight, in sleeping bags, working nights into mornings. The Art Can Feed team — Henry, Pradnya and their crew — carried the bulk of the fabrication. Without them, it would not have gone up.
 
