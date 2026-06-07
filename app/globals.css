@@ -467,14 +467,14 @@ a.dispatch-feature:hover { box-shadow: 0 0 0 2px var(--gold); }
   .hero-sub { font-size: 14.5px; }
   /* Buttons: smaller padding + nowrap so text stays one line */
   .btn-primary, .hero-ctas .btn-ghost { padding: 12px 10px; font-size: 11px; letter-spacing: 0.14em; white-space: nowrap; }
-  /* Remove the duplicate divider lines around the stats block */
-  .hero-stats { gap: 8px; flex-wrap: nowrap; border-top: none; padding-top: 0; }
   .story-link { border-bottom: none; padding-bottom: 0; }
+  /* 2×2 grid for stats on mobile */
+  .hero-stats { display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px 24px; border-top: 1px solid var(--line-light); padding-top: 16px; }
   /* Tighten gap between stats and offerings */
   .hero-offerings { margin-top: 0; gap: 6px; }
-  .hero-stat { flex: 1; min-width: 0; }
-  .hero-stat-num { font-size: 20px; }
-  .hero-stat-label { font-size: 8px; letter-spacing: 0.12em; }
+  .hero-stat { flex: unset; min-width: unset; }
+  .hero-stat-num { font-size: clamp(26px, 8vw, 32px); }
+  .hero-stat-label { font-size: 9px; letter-spacing: 0.14em; }
   .work-grid, .media-grid, .media-list-grid, .press-grid, .notes-grid, .writing-list-grid { grid-template-columns: 1fr; }
   .note-card.featured { grid-column: auto; }
   .story-rail { flex-direction: column; gap: 24px; padding: 24px 0; }

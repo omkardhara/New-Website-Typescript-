@@ -8,7 +8,7 @@ type Stat = { num: number; label: string; suffix?: string };
 const STATS: Stat[] = [
   { num: 10, label: 'Years' },
   { num: 500, label: 'Murals' },
-  { num: 12, label: 'Press Features' },
+  { num: 17, label: 'Press Features' },
   { num: 4000, label: 'Rickshaw Run', suffix: ' km' },
 ];
 
