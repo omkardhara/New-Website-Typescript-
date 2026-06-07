@@ -90,7 +90,8 @@ function renderWithLinks(text: string) {
 
 type Block =
   | { kind: 'text'; value: string; first: boolean }
-  | { kind: 'image'; src: string; idx: number; caption?: string; position?: string };
+  | { kind: 'image'; src: string; idx: number; caption?: string; position?: string }
+  | { kind: 'video'; videoId: string };
 
 export default function ProjectPage({ params }: { params: { slug: string } }) {
   const item = getWorkBySlug(params.slug);
@@ -107,6 +108,11 @@ export default function ProjectPage({ params }: { params: { slug: string } }) {
   let imgIdx = 0;
   for (let i = 0; i < paragraphs.length; i++) {
     const p = paragraphs[i];
+    const ytMatch = p.match(/^\[yt:([A-Za-z0-9_-]+)\]$/);
+    if (ytMatch) {
+      blocks.push({ kind: 'video', videoId: ytMatch[1] });
+      continue;
+    }
     blocks.push({ kind: 'text', value: p, first: i === 0 });
     const isBoldHeading = p.startsWith('**') && p.endsWith('**');
     const isH2Heading = p.startsWith('## ') || p.startsWith('# ');
@@ -273,6 +279,13 @@ export default function ProjectPage({ params }: { params: { slug: string } }) {
               >
                 {renderWithLinks(block.value)}
               </p>
+            );
+          }
+          if (block.kind === 'video') {
+            return (
+              <figure key={`v-${i}`} style={{ margin: 'clamp(40px,5vw,60px) auto', maxWidth: '960px', padding: '0' }}>
+                <YoutubeEmbed videoId={block.videoId} title={item.title} />
+              </figure>
             );
           }
           const isInset = block.idx % 2 === 1;
