@@ -32,6 +32,12 @@ export function YoutubeEmbed({ videoId, title, start }: Props) {
           <img
             src={thumb}
             alt={title}
+            onError={(e) => {
+              const t = e.currentTarget;
+              if (t.src.includes('maxresdefault')) {
+                t.src = `https://img.youtube.com/vi/${videoId}/hqdefault.jpg`;
+              }
+            }}
             style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', objectFit: 'cover' }}
           />
           <div style={{
