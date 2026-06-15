@@ -666,7 +666,7 @@ export const SOCIALS: Social[] = [
   { label: 'Instagram', handle: '@omkar_dhara', href: 'https://instagram.com/omkar_dhara' },
   { label: 'YouTube', handle: '@OmkarDhareshwar', href: 'https://www.youtube.com/@OmkarDhareshwar' },
   { label: 'LinkedIn', handle: 'OmkarDhareshwar', href: 'https://www.linkedin.com/in/omkardhareshwar' },
-  { label: 'Juggler Insta', handle: '@manwith3balls', href: 'https://instagram.com/manwith3balls' },
+  { label: 'ManWith3Balls', handle: '@manwith3balls', href: 'https://instagram.com/manwith3balls' },
 ];
 
 export const getNoteBySlug = (slug: string) => NOTES.find((n) => n.slug === slug);
