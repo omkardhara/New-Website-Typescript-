@@ -51,6 +51,7 @@ export const TESTIMONIALS: Testimonial[] = [
     name: 'Suresh Nair',
     role: 'Chairman, Military Road RWA · Dream Marol',
     context: 'Marol Art Village — community partner since 2015',
+    approved: true,
   },
   {
     id: 6,
