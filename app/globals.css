@@ -943,7 +943,7 @@ button:focus:not(:focus-visible) {
   background: var(--bg-dark);
   border-top: 1px solid rgba(248,246,241,0.08);
   border-bottom: 1px solid rgba(248,246,241,0.08);
-  padding: 40px 0;
+  padding: 24px 0;
   overflow: hidden;
   position: relative;
 }
@@ -954,7 +954,7 @@ button:focus:not(:focus-visible) {
   color: var(--gold-light);
   text-transform: uppercase;
   text-align: center;
-  margin-bottom: 32px;
+  margin-bottom: 16px;
 }
 .testimonials-strip-viewport {
   overflow: hidden;
@@ -985,14 +985,14 @@ button:focus:not(:focus-visible) {
   animation: testimonials-scroll 80s linear infinite;
 }
 .testimonials-strip-card {
-  width: 340px;
+  width: 320px;
   flex-shrink: 0;
-  margin: 0 12px;
-  padding: 28px 28px 24px;
+  margin: 0 10px;
+  padding: 20px 22px 18px;
   border: 1px solid rgba(248,246,241,0.1);
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 14px;
   transition: border-color 0.25s;
 }
 .testimonials-strip-viewport:hover .testimonials-strip-card {
@@ -1003,9 +1003,9 @@ button:focus:not(:focus-visible) {
 }
 .testimonials-strip-quote {
   font-family: var(--font-serif);
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 300;
-  line-height: 1.7;
+  line-height: 1.65;
   color: var(--text-light-2);
   margin: 0;
   quotes: none;
@@ -1015,7 +1015,7 @@ button:focus:not(:focus-visible) {
   flex-direction: column;
   gap: 4px;
   border-top: 1px solid rgba(248,246,241,0.08);
-  padding-top: 16px;
+  padding-top: 12px;
   margin-top: auto;
 }
 .testimonials-strip-name {
@@ -1089,20 +1089,23 @@ button:focus:not(:focus-visible) {
   .testimonials-strip-mobile {
     display: flex;
     align-items: flex-start;
-    gap: 12px;
+    gap: 10px;
     padding: 0 16px;
   }
   .testimonials-strip-dots {
     display: flex;
     gap: 8px;
     justify-content: center;
-    margin-top: 20px;
+    margin-top: 14px;
   }
   .testimonials-strip-desktop {
     display: none;
   }
   .testimonials-strip-wrap {
-    padding: 36px 0 32px;
+    padding: 20px 0 18px;
+  }
+  .testimonials-strip-label {
+    margin-bottom: 12px;
   }
 }
 
