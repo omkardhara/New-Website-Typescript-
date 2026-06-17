@@ -13,6 +13,7 @@ const items = [
 export function TestimonialsStrip() {
   const [paused, setPaused] = useState(false);
   const [swipeX, setSwipeX] = useState(0);
+  const [currentIndex, setCurrentIndex] = useState(0);
   const marqueeRef = useRef<HTMLDivElement>(null);
   const timeoutRef = useRef<NodeJS.Timeout | null>(null);
   const touchStartX = useRef(0);
@@ -47,11 +48,18 @@ export function TestimonialsStrip() {
     timeoutRef.current = setTimeout(() => setPaused(false), 1500);
   };
 
+  const handlePrev = () =>
+    setCurrentIndex((i) => (i - 1 + APPROVED_TESTIMONIALS.length) % APPROVED_TESTIMONIALS.length);
+  const handleNext = () =>
+    setCurrentIndex((i) => (i + 1) % APPROVED_TESTIMONIALS.length);
+
   useEffect(() => {
     return () => { if (timeoutRef.current) clearTimeout(timeoutRef.current); };
   }, []);
 
   if (items.length === 0) return null;
+
+  const current = APPROVED_TESTIMONIALS[currentIndex];
 
   return (
     <section
@@ -66,37 +74,77 @@ export function TestimonialsStrip() {
         What collaborators say
       </p>
 
-      <div
-        className="testimonials-strip-viewport"
-        onMouseEnter={() => { if (timeoutRef.current) clearTimeout(timeoutRef.current); setPaused(true); }}
-        onMouseLeave={() => setPaused(false)}
-        onTouchStart={handleTouchStart}
-        onTouchMove={handleTouchMove}
-        onTouchEnd={handleTouchEnd}
-        role="region"
-        aria-label="Scrolling testimonials"
-      >
-        <div style={{ transform: `translateX(${swipeX}px)` }}>
-          <div
-            ref={marqueeRef}
-            className="testimonials-strip-marquee"
-            style={{ animationPlayState: paused ? 'paused' : 'running' }}
-          >
-            {items.map((t, i) => (
-              <figure
-                key={`${t.id}-${t._aria ? 'b' : 'a'}`}
-                className="testimonials-strip-card"
-                aria-hidden={t._aria || undefined}
-              >
-                <blockquote className="testimonials-strip-quote">
-                  &ldquo;{t.quote}&rdquo;
-                </blockquote>
-                <figcaption className="testimonials-strip-attribution">
-                  <span className="testimonials-strip-name">{t.name}</span>
-                  <span className="testimonials-strip-role">{t.role}</span>
-                </figcaption>
-              </figure>
-            ))}
+      {/* Mobile: fixed card + arrow navigation */}
+      <div className="testimonials-strip-mobile" aria-label="Testimonials">
+        <button
+          className="testimonials-strip-arrow"
+          onClick={handlePrev}
+          aria-label="Previous testimonial"
+        >
+          ←
+        </button>
+        <figure className="testimonials-strip-card testimonials-strip-card-mobile">
+          <blockquote className="testimonials-strip-quote">
+            &ldquo;{current.quote}&rdquo;
+          </blockquote>
+          <figcaption className="testimonials-strip-attribution">
+            <span className="testimonials-strip-name">{current.name}</span>
+            <span className="testimonials-strip-role">{current.role}</span>
+          </figcaption>
+        </figure>
+        <button
+          className="testimonials-strip-arrow"
+          onClick={handleNext}
+          aria-label="Next testimonial"
+        >
+          →
+        </button>
+      </div>
+      <div className="testimonials-strip-dots" aria-hidden="true">
+        {APPROVED_TESTIMONIALS.map((_, i) => (
+          <button
+            key={i}
+            className={`testimonials-strip-dot${i === currentIndex ? ' active' : ''}`}
+            onClick={() => setCurrentIndex(i)}
+            aria-label={`Go to testimonial ${i + 1}`}
+          />
+        ))}
+      </div>
+
+      {/* Desktop: auto-scroll marquee */}
+      <div className="testimonials-strip-desktop">
+        <div
+          className="testimonials-strip-viewport"
+          onMouseEnter={() => { if (timeoutRef.current) clearTimeout(timeoutRef.current); setPaused(true); }}
+          onMouseLeave={() => setPaused(false)}
+          onTouchStart={handleTouchStart}
+          onTouchMove={handleTouchMove}
+          onTouchEnd={handleTouchEnd}
+          role="region"
+          aria-label="Scrolling testimonials"
+        >
+          <div style={{ transform: `translateX(${swipeX}px)` }}>
+            <div
+              ref={marqueeRef}
+              className="testimonials-strip-marquee"
+              style={{ animationPlayState: paused ? 'paused' : 'running' }}
+            >
+              {items.map((t) => (
+                <figure
+                  key={`${t.id}-${t._aria ? 'b' : 'a'}`}
+                  className="testimonials-strip-card"
+                  aria-hidden={t._aria || undefined}
+                >
+                  <blockquote className="testimonials-strip-quote">
+                    &ldquo;{t.quote}&rdquo;
+                  </blockquote>
+                  <figcaption className="testimonials-strip-attribution">
+                    <span className="testimonials-strip-name">{t.name}</span>
+                    <span className="testimonials-strip-role">{t.role}</span>
+                  </figcaption>
+                </figure>
+              ))}
+            </div>
           </div>
         </div>
       </div>

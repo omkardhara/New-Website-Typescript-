@@ -949,13 +949,12 @@ button:focus:not(:focus-visible) {
 }
 .testimonials-strip-label {
   font-family: var(--font-mono);
-  font-size: 10px;
-  letter-spacing: 0.28em;
+  font-size: 13px;
+  letter-spacing: 0.22em;
   color: var(--gold-light);
   text-transform: uppercase;
   text-align: center;
-  margin-bottom: 28px;
-  opacity: 0.7;
+  margin-bottom: 32px;
 }
 .testimonials-strip-viewport {
   overflow: hidden;
@@ -1004,7 +1003,7 @@ button:focus:not(:focus-visible) {
 }
 .testimonials-strip-quote {
   font-family: var(--font-serif);
-  font-size: 15px;
+  font-size: 18px;
   font-weight: 300;
   line-height: 1.7;
   color: var(--text-light-2);
@@ -1038,6 +1037,73 @@ button:focus:not(:focus-visible) {
 }
 @media (prefers-reduced-motion: reduce) {
   .testimonials-strip-marquee { animation: none; }
+}
+/* Mobile: hide marquee, show card+arrow carousel */
+.testimonials-strip-mobile {
+  display: none;
+}
+.testimonials-strip-dots {
+  display: none;
+}
+.testimonials-strip-desktop {
+  display: block;
+}
+.testimonials-strip-card-mobile {
+  flex: 1;
+  width: auto;
+  margin: 0;
+}
+.testimonials-strip-arrow {
+  background: none;
+  border: 1px solid rgba(248,246,241,0.2);
+  color: var(--text-light-2);
+  width: 44px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  font-size: 20px;
+  flex-shrink: 0;
+  transition: border-color 0.25s, color 0.25s;
+  align-self: center;
+}
+.testimonials-strip-arrow:hover {
+  border-color: var(--gold-light);
+  color: var(--gold-light);
+}
+.testimonials-strip-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: rgba(248,246,241,0.2);
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  transition: background 0.25s;
+}
+.testimonials-strip-dot.active {
+  background: var(--gold-light);
+}
+@media (max-width: 720px) {
+  .testimonials-strip-mobile {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    padding: 0 16px;
+  }
+  .testimonials-strip-dots {
+    display: flex;
+    gap: 8px;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  .testimonials-strip-desktop {
+    display: none;
+  }
+  .testimonials-strip-wrap {
+    padding: 36px 0 32px;
+  }
 }
 
 /* ─── FORCED COLORS (Windows High Contrast mode) ─────────── */
