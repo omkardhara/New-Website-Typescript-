@@ -4,6 +4,7 @@ export type Testimonial = {
   name: string;
   role: string;
   context: string; // project/collaboration context — for internal reference
+  approved?: boolean; // flip to true once the person has confirmed their quote
 };
 
 // DRAFT TESTIMONIALS — not yet approved by collaborators.
@@ -17,6 +18,7 @@ export const TESTIMONIALS: Testimonial[] = [
     name: 'Janhavi Mallapur',
     role: 'Art Director · Trapped, Phantom Films',
     context: 'Jr. Art Director on Trapped (2015) under Janhavi — fabricated 17 survival devices',
+    approved: true,
   },
   {
     id: 2,
@@ -131,3 +133,5 @@ export const TESTIMONIALS: Testimonial[] = [
     context: 'Taught 6-month flow arts programme at the school',
   },
 ];
+
+export const APPROVED_TESTIMONIALS = TESTIMONIALS.filter((t) => t.approved);

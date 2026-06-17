@@ -1,13 +1,13 @@
 'use client';
 import { useState, useRef, useEffect } from 'react';
-import { TESTIMONIALS } from '@/data/testimonials';
+import { APPROVED_TESTIMONIALS } from '@/data/testimonials';
 
 // Must match the CSS animation duration for testimonials-scroll
 const ANIM_DURATION_S = 80;
 
 const items = [
-  ...TESTIMONIALS.map((t) => ({ ...t, _aria: false })),
-  ...TESTIMONIALS.map((t) => ({ ...t, _aria: true })),
+  ...APPROVED_TESTIMONIALS.map((t) => ({ ...t, _aria: false })),
+  ...APPROVED_TESTIMONIALS.map((t) => ({ ...t, _aria: true })),
 ];
 
 export function TestimonialsStrip() {
@@ -50,6 +50,8 @@ export function TestimonialsStrip() {
   useEffect(() => {
     return () => { if (timeoutRef.current) clearTimeout(timeoutRef.current); };
   }, []);
+
+  if (items.length === 0) return null;
 
   return (
     <section

@@ -1,9 +1,12 @@
 import { SOCIALS } from '@/data/site';
+import { TestimonialsStrip } from '@/components/TestimonialsStrip';
 
 const WHATSAPP_NUMBER = '919920499089';
 
 export function ContactBand() {
   return (
+    <>
+    <TestimonialsStrip />
     <section className="contact-band" id="contact" aria-labelledby="contact-band-heading">
       <div className="contact-inner">
         <div>
@@ -65,5 +68,6 @@ export function ContactBand() {
         </address>
       </div>
     </section>
+    </>
   );
 }

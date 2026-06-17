@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import { SOCIALS } from '@/data/site';
+import { TestimonialsStrip } from '@/components/TestimonialsStrip';
 
 const SITE_URL = 'https://www.omkardhareshwar.com';
 
@@ -74,6 +75,8 @@ export default function ContactPage() {
           <span style={{ fontSize: '14px' }}>←</span> Back to home
         </Link>
       </div>
+
+      <TestimonialsStrip />
 
       <div
         style={{
