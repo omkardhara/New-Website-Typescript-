@@ -27,6 +27,7 @@ export const TESTIMONIALS: Testimonial[] = [
     name: 'Arif Chaudhary',
     role: 'B-Boy Flying Machine · 5× Red Bull BC One India Champion',
     context: "Omkar managed Arif's career in the early years",
+    approved: true,
   },
   {
     id: 3,
@@ -60,6 +61,7 @@ export const TESTIMONIALS: Testimonial[] = [
     name: 'Zain Siddiqui',
     role: 'Co-founder, Wicked Broz',
     context: 'Co-founded Wicked Broz and Marol Art Village together',
+    approved: true,
   },
   {
     id: 7,
