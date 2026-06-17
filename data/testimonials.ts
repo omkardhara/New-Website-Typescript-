@@ -13,10 +13,10 @@ export const TESTIMONIALS: Testimonial[] = [
   {
     id: 1,
     quote:
-      "Omkar built things that looked wrong on paper but perfect on screen. He had this rare instinct — make it real, not realistic. The survival devices he fabricated for Trapped had genuine logic behind them; you could feel it. That's the difference between a craftsman and a prop department.",
-    name: 'Vikramaditya Motwane',
-    role: 'Director, Phantom Films',
-    context: 'Jr. Art Director on Trapped (2015) — fabricated 17 survival devices',
+      "On Trapped, Omkar wasn't just building props — he was engineering solutions. Every device had to work on camera and make sense as something a person could actually build alone in the jungle. He'd disappear for an hour and come back with a functioning prototype. Art direction is half vision and half stubborn problem-solving. He had both.",
+    name: 'Janhavi Mallapur',
+    role: 'Art Director · Trapped, Phantom Films',
+    context: 'Jr. Art Director on Trapped (2015) under Janhavi — fabricated 17 survival devices',
   },
   {
     id: 2,
@@ -24,7 +24,7 @@ export const TESTIMONIALS: Testimonial[] = [
       "He managed me when I was still figuring out if b-boying could be a career in India. He didn't just book shows — he told the story. Because of that, the right people started paying attention. Five national championships later, I still credit that early belief.",
     name: 'Arif Chaudhary',
     role: 'B-Boy Flying Machine · 5× Red Bull BC One India Champion',
-    context: 'Omkar managed Arif\'s career in the early years',
+    context: "Omkar managed Arif's career in the early years",
   },
   {
     id: 3,
@@ -72,22 +72,62 @@ export const TESTIMONIALS: Testimonial[] = [
       "We've shot in Marol at 3am, at IIT in a crowd of thousands, and in rain that had no business stopping us. Omkar doesn't wait for perfect conditions — he works in whatever conditions show up. The hyperlapse we made together was 130 feet of mural and two people with one camera. Still one of my proudest shoots.",
     name: 'Bhumesh Das',
     role: 'Director & Cinematographer · Alphabooom',
-    context: 'India\'s First Graffiti Hyperlapse (2016) and multiple Ema Films collabs',
+    context: "India's First Graffiti Hyperlapse (2016) and multiple Ema Films collabs",
   },
   {
     id: 9,
     quote:
-      "Standing tall means something different to everyone on that campaign. For Omkar it meant showing up as a street artist in a national brand moment and not losing an inch of who he is. That's harder than it looks.",
-    name: 'Taba Chake',
-    role: 'Singer & North-East Brand Ambassador',
-    context: 'Stand Tall For All campaign, Lee Jeans (2019)',
+      "We wanted the Khel-Spel exhibition to do more than show objects — we wanted visitors to play. The Flow Simulator became the beating heart of that exhibition. People who had never juggled stood at it for thirty minutes, completely absorbed. That's the mark of an installation that genuinely understands its audience.",
+    name: 'Sharada Kerkar',
+    role: 'Museum of Goa',
+    context: 'Flow Simulator installation — Khel-Spel HomoLudens: The Art of Play (2025)',
   },
   {
     id: 10,
     quote:
-      "The Neon Sky installation was forty by forty metres of neon canopy built in twelve days. There was no budget for failure. Omkar ran that site like someone who had done it a hundred times, even though none of us had done it once. The result was a centrepiece of Asia's largest college festival.",
-    name: 'Henry Tham',
-    role: 'Co-founder, Art Can Feed',
-    context: 'Under a Neon Sky installation, Mood Indigo IIT Powai (2015)',
+      "This Is My Hood was a story that could only be told from the inside. Omkar gave us access to a community he'd spent years building trust with. The documentary won Best Series because that trust comes through in every frame. You cannot manufacture that kind of access — you have to earn it over years.",
+    name: 'Nisha Vasudevan',
+    role: 'Supari Studios',
+    context: 'This Is My Hood — Red Bull documentary, Best Series (Unscripted) Critics Choice (2018)',
+  },
+  {
+    id: 11,
+    quote:
+      "Getting seven athletes to show up authentically on camera is harder than it sounds. Omkar made the shoot feel like a day in the neighbourhood rather than a campaign. The energy was real because he understood the people involved. It didn't look like advertising because it wasn't.",
+    name: 'Dhwani Mankad',
+    role: 'Flying Machine Denims',
+    context: 'Flying Machine denim campaign (2019) — 3 shoots, 7 athletes',
+  },
+  {
+    id: 12,
+    quote:
+      "We came to Marol for the Ladies First festival expecting an event. We found a movement. Omkar has built something in that neighbourhood that most cities would spend crores trying to recreate and still not get right. Our audience felt it too — it became one of our most responded-to pieces.",
+    name: 'Abhi & Niyu',
+    role: 'Content Creators · @abhiandniyu',
+    context: 'Covered Ladies First Street Art Festival, Marol Art Village',
+  },
+  {
+    id: 13,
+    quote:
+      "Working with someone who understands both the culture and the commercial side is rare. Omkar knows the music, the artists, and the scene — and he knows how to translate that into something that works for a label without hollowing out what made it interesting in the first place.",
+    name: 'Tanay Pradhan',
+    role: 'Universal Music India',
+    context: 'Music industry collaboration',
+  },
+  {
+    id: 14,
+    quote:
+      "What struck me about Omkar is that he has done the work across every layer — underground hip-hop, national campaigns, live performance, literary writing. He doesn't just bridge worlds; he genuinely belongs to several of them at once. That's someone you want when you're trying to reach an audience that doesn't want to be marketed to.",
+    name: 'Ayonjeet Mukherjee',
+    role: 'Saregama',
+    context: 'Music industry collaboration',
+  },
+  {
+    id: 15,
+    quote:
+      "Our students had never seen anything like flow arts. Omkar didn't teach it as a trick — he taught it as a practice. By the end of the six months, children were coming in before school just to practise. What he left behind was a habit of attention and focus. That's rare in any teacher, not just an artist.",
+    name: 'Behlah Badri',
+    role: 'Principal · Hasanat International School',
+    context: 'Taught 6-month flow arts programme at the school',
   },
 ];
