@@ -109,18 +109,18 @@ export const TESTIMONIALS: Testimonial[] = [
   {
     id: 13,
     quote:
-      "Working with someone who understands both the culture and the commercial side is rare. Omkar knows the music, the artists, and the scene — and he knows how to translate that into something that works for a label without hollowing out what made it interesting in the first place.",
+      "Most music campaigns stay on screens. We wanted the launch to live in the city. Omkar understood that instinctively — he brought the street art background but also the strategic thinking to make it work as a campaign. People stopped, photographed it, shared it. The art did the work the ads couldn't.",
     name: 'Tanay Pradhan',
     role: 'Universal Music India',
-    context: 'Music industry collaboration',
+    context: 'Designed and executed guerilla street art campaign for a music launch',
   },
   {
     id: 14,
     quote:
-      "What struck me about Omkar is that he has done the work across every layer — underground hip-hop, national campaigns, live performance, literary writing. He doesn't just bridge worlds; he genuinely belongs to several of them at once. That's someone you want when you're trying to reach an audience that doesn't want to be marketed to.",
+      "Guerilla campaigns live or die on execution. You can plan everything and still have it fall flat if the street presence isn't right. Omkar's work has the visual authority that stops people in their tracks — and makes them want to share it. That's the whole game for a music launch.",
     name: 'Ayonjeet Mukherjee',
     role: 'Saregama',
-    context: 'Music industry collaboration',
+    context: 'Designed and executed guerilla street art campaign for a music launch',
   },
   {
     id: 15,
