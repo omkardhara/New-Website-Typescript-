@@ -92,8 +92,9 @@ export const TESTIMONIALS: Testimonial[] = [
     quote:
       "This Is My Hood worked because Omkar had spent years in Marol before we ever brought cameras in. Residents, shop owners, artists. They talked to us because they already knew him. That's not something you arrange in a production timeline. The documentary won Best Series because that trust reads on screen.",
     name: 'Nisha Vasudevan',
-    role: 'Supari Studios',
+    role: 'Executive Creative Director · Supari Studios',
     context: 'This Is My Hood — Red Bull documentary, Best Series (Unscripted) Critics Choice (2018)',
+    approved: true,
   },
   {
     id: 11,
