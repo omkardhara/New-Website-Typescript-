@@ -53,7 +53,7 @@ export function Hero() {
     <section className="hero" aria-label="Introduction">
       <div className="hero-grid">
         <div className="hero-left">
-          <div className="hero-eyebrow">Artist · Story teller · Educator</div>
+          <div className="hero-eyebrow">Juggler · Storyteller · Educator</div>
 
           <h1 className="hero-headline">
             I craft experiences that bring people together, inspire and

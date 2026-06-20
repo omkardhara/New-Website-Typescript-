@@ -10,7 +10,7 @@ const contactSchema = {
   '@type': 'ContactPage',
   name: 'Contact Omkar Dhareshwar',
   url: `${SITE_URL}/contact`,
-  description: 'Get in touch with Omkar Dhareshwar for performances, workshops, or brand collaborations.',
+  description: 'Book Omkar Dhareshwar for juggling performances, fire acts, flow arts workshops, or brand activations. Based in Mumbai, available across India.',
   mainEntity: {
     '@type': 'Person',
     name: 'Omkar Dhareshwar',
@@ -20,20 +20,20 @@ const contactSchema = {
 };
 
 export const metadata: Metadata = {
-  title: 'Contact',
-  description: 'Get in touch with Omkar Dhareshwar — performances, workshops, brand collaborations.',
+  title: 'Book a Juggling Performance or Flow Workshop',
+  description: 'Hire Omkar Dhareshwar for juggling performances, fire acts, flow arts workshops, or brand activations. Mumbai-based, available across India.',
   alternates: { canonical: 'https://www.omkardhareshwar.com/contact' },
   openGraph: {
     type: 'website',
-    title: 'Contact · Omkar Dhareshwar',
-    description: 'Brands, agencies, curators — reach out for performances, workshops, or brand collaborations.',
+    title: 'Book a Juggling Performance or Flow Workshop · Omkar Dhareshwar',
+    description: 'Hire for juggling performances, fire acts, flow arts workshops, or brand activations. Mumbai-based, available across India.',
     url: 'https://www.omkardhareshwar.com/contact',
     images: [{ url: '/og-2025.jpg', alt: 'Omkar Dhareshwar — Flow Artist, Performer & Storyteller' }],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Contact · Omkar Dhareshwar',
-    description: 'Brands, agencies, curators — reach out for performances, workshops, or brand collaborations.',
+    title: 'Book a Juggling Performance or Flow Workshop · Omkar Dhareshwar',
+    description: 'Hire for juggling performances, fire acts, flow arts workshops, or brand activations. Mumbai-based, available across India.',
     images: [{ url: '/og-2025.jpg', alt: 'Omkar Dhareshwar — Flow Artist, Performer & Storyteller' }],
   },
 };
