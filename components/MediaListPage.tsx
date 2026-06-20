@@ -123,7 +123,7 @@ export function MediaListPage() {
               <div className="video-thumb">
                 <Image
                   src={v.thumb}
-                  alt=""
+                  alt={v.title}
                   fill
                   sizes="(max-width: 720px) 100vw, (max-width: 1024px) 50vw, 33vw"
                   style={{ objectFit: 'cover' }}

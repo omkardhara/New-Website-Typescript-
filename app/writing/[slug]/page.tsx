@@ -39,14 +39,19 @@ export function generateMetadata({ params }: { params: { slug: string } }): Meta
 function buildBreadcrumb(note: ReturnType<typeof getNoteBySlug>) {
   if (!note) return null;
   const isPoem = note.type === 'poem';
-  const sectionLabel = isPoem ? 'Poems' : 'Essays';
-  const sectionHref = isPoem ? `${SITE_URL}/writing/poems` : `${SITE_URL}/writing/essays`;
+  const isRedBull = note.publication === 'Red Bull';
+  const sectionLabel = isPoem ? 'Poems' : isRedBull ? 'Red Bull' : 'Essays';
+  const sectionHref = isPoem
+    ? `${SITE_URL}/writing/poems`
+    : isRedBull
+    ? `${SITE_URL}/writing/redbull`
+    : `${SITE_URL}/writing/essays`;
   return {
     '@context': 'https://schema.org',
     '@type': 'BreadcrumbList',
     itemListElement: [
       { '@type': 'ListItem', position: 1, name: 'Home', item: SITE_URL },
-      { '@type': 'ListItem', position: 2, name: 'Writing', item: `${SITE_URL}/writing/essays` },
+      { '@type': 'ListItem', position: 2, name: 'Writing', item: sectionHref },
       { '@type': 'ListItem', position: 3, name: sectionLabel, item: sectionHref },
       { '@type': 'ListItem', position: 4, name: note.title },
     ],
@@ -96,8 +101,9 @@ export default function WritingPage({ params }: { params: { slug: string } }) {
   if (!note) notFound();
 
   const isPoem = note.type === 'poem';
-  const backHref = note.type === 'poem' ? '/writing/poems' : '/writing/essays';
-  const backLabel = note.type === 'poem' ? 'Poems' : 'Essays';
+  const isRedBull = note.publication === 'Red Bull';
+  const backHref = isPoem ? '/writing/poems' : isRedBull ? '/writing/redbull' : '/writing/essays';
+  const backLabel = isPoem ? 'Poems' : isRedBull ? 'Red Bull' : 'Essays';
   const blocks = note.content
     ? note.content.split('\n\n').map((b) => b.trim()).filter(Boolean)
     : [];
