@@ -21,21 +21,21 @@ const aboutSchema = {
 };
 
 export const metadata: Metadata = {
-  title: 'About',
+  title: 'Juggler, Flow Artist & Street Artist in Mumbai',
   description:
-    'Omkar Dhareshwar — flow artist, fire performer, and storyteller based in Mumbai. Mechanical engineer by degree; everything else by choice. Featured in Nat Geo, Red Bull, Doordarshan, and Britannia.',
+    'Omkar Dhareshwar — juggler, flow artist, fire performer, and storyteller based in Mumbai. Mechanical engineer by degree; everything else by choice. Featured in Nat Geo, Red Bull, Doordarshan, and Britannia.',
   alternates: { canonical: 'https://www.omkardhareshwar.com/about' },
   openGraph: {
     type: 'profile',
-    title: 'About · Omkar Dhareshwar',
-    description: 'Mechanical engineer by degree. Everything else by choice.',
+    title: 'Juggler, Flow Artist & Street Artist in Mumbai · Omkar Dhareshwar',
+    description: 'Juggler, fire performer, and street artist. Mechanical engineer by degree. Everything else by choice.',
     url: 'https://www.omkardhareshwar.com/about',
     images: [{ url: '/og-2025.jpg', alt: 'Omkar Dhareshwar — Flow Artist, Performer & Storyteller' }],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'About · Omkar Dhareshwar',
-    description: 'Mechanical engineer by degree. Everything else by choice.',
+    title: 'Juggler, Flow Artist & Street Artist in Mumbai · Omkar Dhareshwar',
+    description: 'Juggler, fire performer, and street artist. Mechanical engineer by degree. Everything else by choice.',
     images: [{ url: '/og-2025.jpg', alt: 'Omkar Dhareshwar — Flow Artist, Performer & Storyteller' }],
   },
 };
