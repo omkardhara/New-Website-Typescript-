@@ -112,6 +112,7 @@ export function CredStrip() {
                       alt=""
                       width={28}
                       height={28}
+                      loading="lazy"
                       style={{ display: 'block', flexShrink: 0 }}
                       draggable={false}
                     />
@@ -122,6 +123,7 @@ export function CredStrip() {
                   <img
                     src={logo.src}
                     alt={logo.name}
+                    loading="lazy"
                     style={{
                       height: logo.h ? `${logo.h}px` : undefined,
                       ...(logo.maxW && { maxWidth: `${logo.maxW}px` }),
