@@ -77,7 +77,7 @@ export function WorkTab() {
               <h3 className="work-card-title">{item.title}</h3>
               <p className="work-card-desc">{item.desc}</p>
               <div className="work-card-link">
-                {item.linkLabel ?? 'View project'} <span>→</span>
+                {item.linkLabel ?? 'View project'} <span>{item.url ? '↗' : '→'}</span>
               </div>
             </div>
           </Link>

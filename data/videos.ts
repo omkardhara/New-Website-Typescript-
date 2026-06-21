@@ -6,18 +6,21 @@ export const VIDEOS: Video[] = [
     // Use the local image from /public/images/.
     title: 'Beyond Thoughts · Doordarshan',
     sub: 'A walk through the journey · National TV',
+    category: 'TV Feature',
     yt: '5A9IgNfa7Wg',
     thumb: '/images/Doordarshan-Beyond Thoughts- Omkar Dhareshwar.png',
   },
   {
     title: 'Britannia Chocostars',
     sub: 'TV Commercial · Britannia',
+    category: 'TV Commercial',
     yt: 'jyzFUHqmjsQ',
     thumb: 'https://img.youtube.com/vi/jyzFUHqmjsQ/hqdefault.jpg',
   },
   {
     title: 'Thugesh — Almost Monday',
     sub: 'Flow Performance · Live',
+    category: 'Live Performance',
     yt: 'jEKNc4njmak',
     thumb: 'https://img.youtube.com/vi/jEKNc4njmak/hqdefault.jpg',
     startTime: 1373, // 22:53
@@ -25,12 +28,14 @@ export const VIDEOS: Video[] = [
   {
     title: 'Wicked Broz × Mochi · 4-City Hip-Hop Tour',
     sub: 'Bengaluru · Hyderabad · Chennai · Goa',
+    category: 'Street Art',
     yt: '-EecfvR0_FE',
     thumb: 'https://img.youtube.com/vi/-EecfvR0_FE/hqdefault.jpg',
   },
   {
     title: 'Mumbai Metro × ManWith3Balls',
     sub: 'Featured · Mumbai Metro',
+    category: 'TV Feature',
     yt: 'o-xjr3pm63w',
     portrait: true,
     thumb: 'https://img.youtube.com/vi/o-xjr3pm63w/hqdefault.jpg',
@@ -38,6 +43,7 @@ export const VIDEOS: Video[] = [
   {
     title: 'Museum of Goa · Flow Simulator',
     sub: 'Khel-Spel HomoLudens · The Art of Play',
+    category: 'Installation',
     yt: '6psNfvXNDkM',
     portrait: true,
     thumb: 'https://img.youtube.com/vi/6psNfvXNDkM/hqdefault.jpg',
@@ -45,6 +51,7 @@ export const VIDEOS: Video[] = [
   {
     title: 'Vithoba Dantmanjan × Shruti Haasan',
     sub: 'Commercial · Featuring Shruti Haasan',
+    category: 'TV Commercial',
     yt: 'pYxmfvJM9So',
     portrait: true,
     thumb: 'https://img.youtube.com/vi/pYxmfvJM9So/hqdefault.jpg',
@@ -52,6 +59,7 @@ export const VIDEOS: Video[] = [
   {
     title: 'Blindfold Juggling',
     sub: 'Blind World · A social juggling commentary',
+    category: 'Juggling',
     yt: 'zogO_4McBPg',
     portrait: true,
     thumb: 'https://img.youtube.com/vi/zogO_4McBPg/hqdefault.jpg',
@@ -59,12 +67,14 @@ export const VIDEOS: Video[] = [
   {
     title: 'Under Neon Sky',
     sub: 'Installation · Light & Movement',
+    category: 'Installation',
     yt: 'M8aD0NU1akw',
     thumb: 'https://img.youtube.com/vi/M8aD0NU1akw/hqdefault.jpg',
   },
   {
     title: "India's First Graffiti Hyperlapse",
     sub: 'Production · Street Art',
+    category: 'Street Art',
     yt: 'fP4Xm5gmTGI',
     thumb: 'https://img.youtube.com/vi/fP4Xm5gmTGI/hqdefault.jpg',
   },

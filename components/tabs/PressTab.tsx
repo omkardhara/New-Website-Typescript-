@@ -16,6 +16,14 @@ const CATS: { id: Cat; label: string }[] = [
   { id: 'installation',label: 'Installation' },
 ];
 
+const CAT_COUNTS: Record<Cat, number> = {
+  all:          SORTED.length,
+  'street-art': SORTED.filter((p) => p.category === 'street-art').length,
+  juggling:     SORTED.filter((p) => p.category === 'juggling').length,
+  activism:     SORTED.filter((p) => p.category === 'activism').length,
+  installation: SORTED.filter((p) => p.category === 'installation').length,
+};
+
 const PREVIEW = 3;
 
 const SORTED = [...PRESS].sort((a, b) => (b.featured ? 1 : 0) - (a.featured ? 1 : 0));
@@ -51,7 +59,7 @@ export function PressTab() {
             onClick={() => setCat(c.id)}
             aria-pressed={cat === c.id}
           >
-            {c.label}
+            {c.label} <span style={{ opacity: 0.6, fontSize: '10px', marginLeft: '4px' }}>({CAT_COUNTS[c.id]})</span>
           </button>
         ))}
       </div>

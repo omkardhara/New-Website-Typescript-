@@ -134,6 +134,7 @@ export function MediaListPage() {
                   {String(i + 1).padStart(2, '0')} / {String(VIDEOS.length).padStart(2, '0')}
                 </span>
               </div>
+              {v.category && <div className="video-category">{v.category}</div>}
               <h4 className="video-title">{v.title}</h4>
               <p className="video-sub">{v.sub}</p>
             </button>

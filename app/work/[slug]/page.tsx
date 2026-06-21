@@ -99,6 +99,12 @@ export default function ProjectPage({ params }: { params: { slug: string } }) {
   const schema = buildWorkSchema(item);
   const breadcrumb = buildBreadcrumb(item);
 
+  const internalWork = WORK.filter((w) => !w.url && !w.hidden)
+    .sort((a, b) => (a.image ? 0 : 1) - (b.image ? 0 : 1));
+  const idx = internalWork.findIndex((w) => w.slug === item.slug);
+  const prevWork = idx > 0 ? internalWork[idx - 1] : null;
+  const nextWork = idx < internalWork.length - 1 ? internalWork[idx + 1] : null;
+
   const paragraphs = item.article
     ? item.article.split('\n\n').map((p) => p.trim()).filter(Boolean)
     : [];
@@ -390,6 +396,22 @@ export default function ProjectPage({ params }: { params: { slug: string } }) {
           <span style={{ fontSize: '14px' }}>←</span> Browse more work
         </Link>
       </div>
+      {(prevWork || nextWork) && (
+        <nav aria-label="Project navigation" className="article-nav">
+          {prevWork ? (
+            <Link href={`/work/${prevWork.slug}`} className="article-nav-item">
+              <span className="article-nav-dir">← Previous</span>
+              <span className="article-nav-title">{prevWork.title}</span>
+            </Link>
+          ) : <div />}
+          {nextWork ? (
+            <Link href={`/work/${nextWork.slug}`} className="article-nav-item next">
+              <span className="article-nav-dir">Next →</span>
+              <span className="article-nav-title">{nextWork.title}</span>
+            </Link>
+          ) : <div />}
+        </nav>
+      )}
     </article>
     </main>
   );

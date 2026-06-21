@@ -249,7 +249,7 @@ export function AboutPage() {
 
           <div className="about-bio-actions">
             <Link href="/contact" className="btn-primary" style={{ display: 'inline-flex', alignItems: 'center', gap: '10px' }}>
-              Work with me <span>→</span>
+              Let&apos;s work <span>→</span>
             </Link>
             <Link href="/story" className="btn-ghost dark">
               Read the full story
@@ -388,6 +388,23 @@ export function AboutPage() {
                 <span className="about-press-year">{p.year}</span>
               </div>
             ))}
+          </div>
+          <div style={{ marginTop: '32px' }}>
+            <Link
+              href="/press"
+              style={{
+                fontFamily: 'var(--font-mono)',
+                fontSize: '11px',
+                letterSpacing: '0.2em',
+                textTransform: 'uppercase',
+                color: 'var(--text-dark)',
+                textDecoration: 'none',
+                borderBottom: '1px solid var(--line-dark)',
+                paddingBottom: '2px',
+              }}
+            >
+              See all {PRESS.length} press features →
+            </Link>
           </div>
         </div>
       )}

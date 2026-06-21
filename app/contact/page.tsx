@@ -123,8 +123,7 @@ export default function ContactPage() {
           }}
         >
           Brands, agencies, curators, festival programmers — if you&apos;ve made it this far, you
-          probably already know what you want. The easiest path is email. WhatsApp works too. A
-          contact form is on the way if you&apos;d prefer one.
+          probably already know what you want. The easiest path is email. WhatsApp works too.
         </p>
 
         <div

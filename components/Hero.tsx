@@ -68,7 +68,7 @@ export function Hero() {
 
           <div className="hero-ctas">
             <Link href="/contact" className="btn-primary">
-              Hire me <span>→</span>
+              Let&apos;s work <span>→</span>
             </Link>
             <a href="#tab-work" className="btn-ghost">
               See the work
