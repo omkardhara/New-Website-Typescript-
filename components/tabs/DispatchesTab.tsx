@@ -107,6 +107,48 @@ export function DispatchesTab() {
           </button>
         </div>
       </div>
+
+      <Link href="/work/bhagsunag" className="dispatch-feature" style={{ marginTop: '48px' }}>
+        <div className="dispatch-img">
+          <Image
+            src="/images/bhagsunag/slackline-sunset.jpg"
+            alt="Slacklining above Dharamshala valley at golden hour"
+            fill
+            style={{ objectFit: 'cover', objectPosition: 'center' }}
+            sizes="(max-width: 1024px) 100vw, 50vw"
+          />
+          <span className="dispatch-img-route">Bhagsunag · Dharamshala</span>
+        </div>
+        <div className="dispatch-text">
+          <div className="dispatch-eyebrow">Bhagsunag · Dharamshala</div>
+          <h3 className="dispatch-title">
+            A month with Wicked Broz.
+            <br />
+            <em>Slacklining in the Himalayas.</em>
+          </h3>
+          <p className="dispatch-desc">
+            No schedule, no gigs. Just Bhagsunag, near Dharamshala, with the Wicked Broz crew.
+            Slacklining on mountain meadows, cooking in nature, prayer flags, rhododendron forests.
+          </p>
+          <div className="dispatch-stats">
+            <div>
+              <div className="dispatch-stat-num">1</div>
+              <span className="dispatch-stat-label">month</span>
+            </div>
+            <div>
+              <div className="dispatch-stat-num">∞</div>
+              <span className="dispatch-stat-label">slacklines</span>
+            </div>
+            <div>
+              <div className="dispatch-stat-num">0</div>
+              <span className="dispatch-stat-label">agenda</span>
+            </div>
+          </div>
+          <span className="btn-ghost dark" style={{ alignSelf: 'flex-start' }}>
+            Read the dispatch →
+          </span>
+        </div>
+      </Link>
     </>
   );
 }
