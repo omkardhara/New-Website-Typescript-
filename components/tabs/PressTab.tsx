@@ -16,6 +16,8 @@ const CATS: { id: Cat; label: string }[] = [
   { id: 'installation',label: 'Installation' },
 ];
 
+const SORTED = [...PRESS].sort((a, b) => (b.featured ? 1 : 0) - (a.featured ? 1 : 0));
+
 const CAT_COUNTS: Record<Cat, number> = {
   all:          SORTED.length,
   'street-art': SORTED.filter((p) => p.category === 'street-art').length,
@@ -25,8 +27,6 @@ const CAT_COUNTS: Record<Cat, number> = {
 };
 
 const PREVIEW = 3;
-
-const SORTED = [...PRESS].sort((a, b) => (b.featured ? 1 : 0) - (a.featured ? 1 : 0));
 
 export function PressTab() {
   const [cat, setCat] = useState<Cat>('all');
