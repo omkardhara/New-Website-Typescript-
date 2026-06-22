@@ -680,9 +680,9 @@ At every stop along the way, Khati, Dharchula, the villages between, there were 
     image: '/images/bhagsunag/slackline-sunset.jpg',
     images: [
       '/images/bhagsunag/slackline-meadow.jpg',
-      '/images/bhagsunag/slackline-lotus.jpg',
-      '/images/bhagsunag/slackline-sunset.jpg',
       '/images/bhagsunag/slackline-forest.jpg',
+      '/images/bhagsunag/slackline-sunset.jpg',
+      '/images/bhagsunag/slackline-lotus.jpg',
       '/images/bhagsunag/slackline-teaching.jpg',
       '/images/bhagsunag/prayer-flags.jpg',
       '/images/bhagsunag/rhododendron-tree.jpg',
@@ -690,10 +690,10 @@ At every stop along the way, Khati, Dharchula, the villages between, there were 
     ],
     captions: [
       'Walking the line. Bhagsunag meadows.',
-      'Lotus on a slackline. Mountains behind.',
-      'Golden hour above Dharamshala valley.',
       'Forest slacklining near the temple trail.',
-      'Teaching someone to find the line.',
+      'Golden hour above Dharamshala valley.',
+      'Lotus on a slackline. Mountains behind.',
+      'Teaching Wicked Broz co-founder Zain Siddiqui to find the line.',
       'Prayer flags, pine forest, hammock. No agenda.',
       'Up a rhododendron tree above Dharamshala.',
       'Above the snowline. Somewhere above Triund.',
@@ -725,8 +725,6 @@ Lower down, near the Bhagsunag temple, the trail is shaded and quiet. Prayer fla
 **Triund and above**
 
 We trekked to Triund on a clear day. Above treeline it opens up into high alpine meadow. Past Triund the snow starts. The Dhauladhar peaks sit close enough to feel like walls.
-
-I carried balls up to the snowline and juggled there. Altitude does not affect juggling the way it affects running — the balls go up the same, your lungs are the problem. You throw slower. You breathe more between throws.
 
 **The month**
 
