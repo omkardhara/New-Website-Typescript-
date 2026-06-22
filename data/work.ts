@@ -664,7 +664,13 @@ The Panchachuli peaks, five of them, sit in a row above. At that hour, with the 
 
 **The kids**
 
-At every stop along the way, Khati, Dharchula, the villages between, there were kids. Juggling travels well. You do not need a common language. You hand someone a ball and they either want to try or they do not. Most of them did.`,
+At every stop along the way, Khati, Dharchula, the villages between, there were kids. Juggling travels well. You do not need a common language. You hand someone a ball and they either want to try or they do not. Most of them did.
+
+## Bhagsunag, Dharamshala
+
+[yt:4mzfupkdmBc]
+
+A month in Bhagsunag with the Wicked Broz crew. Near Dharamshala, in the Himalayas. Slacklining between trees, cooking in nature, flow arts, long days at altitude. No schedule, no gigs. Just being somewhere for long enough to actually feel it.`,
   },
 ];
 
