@@ -664,13 +664,75 @@ The Panchachuli peaks, five of them, sit in a row above. At that hour, with the 
 
 **The kids**
 
-At every stop along the way, Khati, Dharchula, the villages between, there were kids. Juggling travels well. You do not need a common language. You hand someone a ball and they either want to try or they do not. Most of them did.
+At every stop along the way, Khati, Dharchula, the villages between, there were kids. Juggling travels well. You do not need a common language. You hand someone a ball and they either want to try or they do not. Most of them did.`,
+  },
+  {
+    id: 20,
+    slug: 'bhagsunag',
+    cat: 'performance',
+    tag: 'Adventures · Travel · Flow',
+    title: 'Bhagsunag, Dharamshala',
+    desc: '1 month with the Wicked Broz crew near Dharamshala. Slacklining on mountain meadows, prayer flags, cooking in nature, rhododendron forests, and long days at altitude.',
+    stat: 'Bhagsunag · Dharamshala',
+    glyph: '🏔️',
+    hidden: true,
+    gradient: 'radial-gradient(ellipse at 50% 40%, rgba(80,160,120,0.22), rgba(15,15,13,0.12) 65%, var(--bg-cream))',
+    image: '/images/bhagsunag/slackline-sunset.jpg',
+    images: [
+      '/images/bhagsunag/slackline-meadow.jpg',
+      '/images/bhagsunag/slackline-lotus.jpg',
+      '/images/bhagsunag/slackline-sunset.jpg',
+      '/images/bhagsunag/slackline-forest.jpg',
+      '/images/bhagsunag/slackline-teaching.jpg',
+      '/images/bhagsunag/prayer-flags.jpg',
+      '/images/bhagsunag/rhododendron-tree.jpg',
+      '/images/bhagsunag/snow-peaks.jpg',
+    ],
+    captions: [
+      'Walking the line. Bhagsunag meadows.',
+      'Lotus on a slackline. Mountains behind.',
+      'Golden hour above Dharamshala valley.',
+      'Forest slacklining near the temple trail.',
+      'Teaching someone to find the line.',
+      'Prayer flags, pine forest, hammock. No agenda.',
+      'Up a rhododendron tree above Dharamshala.',
+      'Above the snowline. Somewhere above Triund.',
+    ],
+    yt: '4mzfupkdmBc',
+    ytCaption: 'Bhagsunag — a month with Wicked Broz',
+    article: `A month in Bhagsunag. That was the plan — or more precisely, that was what happened when there was no plan.
 
-## Bhagsunag, Dharamshala
+Bhagsunag sits above McLeod Ganj, above Dharamshala, in the Dhauladhar range. Most people pass through on the way to Triund. We stayed.
 
-[yt:4mzfupkdmBc]
+The Wicked Broz crew had a spot up there. Enough space for hammocks, a kitchen setup, a slackline between two solid trees. We cooked outside most nights. The altitude keeps the evenings cold even when the days are warm.
 
-A month in Bhagsunag with the Wicked Broz crew. Near Dharamshala, in the Himalayas. Slacklining between trees, cooking in nature, flow arts, long days at altitude. No schedule, no gigs. Just being somewhere for long enough to actually feel it.`,
+**The slackline**
+
+Bhagsunag has good anchors. Old deodars and rhododendrons, wide enough and rooted deep. We rigged lines in the meadow, in the forest, anywhere the trees cooperated.
+
+At that elevation the light does something specific in the late afternoon. It comes sideways across the valley. If you are on a slackline at that hour, with the Dharamshala valley dropping away below you and the Dhauladhar range behind, the whole thing feels slightly improbable.
+
+Sitting in lotus on a slackline is a patience exercise. The line moves. You breathe. You either find the stillness inside the movement or you fall off. Most sessions ended in falling off.
+
+We taught slacklining to whoever showed up and wanted to try. The first step is always the same: one foot, find the wobble, decide whether to fight it or follow it. Most people fight it first.
+
+**The forest**
+
+Above the meadows is rhododendron forest. The trees flower red in season. They are old and wide and good for climbing. You can get high enough to see across the valley.
+
+Lower down, near the Bhagsunag temple, the trail is shaded and quiet. Prayer flags strung between the pines. On a slow afternoon with the hammock up and nowhere to be, there are worse places to be alive.
+
+**Triund and above**
+
+We trekked to Triund on a clear day. Above treeline it opens up into high alpine meadow. Past Triund the snow starts. The Dhauladhar peaks sit close enough to feel like walls.
+
+I carried balls up to the snowline and juggled there. Altitude does not affect juggling the way it affects running — the balls go up the same, your lungs are the problem. You throw slower. You breathe more between throws.
+
+**The month**
+
+A month is long enough to stop being a visitor. You learn the chai shops, which trails go where, when the mist rolls in and when it clears. You stop thinking about what you should be doing and start noticing what is actually there.
+
+The Wicked Broz know how to be somewhere. No agenda beyond the next meal, the next line, the next fire. That is a skill worth learning.`,
   },
 ];
 
