@@ -5,6 +5,7 @@ import { NOTES } from '@/data/site';
 const SITE_URL = 'https://www.omkardhareshwar.com';
 
 const poemNotes = NOTES.filter((n) => n.type === 'poem');
+const firstImage = poemNotes.find((n) => n.image)?.image ?? '/og-2025.jpg';
 
 const poemsSchema = {
   '@context': 'https://schema.org',
@@ -32,13 +33,13 @@ export const metadata: Metadata = {
     title: 'Poems · Omkar Dhareshwar',
     description: 'Poetry on time, belief, cities, love, and the edges of consciousness.',
     url: 'https://www.omkardhareshwar.com/writing/poems',
-    images: [{ url: '/og-2025.jpg', alt: 'Omkar Dhareshwar — Flow Artist, Performer & Storyteller' }],
+    images: [{ url: `${SITE_URL}${firstImage}`, alt: 'Poems by Omkar Dhareshwar' }],
   },
   twitter: {
     card: 'summary_large_image',
     title: 'Poems · Omkar Dhareshwar',
     description: 'Poetry on time, belief, cities, love, and the edges of consciousness.',
-    images: [{ url: '/og-2025.jpg', alt: 'Omkar Dhareshwar — Flow Artist, Performer & Storyteller' }],
+    images: [{ url: `${SITE_URL}${firstImage}`, alt: 'Poems by Omkar Dhareshwar' }],
   },
 };
 

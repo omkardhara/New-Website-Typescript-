@@ -7,6 +7,7 @@ const SITE_URL = 'https://www.omkardhareshwar.com';
 const essayNotes = NOTES.filter(
   (n) => (n.type === 'article' || n.type === 'short-story') && n.publication !== 'Red Bull'
 );
+const firstImage = essayNotes.find((n) => n.image)?.image ?? '/og-2025.jpg';
 
 const essaysSchema = {
   '@context': 'https://schema.org',
@@ -34,13 +35,13 @@ export const metadata: Metadata = {
     title: 'Essays · Omkar Dhareshwar',
     description: 'Long-form essays on craft, philosophy, spirituality, adventure, and identity.',
     url: 'https://www.omkardhareshwar.com/writing/essays',
-    images: [{ url: '/og-2025.jpg', alt: 'Omkar Dhareshwar — Flow Artist, Performer & Storyteller' }],
+    images: [{ url: `${SITE_URL}${firstImage}`, alt: 'Essays by Omkar Dhareshwar' }],
   },
   twitter: {
     card: 'summary_large_image',
     title: 'Essays · Omkar Dhareshwar',
     description: 'Long-form essays on craft, philosophy, spirituality, adventure, and identity.',
-    images: [{ url: '/og-2025.jpg', alt: 'Omkar Dhareshwar — Flow Artist, Performer & Storyteller' }],
+    images: [{ url: `${SITE_URL}${firstImage}`, alt: 'Essays by Omkar Dhareshwar' }],
   },
 };
 

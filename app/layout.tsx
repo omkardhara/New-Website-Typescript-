@@ -3,6 +3,7 @@ import { cormorant, dmSans, dmMono } from '@/lib/fonts';
 import { Nav } from '@/components/Nav';
 import { Footer } from '@/components/Footer';
 import { ScrollToTop } from '@/components/ScrollToTop';
+import { Analytics } from '@vercel/analytics/next';
 import { SOCIALS } from '@/data/site';
 import './globals.css';
 
@@ -139,6 +140,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           {children}
         </div>
         <Footer />
+        <Analytics />
       </body>
     </html>
   );

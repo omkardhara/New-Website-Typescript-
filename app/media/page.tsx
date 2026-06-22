@@ -2,6 +2,9 @@ import type { Metadata } from 'next';
 import { MediaListPage } from '@/components/MediaListPage';
 import { VIDEOS } from '@/data/videos';
 
+const SITE_URL = 'https://www.omkardhareshwar.com';
+const firstLocalThumb = VIDEOS.find((v) => v.thumb && !v.thumb.startsWith('http'))?.thumb ?? '/og-2025.jpg';
+
 export const metadata: Metadata = {
   title: 'Juggling, Fire & Performance Videos',
   description: 'Juggling performances, fire acts, flow art reels, TV commercials, and documentary features by Omkar Dhareshwar. Mumbai-based flow artist and juggler.',
@@ -11,13 +14,13 @@ export const metadata: Metadata = {
     title: 'Juggling, Fire & Performance Videos · Omkar Dhareshwar',
     description: 'Juggling performances, fire acts, flow art reels, TV commercials, and documentary features.',
     url: 'https://www.omkardhareshwar.com/media',
-    images: [{ url: '/og-2025.jpg', alt: 'Omkar Dhareshwar — Flow Artist, Performer & Storyteller' }],
+    images: [{ url: `${SITE_URL}${firstLocalThumb}`, alt: 'Omkar Dhareshwar — Juggling, Fire & Performance Videos' }],
   },
   twitter: {
     card: 'summary_large_image',
     title: 'Juggling, Fire & Performance Videos · Omkar Dhareshwar',
     description: 'Juggling performances, fire acts, flow art reels, TV commercials, and documentary features.',
-    images: [{ url: '/og-2025.jpg', alt: 'Omkar Dhareshwar — Flow Artist, Performer & Storyteller' }],
+    images: [{ url: `${SITE_URL}${firstLocalThumb}`, alt: 'Omkar Dhareshwar — Juggling, Fire & Performance Videos' }],
   },
 };
 

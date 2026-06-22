@@ -5,6 +5,7 @@ import { NOTES } from '@/data/site';
 const SITE_URL = 'https://www.omkardhareshwar.com';
 
 const redbullNotes = NOTES.filter((n) => n.publication === 'Red Bull');
+const firstImage = redbullNotes.find((n) => n.image)?.image ?? '/og-2025.jpg';
 
 const redbullSchema = {
   '@context': 'https://schema.org',
@@ -33,13 +34,13 @@ export const metadata: Metadata = {
     title: 'Red Bull Writing · Omkar Dhareshwar',
     description: 'Articles for Red Bull India — covering breaking, street dance, surfing, and sport.',
     url: 'https://www.omkardhareshwar.com/writing/redbull',
-    images: [{ url: '/og-2025.jpg', alt: 'Omkar Dhareshwar — Flow Artist, Performer & Storyteller' }],
+    images: [{ url: `${SITE_URL}${firstImage}`, alt: 'Omkar Dhareshwar writing for Red Bull India' }],
   },
   twitter: {
     card: 'summary_large_image',
     title: 'Red Bull Writing · Omkar Dhareshwar',
     description: 'Articles for Red Bull India — covering breaking, street dance, surfing, and sport.',
-    images: [{ url: '/og-2025.jpg', alt: 'Omkar Dhareshwar — Flow Artist, Performer & Storyteller' }],
+    images: [{ url: `${SITE_URL}${firstImage}`, alt: 'Omkar Dhareshwar writing for Red Bull India' }],
   },
 };
 
