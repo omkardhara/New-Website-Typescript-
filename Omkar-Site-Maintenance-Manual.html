@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>omkardhareshwar.com — Maintenance &amp; Content Manual</title>
+<style>
+  :root{
+    --green:#2E6B4F; --green-soft:#e8f1ec; --ember:#C4621D; --ember-soft:#fbeee3;
+    --ink:#15150f; --mid:#555; --line:#e3e1da; --bg:#fff;
+    --tip:#1f7a4d; --tip-bg:#e9f7ef; --warn:#a3650a; --warn-bg:#fdf3e3;
+    --danger:#b4231f; --danger-bg:#fdeceb; --note:#1f5fa3; --note-bg:#eaf2fb;
+  }
+  *{box-sizing:border-box;}
+  html{ -webkit-print-color-adjust:exact; print-color-adjust:exact; }
+  body{ font-family:"Segoe UI",Helvetica,Arial,sans-serif; color:var(--ink); line-height:1.55; font-size:11pt; margin:0; }
+  h2{ font-size:19pt; color:#000; border-bottom:3px solid var(--green); padding-bottom:6px; margin:0 0 12px; page-break-after:avoid; }
+  h3{ font-size:13.5pt; color:#000; margin:20px 0 5px; page-break-after:avoid; }
+  h4{ font-size:11.5pt; color:var(--green); margin:15px 0 3px; page-break-after:avoid; }
+  p{ margin:0 0 9px; } ul,ol{ margin:0 0 11px; padding-left:20px; } li{ margin:0 0 4px; }
+  a{ color:var(--note); }
+  code{ font-family:"Consolas","Courier New",monospace; background:#f3f3f1; border:1px solid #e0ded7; border-radius:3px; padding:1px 4px; font-size:9.5pt; color:#9c2e2a; word-break:break-word; }
+  pre{ font-family:"Consolas","Courier New",monospace; background:#1d1f1b; color:#e8e8e4; border-radius:6px; padding:11px 13px; font-size:9pt; line-height:1.5; white-space:pre-wrap; word-break:break-word; margin:7px 0 13px; page-break-inside:avoid; }
+  pre .c{ color:#7fae7f; } pre .k{ color:#c98fdb; } pre .s{ color:#d8b56b; } pre .t{ color:#6fc0d8; } pre .y{ color:#ffe08a; }
+  table{ border-collapse:collapse; width:100%; margin:9px 0 15px; font-size:9.5pt; }
+  th,td{ border:1px solid var(--line); padding:6px 8px; text-align:left; vertical-align:top; }
+  th{ background:#15150f; color:#fff; font-weight:600; } tr:nth-child(even) td{ background:#faf9f5; }
+  .box{ border-radius:6px; padding:10px 13px 10px 15px; margin:11px 0; page-break-inside:avoid; border-left:5px solid; }
+  .box p:last-child{ margin-bottom:0; } .box .lbl{ font-weight:700; display:block; margin-bottom:3px; font-size:10pt; }
+  .tip{ background:var(--tip-bg); border-color:var(--tip); } .tip .lbl{ color:var(--tip); }
+  .warn{ background:var(--warn-bg); border-color:var(--warn); } .warn .lbl{ color:var(--warn); }
+  .danger{ background:var(--danger-bg); border-color:var(--danger); } .danger .lbl{ color:var(--danger); }
+  .note{ background:var(--note-bg); border-color:var(--note); } .note .lbl{ color:var(--note); }
+  .page-break{ page-break-before:always; }
+  .toc ol{ list-style:none; padding-left:0; counter-reset:toc; }
+  .toc > ol > li{ counter-increment:toc; margin:6px 0; font-weight:700; font-size:11pt; }
+  .toc > ol > li::before{ content:"PART " counter(toc) " · "; color:var(--green); }
+  .toc ul{ list-style:none; padding-left:16px; font-weight:400; font-size:9.5pt; color:var(--mid); margin-top:2px; }
+  .kbd{ display:inline-block; background:#f0efe9; border:1px solid #bbb; border-bottom-width:2px; border-radius:4px; padding:0 5px; font-family:Consolas,monospace; font-size:9pt; }
+  .fillbox{ border:2px dashed var(--green); border-radius:6px; padding:9px 13px; background:var(--green-soft); margin:9px 0; }
+  .cover{ height:100vh; display:flex; flex-direction:column; justify-content:center; align-items:center; text-align:center; page-break-after:always; background:#0F0F0D; color:#F8F6F1; padding:0 40px; }
+  .cover .badge{ font-family:Consolas,monospace; letter-spacing:.32em; font-size:9.5pt; color:#4A9068; text-transform:uppercase; }
+  .cover h1{ font-size:31pt; margin:16px 0 6px; font-weight:600; }
+  .cover .sub{ font-size:13pt; color:#bdbcb4; max-width:560px; margin:0 auto 24px; line-height:1.5; }
+  .cover .for{ font-size:12pt; } .cover .for b{ color:#C4621D; }
+  .cover .meta{ position:absolute; bottom:38px; font-size:8.5pt; color:#777; letter-spacing:.12em; }
+  .big-num{ display:inline-flex; width:24px;height:24px; background:var(--green); color:#fff; border-radius:50%; align-items:center; justify-content:center; font-weight:700; font-size:10pt; margin-right:5px; }
+  .lead{ font-size:11.5pt; color:#333; } hr{ border:none; border-top:1px solid var(--line); margin:20px 0; }
+  .emoji{ font-family:"Segoe UI Emoji","Segoe UI Symbol",sans-serif; }
+  .pathtag{ display:inline-block; background:#15150f; color:#fff; font-family:Consolas,monospace; font-size:8.5pt; padding:1px 7px; border-radius:3px; }
+</style>
+</head>
+<body>
+
+<div class="cover">
+  <div class="badge">Maintenance &amp; Content Manual · v2.0</div>
+  <h1>omkardhareshwar.com</h1>
+  <div class="sub">How the site is wired, how to change every piece of content, how to add new content, and how to not break the build — for the owner maintaining it without AI assistance.</div>
+  <div class="for">Repo: <b>omkardhara/New-Website-Typescript-</b> · branch <b>main</b></div>
+  <div class="meta">NEXT.JS 14 · TYPESCRIPT · STATIC EXPORT · VERCEL · SYNCED TO LIVE 2026-06-22</div>
+</div>
+
+<!-- TOC -->
+<div>
+<h2>Contents</h2>
+<div class="toc"><ol>
+  <li>Orientation, facts &amp; the docs already in your repo</li>
+  <li>How the project is wired
+    <ul><li>Stack (no Tailwind!) · folder map · data-vs-component model · content-location table · routes</li></ul></li>
+  <li>The edit &amp; deploy workflow
+    <ul><li>GitHub-web vs local · setup · the build gate · Vercel + Analytics · rollback</li></ul></li>
+  <li>The TypeScript rulebook (<code>data/types.ts</code>)
+    <ul><li>Why types gate deploys · field reference per content type · the errors you'll hit</li></ul></li>
+  <li>Changing existing content — data files
+    <ul><li>Writing · Work · Red Bull notes · Videos · Press · Story/Timeline · Offerings · Socials · Testimonials</li></ul></li>
+  <li>Changing existing content — components &amp; pages
+    <ul><li>Hero copy + stats · Contact (email/WhatsApp) · About/Press/Media page copy · SEO metadata · colours/fonts</li></ul></li>
+  <li>Adding new content (every type) &amp; images</li>
+  <li>The rules you must not break (preview counts, OG image, casing, Tailwind…)</li>
+  <li>Troubleshooting</li>
+  <li>Reference — commands, cheat sheets, glossary, pre-push checklist</li>
+</ol></div>
+</div>
+
+<!-- PART 1 -->
+<div class="page-break">
+<h2>Part 1 · Orientation &amp; Facts</h2>
+<p class="lead">This is a <b>Next.js 14 (App Router, static export) + TypeScript</b> site on <b>Vercel</b>. The code is <b>compiled</b> before going live, so a mistake in the wrong place can <b>fail the build and block the deploy</b> — but a failed build never takes the live site down; Vercel keeps serving the last good version. The whole game is "make the build pass."</p>
+
+<div class="note">
+  <span class="lbl emoji">📌 Your repo already documents itself — read these first</span>
+  <p>The project ships its own up-to-date guides. This manual <b>consolidates and extends</b> them; when in doubt, the in-repo docs + the live code win.</p>
+  <ul style="margin-bottom:0">
+    <li><code>docs/site-editing-guide.md</code> — step-by-step for routine content tasks (writing, work, video, press, timeline).</li>
+    <li><code>docs/image-sizing-guide.md</code> — exact pixel sizes / max file sizes for every image slot.</li>
+    <li><code>CLAUDE.md</code>, <code>app/CLAUDE.md</code>, <code>components/CLAUDE.md</code>, <code>data/CLAUDE.md</code> — architecture, routing, schemas, and hard rules.</li>
+  </ul>
+</div>
+
+<div class="danger">
+  <span class="lbl emoji">🚫 The one rule that governs everything</span>
+  <p>All content lives in <b>typed</b> structures. If an edit doesn't match the shape in <code>data/types.ts</code> (missing required field, value outside an allowed list, stray comma, unclosed quote), <b>the build fails and the change never ships</b>. Always run <code>npm run build</code> locally before pushing (Part 3).</p>
+</div>
+
+<h3>1.1 Project facts</h3>
+<div class="fillbox">
+  <p><b>Live URL:</b> <code>https://www.omkardhareshwar.com</code> &nbsp;(<code>SITE_URL</code> in <code>app/layout.tsx</code>)</p>
+  <p><b>GitHub:</b> <code>github.com/omkardhara/New-Website-Typescript-</code> · branch <code>main</code></p>
+  <p><b>Local clone:</b> <code>…\Downloads\09_Projects_Code\files\omkar-site\omkar-site</code></p>
+  <p><b>Host:</b> Vercel — auto-deploys on every push to <code>main</code>; Vercel Analytics is wired in.</p>
+  <p><b>Contact:</b> email <code>omkar.dhara@gmail.com</code> · WhatsApp <code>919920499089</code></p>
+</div>
+</div>
+
+<!-- PART 2 -->
+<div class="page-break">
+<h2>Part 2 · How the Project Is Wired</h2>
+
+<h3>2.1 The stack</h3>
+<table>
+  <tr><th>Piece</th><th>What &amp; why it matters</th></tr>
+  <tr><td>Next.js 14 App Router, <b>static export</b></td><td>Folders in <code>app/</code> become URLs. The site builds to static HTML — there's no live server/database. All data is baked in at build time from <code>data/*.ts</code>.</td></tr>
+  <tr><td>TypeScript (strict)</td><td>Your data must match declared shapes or the build fails. Your safety net <i>and</i> your gatekeeper.</td></tr>
+  <tr><td><b>Plain CSS</b> — <code>app/globals.css</code> + CSS variables + inline styles</td><td><b>Tailwind is NOT used.</b> <code>tailwind.config.ts</code>/<code>postcss.config.mjs</code> are vestigial leftovers — ignore them and never add Tailwind utility classes.</td></tr>
+  <tr><td>Framer Motion</td><td>Animations. Mostly leave alone; animated/interactive components carry <code>'use client'</code>.</td></tr>
+  <tr><td>next/image</td><td>Optimised images. Local files in <code>public/</code>; remote hosts must be whitelisted in <code>next.config.mjs</code> (already covers YouTube).</td></tr>
+  <tr><td>Vercel + Analytics</td><td>Push to <code>main</code> → build &amp; deploy. <code>@vercel/analytics</code> tracks traffic automatically.</td></tr>
+</table>
+
+<h3>2.2 Folder map</h3>
+<pre><span class="c">omkar-site/</span>
+├── app/                       <span class="c"># ROUTES (folder = URL) + global layout/SEO. CLAUDE.md here.</span>
+│   ├── layout.tsx             <span class="c"># site-wide SEO metadata, Person schema, Nav/Footer/Analytics</span>
+│   ├── page.tsx               <span class="c"># homepage (Hero + TabShell + ContactBand)</span>
+│   ├── globals.css            <span class="c"># ALL design tokens (colours/fonts) + most styling</span>
+│   ├── about/ contact/ story/ media/ press/ work/   <span class="c"># static + list pages</span>
+│   ├── work/[slug]/           <span class="c"># a project page per WORK item</span>
+│   ├── press/[slug]/          <span class="c"># a page per PRESS item</span>
+│   └── writing/               <span class="c"># [slug] + essays/ redbull/ poems/ (articles/ short-stories/ redirect)</span>
+├── components/                <span class="c"># UI building blocks (some copy is hard-coded here). CLAUDE.md here.</span>
+│   ├── Hero.tsx               <span class="c"># hero copy + the 4 stat counters (NOT in a data file)</span>
+│   ├── ContactBand.tsx        <span class="c"># homepage contact block (email + WhatsApp) + renders TestimonialsStrip</span>
+│   ├── TabShell.tsx + tabs/   <span class="c"># homepage Work/Media/Notes/Press tabs (3-item previews)</span>
+│   ├── *ListPage.tsx          <span class="c"># full list pages (Work/Writing/Media/Press)</span>
+│   └── AboutPage · StoryMap · Nav · Footer · CredStrip · ShareButton · …
+├── data/                      <span class="c"># ★ MOST CONTENT LIVES HERE ★  CLAUDE.md here.</span>
+│   ├── types.ts               <span class="c"># the shapes every item MUST match</span>
+│   ├── site.ts                <span class="c"># NOTES (writing meta), PRESS, CHAPTERS, OFFERINGS, SOCIALS, NAV_LINKS</span>
+│   ├── writing-content.ts     <span class="c"># the full TEXT BODY of every writing piece</span>
+│   ├── work.ts                <span class="c"># project cards + detail pages + WORK_FILTERS</span>
+│   ├── redbull-notes.ts       <span class="c"># Red Bull article cards (external links)</span>
+│   ├── videos.ts              <span class="c"># Media tab videos</span>
+│   ├── timeline.ts            <span class="c"># story-page chapters (CHAPTERS_FULL) + events (TIMELINE)</span>
+│   ├── testimonials.ts        <span class="c"># testimonial quotes (approval-gated)</span>
+│   └── press-dims.ts          <span class="c"># press image dimensions (helper data)</span>
+├── lib/fonts.ts               <span class="c"># Cormorant / DM Sans / DM Mono</span>
+├── public/                    <span class="c"># static files; images referenced as /images/… (no "public")</span>
+│   ├── og-2025.jpg favicon.png apple-touch-icon.png
+│   └── images/ (+ press/ redbull/ writing/ logos/ and per-project folders)
+├── docs/                      <span class="c"># site-editing-guide.md, image-sizing-guide.md</span>
+├── next.config.mjs vercel.json next.config / robots.ts sitemap.ts manifest.ts
+└── tailwind.config.ts         <span class="c"># ⚠ vestigial — NOT used</span></pre>
+
+<h3>2.3 The mental model: data files vs components</h3>
+<ul>
+  <li><b>Data files</b> (<code>data/*.ts</code>) — structured lists (projects, writing, videos, press…). Low-risk to edit <i>if you match the types</i>. Most repeatable content. (Part 5)</li>
+  <li><b>Components / pages</b> (<code>components/*.tsx</code>, <code>app/**/page.tsx</code>) — one-off copy baked into the UI: the hero headline &amp; stat numbers, contact details, the About-page prose, button labels, SEO text. (Part 6)</li>
+</ul>
+<div class="warn">
+  <span class="lbl emoji">⚠️ The trap</span>
+  <p>The in-repo editing guide says "you'll never touch <code>app/</code> or <code>components/</code>" — true for <i>routine content</i>, but you asked to change <b>everything</b>. The hero copy, the 4 stat numbers, contact details, About/Press/Media prose, and all SEO text live in components/pages, not data. Part 6 covers those.</p>
+</div>
+
+<h3>2.4 Content-location master table</h3>
+<table>
+  <tr><th>Content</th><th>File</th><th>What you edit</th></tr>
+  <tr><td>Writing piece — body text</td><td><span class="pathtag">data/writing-content.ts</span></td><td><code>WRITING_CONTENT['slug']</code></td></tr>
+  <tr><td>Writing piece — metadata/card</td><td><span class="pathtag">data/site.ts</span></td><td><code>NOTES</code></td></tr>
+  <tr><td>Work projects + their pages</td><td><span class="pathtag">data/work.ts</span></td><td><code>WORK</code> / <code>WORK_FILTERS</code></td></tr>
+  <tr><td>Red Bull article cards</td><td><span class="pathtag">data/redbull-notes.ts</span></td><td><code>REDBULL_NOTES</code></td></tr>
+  <tr><td>Videos (Media)</td><td><span class="pathtag">data/videos.ts</span></td><td><code>VIDEOS</code></td></tr>
+  <tr><td>Press items + pages</td><td><span class="pathtag">data/site.ts</span></td><td><code>PRESS</code></td></tr>
+  <tr><td>Story chapters + timeline</td><td><span class="pathtag">data/timeline.ts</span></td><td><code>CHAPTERS_FULL</code>, <code>TIMELINE</code></td></tr>
+  <tr><td>Offerings / Socials / Nav links</td><td><span class="pathtag">data/site.ts</span></td><td><code>OFFERINGS</code>/<code>SOCIALS</code>/<code>NAV_LINKS</code></td></tr>
+  <tr><td>Testimonials</td><td><span class="pathtag">data/testimonials.ts</span></td><td><code>TESTIMONIALS</code></td></tr>
+  <tr><td>Hero copy + 4 stat numbers</td><td><span class="pathtag">components/Hero.tsx</span></td><td>JSX + <code>STATS</code></td></tr>
+  <tr><td>Email / WhatsApp</td><td><span class="pathtag">components/ContactBand.tsx</span> + <span class="pathtag">app/contact/page.tsx</span></td><td>two places</td></tr>
+  <tr><td>About / Press / Media page prose</td><td><span class="pathtag">components/AboutPage.tsx</span>, <span class="pathtag">app/press/page.tsx</span>, <span class="pathtag">app/media/page.tsx</span></td><td>JSX</td></tr>
+  <tr><td>Global SEO + social preview</td><td><span class="pathtag">app/layout.tsx</span></td><td><code>metadata</code> / schema</td></tr>
+  <tr><td>Per-page SEO</td><td>that page's <code>generateMetadata</code></td><td>export</td></tr>
+  <tr><td>Colours / fonts</td><td><span class="pathtag">app/globals.css</span> · <span class="pathtag">lib/fonts.ts</span></td><td>CSS tokens</td></tr>
+  <tr><td>All images</td><td><span class="pathtag">public/images/</span></td><td>files</td></tr>
+</table>
+
+<h3>2.5 Routes (current)</h3>
+<table>
+  <tr><th>URL</th><th>Source</th></tr>
+  <tr><td><code>/</code></td><td>homepage — Hero + tabs</td></tr>
+  <tr><td><code>/work</code> · <code>/work/[slug]</code></td><td>list + per-project (items with <code>url</code> set link out, no page generated)</td></tr>
+  <tr><td><code>/media</code></td><td>full video list</td></tr>
+  <tr><td><code>/writing/essays</code> · <code>/redbull</code> · <code>/poems</code></td><td>writing section lists</td></tr>
+  <tr><td><code>/writing/[slug]</code></td><td>individual writing page (skips items with <code>url</code>)</td></tr>
+  <tr><td><code>/writing/articles</code> · <code>/short-stories</code></td><td>redirect → <code>/writing/essays</code></td></tr>
+  <tr><td><code>/about</code> · <code>/story</code> · <code>/press</code> · <code>/press/[slug]</code> · <code>/contact</code></td><td>static + per-press pages</td></tr>
+</table>
+<p>Dynamic routes are generated from the data arrays via <code>generateStaticParams()</code> — add a <code>WORK</code>/<code>PRESS</code>/<code>NOTES</code> entry (with an internal slug, no <code>url</code>) and its page exists automatically.</p>
+</div>
+
+<!-- PART 3 -->
+<div class="page-break">
+<h2>Part 3 · The Edit &amp; Deploy Workflow</h2>
+
+<h3>3.1 Two ways to edit</h3>
+<table>
+  <tr><th>Method</th><th>Good for</th><th>Risk</th></tr>
+  <tr><td><b>GitHub website</b> (pencil-edit, commit)</td><td>A one-word text fix.</td><td>⚠️ <b>No type-check before commit</b> → a bad edit ships to a failed Vercel build. Trivial text only.</td></tr>
+  <tr><td><b>Local editor</b> (VS Code) + <code>npm run dev</code>/<code>build</code></td><td>Anything structural: new content, data edits, multi-file work.</td><td>✅ You catch errors before pushing. <b>Recommended.</b></td></tr>
+</table>
+
+<h3>3.2 Local setup (one-time)</h3>
+<ol>
+  <li>Install <b>Node.js LTS</b> (v18+) and <b>VS Code</b>.</li>
+  <li><code>git pull</code> first, then <code>npm install</code> (one time, and again whenever dependencies change).</li>
+  <li><code>npm run dev</code> → <code>http://localhost:3000</code>, hot-reloads on save.</li>
+</ol>
+
+<h3>3.3 The pre-push build gate (don't skip)</h3>
+<p><code>npm run dev</code> is forgiving; <b><code>npm run build</code> is what Vercel actually runs</b> and surfaces type errors. Run it before every push:</p>
+<pre><span class="k">npm</span> run build</pre>
+<p>Ends with <code>✓ Compiled successfully</code> + a route list → safe to push. A red <code>Type error:</code> / <code>Failed to compile</code> → fix first (Parts 4 &amp; 9). Also useful: <code>npm run lint</code>.</p>
+
+<h3>3.4 Deploy</h3>
+<ul>
+  <li>Push to <code>main</code> → Vercel builds &amp; deploys (1–3 min). Watch <b>vercel.com → project → Deployments</b>. Green = live, Red = build failed (log shows file + line).</li>
+  <li><b>A failed build never breaks the live site</b> — the previous good deployment keeps serving.</li>
+</ul>
+
+<h3>3.5 Rollback</h3>
+<ul>
+  <li><b>Vercel instant rollback:</b> Deployments → last good one → <b>Promote to Production</b> (seconds, no code change).</li>
+  <li><b>Git revert:</b> <code>git revert HEAD &amp;&amp; git push</code>.</li>
+  <li>If a push is rejected as out-of-date: <code>git pull origin main --rebase</code> then push (per <code>CLAUDE.md</code>).</li>
+</ul>
+</div>
+
+<!-- PART 4 -->
+<div class="page-break">
+<h2>Part 4 · The TypeScript Rulebook — <code>data/types.ts</code></h2>
+<p class="lead">Every item in every data file must match a shape declared in <code>data/types.ts</code>. Read it before editing; it lists required fields, optional ones (<code>?</code>), and fixed value-lists ("unions"). Need a new field on a type? Add it there first.</p>
+
+<h3>4.1 Reading a type</h3>
+<pre><span class="k">export type</span> <span class="t">WorkItem</span> = {
+  id: <span class="t">number</span>;                <span class="c">// required</span>
+  slug: <span class="t">string</span>;
+  cat: <span class="s">'performance'</span>|<span class="s">'brand'</span>|<span class="s">'installation'</span>|<span class="s">'activism'</span>|<span class="s">'production'</span>|<span class="s">'art'</span>|<span class="s">'education'</span>;  <span class="c">// one of these</span>
+  image?: <span class="t">string</span>;             <span class="c">// ? = OPTIONAL</span>
+};</pre>
+<ul>
+  <li>No <code>?</code> = required. Omit it → <code>Property 'x' is missing</code>.</li>
+  <li>A list of <code>'a' | 'b'</code> = only those exact strings allowed.</li>
+  <li>Unique <code>id</code> per item; <code>slug</code> unique &amp; URL-safe (lowercase-hyphen).</li>
+</ul>
+
+<h3>4.2 Field reference (current)</h3>
+<h4>WorkItem &nbsp;<span class="pathtag">data/work.ts</span></h4>
+<table>
+<tr><th>Field</th><th>Req?</th><th>Notes</th></tr>
+<tr><td><code>id, slug, cat, tag, title, desc, stat, glyph</code></td><td>yes</td><td><code>cat</code> ∈ performance·brand·installation·activism·production·<b>art·education</b>; <code>stat</code> = corner text (year or stat); <code>glyph</code> = emoji</td></tr>
+<tr><td><code>image, images[], captions[]</code></td><td>no</td><td>cover + gallery; captions matched by position. <b>Cards with an <code>image</code> auto-sort before cards without one.</b></td></tr>
+<tr><td><code>imagePosition, imagePositions[]</code></td><td>no</td><td>CSS object-position to fine-tune crop (e.g. <code>'center top'</code>)</td></tr>
+<tr><td><code>article</code></td><td>no</td><td>long story; blank line = new paragraph. <b>Supports markdown:</b> <code>[text](url)</code>, <code>**bold**</code>, <code>## Heading</code></td></tr>
+<tr><td><code>yt, ytStart, ytCaption</code></td><td>no</td><td>embeds a YouTube video at top of the project page</td></tr>
+<tr><td><code>url, linkLabel</code></td><td>no</td><td>if <code>url</code> set, card links <b>externally</b> and <b>no internal page is generated</b>; <code>linkLabel</code> overrides link text</td></tr>
+<tr><td><code>hidden</code></td><td>no</td><td><code>true</code> hides the card from Work tab + <code>/work</code> but <b>still generates its article page</b></td></tr>
+</table>
+
+<h4>Note (writing) &nbsp;<span class="pathtag">data/site.ts → NOTES</span></h4>
+<table>
+<tr><th>Field</th><th>Req?</th><th>Notes</th></tr>
+<tr><td><code>id, slug, title, date, read, tag, excerpt, type</code></td><td>yes</td><td><code>type</code> ∈ <code>article | poem | short-story</code></td></tr>
+<tr><td><code>content</code></td><td>no*</td><td>the body — set to <code>WRITING_CONTENT['slug']</code>. Required for an internal page.</td></tr>
+<tr><td><code>image, imagePosition</code></td><td>no</td><td>cover (also used as the page hero + OG image)</td></tr>
+<tr><td><code>aiAssisted</code></td><td>no</td><td><code>true</code> shows an "AI-assisted" badge</td></tr>
+<tr><td><code>url, publication</code></td><td>no</td><td>external pieces set <code>url</code> → no internal page. Section logic: <b>essays</b> = articles+short-stories where publication ≠ Red Bull; <b>redbull</b> = publication = Red Bull; <b>poems</b> = type poem</td></tr>
+</table>
+
+<h4>Others</h4>
+<table>
+<tr><th>Type · file</th><th>Required fields</th></tr>
+<tr><td><b>Video</b> · videos.ts</td><td><code>title, sub, yt, thumb</code> (+ optional <code>portrait</code>, <code>startTime</code>, <code>category</code>)</td></tr>
+<tr><td><b>PressItem</b> · site.ts</td><td><code>id, slug, publication, title, featured, year, type, src, category</code> (+ <code>images[]</code>, <code>thumbPosition</code>, <code>url</code>). <code>category</code> ∈ street-art·juggling·activism·installation; <code>featured:true</code> also shows on About.</td></tr>
+<tr><td><b>Testimonial</b> · testimonials.ts</td><td><code>id, quote, name, role, context</code> (+ <code>approved</code>)</td></tr>
+<tr><td><b>Chapter</b> · site.ts</td><td><code>id, roman, label, period, desc</code></td></tr>
+<tr><td><b>Offering / Social</b> · site.ts</td><td>Offering: <code>id, icon, label, title, desc, note</code> · Social: <code>label, handle, href</code></td></tr>
+</table>
+
+<h3>4.3 The errors you'll actually hit</h3>
+<table>
+<tr><th>Build says…</th><th>Means / fix</th></tr>
+<tr><td><code>Property 'stat' is missing…</code></td><td>Omitted a required field → add it.</td></tr>
+<tr><td><code>Type '"x"' is not assignable to '…'</code></td><td>Value outside an allowed union → use a listed value.</td></tr>
+<tr><td><code>',' expected</code> / <code>Unterminated string</code></td><td>Missing comma between items, or an unescaped quote (4.4).</td></tr>
+<tr><td><code>Cannot find name / module</code></td><td>Typo in import or filename case mismatch.</td></tr>
+</table>
+
+<h3>4.4 Quotes &amp; apostrophes</h3>
+<pre><span class="c">// ✗ breaks:</span>  excerpt: <span class="s">'It doesn't work'</span>,
+<span class="c">// ✓ escape:</span> excerpt: <span class="s">'It doesn\'t work'</span>,
+<span class="c">// ✓ backticks (also for multi-line article/content bodies):</span> excerpt: <span class="s">`It doesn't work`</span>,</pre>
+<p>In JSX text (components/pages), write a literal apostrophe as <code>&amp;apos;</code> (existing files do, e.g. <code>Let&amp;apos;s work</code>) — ESLint flags a raw <code>'</code>.</p>
+</div>
+
+<!-- PART 5 -->
+<div class="page-break">
+<h2>Part 5 · Changing Content — Data Files</h2>
+<p class="lead">These mirror <code>docs/site-editing-guide.md</code> (your authoritative step-by-step). Golden method: <b>copy a working entry, edit the copy</b>, then <code>npm run build</code>.</p>
+
+<h3>5.1 A writing piece (two files)</h3>
+<p>Body in <code>writing-content.ts</code>, metadata in <code>site.ts → NOTES</code>:</p>
+<pre><span class="c">// data/writing-content.ts — key MUST equal the note slug</span>
+<span class="s">'my-new-slug'</span>: <span class="s">`Full text here.
+
+Blank line = new paragraph (or stanza for poems).`</span>,
+
+<span class="c">// data/site.ts — NOTES, in the right section (article / poem / short-story)</span>
+{ id: 40, slug: <span class="s">'my-new-slug'</span>, title: <span class="s">'…'</span>, date: <span class="s">'May 2026'</span>, read: <span class="s">'5 min'</span>,
+  tag: <span class="s">'Craft'</span>, type: <span class="s">'article'</span>, excerpt: <span class="s">'Hook line.'</span>,
+  image: <span class="s">'/images/cover.jpg'</span>, content: WRITING_CONTENT[<span class="s">'my-new-slug'</span>] },</pre>
+<p>The <b>first entry in each type group is the featured card</b>. External pieces (set <code>url</code>) skip the internal page.</p>
+
+<h3>5.2 Work project</h3>
+<p>Copy a <code>WORK</code> entry; set unique <code>id</code>/<code>slug</code>, valid <code>cat</code>, the text fields, <code>image</code>, <code>images[]</code>+<code>captions[]</code>, and <code>article</code>. New category → add to the <code>cat</code> union in <code>types.ts</code> <b>and</b> to <code>WORK_FILTERS</code>. External? add <code>url</code>. Video at top? add <code>yt</code>.</p>
+
+<h3>5.3 Red Bull note</h3>
+<p>In <code>redbull-notes.ts</code>: add with <code>publication: 'Red Bull'</code>, a <code>url</code>, and <code>image: '/images/redbull/&lt;slug&gt;.jpg'</code> (drop that file into <code>public/images/redbull/</code>). These are external — no internal page.</p>
+
+<h3>5.4 Video</h3>
+<p>Copy a <code>VIDEOS</code> entry; set <code>title/sub/yt/thumb</code> (<code>thumb</code> = <code>https://img.youtube.com/vi/&lt;ID&gt;/maxresdefault.jpg</code>). <code>portrait:true</code> for vertical; <code>startTime</code> to begin mid-video. If a thumbnail won't load, use a local <code>/images/…</code> file (as the Doordarshan entry does).</p>
+
+<h3>5.5 Press item</h3>
+<p>Add the scan to <code>public/images/press/</code>, then copy a <code>PRESS</code> entry: unique <code>id</code>/<code>slug</code>, <code>publication</code>, <code>title</code>, <code>year</code>, <code>type:'image'</code>, <code>src</code>, <code>category</code>. <code>featured:true</code> = larger card + appears on the About page.</p>
+
+<h3>5.6 Story / timeline · Offerings · Socials</h3>
+<p>Chapters in <code>timeline.ts → CHAPTERS_FULL</code>, events in <code>TIMELINE</code> (year/title/tag/desc + optional image). <code>OFFERINGS</code> and <code>SOCIALS</code> are plain arrays in <code>site.ts</code> — edit <code>href</code>/<code>handle</code> directly.</p>
+
+<h3>5.7 Testimonials</h3>
+<div class="warn">
+  <span class="lbl emoji">⚠️ Approval-gated</span>
+  <p><code>testimonials.ts</code> entries carry an <code>approved</code> flag and the file is marked DRAFT until quotes are confirmed by the people quoted. Only flip <code>approved: true</code> once you have their sign-off, and keep <code>context</code> (internal note) accurate.</p>
+</div>
+</div>
+
+<!-- PART 6 -->
+<div class="page-break">
+<h2>Part 6 · Changing Content — Components &amp; Pages</h2>
+<p>For the one-off copy that <i>isn't</i> in data files. Edit the JSX text only; leave tags/classes/props intact.</p>
+
+<h3>6.1 Hero &nbsp;<span class="pathtag">components/Hero.tsx</span></h3>
+<p>Eyebrow, headline, aside, CTAs are JSX text. The four animated counters are the <code>STATS</code> array — change <code>num</code>/<code>label</code>/<code>suffix</code> (currently 12 Years · 500 Murals · 17 Press Features · 4000 km):</p>
+<pre><span class="k">const</span> STATS = [
+  { num: <span class="y">12</span>, label: <span class="s">'Years'</span> },
+  { num: <span class="y">500</span>, label: <span class="s">'Murals'</span> },
+  { num: <span class="y">17</span>, label: <span class="s">'Press Features'</span> },
+  { num: <span class="y">4000</span>, label: <span class="s">'Rickshaw Run'</span>, suffix: <span class="s">' km'</span> },
+];</pre>
+<p>The headline uses <code>&lt;br /&gt;</code> for line breaks and <code>&lt;em&gt;…&lt;/em&gt;</code> for the serif italic. Hero portrait = replace <code>public/images/portrait.jpg</code> (4:5, see image guide).</p>
+
+<h3>6.2 Contact email &amp; WhatsApp</h3>
+<p>Two places, both currently correct (<code>919920499089</code>): the constant <code>WHATSAPP_NUMBER</code> in <span class="pathtag">components/ContactBand.tsx</span> and the <code>wa.me</code>/<code>mailto</code> links in <span class="pathtag">app/contact/page.tsx</span>. Update both if the number/email changes (digits only, no <code>+</code>/spaces).</p>
+
+<h3>6.3 About / Press / Media page copy</h3>
+<p>Prose for these lives directly in <span class="pathtag">components/AboutPage.tsx</span> and the respective <code>app/.../page.tsx</code>. Per <code>CLAUDE.md</code>, one-off sections are intentionally inlined rather than split into new components — edit the JSX in place.</p>
+
+<h3>6.4 SEO &amp; social previews</h3>
+<p><b>Global:</b> <span class="pathtag">app/layout.tsx → metadata</span> (browser-tab title, description, keywords, OG/Twitter image <code>/og-2025.jpg</code>) and the <code>personSchema</code> JSON-LD. <b>Per page:</b> each route exports <code>generateMetadata()</code> with its own title/description/canonical/OG — follow the existing pattern (also in <code>app/CLAUDE.md</code>). Article pages additionally emit content + BreadcrumbList JSON-LD.</p>
+<div class="danger">
+  <span class="lbl emoji">🚫 OG image: never reuse <code>/og-image.jpg</code></span>
+  <p>The social-share image was deliberately renamed to <code>/og-2025.jpg</code> to bust WhatsApp's aggressive preview cache. To change it, replace <code>public/og-2025.jpg</code> <b>or</b> add a new filename and update the references in <code>layout.tsx</code> — but don't revert to the old <code>og-image.jpg</code> path.</p>
+</div>
+
+<h3>6.5 Colours &amp; fonts</h3>
+<p>Colour tokens are the <code>:root</code> CSS variables at the top of <span class="pathtag">app/globals.css</span>; fonts in <span class="pathtag">lib/fonts.ts</span>. Change a hex and it cascades everywhere.</p>
+<div class="note">
+  <span class="lbl emoji">📌 Misleading name</span>
+  <p><code>--gold</code> is actually <b>green</b> (<code>#2E6B4F</code>) — the primary accent. <code>--ember</code> is the orange (<code>#C4621D</code>). Don't be fooled by the variable name.</p>
+</div>
+</div>
+
+<!-- PART 7 -->
+<div class="page-break">
+<h2>Part 7 · Adding New Content &amp; Images</h2>
+<p class="lead">Everything in Part 5/6 doubles as "add" instructions — copy a working item. This part collects the image rules, since nearly every addition involves a photo.</p>
+
+<h3>7.1 Image rules</h3>
+<table>
+<tr><th>Rule</th><th>Detail</th></tr>
+<tr><td>Location</td><td>Local images → <code>public/</code>. A file at <code>public/images/x.jpg</code> is referenced as <code>/images/x.jpg</code> (no <code>public</code>).</td></tr>
+<tr><td>Sizes</td><td><b>Follow <code>docs/image-sizing-guide.md</code></b> — it gives exact px + max-KB per slot (hero 960×1200 ≤300KB; work thumb 800×600 ≤200KB; writing cover 16:9 ≤250KB; OG 1200×630 ≤300KB; etc.).</td></tr>
+<tr><td>Naming</td><td>lowercase-hyphen, no spaces (<code>rickshaw-run-finish.jpg</code>). JPG for photos, PNG only for transparency.</td></tr>
+<tr><td>Case-sensitive</td><td>Vercel builds on Linux = case-sensitive. <code>Photo.JPG</code> ≠ <code>photo.jpg</code>. Path in code must match the file <b>exactly</b>, extension included.</td></tr>
+<tr><td>Remote images</td><td>Any non-local host must be in <code>remotePatterns</code> in <code>next.config.mjs</code> (YouTube already is).</td></tr>
+</table>
+<div class="danger">
+  <span class="lbl emoji">🚫 "Works locally, breaks on Vercel"</span>
+  <p>Almost always filename casing or a wrong extension (<code>.jpg</code> vs <code>.jpeg</code> vs <code>.png</code>). Windows ignores case; Vercel doesn't. If an image 404s only in production, check the exact name.</p>
+</div>
+
+<h3>7.2 Adding a whole new page or section</h3>
+<ul>
+  <li><b>New route:</b> create <code>app/&lt;name&gt;/page.tsx</code> with a default-export component <b>and</b> a <code>generateMetadata()</code> (copy <code>app/contact/page.tsx</code> as a template). Live at <code>/&lt;name&gt;</code>.</li>
+  <li><b>New homepage section:</b> per <code>CLAUDE.md</code>, inline it in <code>app/page.tsx</code> rather than making a one-off component. Styling via <code>globals.css</code> / inline styles (no Tailwind).</li>
+  <li><b>Interactivity/hooks</b> (<code>useState</code>, <code>onClick</code>…): the file's first line must be <code>'use client'</code>.</li>
+</ul>
+</div>
+
+<!-- PART 8 -->
+<div class="page-break">
+<h2>Part 8 · Rules You Must Not Break</h2>
+<table>
+<tr><th>Rule</th><th>Why</th></tr>
+<tr><td><b>Don't increase homepage tab preview counts</b> (3 Work, 3 Media, 3 per writing section). They're <code>PREVIEW_COUNT</code> in each <code>components/tabs/*Tab.tsx</code>.</td><td>Intentional design. Adding cards updates the "See all N →" count automatically; the homepage still shows 3.</td></tr>
+<tr><td><b>Don't add Tailwind</b> classes.</td><td>Tailwind is vestigial/unused; all styling is <code>globals.css</code> + inline. Utility classes silently do nothing.</td></tr>
+<tr><td><b>Don't reuse <code>/og-image.jpg</code></b> — use <code>/og-2025.jpg</code>.</td><td>Renamed to bust WhatsApp's cache (6.4).</td></tr>
+<tr><td>Don't modify <code>next.config.mjs</code> / <code>tsconfig.json</code> without reason.</td><td>Per <code>CLAUDE.md</code>.</td></tr>
+<tr><td>Don't add <code>priority</code> to more than the first 1–2 images per page.</td><td>Performance; per <code>CLAUDE.md</code>.</td></tr>
+<tr><td>Don't fetch external APIs at build time.</td><td>All data is static in <code>data/</code>.</td></tr>
+<tr><td>Keep filenames lowercase-hyphen, match case exactly.</td><td>Vercel case-sensitivity (7.1).</td></tr>
+<tr><td>Only set testimonial <code>approved:true</code> after sign-off.</td><td>Quotes are real people's words (5.7).</td></tr>
+</table>
+</div>
+
+<!-- PART 9 -->
+<div class="page-break">
+<h2>Part 9 · Troubleshooting</h2>
+
+<h3>9.1 Vercel build failed (red X)</h3>
+<ol>
+  <li>Open the failed deployment → read the log; it names the <b>file, line, reason</b>.</li>
+  <li>Reproduce locally with <code>npm run build</code>.</li>
+  <li>Usual causes: type mismatch / missing required field (Part 4.3), unescaped quote (4.4), image path/case (7.1).</li>
+  <li>Fix → build passes → push. Live site was untouched throughout.</li>
+</ol>
+
+<h3>9.2 "I pushed but nothing changed"</h3>
+<ul>
+  <li>Did the Vercel build go <b>green</b>? Red = your change didn't ship.</li>
+  <li>On <code>main</code>? (<code>git status</code>, <code>git log</code>.)</li>
+  <li>Hard-refresh (<span class="kbd">Ctrl/Cmd</span>+<span class="kbd">Shift</span>+<span class="kbd">R</span>) or incognito — CDN/browser cache.</li>
+</ul>
+
+<h3>9.3 An image won't load</h3>
+<ul>
+  <li><b>Only in production?</b> → filename casing/extension (7.1).</li>
+  <li>Path starts <code>/images/…</code> (no <code>public</code>)? Remote host whitelisted in <code>next.config.mjs</code>? File actually committed (<code>git status</code>)?</li>
+</ul>
+
+<h3>9.4 A page 404s or content is missing</h3>
+<ul>
+  <li>Work/Press/Writing: the <code>slug</code> in the URL must match the data entry, and the entry must <b>not</b> have a <code>url</code> (external items don't generate internal pages).</li>
+  <li>New writing piece not on its list? Check <code>type</code>/<code>publication</code> — they decide the section (essays vs redbull vs poems).</li>
+  <li>New page route: the folder must contain <code>page.tsx</code> exactly.</li>
+</ul>
+
+<h3>9.5 Build error about hooks / "use client"</h3>
+<p><code>useState/useEffect/onClick</code> only work in client components → add <code>'use client'</code> as the file's first line.</p>
+
+<h3>9.6 Local dev won't start</h3>
+<ul>
+  <li><code>command not found</code> → Node not installed / reopen terminal.</li>
+  <li>Module errors after <code>git pull</code> → re-run <code>npm install</code>.</li>
+  <li>Port busy → <code>npm run dev -- -p 3001</code>.</li>
+</ul>
+
+<h3>9.7 Emergency rollback</h3>
+<p>Vercel → Deployments → last good → <b>Promote to Production</b>. Or <code>git revert HEAD &amp;&amp; git push</code>.</p>
+</div>
+
+<!-- PART 10 -->
+<div class="page-break">
+<h2>Part 10 · Reference</h2>
+
+<h3>10.1 Commands</h3>
+<table>
+<tr><th>Command</th><th>Does</th></tr>
+<tr><td><code>npm install</code></td><td>Install deps (after clone / when they change)</td></tr>
+<tr><td><code>npm run dev</code></td><td>Local preview at localhost:3000</td></tr>
+<tr><td><code>npm run build</code></td><td><b>Pre-push gate</b> — must pass</td></tr>
+<tr><td><code>npm run lint</code></td><td>Catch lint issues (e.g. JSX quotes)</td></tr>
+<tr><td><code>git pull origin main --rebase</code></td><td>Sync before pushing (esp. if push rejected)</td></tr>
+<tr><td><code>git add -A &amp;&amp; git commit -m "…" &amp;&amp; git push</code></td><td>Save &amp; deploy</td></tr>
+<tr><td><code>git revert HEAD &amp;&amp; git push</code></td><td>Undo last commit safely</td></tr>
+</table>
+
+<h3>10.2 Where everything lives (compact)</h3>
+<table>
+<tr><th>Change…</th><th>Go to</th></tr>
+<tr><td>Writing (body + meta)</td><td><code>data/writing-content.ts</code> + <code>data/site.ts</code></td></tr>
+<tr><td>Projects</td><td><code>data/work.ts</code></td></tr>
+<tr><td>Red Bull cards</td><td><code>data/redbull-notes.ts</code></td></tr>
+<tr><td>Videos</td><td><code>data/videos.ts</code></td></tr>
+<tr><td>Press</td><td><code>data/site.ts</code> (PRESS)</td></tr>
+<tr><td>Timeline / Offerings / Socials / Nav</td><td><code>data/site.ts</code> · <code>data/timeline.ts</code></td></tr>
+<tr><td>Testimonials</td><td><code>data/testimonials.ts</code></td></tr>
+<tr><td>Hero copy + stats</td><td><code>components/Hero.tsx</code></td></tr>
+<tr><td>Email / WhatsApp</td><td><code>components/ContactBand.tsx</code> + <code>app/contact/page.tsx</code></td></tr>
+<tr><td>About/Press/Media prose</td><td><code>components/AboutPage.tsx</code>, <code>app/press|media/page.tsx</code></td></tr>
+<tr><td>SEO / social preview</td><td><code>app/layout.tsx</code> + per-page <code>generateMetadata</code></td></tr>
+<tr><td>Colours / fonts</td><td><code>app/globals.css</code> · <code>lib/fonts.ts</code></td></tr>
+<tr><td>Types / new fields</td><td><code>data/types.ts</code></td></tr>
+<tr><td>Images</td><td><code>public/images/</code> (+ sizing guide)</td></tr>
+</table>
+
+<h3>10.3 Glossary</h3>
+<table>
+<tr><th>Term</th><th>Meaning</th></tr>
+<tr><td>App Router / static export</td><td>Folders in <code>app/</code> = URLs; site builds to static HTML, no server.</td></tr>
+<tr><td>Server / Client component</td><td>Default server (no browser APIs). <code>'use client'</code> opts into hooks/interactivity.</td></tr>
+<tr><td>Type / union / optional <code>?</code></td><td>The rules in <code>types.ts</code>.</td></tr>
+<tr><td>Slug</td><td>URL-safe id → <code>/work/&lt;slug&gt;</code>, <code>/writing/&lt;slug&gt;</code>.</td></tr>
+<tr><td><code>generateStaticParams</code> / <code>generateMetadata</code></td><td>Which slugs to pre-build; per-page SEO.</td></tr>
+<tr><td>Build gate</td><td><code>npm run build</code> — what Vercel runs; must pass.</td></tr>
+<tr><td>OG image</td><td>Social-share preview (<code>/og-2025.jpg</code>).</td></tr>
+</table>
+
+<h3>10.4 Pre-push checklist</h3>
+<div class="box note">
+<ul style="margin:0">
+  <li>Matched the type in <code>data/types.ts</code> (required fields, valid union values)?</li>
+  <li>Unique <code>id</code>/<code>slug</code>? Apostrophes escaped?</li>
+  <li>New images in <code>public/</code>, paths start <code>/images/…</code>, casing exact, sized per the image guide?</li>
+  <li>Didn't increase homepage preview counts? Didn't add Tailwind? Didn't revert the OG path?</li>
+  <li>Interactive component has <code>'use client'</code>?</li>
+  <li><b><code>npm run build</code> succeeded locally?</b></li>
+  <li>Committed &amp; pushing to <code>main</code>; verified Vercel went green + hard-refreshed?</li>
+</ul>
+</div>
+
+<hr>
+<p style="text-align:center;color:#999;font-size:8.5pt;letter-spacing:.1em;">omkardhareshwar.com · MAINTENANCE MANUAL v2.0 · END OF DOCUMENT</p>
+</div>
+
+</body>
+</html>
