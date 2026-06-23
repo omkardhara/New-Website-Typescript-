@@ -43,8 +43,6 @@ export function TabShell({ tabs }: { tabs: TabDef[] }) {
 
   const handleSelect = (id: string) => {
     setActive(id);
-    // Only scroll to the tab bar if it's not already visible (stuck = visible at top)
-    if (stuck) return;
     if (!sentinelRef.current) return;
     const targetY =
       sentinelRef.current.getBoundingClientRect().top + window.scrollY - NAV_H;

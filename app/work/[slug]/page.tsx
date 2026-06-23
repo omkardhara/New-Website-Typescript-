@@ -99,11 +99,12 @@ export default function ProjectPage({ params }: { params: { slug: string } }) {
   const schema = buildWorkSchema(item);
   const breadcrumb = buildBreadcrumb(item);
 
+  const isAdventure = !!item.hidden;
   const internalWork = WORK.filter((w) => !w.url && !w.hidden)
     .sort((a, b) => (a.image ? 0 : 1) - (b.image ? 0 : 1));
   const idx = internalWork.findIndex((w) => w.slug === item.slug);
   const prevWork = idx > 0 ? internalWork[idx - 1] : null;
-  const nextWork = idx < internalWork.length - 1 ? internalWork[idx + 1] : null;
+  const nextWork = idx !== -1 && idx < internalWork.length - 1 ? internalWork[idx + 1] : null;
 
   const paragraphs = item.article
     ? item.article.split('\n\n').map((p) => p.trim()).filter(Boolean)
@@ -156,7 +157,7 @@ export default function ProjectPage({ params }: { params: { slug: string } }) {
       >
         <div style={{ maxWidth: '960px', margin: '0 auto', display: 'flex', alignItems: 'center', justifyContent: 'space-between', gap: '12px' }}>
           <Link
-            href="/#tab-work"
+            href={isAdventure ? '/#tab-dispatches' : '/#tab-work'}
             scroll={false}
             style={{
               display: 'inline-flex',
@@ -175,7 +176,7 @@ export default function ProjectPage({ params }: { params: { slug: string } }) {
             }}
             className="back-btn"
           >
-            <span style={{ fontSize: '14px' }}>←</span> Back to all work
+            <span style={{ fontSize: '14px' }}>←</span> {isAdventure ? 'Back to Adventures' : 'Back to all work'}
           </Link>
           <ShareButton title={item.title} text={item.desc} />
         </div>
@@ -377,7 +378,8 @@ export default function ProjectPage({ params }: { params: { slug: string } }) {
         }}
       >
         <Link
-          href="/#tab-work"
+          href={isAdventure ? '/#tab-dispatches' : '/#tab-work'}
+          scroll={false}
           style={{
             display: 'inline-flex',
             alignItems: 'center',
@@ -394,10 +396,10 @@ export default function ProjectPage({ params }: { params: { slug: string } }) {
             marginTop: '32px',
           }}
         >
-          <span style={{ fontSize: '14px' }}>←</span> Browse more work
+          <span style={{ fontSize: '14px' }}>←</span> {isAdventure ? 'Back to Adventures' : 'Browse more work'}
         </Link>
       </div>
-      {(prevWork || nextWork) && (
+      {!isAdventure && (prevWork || nextWork) && (
         <nav aria-label="Project navigation" className="article-nav">
           {prevWork ? (
             <Link href={`/work/${prevWork.slug}`} className="article-nav-item">
