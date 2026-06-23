@@ -157,6 +157,7 @@ export default function ProjectPage({ params }: { params: { slug: string } }) {
         <div style={{ maxWidth: '960px', margin: '0 auto', display: 'flex', alignItems: 'center', justifyContent: 'space-between', gap: '12px' }}>
           <Link
             href="/#tab-work"
+            scroll={false}
             style={{
               display: 'inline-flex',
               alignItems: 'center',

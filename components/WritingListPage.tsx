@@ -62,6 +62,7 @@ export function WritingListPage({ section }: { section: WritingSection }) {
           <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginBottom: '10px' }}>
             <Link
               href="/#tab-notes"
+              scroll={false}
               style={{
                 display: 'inline-flex',
                 alignItems: 'center',

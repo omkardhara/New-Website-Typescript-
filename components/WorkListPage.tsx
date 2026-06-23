@@ -25,6 +25,7 @@ export function WorkListPage() {
         <div style={{ maxWidth: '1100px', margin: '0 auto', display: 'flex', alignItems: 'center', justifyContent: 'space-between', gap: '12px' }}>
           <Link
             href="/#tab-work"
+            scroll={false}
             style={{
               display: 'inline-flex',
               alignItems: 'center',

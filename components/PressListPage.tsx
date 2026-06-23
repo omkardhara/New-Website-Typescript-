@@ -47,6 +47,7 @@ export function PressListPage({ defaultCategory = 'all' }: { defaultCategory?: C
         >
           <Link
             href="/#tab-press"
+            scroll={false}
             style={{
               display: 'inline-flex',
               alignItems: 'center',

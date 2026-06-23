@@ -57,6 +57,7 @@ export function MediaListPage() {
         >
           <Link
             href="/#tab-media"
+            scroll={false}
             style={{
               display: 'inline-flex',
               alignItems: 'center',
