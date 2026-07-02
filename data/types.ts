@@ -43,6 +43,8 @@ export type PressItem = {
   year: string;
   type: 'image' | 'pdf';
   src: string;
+  /** Card-thumbnail override when src is a full article scan unsuited for a cropped card view. */
+  thumb?: string;
   images?: string[];
   thumbPosition?: string;
   category: PressCategory;

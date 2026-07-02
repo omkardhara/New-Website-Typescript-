@@ -190,10 +190,9 @@ export default function WritingPage({ params }: { params: { slug: string } }) {
                 fontSize: '10px',
                 letterSpacing: '0.18em',
                 textTransform: 'uppercase',
-                color: 'var(--ember-light)',
-                border: '1px solid var(--ember-light)',
+                color: 'var(--ember-dark)',
+                border: '1px solid var(--ember-dark)',
                 padding: '3px 10px',
-                opacity: 0.8,
               }}
             >
               AI assisted

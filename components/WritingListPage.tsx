@@ -169,10 +169,8 @@ export function WritingListPage({ section }: { section: WritingSection }) {
                   <span className="note-tag">{n.tag}</span>
                   <span className="note-date">
                     {n.date} · {n.read}
+                    {n.aiAssisted && <span className="note-ai-note"> · AI-assisted</span>}
                   </span>
-                  {n.aiAssisted && (
-                    <span className="note-ai-badge">AI assisted</span>
-                  )}
                 </div>
                 <h3 className="note-title">{n.title}</h3>
                 <p className="note-excerpt"><Excerpt text={n.excerpt} /></p>

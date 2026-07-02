@@ -175,7 +175,7 @@ export function StoryMap() {
               <span className={s.hudStatLabel}>km · Rickshaw Run</span>
             </div>
             <div className={`${s.hudStat} ${s.ember}`}>
-              <span className={s.hudStatNum}>VI</span>
+              <span className={s.hudStatNum}>6</span>
               <span className={s.hudStatLabel}>Chapters logged</span>
             </div>
           </div>

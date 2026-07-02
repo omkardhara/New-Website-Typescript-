@@ -43,6 +43,7 @@ export function Hero() {
       statsRef.current?.querySelectorAll<HTMLElement>('[data-target]').forEach((el) => {
         const target = parseFloat(el.dataset.target || '0');
         const suffix = el.dataset.suffix || '';
+        el.textContent = '0' + suffix;
         animateCounter(el, target, suffix);
       });
     }, 1200);
@@ -93,7 +94,7 @@ export function Hero() {
                 aria-label={`${s.num.toLocaleString()}${s.suffix ?? ''} ${s.label}`}
               >
                 <span className="hero-stat-num" data-target={s.num} data-suffix={s.suffix || ''} aria-hidden="true">
-                  0
+                  {s.num.toLocaleString()}{s.suffix ?? ''}
                 </span>
                 <span className="hero-stat-label" aria-hidden="true">{s.label}</span>
               </div>

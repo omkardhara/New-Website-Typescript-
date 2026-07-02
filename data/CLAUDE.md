@@ -24,10 +24,12 @@ Cards with an `image` field automatically sort before cards without one. No manu
 
 ## PressItem type
 ```ts
-{ id, slug, publication, title, featured, year, type, src, images?, thumbPosition?, category, url? }
+{ id, slug, publication, title, featured, year, type, src, thumb?, images?, thumbPosition?, category, url? }
 ```
 - `featured: true` items appear on the About page
 - `category`: `street-art | juggling | activism | installation`
+- `src` doubles as page 1 of the article-scan gallery on `/press/[slug]` — keep it as the full original screenshot
+- `thumb?` — optional card-thumbnail override (used by PressTab/PressListPage) when `src` is a full-page scan with chrome (headline, share buttons, etc.) unsuited for a cropped card view
 
 ## Adding a new work card
 1. Add entry to `WORK` array in `data/work.ts` with next sequential id

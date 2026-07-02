@@ -11,6 +11,7 @@
   --gold-bright: #358A5F;
   --ember: #C4621D;
   --ember-light: #E07A35;
+  --ember-dark: #9C4E17; /* AA-legible ember for small text on cream (ember/ember-light fail 4.5:1 there) */
   --text-light: #F8F6F1;
   --text-light-2: rgba(248,246,241,0.72);
   --text-light-3: rgba(248,246,241,0.48);
@@ -201,7 +202,7 @@ body::before {
 
 .hero-stats { display: flex; flex-wrap: wrap; gap: clamp(20px, 3.5vw, 48px); padding-top: 24px; border-top: 1px solid var(--line-light); opacity: 0; animation: rise-up 0.9s cubic-bezier(0.16,1,0.3,1) 1.15s forwards; }
 .hero-stat { display: flex; flex-direction: column; gap: 6px; }
-.hero-stat-num { font-family: var(--font-serif); font-size: clamp(28px, 3.2vw, 38px); font-weight: 400; color: var(--gold-light); line-height: 1; }
+.hero-stat-num { font-family: var(--font-serif); font-size: clamp(28px, 3.2vw, 38px); font-weight: 400; color: var(--gold-light); line-height: 1; font-feature-settings: "lnum" 1, "tnum" 1; font-variant-numeric: lining-nums tabular-nums; }
 .hero-stat-label { font-family: var(--font-mono); font-size: 10px; letter-spacing: 0.18em; text-transform: uppercase; color: var(--text-light-3); }
 
 .hero-right { position: relative; display: flex; flex-direction: column; justify-content: center; align-items: center; gap: 20px; opacity: 0; animation: rise-up 1.3s cubic-bezier(0.16,1,0.3,1) 0.4s forwards; }
@@ -214,8 +215,8 @@ body::before {
 
 .hero-offerings { margin-top: 28px; display: flex; gap: 8px; flex-wrap: wrap; opacity: 0; animation: rise-up 0.9s cubic-bezier(0.16,1,0.3,1) 1.3s forwards; }
 .offering-label { font-family: var(--font-mono); font-size: 9px; letter-spacing: 0.18em; text-transform: uppercase; color: var(--text-dark-3); align-self: center; white-space: nowrap; margin-right: 4px; }
-.offering-chip { font-family: var(--font-mono); font-size: 10px; letter-spacing: 0.16em; text-transform: uppercase; color: var(--gold-light); border: 1px solid var(--line-light); padding: 9px 16px; background: rgba(46,107,79,0.06); display: inline-flex; align-items: center; gap: 8px; }
-.offering-chip-num { color: var(--ember-light); font-size: 9px; }
+.offering-chip { font-family: var(--font-mono); font-size: 10px; letter-spacing: 0.16em; text-transform: uppercase; color: var(--gold); border: 1px solid var(--line-light); padding: 9px 16px; background: rgba(46,107,79,0.06); display: inline-flex; align-items: center; gap: 8px; }
+.offering-chip-num { color: var(--ember-dark); font-size: 9px; }
 
 /* Tab shell — base (dark v3 styles further below override nothing; kept as single source) */
 .tab-shell { background: var(--bg-dark); position: relative; z-index: 2; }
@@ -231,7 +232,7 @@ body::before {
 .panel-head h2 { font-family: var(--font-serif); font-size: clamp(36px, 5vw, 64px); font-weight: 400; line-height: 1.0; letter-spacing: -0.02em; color: var(--text-dark); }
 .panel-head h2 em { font-style: italic; color: var(--gold); }
 .panel-meta { font-family: var(--font-mono); font-size: 11px; letter-spacing: 0.18em; text-transform: uppercase; color: var(--text-dark-3); text-align: right; }
-.panel-meta strong { display: block; font-family: var(--font-serif); font-style: normal; font-size: 28px; font-weight: 400; color: var(--gold); margin-bottom: 4px; line-height: 1; }
+.panel-meta strong { display: block; font-family: var(--font-serif); font-style: normal; font-size: 28px; font-weight: 400; color: var(--gold); margin-bottom: 4px; line-height: 1; font-feature-settings: "lnum" 1, "tnum" 1; font-variant-numeric: lining-nums tabular-nums; }
 
 /* Filter chips */
 .filter-row { display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 24px; }
@@ -288,7 +289,11 @@ body::before {
 .note-meta { display: flex; align-items: center; gap: 12px; flex-wrap: wrap; font-family: var(--font-mono); font-size: 10px; letter-spacing: 0.14em; text-transform: uppercase; margin-bottom: 24px; }
 .note-tag { color: var(--gold); }
 .note-date { color: var(--text-dark-4); margin-left: auto; }
-.note-ai-badge { color: var(--ember-light); border: 1px solid currentColor; padding: 2px 8px; opacity: 0.8; font-size: 9px; white-space: nowrap; }
+.note-ai-badge { color: var(--ember-dark); border: 1px solid currentColor; padding: 2px 8px; font-size: 9px; white-space: nowrap; }
+/* Quieter than .note-ai-badge: plain inline text folded into the meta line
+   instead of a bordered chip, per feedback that the badge read as too loud
+   on the card (full disclosure box is kept on the article detail page). */
+.note-ai-note { color: var(--ember-dark); }
 .note-title { font-family: var(--font-serif); font-size: 22px; font-weight: 400; line-height: 1.25; color: var(--text-dark); margin-bottom: 12px; }
 .note-card.featured .note-title { font-size: 34px; line-height: 1.15; }
 .note-excerpt { font-size: 13.5px; color: var(--text-dark-2); line-height: 1.8; flex: 1; margin-bottom: 24px; }
@@ -398,7 +403,7 @@ body::before {
 .dispatch-desc { font-size: 14.5px; color: var(--text-dark-2); line-height: 1.85; margin-bottom: 32px; max-width: 460px; }
 .dispatch-stats { display: flex; gap: 20px; flex-wrap: nowrap; margin-bottom: 28px; padding-top: 16px; border-top: 1px solid var(--line-faint); align-items: baseline; }
 .dispatch-stats > div { display: flex; align-items: baseline; gap: 5px; }
-.dispatch-stat-num { font-family: var(--font-serif); font-size: 18px; color: var(--gold); font-weight: 400; line-height: 1; }
+.dispatch-stat-num { font-family: var(--font-serif); font-size: 18px; color: var(--gold); font-weight: 400; line-height: 1; font-feature-settings: "lnum" 1, "tnum" 1; font-variant-numeric: lining-nums tabular-nums; }
 .dispatch-stat-label { font-family: var(--font-mono); font-size: 9px; letter-spacing: 0.16em; text-transform: uppercase; color: var(--text-dark-4); margin-top: 0; display: inline; }
 a.dispatch-feature { text-decoration: none; color: inherit; transition: box-shadow 0.2s; }
 a.dispatch-feature:hover { box-shadow: 0 0 0 2px var(--gold); }
@@ -406,7 +411,8 @@ a.dispatch-feature:hover { box-shadow: 0 0 0 2px var(--gold); }
 /* Contact band */
 .contact-band { background: var(--bg-dark); color: var(--text-light); padding: clamp(60px, 8vw, 100px) clamp(20px, 5vw, 64px); position: relative; overflow: hidden; }
 .contact-band::before { content: ''; position: absolute; top: -200px; right: -200px; width: 600px; height: 600px; border-radius: 50%; background: radial-gradient(circle, rgba(46,107,79,0.18), transparent 65%); pointer-events: none; }
-.contact-inner { max-width: 1100px; margin: 0 auto; display: grid; grid-template-columns: 1fr 1fr; gap: clamp(40px, 6vw, 80px); align-items: center; position: relative; z-index: 1; }
+.contact-inner { max-width: 1100px; margin: 0 auto; display: grid; grid-template-columns: 1.15fr 0.85fr; gap: clamp(40px, 6vw, 80px); align-items: center; position: relative; z-index: 1; }
+.contact-inner address { max-width: 380px; padding-left: clamp(28px, 3vw, 40px); border-left: 1px solid var(--line-light); }
 .contact-band h2 { font-family: var(--font-serif); font-size: clamp(36px, 5vw, 60px); font-weight: 300; line-height: 1.0; letter-spacing: -0.02em; margin-bottom: 20px; }
 .contact-band h2 em { font-style: italic; color: var(--gold-light); }
 .contact-band p { font-size: 15px; line-height: 1.8; color: var(--text-light-2); max-width: 440px; margin-bottom: 24px; }
@@ -459,6 +465,7 @@ a.dispatch-feature:hover { box-shadow: 0 0 0 2px var(--gold); }
   .dispatch-img { min-height: 240px; }
   .dispatch-stats { flex-wrap: wrap; gap: 10px 16px; }
   .contact-inner { grid-template-columns: 1fr; }
+  .contact-inner address { max-width: none; padding-left: 0; border-left: none; }
 }
 @media (max-width: 720px) {
   .nav-right { gap: 14px; }
@@ -876,9 +883,12 @@ a.dispatch-feature:hover { box-shadow: 0 0 0 2px var(--gold); }
   outline-offset: 2px;
 }
 
-/* Keyboard focus ring — only for keyboard navigation, not mouse clicks */
+/* Keyboard focus ring — only for keyboard navigation, not mouse clicks.
+   gold-light used instead of gold: gold is only 3.04:1 on dark sections
+   (barely clears the 3:1 non-text contrast minimum); gold-light holds
+   3.55:1+ on both cream and dark backgrounds. */
 :focus-visible {
-  outline: 2px solid var(--gold);
+  outline: 2px solid var(--gold-light);
   outline-offset: 2px;
 }
 /* Suppress outline for mouse users on elements that already have hover states */
@@ -947,7 +957,6 @@ button:focus:not(:focus-visible) {
 
 /* ═══════════════════════════════════════════════════════════
  * TESTIMONIALS STRIP — horizontal auto-scroll above contact
- * Not yet wired into any page; pending content approval.
  * ═══════════════════════════════════════════════════════════ */
 .testimonials-strip-wrap {
   background: var(--bg-dark);
@@ -975,7 +984,10 @@ button:focus:not(:focus-visible) {
   content: '';
   position: absolute;
   top: 0; bottom: 0;
-  width: 120px;
+  /* >= one card + its margins (340px) so a scrolling card always fully fades
+     before it hits the viewport's hard overflow:hidden clip — otherwise it
+     gets chopped off mid-card at the edge instead of fading out. */
+  width: 340px;
   z-index: 2;
   pointer-events: none;
 }
@@ -1057,7 +1069,36 @@ button:focus:not(:focus-visible) {
 }
 .testimonials-strip-desktop {
   display: block;
+  position: relative;
 }
+.testimonials-strip-desktop-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 3;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: rgba(15,15,13,0.55);
+  backdrop-filter: blur(6px);
+  border: 1px solid rgba(248,246,241,0.25);
+  color: var(--text-light-2);
+  font-size: 16px;
+  cursor: pointer;
+  opacity: 0.6;
+  transition: opacity 0.25s, border-color 0.25s, color 0.25s;
+}
+.testimonials-strip-desktop:hover .testimonials-strip-desktop-arrow {
+  opacity: 1;
+}
+.testimonials-strip-desktop-arrow:hover,
+.testimonials-strip-desktop-arrow:focus-visible {
+  opacity: 1;
+  border-color: var(--gold-light);
+  color: var(--gold-light);
+}
+.testimonials-strip-desktop-arrow.prev { left: 12px; }
+.testimonials-strip-desktop-arrow.next { right: 12px; }
 .testimonials-strip-card-mobile {
   flex: 1;
   width: auto;

@@ -128,7 +128,7 @@ export function PressListPage({ defaultCategory = 'all' }: { defaultCategory?: C
             >
               <div className="press-card-bg">
                 <Image
-                  src={p.src}
+                  src={p.thumb ?? p.src}
                   alt={p.title}
                   fill
                   sizes="(max-width: 720px) 100vw, (max-width: 1024px) 50vw, 33vw"

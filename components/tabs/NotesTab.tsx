@@ -51,9 +51,9 @@ export function NotesTab() {
         <div className="panel-head-left">
           <div className="panel-dispatch">Writing · Long-form</div>
           <h2>
-            From walls to stages,
+            Words carry what
             <br />
-            <em>to the front pages.</em>
+            <em>walls can&apos;t hold.</em>
           </h2>
         </div>
         <div className="panel-meta">
@@ -108,10 +108,8 @@ export function NotesTab() {
                   <span className="note-tag">✦ Featured · {featured.tag}</span>
                   <span className="note-date">
                     {featured.date} · {featured.read}
+                    {featured.aiAssisted && <span className="note-ai-note"> · AI-assisted</span>}
                   </span>
-                  {featured.aiAssisted && (
-                    <span className="note-ai-badge">AI assisted</span>
-                  )}
                 </div>
                 <h3 className="note-title">{featured.title}</h3>
                 <p className="note-excerpt"><Excerpt text={featured.excerpt} /></p>
@@ -145,10 +143,8 @@ export function NotesTab() {
                     <span className="note-tag">{n.tag}</span>
                     <span className="note-date">
                       {n.date} · {n.read}
+                      {n.aiAssisted && <span className="note-ai-note"> · AI-assisted</span>}
                     </span>
-                    {n.aiAssisted && (
-                      <span className="note-ai-badge">AI assisted</span>
-                    )}
                   </div>
                   <h3 className="note-title">{n.title}</h3>
                   <p className="note-excerpt"><Excerpt text={n.excerpt} /></p>

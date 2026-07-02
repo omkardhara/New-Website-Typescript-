@@ -53,6 +53,21 @@ export function TestimonialsStrip() {
   const handleNext = () =>
     setCurrentIndex((i) => (i + 1) % APPROVED_TESTIMONIALS.length);
 
+  const stepDesktop = (dir: 1 | -1) => {
+    const marquee = marqueeRef.current;
+    if (!marquee) return;
+    if (timeoutRef.current) clearTimeout(timeoutRef.current);
+    setPaused(true);
+    const matrix = new DOMMatrix(window.getComputedStyle(marquee).transform);
+    const totalW = marquee.scrollWidth / 2;
+    const cardStep = totalW / APPROVED_TESTIMONIALS.length;
+    let pos = (matrix.m41 - dir * cardStep) % totalW;
+    if (pos > 0) pos -= totalW;
+    const progress = Math.abs(pos) / totalW;
+    marquee.style.animationDelay = `${-(progress * ANIM_DURATION_S)}s`;
+    timeoutRef.current = setTimeout(() => setPaused(false), 2500);
+  };
+
   useEffect(() => {
     return () => { if (timeoutRef.current) clearTimeout(timeoutRef.current); };
   }, []);
@@ -113,6 +128,20 @@ export function TestimonialsStrip() {
 
       {/* Desktop: auto-scroll marquee */}
       <div className="testimonials-strip-desktop">
+        <button
+          className="testimonials-strip-desktop-arrow prev"
+          onClick={() => stepDesktop(-1)}
+          aria-label="Previous testimonial"
+        >
+          ←
+        </button>
+        <button
+          className="testimonials-strip-desktop-arrow next"
+          onClick={() => stepDesktop(1)}
+          aria-label="Next testimonial"
+        >
+          →
+        </button>
         <div
           className="testimonials-strip-viewport"
           onMouseEnter={() => { if (timeoutRef.current) clearTimeout(timeoutRef.current); setPaused(true); }}
