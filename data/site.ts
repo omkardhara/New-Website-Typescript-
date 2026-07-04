@@ -294,6 +294,7 @@ export const NOTES: Note[] = [
     slug: 'experiences-with-swamiji',
     title: 'Experiences with Swamiji',
     date: '2013',
+    image: '/images/writing/swamiji.jpg',
     read: '4 min',
     tag: 'Spirituality',
     type: 'article',
