@@ -318,6 +318,7 @@ export const NOTES: Note[] = [
     slug: 'spirituality-in-the-21st-century',
     title: 'Spirituality in the 21st Century',
     date: '2015',
+    image: '/images/writing/21st.jpg',
     read: '5 min',
     tag: 'Philosophy',
     type: 'article',
