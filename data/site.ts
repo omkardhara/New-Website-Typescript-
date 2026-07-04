@@ -330,6 +330,7 @@ export const NOTES: Note[] = [
     slug: 'yuvaiva-dharmasheelah-syaat',
     title: 'Yuvaiva Dharmasheelah Syaat',
     date: '2015',
+    image: '/images/writing/yuvaiva.jpg',
     read: '5 min',
     tag: 'Adventure',
     type: 'article',
