@@ -306,6 +306,7 @@ export const NOTES: Note[] = [
     slug: 'spiritual-guru',
     title: 'The Spiritual Guru',
     date: '2014',
+    image: '/images/writing/spiritual_guru.jpg',
     read: '5 min',
     tag: 'Spirituality',
     type: 'article',
