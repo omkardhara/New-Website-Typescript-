@@ -270,6 +270,7 @@ export const NOTES: Note[] = [
     slug: 'happiness',
     title: 'Happiness',
     date: '2016',
+     image: '/images/writing/happiness.jpg',
     read: '5 min',
     tag: 'Philosophy',
     type: 'article',
