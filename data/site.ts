@@ -258,6 +258,7 @@ export const NOTES: Note[] = [
     slug: 'learned-men',
     title: 'Learned Men',
     date: '2009–11',
+    image: '/images/learned_men.jpg',
     read: '2 min',
     tag: 'Satire',
     type: 'article',
