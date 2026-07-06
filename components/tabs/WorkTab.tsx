@@ -3,13 +3,14 @@ import { useState } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 import { WORK, WORK_FILTERS } from '@/data/work';
+import type { WorkCategory } from '@/data/types';
 
 const PREVIEW_COUNT = 3;
 
 export function WorkTab() {
   const [active, setActive] = useState<string>('all');
   const visible = WORK.filter((w) => !w.hidden).sort((a, b) => (a.image ? 0 : 1) - (b.image ? 0 : 1));
-  const filtered = active === 'all' ? visible : visible.filter((w) => w.cat === active);
+  const filtered = active === 'all' ? visible : visible.filter((w) => (Array.isArray(w.cat) ? w.cat.includes(active as WorkCategory) : w.cat === active));
   const preview = filtered.slice(0, PREVIEW_COUNT);
 
   return (

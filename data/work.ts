@@ -110,7 +110,7 @@ One of the most memorable parts was leading a juggling workshop for children. Se
   {
     id: 6,
     slug: 'flying-machine-denims',
-    cat: 'production',
+    cat: ['brand', 'production'],
     tag: 'Ad Shoot · Flying Machine Denims · 2021',
     title: 'Underground Street Culture Ended Up Selling Denim for Flying Machine',
     desc: 'A story about timing, youth culture, and how a Bboy named Flying Machine became the perfect face for a brand called Flying Machine.',
@@ -770,7 +770,7 @@ The Wicked Broz know how to be somewhere. No agenda beyond the next meal, the ne
   {
     id: 21,
     slug: 'jbcn-school-talk-and-performance',
-    cat: 'education',
+    cat: ['education', 'performance'],
     tag: 'Talk · Performance · JBCN Oshiwara',
     title: 'A Flow Talk and a Juggling Royal Rumble for 2,000 Students at JBCN',
     desc: 'A talk on peripheral vision, hand-eye coordination, and flow state for JBCN Oshiwara\'s annual event, followed by a live juggling demo with student volunteers on stage.',

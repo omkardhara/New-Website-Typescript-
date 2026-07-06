@@ -1,7 +1,9 @@
+export type WorkCategory = 'performance' | 'brand' | 'installation' | 'activism' | 'production' | 'art' | 'education';
+
 export type WorkItem = {
   id: number;
   slug: string;
-  cat: 'performance' | 'brand' | 'installation' | 'activism' | 'production' | 'art' | 'education';
+  cat: WorkCategory | WorkCategory[];
   tag: string;
   title: string;
   desc: string;
