@@ -55,6 +55,7 @@ export const TESTIMONIALS: Testimonial[] = [
     role: 'Chairman, Military Road RWA · Dream Marol',
     context: 'Marol Art Village — community partner since 2015',
     approved: true,
+    image: '/images/testimonials/suresh-nair.jpg',
   },
   {
     id: 6,
@@ -64,6 +65,7 @@ export const TESTIMONIALS: Testimonial[] = [
     role: 'Co-founder, Wicked Broz',
     context: 'Co-founded Wicked Broz and Marol Art Village together',
     approved: true,
+    image: '/images/testimonials/zain-siddiqui.jpg',
   },
   {
     id: 7,
