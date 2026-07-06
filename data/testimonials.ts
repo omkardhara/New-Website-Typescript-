@@ -108,7 +108,7 @@ export const TESTIMONIALS: Testimonial[] = [
       "Athletes can be stiff in front of a camera, especially with crew around. Omkar had most of them relaxed within the first hour on each of the three shoot days. I think it's because he's a performer himself. He knows what it feels like to be watched and asked to just be yourself. The final campaign felt like a day in the neighbourhood, not a shoot day.",
     name: 'Dhwani Mankad',
     role: 'Flying Machine Denims',
-    context: 'Flying Machine denim campaign (2019) — 3 shoots, 7 athletes',
+    context: 'Flying Machine denim campaign (2021) — 3 shoots, 7 athletes',
   },
   {
     id: 12,

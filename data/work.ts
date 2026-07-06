@@ -111,7 +111,7 @@ One of the most memorable parts was leading a juggling workshop for children. Se
     id: 6,
     slug: 'flying-machine-denims',
     cat: 'production',
-    tag: 'Ad Shoot · Flying Machine Denims · 2019',
+    tag: 'Ad Shoot · Flying Machine Denims · 2021',
     title: 'Underground Street Culture Ended Up Selling Denim for Flying Machine',
     desc: 'A story about timing, youth culture, and how a Bboy named Flying Machine became the perfect face for a brand called Flying Machine.',
     stat: '3 shoots · 7 athletes',
@@ -140,7 +140,7 @@ One of the most memorable parts was leading a juggling workshop for children. Se
       'Sky and puddle, mirrored',
       'No changing room on site — outfit changes happened wherever there was space',
     ],
-    article: `In 2019, Flying Machine Denims came knocking through a connection I already had. I'd spent years around Arif Chaudhary — the Bboy known as Flying Machine — going back to when I managed his early career. A brand called Flying Machine wanting a bboy nicknamed Flying Machine as one of its faces wasn't a hard sell to anyone. I ended up curating and producing the campaign for Seesaw Productions, alongside Dhwani Mankad and Yash Gupta: three shoots, seven athletes, built around a simple idea — that street culture wasn't a marketing layer on top of the brand, it was the brand.
+    article: `In July 2021, Flying Machine Denims came knocking through a connection I already had. I'd spent years around Arif Chaudhary — the Bboy known as Flying Machine — going back to when I managed his early career. A brand called Flying Machine wanting a bboy nicknamed Flying Machine as one of its faces wasn't a hard sell to anyone. I ended up curating and producing the campaign for Seesaw Productions, alongside Dhwani Mankad and Yash Gupta: three shoots, seven athletes, built around a simple idea — that street culture wasn't a marketing layer on top of the brand, it was the brand.
 
 This particular shoot brought together Arif, parkour athlete [Rajesh, aka Monkkey](https://www.instagram.com/monkkey_00/), and graffiti artist Dheeraj Singh ("Krypt One") at a skate park in Mumbai. [Rohit Khetle](https://www.instagram.com/fastshutterguy/) shot stills across the day.
 
