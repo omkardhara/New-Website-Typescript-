@@ -119,29 +119,35 @@ One of the most memorable parts was leading a juggling workshop for children. Se
     gradient: 'radial-gradient(ellipse at 60% 40%, rgba(46,107,79,0.22), rgba(15,15,13,0.12) 65%, var(--bg-cream))',
     image: '/images/flying-machine-denims/flying-machine-tshirt-reveal.jpg',
     images: [
+      '/images/flying-machine-denims/arif-green-beanie-portrait.jpg',
       '/images/flying-machine-denims/skateboard-flying-machine-hoodie.jpg',
       '/images/flying-machine-denims/graffiti-artist-spraying.jpg',
       '/images/flying-machine-denims/krypt-one-portrait.jpg',
+      '/images/flying-machine-denims/arif-low-angle-kick.jpg',
       '/images/flying-machine-denims/side-kick-reflection.jpg',
       '/images/flying-machine-denims/handstand-bowl-edge.jpg',
       '/images/flying-machine-denims/kick-pose-bowl-edge.jpg',
+      '/images/flying-machine-denims/arif-red-hoodie-mask-kick.jpg',
       '/images/flying-machine-denims/retro-nostalgia-hoodie.jpg',
       '/images/flying-machine-denims/human-flag-fm180-tag.jpg',
     ],
-    imagePositions: ['top', '', 'top', '', '', 'top', '', ''],
+    imagePositions: ['', 'top', '', 'top', '', '', '', 'top', '', '', ''],
     captions: [
+      'Arif Chaudhary between takes',
       'Rolling down the promenade in the Flying Machine hoodie, between takes',
       'Dheeraj Singh, aka Krypt One, adding a graffiti piece that was never part of the original plan',
       'Krypt One between setups',
+      'Arif mid-kick, shot low against the sky',
       'A kick caught in a rain puddle\'s reflection — the same rain that almost called off the shoot',
       'Rajesh mid-handstand on the skate bowl\'s edge',
       'Rajesh working the bowl\'s rim between setups',
+      'Arif, hooded and masked, mid-kick',
       'No changing room on site — outfit changes happened wherever there was space',
       'Rajesh holding a human flag off the platform edge — the FM180 bib tag reading Flying Machine',
     ],
     article: `In July 2021, Flying Machine Denims came knocking through a connection I already had. I'd spent years around Arif Chaudhary — the Bboy known as Flying Machine — going back to when I managed his early career. A brand called Flying Machine wanting a bboy nicknamed Flying Machine as one of its faces wasn't a hard sell to anyone. I ended up curating and producing the campaign for Seesaw Productions, alongside Dhwani Mankad and Yash Gupta: three shoots, seven athletes, built around a simple idea — that street culture wasn't a marketing layer on top of the brand, it was the brand.
 
-This particular shoot brought together Arif, parkour athlete [Rajesh, aka Monkkey](https://www.instagram.com/monkkey_00/), and graffiti artist Dheeraj Singh ("Krypt One") at a skate park in Mumbai. [Rohit Khetle](https://www.instagram.com/fastshutterguy/) shot stills across the day.
+This particular shoot brought together Arif, parkour athlete [Rajesh, aka Monkkey](https://www.instagram.com/monkkey_00/), and graffiti artist [Dheeraj Singh, aka Krypt One](https://www.instagram.com/krypt.one/) at a skate park in Mumbai. [Rohit Khetle](https://www.instagram.com/fastshutterguy/) shot stills across the day.
 
 Graffiti was never part of the original plan. It got added at the last minute once we saw the blank concrete at the park, and Krypt One's piece ended up becoming one of the strongest visuals of the day. Rain played spoilsport for most of the afternoon, and with no changing room on site, outfit changes happened wherever there was space, between ramps, behind a wall, wherever worked.
 
