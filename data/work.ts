@@ -140,15 +140,15 @@ One of the most memorable parts was leading a juggling workshop for children. Se
       'Sky and puddle, mirrored',
       'No changing room on site — outfit changes happened wherever there was space',
     ],
-    article: `In 2019, Flying Machine Denims came knocking through a connection I already had. I'd spent years around Arif Chaudhary — the Bboy known as Flying Machine — going back to when I managed his early career. A brand called Flying Machine wanting a bboy nicknamed Flying Machine as one of its faces wasn't a hard sell to anyone. I ended up curating and producing the campaign: three shoots, seven athletes, built around a simple idea — that street culture wasn't a marketing layer on top of the brand, it was the brand.
+    article: `In 2019, Flying Machine Denims came knocking through a connection I already had. I'd spent years around Arif Chaudhary — the Bboy known as Flying Machine — going back to when I managed his early career. A brand called Flying Machine wanting a bboy nicknamed Flying Machine as one of its faces wasn't a hard sell to anyone. I ended up curating and producing the campaign for Seesaw Productions, alongside Dhwani Mankad and Yash Gupta: three shoots, seven athletes, built around a simple idea — that street culture wasn't a marketing layer on top of the brand, it was the brand.
 
-This particular shoot brought together Arif, parkour athlete Rajesh ("Monkkey"), and graffiti artist Dheeraj Singh ("Krypt One") at a skate park in Mumbai. Rohit Khetle shot stills across the day.
+This particular shoot brought together Arif, parkour athlete [Rajesh, aka Monkkey](https://www.instagram.com/monkkey_00/), and graffiti artist Dheeraj Singh ("Krypt One") at a skate park in Mumbai. [Rohit Khetle](https://www.instagram.com/fastshutterguy/) shot stills across the day.
 
 Graffiti was never part of the original plan. It got added at the last minute once we saw the blank concrete at the park, and Krypt One's piece ended up becoming one of the strongest visuals of the day. Rain played spoilsport for most of the afternoon, and with no changing room on site, outfit changes happened wherever there was space, between ramps, behind a wall, wherever worked.
 
 The campaign ran digitally and was displayed across Flying Machine's retail stores. No hard numbers to report, but the brief was met: a brand named Flying Machine, fronted by a bboy nicknamed Flying Machine, selling denim through the exact street culture it borrowed its energy from.
 
-Video from this shoot, by Kevin Joseph ("Void") and Karan Shelar ("Canfuse"), is coming soon. Two more shoots from this campaign are yet to be added.`,
+Video from this shoot, by [Kevin Joseph, aka Void](https://www.instagram.com/k.void/) and [Karan Shelar, aka Canfuse](https://www.instagram.com/canfuse/), is coming soon. Two more shoots from this campaign are yet to be added.`,
   },
   {
     id: 4,
