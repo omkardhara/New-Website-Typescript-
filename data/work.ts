@@ -131,7 +131,6 @@ One of the most memorable parts was leading a juggling workshop for children. Se
       '/images/flying-machine-denims/retro-nostalgia-hoodie.jpg',
       '/images/flying-machine-denims/human-flag-fm180-tag.jpg',
     ],
-    imagePositions: ['', 'top', '', 'top', '', '', '', 'top', '', '', ''],
     captions: [
       'Arif Chaudhary between takes',
       'Rolling down the promenade in the Flying Machine hoodie, between takes',
