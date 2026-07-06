@@ -1034,11 +1034,24 @@ button:focus:not(:focus-visible) {
 }
 .testimonials-strip-attribution {
   display: flex;
-  flex-direction: column;
-  gap: 4px;
+  flex-direction: row;
+  align-items: center;
+  gap: 12px;
   border-top: 1px solid rgba(248,246,241,0.08);
   padding-top: 12px;
   margin-top: auto;
+}
+.testimonials-strip-attribution > div {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+.testimonials-strip-avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+  flex-shrink: 0;
 }
 .testimonials-strip-name {
   font-family: var(--font-mono);

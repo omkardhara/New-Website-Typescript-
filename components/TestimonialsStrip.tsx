@@ -1,5 +1,6 @@
 'use client';
 import { useState, useRef, useEffect } from 'react';
+import Image from 'next/image';
 import { APPROVED_TESTIMONIALS } from '@/data/testimonials';
 
 // Must match the CSS animation duration for testimonials-scroll
@@ -103,8 +104,19 @@ export function TestimonialsStrip() {
             &ldquo;{current.quote}&rdquo;
           </blockquote>
           <figcaption className="testimonials-strip-attribution">
-            <span className="testimonials-strip-name">{current.name}</span>
-            <span className="testimonials-strip-role">{current.role}</span>
+            {current.image && (
+              <Image
+                src={current.image}
+                alt={current.name}
+                width={40}
+                height={40}
+                className="testimonials-strip-avatar"
+              />
+            )}
+            <div>
+              <span className="testimonials-strip-name">{current.name}</span>
+              <span className="testimonials-strip-role">{current.role}</span>
+            </div>
           </figcaption>
         </figure>
         <button
@@ -168,8 +180,19 @@ export function TestimonialsStrip() {
                     &ldquo;{t.quote}&rdquo;
                   </blockquote>
                   <figcaption className="testimonials-strip-attribution">
-                    <span className="testimonials-strip-name">{t.name}</span>
-                    <span className="testimonials-strip-role">{t.role}</span>
+                    {t.image && (
+                      <Image
+                        src={t.image}
+                        alt={t.name}
+                        width={40}
+                        height={40}
+                        className="testimonials-strip-avatar"
+                      />
+                    )}
+                    <div>
+                      <span className="testimonials-strip-name">{t.name}</span>
+                      <span className="testimonials-strip-role">{t.role}</span>
+                    </div>
                   </figcaption>
                 </figure>
               ))}

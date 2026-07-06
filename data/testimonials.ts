@@ -5,6 +5,7 @@ export type Testimonial = {
   role: string;
   context: string; // project/collaboration context — for internal reference
   approved?: boolean; // flip to true once the person has confirmed their quote
+  image?: string; // portrait, /public/images/testimonials/[slug].jpg
 };
 
 // DRAFT TESTIMONIALS — not yet approved by collaborators.
@@ -28,6 +29,7 @@ export const TESTIMONIALS: Testimonial[] = [
     role: 'B-Boy Flying Machine · 5× Red Bull BC One India Champion',
     context: "Omkar managed Arif's career in the early years",
     approved: true,
+    image: '/images/testimonials/arif-chaudhary.jpg',
   },
   {
     id: 3,
