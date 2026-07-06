@@ -732,6 +732,18 @@ A month is long enough to stop being a visitor. You learn the chai shops, which 
 
 The Wicked Broz know how to be somewhere. No agenda beyond the next meal, the next line, the next fire. That is a skill worth learning.`,
   },
+  {
+    id: 21,
+    slug: 'jbcn-school-talk-and-performance',
+    cat: 'education',
+    tag: 'Education · Talk · Performance',
+    title: 'Talk & Performance at JBCN School',
+    desc: 'A talk and flow arts performance for students at JBCN School — bringing movement, storytelling, and creative practice into the classroom.',
+    stat: 'Details coming soon',
+    glyph: '🎤',
+    gradient: 'radial-gradient(ellipse at 50% 45%, rgba(80,160,120,0.2), rgba(15,15,13,0.12) 65%, var(--bg-cream))',
+    article: `Details and images coming soon.`,
+  },
 ];
 
 export const getWorkBySlug = (slug: string) => WORK.find((w) => w.slug === slug);
