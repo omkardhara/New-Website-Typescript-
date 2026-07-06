@@ -20,6 +20,7 @@ export const TESTIMONIALS: Testimonial[] = [
     role: 'Art Director · Trapped, Phantom Films',
     context: 'Jr. Art Director on Trapped (2015) under Janhavi — fabricated 17 survival devices',
     approved: true,
+    image: '/images/testimonials/janhavi-mallapur.jpg',
   },
   {
     id: 2,
