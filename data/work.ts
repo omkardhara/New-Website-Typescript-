@@ -564,9 +564,9 @@ I said yes to this before I knew how to do it. That's the only way I knew how to
       '/images/hasanat-flow/slackline-courtyard.jpg',
     ],
     captions: [
-      'Balance board work, indoors — poi in hand, focus on the toss',
+      'Balance board work, indoors — dapo star in hand, focus on the toss',
       'Slackline, stretched into an arabesque',
-      'Balance board, juggling balls, and a flying scarf — a typical session',
+      'Balance board, juggling balls, and a dapo star — a typical session',
       'Between sessions, with two students showing off their tricks',
       'Finding the line — slackline in the school courtyard',
     ],
