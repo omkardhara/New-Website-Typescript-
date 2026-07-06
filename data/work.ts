@@ -108,6 +108,49 @@ The installation works as both an art piece and a hands-on experience. Participa
 One of the most memorable parts was leading a juggling workshop for children. Seeing a group of 10-year-olds learn and successfully perform a three-ball cascade was incredibly rewarding.`,
   },
   {
+    id: 6,
+    slug: 'flying-machine-denims',
+    cat: 'production',
+    tag: 'Ad Shoot · Flying Machine Denims · 2019',
+    title: 'Underground Street Culture Ended Up Selling Denim for Flying Machine',
+    desc: 'A story about timing, youth culture, and how a Bboy named Flying Machine became the perfect face for a brand called Flying Machine.',
+    stat: '3 shoots · 7 athletes',
+    glyph: '👖',
+    gradient: 'radial-gradient(ellipse at 60% 40%, rgba(46,107,79,0.22), rgba(15,15,13,0.12) 65%, var(--bg-cream))',
+    image: '/images/flying-machine-denims/flying-machine-tshirt-reveal.jpg',
+    images: [
+      '/images/flying-machine-denims/human-flag-fm180-tag.jpg',
+      '/images/flying-machine-denims/skateboard-flying-machine-hoodie.jpg',
+      '/images/flying-machine-denims/graffiti-artist-spraying.jpg',
+      '/images/flying-machine-denims/krypt-one-portrait.jpg',
+      '/images/flying-machine-denims/handstand-bowl-edge.jpg',
+      '/images/flying-machine-denims/kick-pose-bowl-edge.jpg',
+      '/images/flying-machine-denims/side-kick-reflection.jpg',
+      '/images/flying-machine-denims/mirror-reflection-flip.jpg',
+      '/images/flying-machine-denims/retro-nostalgia-hoodie.jpg',
+    ],
+    captions: [
+      'Arif Chaudhary holding a human flag off the platform edge — the FM180 bib tag reading Flying Machine',
+      'Rolling down the promenade in the Flying Machine hoodie, between takes',
+      'Dheeraj Singh, aka Krypt One, adding a graffiti piece that was never part of the original plan',
+      'Krypt One between setups',
+      'A handstand straddling the skate bowl\'s edge',
+      'Working the bowl\'s rim between setups',
+      'A kick caught in a rain puddle\'s reflection — the same rain that almost called off the shoot',
+      'Sky and puddle, mirrored',
+      'No changing room on site — outfit changes happened wherever there was space',
+    ],
+    article: `In 2019, Flying Machine Denims came knocking through a connection I already had. I'd spent years around Arif Chaudhary — the Bboy known as Flying Machine — going back to when I managed his early career. A brand called Flying Machine wanting a bboy nicknamed Flying Machine as one of its faces wasn't a hard sell to anyone. I ended up curating and producing the campaign: three shoots, seven athletes, built around a simple idea — that street culture wasn't a marketing layer on top of the brand, it was the brand.
+
+This particular shoot brought together Arif, parkour athlete Rajesh ("Monkkey"), and graffiti artist Dheeraj Singh ("Krypt One") at a skate park in Mumbai. Rohit Khetle shot stills across the day.
+
+Graffiti was never part of the original plan. It got added at the last minute once we saw the blank concrete at the park, and Krypt One's piece ended up becoming one of the strongest visuals of the day. Rain played spoilsport for most of the afternoon, and with no changing room on site, outfit changes happened wherever there was space, between ramps, behind a wall, wherever worked.
+
+The campaign ran digitally and was displayed across Flying Machine's retail stores. No hard numbers to report, but the brief was met: a brand named Flying Machine, fronted by a bboy nicknamed Flying Machine, selling denim through the exact street culture it borrowed its energy from.
+
+Video from this shoot, by Kevin Joseph ("Void") and Karan Shelar ("Canfuse"), is coming soon. Two more shoots from this campaign are yet to be added.`,
+  },
+  {
     id: 4,
     slug: 'marol-art-village',
     cat: 'activism',
@@ -434,49 +477,6 @@ Some losses open doors you wouldn't have found any other way. The 14 lakhs are g
   },
 
   // ── Placeholders ──────────────────────────────────────────
-  {
-    id: 6,
-    slug: 'flying-machine-denims',
-    cat: 'production',
-    tag: 'Ad Shoot · Flying Machine Denims · 2019',
-    title: 'Underground Street Culture Ended Up Selling Denim for Flying Machine',
-    desc: 'A story about timing, youth culture, and how a Bboy named Flying Machine became the perfect face for a brand called Flying Machine.',
-    stat: '3 shoots · 7 athletes',
-    glyph: '👖',
-    gradient: 'radial-gradient(ellipse at 60% 40%, rgba(46,107,79,0.22), rgba(15,15,13,0.12) 65%, var(--bg-cream))',
-    image: '/images/flying-machine-denims/flying-machine-tshirt-reveal.jpg',
-    images: [
-      '/images/flying-machine-denims/human-flag-fm180-tag.jpg',
-      '/images/flying-machine-denims/skateboard-flying-machine-hoodie.jpg',
-      '/images/flying-machine-denims/graffiti-artist-spraying.jpg',
-      '/images/flying-machine-denims/krypt-one-portrait.jpg',
-      '/images/flying-machine-denims/handstand-bowl-edge.jpg',
-      '/images/flying-machine-denims/kick-pose-bowl-edge.jpg',
-      '/images/flying-machine-denims/side-kick-reflection.jpg',
-      '/images/flying-machine-denims/mirror-reflection-flip.jpg',
-      '/images/flying-machine-denims/retro-nostalgia-hoodie.jpg',
-    ],
-    captions: [
-      'Arif Chaudhary holding a human flag off the platform edge — the FM180 bib tag reading Flying Machine',
-      'Rolling down the promenade in the Flying Machine hoodie, between takes',
-      'Dheeraj Singh, aka Krypt One, adding a graffiti piece that was never part of the original plan',
-      'Krypt One between setups',
-      'A handstand straddling the skate bowl\'s edge',
-      'Working the bowl\'s rim between setups',
-      'A kick caught in a rain puddle\'s reflection — the same rain that almost called off the shoot',
-      'Sky and puddle, mirrored',
-      'No changing room on site — outfit changes happened wherever there was space',
-    ],
-    article: `In 2019, Flying Machine Denims came knocking through a connection I already had. I'd spent years around Arif Chaudhary — the Bboy known as Flying Machine — going back to when I managed his early career. A brand called Flying Machine wanting a bboy nicknamed Flying Machine as one of its faces wasn't a hard sell to anyone. I ended up curating and producing the campaign: three shoots, seven athletes, built around a simple idea — that street culture wasn't a marketing layer on top of the brand, it was the brand.
-
-This particular shoot brought together Arif, parkour athlete Rajesh ("Monkkey"), and graffiti artist Dheeraj Singh ("Krypt One") at a skate park in Mumbai. Rohit Khetle shot stills across the day.
-
-Graffiti was never part of the original plan. It got added at the last minute once we saw the blank concrete at the park, and Krypt One's piece ended up becoming one of the strongest visuals of the day. Rain played spoilsport for most of the afternoon, and with no changing room on site, outfit changes happened wherever there was space, between ramps, behind a wall, wherever worked.
-
-The campaign ran digitally and was displayed across Flying Machine's retail stores. No hard numbers to report, but the brief was met: a brand named Flying Machine, fronted by a bboy nicknamed Flying Machine, selling denim through the exact street culture it borrowed its energy from.
-
-Video from this shoot, by Kevin Joseph ("Void") and Karan Shelar ("Canfuse"), is coming soon. Two more shoots from this campaign are yet to be added.`,
-  },
   {
     id: 7,
     slug: 'bmw-joytown',
