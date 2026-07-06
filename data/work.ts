@@ -771,13 +771,30 @@ The Wicked Broz know how to be somewhere. No agenda beyond the next meal, the ne
     id: 21,
     slug: 'jbcn-school-talk-and-performance',
     cat: 'education',
-    tag: 'Education · Talk · Performance',
-    title: 'Talk & Performance at JBCN School',
-    desc: 'A talk and flow arts performance for students at JBCN School — bringing movement, storytelling, and creative practice into the classroom.',
-    stat: 'Details coming soon',
+    tag: 'Talk · Performance · JBCN Oshiwara',
+    title: 'A Flow Talk and a Juggling Royal Rumble for 2,000 Students at JBCN',
+    desc: 'A talk on peripheral vision, hand-eye coordination, and flow state for JBCN Oshiwara\'s annual event, followed by a live juggling demo with student volunteers on stage.',
+    stat: '2,000+ students · 1 talk',
     glyph: '🎤',
     gradient: 'radial-gradient(ellipse at 50% 45%, rgba(80,160,120,0.2), rgba(15,15,13,0.12) 65%, var(--bg-cream))',
-    article: `Details and images coming soon.`,
+    image: '/images/jbcn-oshiwara/stage-wide-crowd.jpg',
+    images: [
+      '/images/jbcn-oshiwara/volunteers-royal-rumble.jpg',
+      '/images/jbcn-oshiwara/dapo-star-demo.jpg',
+      '/images/jbcn-oshiwara/juggling-balls-demo.jpg',
+      '/images/jbcn-oshiwara/paper-airplane-portrait.jpg',
+    ],
+    captions: [
+      'Student volunteers on stage for the juggling royal rumble',
+      'Demonstrating with the dapo star',
+      'Juggling balls — the hand-eye coordination demo',
+      'Between demos, keeping it light for a young crowd',
+    ],
+    article: `JBCN Oshiwara brought me in to speak at their annual event — a talk to a crowd of over 2,000 students on peripheral vision, hand-eye coordination, flow state, and spatial awareness, and why those things matter far beyond a stage: in a classroom, on a sports field, in everyday movement.
+
+The talk wasn't just theory. Partway through, I called a few student volunteers up to join what I call the juggling royal rumble — a live, informal demo where the crowd on stage grows one dropped ball at a time. I ran through the tools that make the ideas tangible: the dapo star for reflex and reaction, juggling balls for hand-eye coordination, a balance board for core and spatial awareness, and poi for full-body flow.
+
+Talking about flow state to a room of 2,000 kids only works if you can make them feel it, not just hear about it. Watching a volunteer land their first catch on stage, in front of the whole school, tends to do that better than any slide.`,
   },
 ];
 
