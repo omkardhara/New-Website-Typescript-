@@ -550,12 +550,31 @@ I said yes to this before I knew how to do it. That's the only way I knew how to
     slug: 'hasanat-international-school',
     cat: 'education',
     tag: 'Education · Flow Arts · Teaching',
-    title: 'Flow Arts at Hasanat International School',
-    desc: 'Taught flow arts to students at Hasanat International School over six months — bringing movement, coordination, and creative play into the classroom.',
-    stat: '6 months',
+    title: 'Six Months of Balance Boards, Slacklines, and Juggling at Hasanat International School',
+    desc: 'A six-month flow arts programme for 10-15 year olds at Hasanat International School — balance boards, slacklines, poi, dapo star, kendama, and juggling balls brought into the school day.',
+    stat: '6 months · Ages 10-15',
     glyph: '🎓',
     gradient: 'radial-gradient(ellipse at 45% 50%, rgba(46,107,79,0.22), rgba(15,15,13,0.12) 65%, var(--bg-cream))',
-    article: `Details and images coming soon.`,
+    image: '/images/hasanat-flow/selfie-with-students.jpg',
+    images: [
+      '/images/hasanat-flow/balance-board-poi-toss.jpg',
+      '/images/hasanat-flow/slackline-arabesque.jpg',
+      '/images/hasanat-flow/balance-board-group-session.jpg',
+      '/images/hasanat-flow/slackline-courtyard.jpg',
+    ],
+    captions: [
+      'Balance board work, indoors — poi in hand, focus on the toss',
+      'Slackline, stretched into an arabesque',
+      'Balance board, juggling balls, and a flying scarf — a typical session',
+      'Finding the line — slackline in the school courtyard',
+    ],
+    article: `Hasanat International School brought me in for a six-month flow arts programme with students aged 10 to 15 — sessions built around balance boards, slacklines, poi, the dapo star, kendama, and juggling balls. The brief was simple: use movement to build focus, coordination, and confidence, inside a school day that doesn't usually have room for any of that.
+
+Balance board work opened most sessions — an unglamorous wobble board that turns out to be one of the fastest ways to make a teenager's core and attention show up at the same time. Once they could hold a stance, we added a toss: catching poi or a kendama mid-balance, which fails instantly if focus drifts.
+
+Slackline sessions moved outdoors, into the school courtyard between a tree and a railing. The line doesn't care how coordinated you think you are — it rewards patience over athleticism, which flips the usual hierarchy of who's "good at sports" in a group that age.
+
+By month three, kids were teaching each other at recess, coaching newcomers through their first few steps on the board or the line without me in the room. That's the actual measure of a programme like this working: not what happens in the session, but what keeps happening after it ends.`,
   },
   {
     id: 15,
