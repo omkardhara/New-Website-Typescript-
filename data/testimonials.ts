@@ -100,6 +100,7 @@ export const TESTIMONIALS: Testimonial[] = [
     role: 'Executive Creative Director · Supari Studios',
     context: 'This Is My Hood — Red Bull documentary, Best Series (Unscripted) Critics Choice (2018)',
     approved: true,
+    image: '/images/testimonials/nisha-vasudevan.jpg',
   },
   {
     id: 11,
