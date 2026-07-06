@@ -550,7 +550,7 @@ I said yes to this before I knew how to do it. That's the only way I knew how to
     slug: 'hasanat-international-school',
     cat: 'education',
     tag: 'Education · Flow Arts · Teaching',
-    title: 'Six Months of Balance Boards, Slacklines, and Juggling at Hasanat International School',
+    title: 'Flow Arts at Hasanat International School',
     desc: 'A six-month flow arts programme for 10-15 year olds at Hasanat International School — balance boards, slacklines, poi, dapo star, kendama, and juggling balls brought into the school day.',
     stat: '6 months · Ages 10-15',
     glyph: '🎓',
@@ -560,12 +560,14 @@ I said yes to this before I knew how to do it. That's the only way I knew how to
       '/images/hasanat-flow/balance-board-poi-toss.jpg',
       '/images/hasanat-flow/slackline-arabesque.jpg',
       '/images/hasanat-flow/balance-board-group-session.jpg',
+      '/images/hasanat-flow/group-dapo-star-spin.jpg',
       '/images/hasanat-flow/slackline-courtyard.jpg',
     ],
     captions: [
       'Balance board work, indoors — poi in hand, focus on the toss',
       'Slackline, stretched into an arabesque',
       'Balance board, juggling balls, and a flying scarf — a typical session',
+      'Three discs, three students, one shared sense of timing',
       'Finding the line — slackline in the school courtyard',
     ],
     article: `Hasanat International School brought me in for a six-month flow arts programme with students aged 10 to 15 — sessions built around balance boards, slacklines, poi, the dapo star, kendama, and juggling balls. The brief was simple: use movement to build focus, coordination, and confidence, inside a school day that doesn't usually have room for any of that.
@@ -573,6 +575,8 @@ I said yes to this before I knew how to do it. That's the only way I knew how to
 Balance board work opened most sessions — an unglamorous wobble board that turns out to be one of the fastest ways to make a teenager's core and attention show up at the same time. Once they could hold a stance, we added a toss: catching poi or a kendama mid-balance, which fails instantly if focus drifts.
 
 Slackline sessions moved outdoors, into the school courtyard between a tree and a railing. The line doesn't care how coordinated you think you are — it rewards patience over athleticism, which flips the usual hierarchy of who's "good at sports" in a group that age.
+
+One session brought in a special mentor for the day: Lalit Panigrahi, a dapo star specialist, running the group through timing and catches. Those sessions were the ones everyone wanted photos of — three or four of us spinning discs overhead at once, timing the catch before it drops. It looks like a party trick, and it partly is one, but keeping multiple discs alive together only works if everyone's tracking more than just their own hands.
 
 By month three, kids were teaching each other at recess, coaching newcomers through their first few steps on the board or the line without me in the room. That's the actual measure of a programme like this working: not what happens in the session, but what keeps happening after it ends.`,
   },
@@ -791,7 +795,7 @@ The Wicked Broz know how to be somewhere. No agenda beyond the next meal, the ne
     slug: 'jbcn-school-talk-and-performance',
     cat: ['education', 'performance'],
     tag: 'Talk · Performance · JBCN Oshiwara',
-    title: 'A Flow Talk and a Juggling Royal Rumble for 2,000 Students at JBCN',
+    title: 'A Flow Talk and Juggling Rumble at JBCN',
     desc: 'A talk on peripheral vision, hand-eye coordination, and flow state for JBCN Oshiwara\'s annual event, followed by a live juggling demo with student volunteers on stage.',
     stat: '2,000+ students · 1 talk',
     glyph: '🎤',
