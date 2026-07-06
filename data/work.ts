@@ -555,19 +555,19 @@ I said yes to this before I knew how to do it. That's the only way I knew how to
     stat: '6 months · Ages 10-15',
     glyph: '🎓',
     gradient: 'radial-gradient(ellipse at 45% 50%, rgba(46,107,79,0.22), rgba(15,15,13,0.12) 65%, var(--bg-cream))',
-    image: '/images/hasanat-flow/selfie-with-students.jpg',
+    image: '/images/hasanat-flow/group-dapo-star-spin.jpg',
     images: [
       '/images/hasanat-flow/balance-board-poi-toss.jpg',
       '/images/hasanat-flow/slackline-arabesque.jpg',
       '/images/hasanat-flow/balance-board-group-session.jpg',
-      '/images/hasanat-flow/group-dapo-star-spin.jpg',
+      '/images/hasanat-flow/selfie-with-students.jpg',
       '/images/hasanat-flow/slackline-courtyard.jpg',
     ],
     captions: [
       'Balance board work, indoors — poi in hand, focus on the toss',
       'Slackline, stretched into an arabesque',
       'Balance board, juggling balls, and a flying scarf — a typical session',
-      'Three discs, three students, one shared sense of timing',
+      'Between sessions, with two students showing off their tricks',
       'Finding the line — slackline in the school courtyard',
     ],
     article: `Hasanat International School brought me in for a six-month flow arts programme with students aged 10 to 15 — sessions built around balance boards, slacklines, poi, the dapo star, kendama, and juggling balls. The brief was simple: use movement to build focus, coordination, and confidence, inside a school day that doesn't usually have room for any of that.
