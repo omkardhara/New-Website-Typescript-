@@ -272,7 +272,8 @@ export default function WritingPage({ params }: { params: { slug: string } }) {
             {note.excerpt}
           </p>
         ) : isPoem ? (
-          // Poem: render each stanza as a block, lines within stanza separated by <br>
+          // Poem: render each stanza as a block, lines within stanza separated by <br>.
+          // Single-line blocks are chapter headings — pair each with the next gallery image.
           <div
             style={{
               fontFamily: 'var(--font-serif)',
@@ -283,16 +284,70 @@ export default function WritingPage({ params }: { params: { slug: string } }) {
               marginTop: 'clamp(40px,5vw,64px)',
             }}
           >
-            {blocks.map((stanza, i) => (
-              <p key={i} style={{ marginBottom: 'clamp(24px,3vw,36px)' }}>
-                {stanza.split('\n').map((line, j, arr) => (
-                  <span key={j}>
-                    {line}
-                    {j < arr.length - 1 && <br />}
-                  </span>
-                ))}
-              </p>
-            ))}
+            {(() => {
+              let imgIdx = 0;
+              return blocks.map((stanza, i) => {
+                const isHeading = !stanza.includes('\n') && note.images && note.images.length > 0;
+                if (isHeading) {
+                  const idx = imgIdx;
+                  imgIdx++;
+                  const src = note.images?.[idx];
+                  return (
+                    <div key={i}>
+                      <p
+                        style={{
+                          fontFamily: 'var(--font-mono)',
+                          fontSize: '12px',
+                          letterSpacing: '0.2em',
+                          textTransform: 'uppercase',
+                          color: 'var(--gold)',
+                          marginBottom: '20px',
+                          marginTop: i === 0 ? '0' : 'clamp(40px,5vw,64px)',
+                        }}
+                      >
+                        {stanza}
+                      </p>
+                      {src && (
+                        <figure style={{ margin: '0 0 clamp(24px,3vw,36px)' }}>
+                          <div style={{ position: 'relative', aspectRatio: '4/3', border: '1px solid var(--line-faint)' }}>
+                            <Image
+                              src={src}
+                              alt={note.captions?.[idx] || `${note.title} — ${stanza}`}
+                              fill
+                              sizes="(max-width: 560px) 100vw, 560px"
+                              style={{ objectFit: 'cover' }}
+                            />
+                          </div>
+                          {note.captions?.[idx] && (
+                            <figcaption
+                              style={{
+                                fontFamily: 'var(--font-mono)',
+                                fontSize: '11px',
+                                color: 'var(--text-dark-3)',
+                                padding: '8px 2px 0',
+                                fontStyle: 'normal',
+                              }}
+                            >
+                              {note.captions[idx]}
+                            </figcaption>
+                          )}
+                        </figure>
+                      )}
+                    </div>
+                  );
+                }
+                return (
+                  <p key={i} style={{ marginBottom: 'clamp(24px,3vw,36px)' }}>
+                    {stanza.split('\n').map((line, j, arr) => (
+                      <span key={j}>
+                        {line}
+                        {j < arr.length - 1 && <br />}
+                      </span>
+                    ))}
+                  </p>
+                );
+              });
+            })()}
           </div>
         ) : (
           // Article: paragraphs + optional ## headings and **bold**

@@ -826,12 +826,35 @@ Talking about flow state to a room of 2,000 kids only works if you can make them
     slug: 'poetry-book-for-mom',
     cat: 'art',
     tag: 'Illustration · Design · Poetry',
-    title: 'A Poetry Book, Designed for My Mom',
-    desc: 'A book of poetry and illustration designed as a personal gift for my mom — writing, drawing, and layout all done by hand.',
-    stat: 'Details coming soon',
+    title: 'A Journey — From Auspiciousness to Pure Gold',
+    desc: 'A book of poetry and illustration written for my mom\'s 55th birthday — her life told in six chapters, mapped onto a single day.',
+    stat: '6 chapters · Her 55th birthday',
     glyph: '📖',
     gradient: 'radial-gradient(ellipse at 50% 45%, rgba(200,100,80,0.2), rgba(15,15,13,0.12) 65%, var(--bg-cream))',
-    article: `Details and images coming soon.`,
+    image: '/images/poetry-book-mom/cover-spread.jpg',
+    images: [
+      '/images/poetry-book-mom/childhood.jpg',
+      '/images/poetry-book-mom/teens.jpg',
+      '/images/poetry-book-mom/pre-marriage.jpg',
+      '/images/poetry-book-mom/marriage.jpg',
+      '/images/poetry-book-mom/married-life.jpg',
+      '/images/poetry-book-mom/current.jpg',
+    ],
+    captions: [
+      'Childhood — "Auspiciousness in tow, she came to this world"',
+      'Teens — "A versatile artist, with fingers of magic"',
+      'Pre-Marriage — "She bloomed, with her smile came joy"',
+      'Marriage — "She found love, and with it responsibility"',
+      'Married Life — "Anew, she started to blend"',
+      'Current — "A mother, she\'s truly a star"',
+    ],
+    article: `For my mom's 55th birthday, I wrote and illustrated a book of poetry built entirely around her life — six chapters, six watercolour portraits, one continuous poem.
+
+The title comes from her name. Before marriage she was Mangala, meaning auspiciousness. After marriage she became Sonali, meaning golden. The book's title is just her name, told as an arc.
+
+The image running through the whole book is a dewdrop on a blade of grass, with the sun as narrator and witness. Her life is mapped onto a single day: dawn is her birth, and the book moves through childhood, teens, the years before marriage, marriage itself, and married life, arriving at noon — now — with the rest of the day still unwritten. A dewdrop at dawn reads as auspiciousness. The same dewdrop, catching the midday sun, reads as gold.
+
+Each chapter got its own watercolour portrait and its own stanza, moving through a life instead of just describing one. The portraits were painted by [Aftab Ahmed, aka Manmauji](https://www.instagram.com/__manmauji/). [Read the full poem here](/writing/a-journey-from-auspiciousness-to-pure-gold).`,
   },
 ];
 

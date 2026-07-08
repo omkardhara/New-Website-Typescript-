@@ -342,6 +342,34 @@ export const NOTES: Note[] = [
 
   // ── Poems ─────────────────────────────────────────────────
   {
+    id: 39,
+    slug: 'a-journey-from-auspiciousness-to-pure-gold',
+    title: 'A Journey — From Auspiciousness to Pure Gold',
+    date: "Her 55th Birthday",
+    read: '3 min',
+    tag: 'Motherhood · Tribute',
+    type: 'poem',
+    excerpt: 'Auspiciousness in tow / She came to this world / You could see the purity in her eyes.',
+    content: WRITING_CONTENT['a-journey-from-auspiciousness-to-pure-gold'],
+    image: '/images/writing/a-journey-from-auspiciousness-to-pure-gold.jpg',
+    images: [
+      '/images/poetry-book-mom/childhood.jpg',
+      '/images/poetry-book-mom/teens.jpg',
+      '/images/poetry-book-mom/pre-marriage.jpg',
+      '/images/poetry-book-mom/marriage.jpg',
+      '/images/poetry-book-mom/married-life.jpg',
+      '/images/poetry-book-mom/current.jpg',
+    ],
+    captions: [
+      'Illustrated portrait — Childhood',
+      'Illustrated portrait — Teens',
+      'Illustrated portrait — Pre-Marriage',
+      'Illustrated portrait — Marriage',
+      'Illustrated portrait — Married Life',
+      'Illustrated portrait — Current',
+    ],
+  },
+  {
     id: 20,
     slug: 'my-mind-wanders-free',
     title: 'My Mind Wanders Free',

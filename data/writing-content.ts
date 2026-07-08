@@ -133,6 +133,93 @@ Separation from the Math is always tinted with a little melancholy, but there is
 
 // ─── POEMS ────────────────────────────────────────────────
 
+'a-journey-from-auspiciousness-to-pure-gold': `Childhood
+
+Auspiciousness in tow
+She came to this world
+You could see the purity in her eyes
+Brave beyond her age she was
+As the morning sun began to rise
+
+Wild like a fawn
+She pranced with glee
+Fascinated by the thought of life
+Seeds of imagination began to germinate
+Her mind, sharper than a knife
+
+Teens
+
+A versatile artist
+With fingers of magic
+Her voice filled the air with delight
+Good at everything she tried
+A perfectionist, a beacon of light
+
+In a man's world
+She walked unafraid
+Never gave in without a fight
+Her skills and talents sailed her through
+She always stood up for what was right
+
+Pre-Marriage
+
+Along with the passing winds of time
+She bloomed, with her smile came joy
+To the world she brought boundless hope
+As her dreams opened up to fly
+
+The skies were the limit
+The journey was set
+Who knew what the next turn would bring?
+Every step she took
+As if shaped by the harps
+That the gods play as they sing
+
+Marriage
+
+As the sun rose through the morning sky
+Illuminating the next steps in life
+She found love, and with it responsibility
+To walk through life's journey as a wife
+
+And this challenge she took
+With a beaming smile
+She knew nothing would be the same
+New family, new place, new rules, new tastes
+She even had to change her name
+
+Married Life
+
+To start a new life
+In a whole new city
+New house, new job, new friends
+Her spirit untouched
+She took it in her stride
+Anew, she started to blend
+
+2 kids in tow, and the husband away
+Many nights like such she faced
+The crises kept lurking
+The pressure kept surging
+Yet she radiated with love and grace
+
+Current
+
+The sun has seen her baffling all odds
+It's seen her come so far
+As she aces through life
+A daughter, friend, and wife
+A mother, she's truly a star
+
+Now the adventure goes on
+As she explores
+All the lovely facets
+That life holds
+At the prime of her life
+There's so much more
+In the journey from
+Auspiciousness to pure gold`,
+
 'new-year-2026': `Years have flown by
 but the dream remains the same
 Create magic everyday

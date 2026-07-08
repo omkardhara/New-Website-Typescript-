@@ -66,6 +66,8 @@ export type Note = {
   type: NoteType;
   image?: string;
   imagePosition?: string;
+  images?: string[];
+  captions?: string[];
   content?: string;
   aiAssisted?: boolean;
   url?: string;
