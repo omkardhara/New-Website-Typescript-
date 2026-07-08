@@ -856,6 +856,18 @@ The image running through the whole book is a dewdrop on a blade of grass, with 
 
 Each chapter got its own watercolour portrait and its own stanza, moving through a life instead of just describing one. The portraits were painted by [Aftab Ahmed, aka Manmauji](https://www.instagram.com/__manmauji/). [Read the full poem here](/writing/a-journey-from-auspiciousness-to-pure-gold).`,
   },
+  {
+    id: 23,
+    slug: 'wicked-broz-mochi-tour',
+    cat: 'brand',
+    tag: 'Street Art · Brand · Mochi',
+    title: 'Wicked Broz × Mochi — 4-City Hip-Hop Tour',
+    desc: 'A street art and hip-hop tour with Wicked Broz across Bengaluru, Hyderabad, Chennai, and Goa, in partnership with Mochi.',
+    stat: '4 cities',
+    glyph: '🎨',
+    gradient: 'radial-gradient(ellipse at 50% 45%, rgba(191,155,69,0.2), rgba(15,15,13,0.12) 65%, var(--bg-cream))',
+    article: `Details and images coming soon.`,
+  },
 ];
 
 export const getWorkBySlug = (slug: string) => WORK.find((w) => w.slug === slug);
