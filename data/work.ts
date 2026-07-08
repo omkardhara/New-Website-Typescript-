@@ -828,7 +828,7 @@ Talking about flow state to a room of 2,000 kids only works if you can make them
     tag: 'Illustration · Design · Poetry',
     title: 'A Journey — From Auspiciousness to Pure Gold',
     desc: 'A book of poetry and illustration written for my mom\'s 55th birthday — her life told in six chapters, mapped onto a single day.',
-    stat: '6 chapters · Her 55th birthday',
+    stat: '6 chapters · Mom\'s birthday gift',
     glyph: '📖',
     gradient: 'radial-gradient(ellipse at 50% 45%, rgba(200,100,80,0.2), rgba(15,15,13,0.12) 65%, var(--bg-cream))',
     image: '/images/poetry-book-mom/cover-spread.jpg',
