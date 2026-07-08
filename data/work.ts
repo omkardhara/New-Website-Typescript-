@@ -821,6 +821,18 @@ The talk wasn't just theory. Partway through, I called a few student volunteers 
 
 Talking about flow state to a room of 2,000 kids only works if you can make them feel it, not just hear about it. Watching a volunteer land their first catch on stage, in front of the whole school, tends to do that better than any slide.`,
   },
+  {
+    id: 22,
+    slug: 'poetry-book-for-mom',
+    cat: 'art',
+    tag: 'Illustration · Design · Poetry',
+    title: 'A Poetry Book, Designed for My Mom',
+    desc: 'A book of poetry and illustration designed as a personal gift for my mom — writing, drawing, and layout all done by hand.',
+    stat: 'Details coming soon',
+    glyph: '📖',
+    gradient: 'radial-gradient(ellipse at 50% 45%, rgba(200,100,80,0.2), rgba(15,15,13,0.12) 65%, var(--bg-cream))',
+    article: `Details and images coming soon.`,
+  },
 ];
 
 export const getWorkBySlug = (slug: string) => WORK.find((w) => w.slug === slug);
