@@ -866,28 +866,32 @@ Each chapter got its own watercolour portrait and its own stanza, moving through
     stat: '5 cities · Post-lockdown tour',
     glyph: '🎨',
     gradient: 'radial-gradient(ellipse at 50% 45%, rgba(191,155,69,0.2), rgba(15,15,13,0.12) 65%, var(--bg-cream))',
-    image: '/images/wicked-broz-mochi-tour/arif-freeze-mural.jpg',
+    image: '/images/wicked-broz-mochi-tour/bengaluru-mochi-mural.jpg',
     images: [
       '/images/wicked-broz-mochi-tour/krypt-one-night-painting.jpg',
       '/images/wicked-broz-mochi-tour/hyderabad-sneaker-mural.jpg',
-      '/images/wicked-broz-mochi-tour/bengaluru-ae-chicha-mural.jpg',
-      '/images/wicked-broz-mochi-tour/bengaluru-group-photo.jpg',
-      '/images/wicked-broz-mochi-tour/bird-character-mural-night.jpg',
+      '/images/wicked-broz-mochi-tour/hyderabad-ae-chicha-mural.jpg',
+      '/images/wicked-broz-mochi-tour/goa-passersby-photo.jpg',
+      '/images/wicked-broz-mochi-tour/bandra-bird-mural-night.jpg',
       '/images/wicked-broz-mochi-tour/chennai-pondy-bazaar-mural.jpg',
       '/images/wicked-broz-mochi-tour/omkar-juggling-mural.jpg',
+      '/images/wicked-broz-mochi-tour/colaba-dancer-freeze-mural.jpg',
+      '/images/wicked-broz-mochi-tour/bengaluru-night-painting.jpg',
     ],
     captions: [
       'Krypt One painting after hours — stores could only be touched once the shutters came down',
       'Hyderabad — the narrator character worked into a giant sneaker',
-      'Bengaluru — local slang painted straight into the wall',
-      'With the local artists we met and painted alongside, Bengaluru',
-      'Another city, another shutter, another night shift',
-      'Chennai',
-      'Juggling in front of a finished wall',
+      'Hyderabad — "Ae Chicha" next to Charminar, with a plate of biryani worked into the wall',
+      'Passersby who stopped for a photo, Goa',
+      'Bandra — another shutter, another night shift',
+      'Chennai — the shoes painted as swings',
+      'Juggling in front of a finished wall, Colaba',
+      'A freeze at the Colaba store — a different dancer, not Arif',
+      'Bengaluru — painting after hours',
     ],
     article: `Mochi wanted their shutters painted across five cities — Hyderabad, Mumbai, Bengaluru, Chennai, Goa — right as the country was coming out of lockdown. The brief was simple on paper: shoe-related street art. In practice it meant something bigger — turn a closed metal shutter into something a stranger would stop for, photograph, and remember the next morning when the store reopened.
 
-We built the whole tour around one idea: a narrator. A spray-can character who shows up in every city, on every wall, tying otherwise unrelated murals into a single story. Around him, each city got its own local flavour worked in — Bengaluru slang painted straight into the wall, shoes turned into swings in Chennai, an ultra-futuristic sneaker factory skyline elsewhere. None of it was generic Mochi branding dropped into a city. It had to feel like it belonged to that street.
+We built the whole tour around one idea: a narrator. A spray-can character who shows up in every city, on every wall, tying otherwise unrelated murals into a single story. Around him, each city got its own local flavour worked in — Hyderabadi slang painted straight into the wall next to Charminar, shoes turned into swings in Chennai, an ultra-futuristic sneaker factory skyline elsewhere. None of it was generic Mochi branding dropped into a city. It had to feel like it belonged to that street.
 
 The catch: we could only paint after the stores physically shut for the night. So the actual work happened between closing time and sunrise, city after city — ladder up, mask on, spray cans out, racing whatever hours we had before the shutter had to go back up for business. It was hard, unglamorous work, and also one of the best trips I've been on. Every city had a local crew of artists who showed up to paint alongside us, and most nights ended with everyone sitting on the pavement afterward, tired and covered in paint, just talking.
 
