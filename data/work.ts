@@ -889,13 +889,23 @@ Each chapter got its own watercolour portrait and its own stanza, moving through
       'A freeze at the Colaba store, a different dancer, not Arif',
       'Bengaluru, painting after hours',
     ],
-    article: `Mochi wanted their shutters painted across five cities (Hyderabad, Mumbai, Bengaluru, Chennai, Goa) right as the country was coming out of lockdown. The brief was simple on paper: shoe-related street art. In practice it meant something bigger: turn a closed metal shutter into something a stranger would stop for, photograph, and remember the next morning when the store reopened.
+    article: `Mochi wanted their shutters painted across five cities (Hyderabad, Mumbai, Bengaluru, Chennai, Goa) right as the country was coming out of lockdown.
 
-We built the whole tour around one idea: a narrator. A spray-can character who shows up in every city, on every wall, tying otherwise unrelated murals into a single story. Around him, each city got its own local flavour worked in: Hyderabadi slang painted straight into the wall next to Charminar, shoes turned into swings in Chennai, an ultra-futuristic sneaker factory skyline elsewhere. None of it was generic Mochi branding dropped into a city. It had to feel like it belonged to that street.
+The brief was simple on paper: shoe-related street art. In practice it meant something bigger: turn a closed metal shutter into something a stranger would stop for, photograph, and remember the next morning when the store reopened.
 
-The catch: we could only paint after the stores physically shut for the night. So the actual work happened between closing time and sunrise, city after city: ladder up, mask on, spray cans out, racing whatever hours we had before the shutter had to go back up for business. It was hard, unglamorous work, and also one of the best trips I've been on. Every city had a local crew of artists who showed up to paint alongside us, and most nights ended with everyone sitting on the pavement afterward, tired and covered in paint, just talking.
+We built the whole tour around one idea: a narrator. A spray-can character who shows up in every city, on every wall, tying otherwise unrelated murals into a single story.
 
-[Krypt One](https://www.instagram.com/krypt.one/) and Siddharth Salian designed every wall; Krypt One executed all of it, city after city, night after night. The full trip (the painting, the cities, the people) is captured in [this video](https://www.youtube.com/watch?v=-EecfvR0_FE).`,
+Around him, each city got its own local flavour worked in: Hyderabadi slang painted straight into the wall next to Charminar, shoes turned into swings in Chennai, an ultra-futuristic sneaker factory skyline elsewhere. None of it was generic Mochi branding dropped into a city. It had to feel like it belonged to that street.
+
+The catch: we could only paint after the stores physically shut for the night. So the actual work happened between closing time and sunrise, city after city: ladder up, mask on, spray cans out, racing whatever hours we had before the shutter had to go back up for business.
+
+It was hard, unglamorous work, and also one of the best trips I've been on. Every city had a local crew of artists who showed up to paint alongside us, and most nights ended with everyone sitting on the pavement afterward, tired and covered in paint, just talking.
+
+Mumbai got two stops of its own: Colaba and Bandra. The Colaba shutter is where the freeze pose and the juggling shot both happened, on the same wall, different nights. Bandra came later in the run: another shutter, another night shift, same routine by then.
+
+[Krypt One](https://www.instagram.com/krypt.one/) and Siddharth Salian designed every wall; Krypt One executed all of it, city after city, night after night.
+
+The full trip (the painting, the cities, the people) is captured in [this video](https://www.youtube.com/watch?v=-EecfvR0_FE).`,
   },
 ];
 
