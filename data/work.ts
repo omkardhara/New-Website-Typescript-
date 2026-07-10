@@ -889,6 +889,8 @@ Each chapter got its own watercolour portrait and its own stanza, moving through
       'A freeze at the Colaba store, a different dancer, not Arif',
       'Bengaluru, painting after hours',
     ],
+    yt: '-EecfvR0_FE',
+    ytCaption: 'The full trip: the painting, the cities, the people',
     article: `Mochi wanted their shutters painted across five cities (Hyderabad, Mumbai, Bengaluru, Chennai, Goa) right as the country was coming out of lockdown.
 
 The brief was simple on paper: shoe-related street art. In practice it meant something bigger: turn a closed metal shutter into something a stranger would stop for, photograph, and remember the next morning when the store reopened.
@@ -905,7 +907,7 @@ Mumbai got two stops of its own: Colaba and Bandra. The Colaba shutter is where 
 
 [Krypt One](https://www.instagram.com/krypt.one/) and Siddharth Salian designed every wall; Krypt One executed all of it, city after city, night after night.
 
-The full trip (the painting, the cities, the people) is captured in [this video](https://www.youtube.com/watch?v=-EecfvR0_FE).`,
+The video above has all of it: the painting, the cities, the people.`,
   },
 ];
 
