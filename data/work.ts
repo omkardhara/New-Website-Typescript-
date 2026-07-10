@@ -68,7 +68,7 @@ I don't know if this will completely change people's habits. But it felt importa
     ],
     article: `Back in 2018, I found myself in the middle of a small but exciting circle, managing a few graffiti artists and working closely with Bboy Flying Machine, also known as Arif Chaudhary. Around then, a young rapper from Dharavi named MC Altaf reached out looking for guidance. Within a week, the three of us were sitting together, talking music and realizing there was something worth building.
 
-We recorded the track "Wassup" at my college friend Udayan Dharmadhikari's home studio. For the video, I got Bhumesh Das on board. The plan was ambitious — multiple outdoor locations. Then the rain showed up and refused to leave. Within two hours, we had a new plan. My parents were heading out of town, so we turned my living room into our set.
+We recorded the track "Wassup" at my college friend Udayan Dharmadhikari's home studio. For the video, I got Bhumesh Das on board. The plan was ambitious: multiple outdoor locations. Then the rain showed up and refused to leave. Within two hours, we had a new plan. My parents were heading out of town, so we turned my living room into our set.
 
 I walked into Evas Pizza in Marol and convinced them to give us ten pizzas in exchange for a placement in the video. Then Altaf mentioned he had met Ranveer Singh on the sets of Gully Boy. A short while later, we had a clip of Ranveer vibing and lip-syncing to the track from his vanity van.
 
@@ -137,14 +137,14 @@ One of the most memorable parts was leading a juggling workshop for children. Se
       'Dheeraj Singh, aka Krypt One, adding a graffiti piece that was never part of the original plan',
       'Krypt One between setups',
       'Arif mid-kick, shot low against the sky',
-      'A kick caught in a rain puddle\'s reflection — the same rain that almost called off the shoot',
+      'A kick caught in a rain puddle\'s reflection, the same rain that almost called off the shoot',
       'Rajesh mid-handstand on the skate bowl\'s edge',
       'Rajesh working the bowl\'s rim between setups',
       'Arif, hooded and masked, mid-kick',
-      'No changing room on site — outfit changes happened wherever there was space',
-      'Rajesh holding a human flag off the platform edge — the FM180 bib tag reading Flying Machine',
+      'No changing room on site, so outfit changes happened wherever there was space',
+      'Rajesh holding a human flag off the platform edge, the FM180 bib tag reading Flying Machine',
     ],
-    article: `In July 2021, Flying Machine Denims came knocking through a connection I already had. I'd spent years around Arif Chaudhary — the Bboy known as Flying Machine — going back to when I managed his early career. A brand called Flying Machine wanting a bboy nicknamed Flying Machine as one of its faces wasn't a hard sell to anyone. I ended up curating and producing the campaign for Seesaw Productions, alongside Dhwani Mankad and Yash Gupta: three shoots, seven athletes, built around a simple idea — that street culture wasn't a marketing layer on top of the brand, it was the brand.
+    article: `In July 2021, Flying Machine Denims came knocking through a connection I already had. I'd spent years around Arif Chaudhary, the Bboy known as Flying Machine, going back to when I managed his early career. A brand called Flying Machine wanting a bboy nicknamed Flying Machine as one of its faces wasn't a hard sell to anyone. I ended up curating and producing the campaign for Seesaw Productions, alongside Dhwani Mankad and Yash Gupta: three shoots, seven athletes, built around a simple idea: street culture wasn't a marketing layer on top of the brand, it was the brand.
 
 This particular shoot brought together Arif, parkour athlete [Rajesh, aka Monkkey](https://www.instagram.com/monkkey_00/), and graffiti artist [Dheeraj Singh, aka Krypt One](https://www.instagram.com/krypt.one/) at a skate park in Mumbai. [Rohit Khetle](https://www.instagram.com/fastshutterguy/) shot stills across the day.
 
@@ -233,8 +233,8 @@ Over the next two weeks, the campaign unexpectedly snowballed. It was covered in
     slug: 'this-is-my-hood',
     cat: 'production',
     tag: 'Documentary · Red Bull · Marol',
-    title: 'This Is My Hood — S1 E1: Marol',
-    desc: 'Curated and featured in this Red Bull documentary on the hip-hop scene in Marol, Mumbai — winner of Best Series (Unscripted) at the Critics Choice Series and Shorts Awards.',
+    title: 'This Is My Hood (S1 E1: Marol)',
+    desc: 'Curated and featured in this Red Bull documentary on the hip-hop scene in Marol, Mumbai, winner of Best Series (Unscripted) at the Critics Choice Series and Shorts Awards.',
     stat: 'Best Series Award',
     glyph: '🎬',
     gradient: 'radial-gradient(ellipse at 50% 40%, rgba(200,20,20,0.22), rgba(15,15,13,0.12) 65%, var(--bg-cream))',
@@ -247,8 +247,8 @@ Over the next two weeks, the campaign unexpectedly snowballed. It was covered in
     slug: 'phantom-films-art-direction',
     cat: 'production',
     tag: 'Art Direction · Production · Phantom Films',
-    title: 'Building Survival, One Broken Appliance at a Time — Trapped',
-    desc: 'Jr. Art Director on Vikramaditya Motwane\'s Trapped — reverse-engineered and hand-built 17 DIY survival devices for Rajkumaar Rao\'s one-man performance.',
+    title: 'Building Survival, One Broken Appliance at a Time: Trapped',
+    desc: 'Jr. Art Director on Vikramaditya Motwane\'s Trapped, where I reverse-engineered and hand-built 17 DIY survival devices for Rajkumaar Rao\'s one-man performance.',
     stat: '17 DIY devices · 4 in final cut',
     glyph: '🎬',
     gradient: 'radial-gradient(ellipse at 45% 55%, rgba(150,50,200,0.2), rgba(15,15,13,0.12) 65%, var(--bg-cream))',
@@ -265,21 +265,21 @@ Over the next two weeks, the campaign unexpectedly snowballed. It was covered in
     ],
     article: `In 2015, I was supposed to be in Germany on an exchange programme, studying automobile engineering. Instead, I was on the 30th floor of a vacant Mumbai high-rise, taking apart a television with my bare hands.
 
-The film was **Trapped** — [Vikramaditya Motwane](https://en.wikipedia.org/wiki/Vikramaditya_Motwane)'s survival thriller about a man sealed inside a locked apartment with no food, no water, and no way out. Rajkumaar Rao played the lead entirely alone for most of the film's runtime, and every object he improvised to stay alive had to exist as a real, working prop. My job was to make his survival believable, one reverse-engineered device at a time.
+The film was **Trapped**, [Vikramaditya Motwane](https://en.wikipedia.org/wiki/Vikramaditya_Motwane)'s survival thriller about a man sealed inside a locked apartment with no food, no water, and no way out. Rajkumaar Rao played the lead entirely alone for most of the film's runtime, and every object he improvised to stay alive had to exist as a real, working prop. My job was to make his survival believable, one reverse-engineered device at a time.
 
-I was 22, freshly graduated as a Mechanical Engineer. My job title was Jr. Associate Art Director. I barely understood what that meant at the time — but I understood machines, materials, and how things come apart.
+I was 22, freshly graduated as a Mechanical Engineer. My job title was Jr. Associate Art Director. I barely understood what that meant at the time, but I understood machines, materials, and how things come apart.
 
 Over the course of a month, I designed and fabricated 17 DIY survival devices: a rainwater collector rigged on a high-rise balcony, a catapult, a firestarter fashioned from steel wool and a dead battery, a rat trap, a urine-powered battery, and a guitar made from wooden sticks and a paint can with rope for strings. Four of the seventeen made the final cut of the film.
 
 ## The film and the people behind it
 
-[Vikramaditya Motwane](https://en.wikipedia.org/wiki/Vikramaditya_Motwane) is one of Hindi cinema's most precise directors — the mind behind **Udaan**, **Lootera**, and **AK vs AK**. Trapped was his most stripped-down work: a near-dialogue-free survival film set almost entirely in one locked apartment.
+[Vikramaditya Motwane](https://en.wikipedia.org/wiki/Vikramaditya_Motwane) is one of Hindi cinema's most precise directors, the mind behind **Udaan**, **Lootera**, and **AK vs AK**. Trapped was his most stripped-down work: a near-dialogue-free survival film set almost entirely in one locked apartment.
 
-[Rajkumaar Rao](https://en.wikipedia.org/wiki/Rajkummar_Rao) had already won a National Award for **Shahid** before Trapped. Here he lost significant weight for the role and carried almost every frame alone — his performance and the props around him were the entire movie.
+[Rajkumaar Rao](https://en.wikipedia.org/wiki/Rajkummar_Rao) had already won a National Award for **Shahid** before Trapped. Here he lost significant weight for the role and carried almost every frame alone: his performance and the props around him were the entire movie.
 
 ## How the film was received
 
-Trapped released in 2017 to widespread critical acclaim. Critics called it a masterclass in minimalist filmmaking — a survival thriller that worked not through spectacle but through the slow, grinding logic of a man forced to improvise his way back to life. Rao's performance was recognised at multiple award ceremonies, and the film has since been cited as one of the more formally ambitious Indian films of that decade.
+Trapped released in 2017 to widespread critical acclaim. Critics called it a masterclass in minimalist filmmaking, a survival thriller that worked not through spectacle but through the slow, grinding logic of a man forced to improvise his way back to life. Rao's performance was recognised at multiple award ceremonies, and the film has since been cited as one of the more formally ambitious Indian films of that decade.
 
 None of it worked without the props being real. You cannot fake a firestarter in close-up. The rainwater collector had to actually collect water. The guitar had to have strings that vibrated. That is what the month on the 30th floor was for.`,
   },
@@ -288,8 +288,8 @@ None of it worked without the props being real. You cannot fake a firestarter in
     slug: 'stand-tall-lee-denims',
     cat: 'brand',
     tag: 'Brand · Influencer Campaign · Lee Jeans',
-    title: 'Stand Tall For All — Lee Jeans',
-    desc: 'Featured as an opinion leader in Lee Jeans\' Stand Tall For All campaign — spotlighting changemakers, artists, and community builders across India.',
+    title: 'Stand Tall For All: Lee Jeans',
+    desc: 'Featured as an opinion leader in Lee Jeans\' Stand Tall For All campaign, spotlighting changemakers, artists, and community builders across India.',
     stat: 'National Campaign',
     glyph: '👕',
     gradient: 'radial-gradient(ellipse at 50% 40%, rgba(191,155,69,0.2), rgba(15,15,13,0.12) 65%, var(--bg-cream))',
@@ -305,29 +305,29 @@ None of it worked without the props being real. You cannot fake a firestarter in
     imagePositions: ['', '', '', '', 'top', ''],
     yt: 'RonBTMdFFq0',
     ytStart: 909,
-    article: `Lee Jeans built **Stand Tall For All** on a simple premise: the most compelling brand stories don't come from celebrities — they come from people who are actually doing the work. The campaign sought out advocates, artists, and community builders whose impact was felt in neighbourhoods and lives, not just on screens.
+    article: `Lee Jeans built **Stand Tall For All** on a simple premise: the most compelling brand stories don't come from celebrities. They come from people who are actually doing the work. The campaign sought out advocates, artists, and community builders whose impact was felt in neighbourhoods and lives, not just on screens.
 
-Wicked Broz — the Marol-based street art collective co-founded by Omkar Dhareshwar and Zain Siddiqui — were chosen as one of the campaign's central voices. For years, the collective had been transforming blank walls across Mumbai into living, breathing conversation pieces: works that grew with the communities around them, absorbed their stories, and gave people something to recognise themselves in.
+Wicked Broz, the Marol-based street art collective co-founded by Omkar Dhareshwar and Zain Siddiqui, were chosen as one of the campaign's central voices. For years, the collective had been transforming blank walls across Mumbai into living, breathing conversation pieces: works that grew with the communities around them, absorbed their stories, and gave people something to recognise themselves in.
 
-For Wicked Broz, street art was never decoration. It was dialogue. Every wall they touched became a shared space — something the neighbourhood could claim as its own. As Omkar put it: "Street art is like a living being. It never fades away. We grow alongside it. It becomes a part of the community. Within it, we find our space, our expression."
+For Wicked Broz, street art was never decoration. It was dialogue. Every wall they touched became a shared space, something the neighbourhood could claim as its own. As Omkar put it: "Street art is like a living being. It never fades away. We grow alongside it. It becomes a part of the community. Within it, we find our space, our expression."
 
-The driving idea behind their work was radical in its simplicity — make art available to everyone, not just those with access to galleries. By painting in public spaces, they turned the street itself into a democratic canvas. "In the beginning, we wanted to make art more inclusive. In our case, walls brought people together, rather than pulling them apart."
+The driving idea behind their work was radical in its simplicity: make art available to everyone, not just those with access to galleries. By painting in public spaces, they turned the street itself into a democratic canvas. "In the beginning, we wanted to make art more inclusive. In our case, walls brought people together, rather than pulling them apart."
 
-The campaign ran as an influencer series across Instagram under [#standtallforall](https://www.instagram.com/explore/tags/standtallforall/), with each changemaker sharing their story through portrait shoots, quote cards, and personal narratives. It was anchored by a podcast — embedded above — that gave these voices room to speak at length about what standing tall actually looks like from the inside.
+The campaign ran as an influencer series across Instagram under [#standtallforall](https://www.instagram.com/explore/tags/standtallforall/), with each changemaker sharing their story through portrait shoots, quote cards, and personal narratives. It was anchored by a podcast (embedded above) that gave these voices room to speak at length about what standing tall actually looks like from the inside.
 
-What Lee Jeans captured in the campaign was something Wicked Broz had always understood: you don't need a stage, a grant, or a gallery to make something meaningful. A can of paint and the conviction that one wall can shift how a neighbourhood sees itself — that's enough to start. "All it takes for a street artist to stand tall — all you really need, is to believe in yourself. You can change the world, one wall at a time."
+What Lee Jeans captured in the campaign was something Wicked Broz had always understood: you don't need a stage, a grant, or a gallery to make something meaningful. A can of paint and the conviction that one wall can shift how a neighbourhood sees itself: that's enough to start. "All it takes for a street artist to stand tall, all you really need, is to believe in yourself. You can change the world, one wall at a time."
 
 ## The other changemakers
 
 The campaign was a collective, not a solo feature. Wicked Broz shared the series with four others, each standing tall in a completely different arena.
 
-[Malhar Kalambe](https://www.instagram.com/kalambemalhar/) is an environmentalist and the founder of **Beach Please** — a grassroots weekly clean-up movement that has removed over 8.5 million kilograms of waste from Mumbai's beaches and rivers since 2017. Recognised by Forbes India, awarded by the UN, and honoured with the National Creators Award 2024 by the Prime Minister of India.
+[Malhar Kalambe](https://www.instagram.com/kalambemalhar/) is an environmentalist and the founder of **Beach Please**, a grassroots weekly clean-up movement that has removed over 8.5 million kilograms of waste from Mumbai's beaches and rivers since 2017. Recognised by Forbes India, awarded by the UN, and honoured with the National Creators Award 2024 by the Prime Minister of India.
 
 [Taba Chake](https://www.instagram.com/taba.chake/) is a singer-songwriter from Arunachal Pradesh whose finger-style guitar and multilingual songwriting has carried the sounds of India's Northeast to a national audience. The first artist from his state to make his Bollywood playback debut, he is now the Government of Arunachal Pradesh's official Ambassador for Art and Culture.
 
 [Arnab Biswas](https://www.instagram.com/urnavishwas/) is a finance professional and LGBTIQA+ inclusion evangelist whose candid, personal storytelling on social media gave visibility to a community rarely seen in mainstream brand campaigns.
 
-[Amit Vaidya](http://www.live4todayamit.com/) is the author of **Holy Cancer: How A Cow Saved My Life** — a stage IV cancer survivor who turned remission into a life's purpose. Through the Healing Vaidya Foundation, he has supported over 35,000 patients across the globe as a wellness advocate, speaker, and motivator.`,
+[Amit Vaidya](http://www.live4todayamit.com/) is the author of **Holy Cancer: How A Cow Saved My Life**, a stage IV cancer survivor who turned remission into a life's purpose. Through the Healing Vaidya Foundation, he has supported over 35,000 patients across the globe as a wellness advocate, speaker, and motivator.`,
   },
 
   {
@@ -390,7 +390,7 @@ That wall set the tone for what came next. Wicked Broz went on to curate the mai
     cat: 'installation',
     tag: 'Installation · Window Display · 2024',
     title: 'Hermès-Styled Window Display Boxes',
-    desc: 'Five Hermès-style window displays designed using Midjourney on Discord, three built in physical form with artist Sajid Wajid Shaikh — fiberglass, 220kg of metal, laser-cut MDF, resin waterfalls. The client never paid.',
+    desc: 'Five Hermès-style window displays designed using Midjourney on Discord, three built in physical form with artist Sajid Wajid Shaikh: fiberglass, 220kg of metal, laser-cut MDF, resin waterfalls. The client never paid.',
     stat: '3 displays · 10+ materials',
     glyph: '🖼️',
     gradient: 'radial-gradient(ellipse at 60% 40%, rgba(180,140,70,0.22), rgba(15,15,13,0.12) 65%, var(--bg-cream))',
@@ -423,7 +423,7 @@ That wall set the tone for what came next. Wicked Broz went on to curate the mai
       'Finished balloon ready for assembly',
       'Completed air balloon display box',
       'Metal gears before assembly',
-      'Completed clock box — 220kg of metal, lit from behind',
+      'Completed clock box, 220kg of metal, lit from behind',
       'Laser-cut MDF mountain layers before painting',
       'Completed mountain and waterfall box',
       'With Sajid Wajid Shaikh and Khalil bhai',
@@ -431,7 +431,7 @@ That wall set the tone for what came next. Wicked Broz went on to curate the mai
       'The clock box',
       'The mountain and waterfall box',
     ],
-    article: `In January 2024, an architect came to me with a brief: design five Hermès-style window display boxes across five themes — moon, underwater, clock, air balloon, mountain.
+    article: `In January 2024, an architect came to me with a brief: design five Hermès-style window display boxes across five themes: moon, underwater, clock, air balloon, mountain.
 
 I had just taken my first Midjourney subscription on Discord. I had never used generative AI as a design tool, and I had never designed for installations. Both those firsts happened on this project.
 
@@ -439,13 +439,13 @@ Midjourney turned ideas into reference images fast. What would have taken days o
 
 Then came the question of how to actually build them.
 
-I reached out to [Sajid Wajid Shaikh](https://www.instagram.com/sajidwajidshaikh/), a long-time friend and one of the most skilled artists I know. He said we could do it. His team worked out of a small workshop in New Panvel, led by Sunny Sathe, with Khalil bhai handling the heavy fabrication work. This collaboration also later became the reason I got to take [Flow Simulator 1.0](/work/flow-simulator-museum-of-goa) to the Museum of Goa — Sajid was curating the exhibition there.
+I reached out to [Sajid Wajid Shaikh](https://www.instagram.com/sajidwajidshaikh/), a long-time friend and one of the most skilled artists I know. He said we could do it. His team worked out of a small workshop in New Panvel, led by Sunny Sathe, with Khalil bhai handling the heavy fabrication work. This collaboration also later became the reason I got to take [Flow Simulator 1.0](/work/flow-simulator-museum-of-goa) to the Museum of Goa, since Sajid was curating the exhibition there.
 
 We started with the air balloon box.
 
 ## Air balloon box
 
-The balloons were made in fiberglass — moulded, laminated, sanded smooth, then painted and striped by hand. The rain drops were carved from wood. The airplane and the houses were cut from sunboard and foam. The wave and mountain backdrop was MDF. It took a month. The finished box had seven balloons at different heights, fiberglass clouds cast from clay moulds, layered painted waves, small houses on the ground floor, and a vintage airplane cutting through the top.
+The balloons were made in fiberglass: moulded, laminated, sanded smooth, then painted and striped by hand. The rain drops were carved from wood. The airplane and the houses were cut from sunboard and foam. The wave and mountain backdrop was MDF. It took a month. The finished box had seven balloons at different heights, fiberglass clouds cast from clay moulds, layered painted waves, small houses on the ground floor, and a vintage airplane cutting through the top.
 
 [yt:K8bAoWlZqko]
 
@@ -453,7 +453,7 @@ The air balloon box took a month from start to finish. Then we moved to the cloc
 
 ## Clock box
 
-We made the clock entirely from metal. Every piece — the outer rings, the clock face, the gears, the hands — was cut and assembled by hand in Khalil bhai's metalwork workshop. He worked with lathes and cutting equipment to get the tolerances the design needed.
+We made the clock entirely from metal. Every piece (the outer rings, the clock face, the gears, the hands) was cut and assembled by hand in Khalil bhai's metalwork workshop. He worked with lathes and cutting equipment to get the tolerances the design needed.
 
 [yt:XCtEqt2xAzo]
 
@@ -473,9 +473,9 @@ The client took all three boxes for review. Then went quiet for almost a year.
 
 When he finally came back, he said he would not pay. The reason given: no wow effect.
 
-That was a loss of ₹14 lakhs — the largest I have taken on a single project. I don't have the boxes and I don't have the money. This was also the best work I had made till that point in terms of craft, materials, and the sheer scale of what we built. That combination is its own kind of heavy.
+That was a loss of ₹14 lakhs, the largest I have taken on a single project. I don't have the boxes and I don't have the money. This was also the best work I had made till that point in terms of craft, materials, and the sheer scale of what we built. That combination is its own kind of heavy.
 
-The one thing that came out of all of this was the relationship with Sajid. When he was later curating 'Khel-Spel HomoLudens: The Art of Play' at the [Museum of Goa](https://museumofgoa.com/program/homo-ludens-the-art-of-play/), he called me. That conversation led to [Flow Simulator 1.0](/work/flow-simulator-museum-of-goa) — an installation that ended up in an actual museum, on a pedestal, in front of thousands of visitors.
+The one thing that came out of all of this was the relationship with Sajid. When he was later curating 'Khel-Spel HomoLudens: The Art of Play' at the [Museum of Goa](https://museumofgoa.com/program/homo-ludens-the-art-of-play/), he called me. That conversation led to [Flow Simulator 1.0](/work/flow-simulator-museum-of-goa), an installation that ended up in an actual museum, on a pedestal, in front of thousands of visitors.
 
 Some losses open doors you wouldn't have found any other way. The 14 lakhs are gone and I can't undo that. But when things get hard, put your head down, do the work, and keep believing in yourself.`,
   },
@@ -487,7 +487,7 @@ Some losses open doors you wouldn't have found any other way. The 14 lakhs are g
     cat: 'performance',
     tag: 'Performance · Brand · BMW',
     title: 'BMW Joytown',
-    desc: 'A live performance experience across Mumbai and Bengaluru for BMW — blending flow arts and movement to bring the brand to life on stage.',
+    desc: 'A live performance experience across Mumbai and Bengaluru for BMW, blending flow arts and movement to bring the brand to life on stage.',
     stat: '2 cities',
     glyph: '🚗',
     gradient: 'radial-gradient(ellipse at 50% 40%, rgba(0,100,200,0.22), rgba(15,15,13,0.12) 65%, var(--bg-cream))',
@@ -516,20 +516,20 @@ Some losses open doors you wouldn't have found any other way. The 14 lakhs are g
       'Setting up the canopy structure on site',
       'With the Art Can Feed team under the canopy',
       'Working through the night on site',
-      'At the anchor point — those streaks are fishing lines, not lasers. We used them to hold the entire canopy in tension.',
+      'At the anchor point: those streaks are fishing lines, not lasers. We used them to hold the entire canopy in tension.',
       'Crowd under the neon canopy during Radio Mirchi silent disco',
-      'Full installation at night — Mood Indigo 2015',
+      'Full installation at night, Mood Indigo 2015',
     ],
     yt: 'M8aD0NU1akw',
-    article: `After engineering, I wasn't sure what came next. I was working at The Hive, a co-working space in Khar, doing a bit of everything — building furniture out of scrap material, running lights and sound for shows, helping artists set up exhibitions. That's where I met Henry and Pradnya, who were running Art Can Feed decor at the time.
+    article: `After engineering, I wasn't sure what came next. I was working at The Hive, a co-working space in Khar, doing a bit of everything: building furniture out of scrap material, running lights and sound for shows, helping artists set up exhibitions. That's where I met Henry and Pradnya, who were running Art Can Feed decor at the time.
 
 When IIT Powai came to me about painting a wall for Mood Indigo 2015, I didn't just say yes to the wall. I saw an opening and added a second item to the proposal: a full psychedelic decor installation. Something I had never done before, at a scale I had never worked at.
 
-The quote I sent was ₹75,000 for 40 metres by 40 metres of coverage. A job of that scale in 2015 should have run ₹3 to 4 lakhs at minimum. Of that ₹75,000, we never received the last installment of ₹25,000 — so the actual payment was fifty thousand rupees. The materials alone cost more. This is the part I always skip when telling this story casually, but it's the part that explains everything about how those twelve days went.
+The quote I sent was ₹75,000 for 40 metres by 40 metres of coverage. A job of that scale in 2015 should have run ₹3 to 4 lakhs at minimum. Of that ₹75,000, we never received the last installment of ₹25,000, so the actual payment was fifty thousand rupees. The materials alone cost more. This is the part I always skip when telling this story casually, but it's the part that explains everything about how those twelve days went.
 
-My college friend Anirudh Shinde came on to help. We slept on site for 12 days straight, in sleeping bags, working nights into mornings. The Art Can Feed team — Henry, Pradnya and their crew — carried the bulk of the fabrication. Without them, it would not have gone up.
+My college friend Anirudh Shinde came on to help. We slept on site for 12 days straight, in sleeping bags, working nights into mornings. The Art Can Feed team (Henry, Pradnya and their crew) carried the bulk of the fabrication. Without them, it would not have gone up.
 
-The installation was used for a Radio Mirchi silent disco during Mood Indigo. Crowds came in, put on headphones, and ended up standing under something we had built from scratch in under two weeks. Jonnas Moirangthem and Bhumesh Das from Ema Films shot the event — the video captures what no photo can.
+The installation was used for a Radio Mirchi silent disco during Mood Indigo. Crowds came in, put on headphones, and ended up standing under something we had built from scratch in under two weeks. Jonnas Moirangthem and Bhumesh Das from Ema Films shot the event, and the video captures what no photo can.
 
 I said yes to this before I knew how to do it. That's the only way I knew how to operate in 2015, and probably still is. The projects I've learnt the most from are always the ones where saying yes came before knowing the answer.`,
   },
@@ -539,7 +539,7 @@ I said yes to this before I knew how to do it. That's the only way I knew how to
     cat: 'production',
     tag: 'Production · Podcast',
     title: 'Now We Here Podcast',
-    desc: '21 days, 21 interviews. A rapid-fire podcast series documenting creative voices and untold stories — filmed and released daily.',
+    desc: '21 days, 21 interviews. A rapid-fire podcast series documenting creative voices and untold stories, filmed and released daily.',
     stat: '21 days · 21 interviews',
     glyph: '🎙️',
     gradient: 'radial-gradient(ellipse at 40% 60%, rgba(46,107,79,0.2), rgba(15,15,13,0.12) 65%, var(--bg-cream))',
@@ -551,7 +551,7 @@ I said yes to this before I knew how to do it. That's the only way I knew how to
     cat: 'education',
     tag: 'Education · Flow Arts · Teaching',
     title: 'Flow Arts at Hasanat International School',
-    desc: 'A six-month flow arts programme for 10-15 year olds at Hasanat International School — balance boards, slacklines, poi, dapo star, kendama, and juggling balls brought into the school day.',
+    desc: 'A six-month flow arts programme for 10-15 year olds at Hasanat International School: balance boards, slacklines, poi, dapo star, kendama, and juggling balls brought into the school day.',
     stat: '6 months · Ages 10-15',
     glyph: '🎓',
     gradient: 'radial-gradient(ellipse at 45% 50%, rgba(46,107,79,0.22), rgba(15,15,13,0.12) 65%, var(--bg-cream))',
@@ -564,19 +564,19 @@ I said yes to this before I knew how to do it. That's the only way I knew how to
       '/images/hasanat-flow/slackline-courtyard.jpg',
     ],
     captions: [
-      'Balance board work, indoors — dapo star in hand, focus on the toss',
+      'Balance board work, indoors, dapo star in hand, focus on the toss',
       'Slackline, stretched into an arabesque',
-      'Balance board, juggling balls, and a dapo star — a typical session',
+      'Balance board, juggling balls, and a dapo star: a typical session',
       'Between sessions, with two students showing off their tricks',
-      'Finding the line — slackline in the school courtyard',
+      'Finding the line, slackline in the school courtyard',
     ],
-    article: `Hasanat International School brought me in for a six-month flow arts programme with students aged 10 to 15 — sessions built around balance boards, slacklines, poi, the dapo star, kendama, and juggling balls. The brief was simple: use movement to build focus, coordination, and confidence, inside a school day that doesn't usually have room for any of that.
+    article: `Hasanat International School brought me in for a six-month flow arts programme with students aged 10 to 15, in sessions built around balance boards, slacklines, poi, the dapo star, kendama, and juggling balls. The brief was simple: use movement to build focus, coordination, and confidence, inside a school day that doesn't usually have room for any of that.
 
-Balance board work opened most sessions — an unglamorous wobble board that turns out to be one of the fastest ways to make a teenager's core and attention show up at the same time. Once they could hold a stance, we added a toss: catching poi or a kendama mid-balance, which fails instantly if focus drifts.
+Balance board work opened most sessions: an unglamorous wobble board that turns out to be one of the fastest ways to make a teenager's core and attention show up at the same time. Once they could hold a stance, we added a toss: catching poi or a kendama mid-balance, which fails instantly if focus drifts.
 
-Slackline sessions moved outdoors, into the school courtyard between a tree and a railing. The line doesn't care how coordinated you think you are — it rewards patience over athleticism, which flips the usual hierarchy of who's "good at sports" in a group that age.
+Slackline sessions moved outdoors, into the school courtyard between a tree and a railing. The line doesn't care how coordinated you think you are. It rewards patience over athleticism, which flips the usual hierarchy of who's "good at sports" in a group that age.
 
-One session brought in a special mentor for the day: Lalit Panigrahi, a dapo star specialist, running the group through timing and catches. Those sessions were the ones everyone wanted photos of — three or four of us spinning discs overhead at once, timing the catch before it drops. It looks like a party trick, and it partly is one, but keeping multiple discs alive together only works if everyone's tracking more than just their own hands.
+One session brought in a special mentor for the day: Lalit Panigrahi, a dapo star specialist, running the group through timing and catches. Those sessions were the ones everyone wanted photos of: three or four of us spinning discs overhead at once, timing the catch before it drops. It looks like a party trick, and it partly is one, but keeping multiple discs alive together only works if everyone's tracking more than just their own hands.
 
 By month three, kids were teaching each other at recess, coaching newcomers through their first few steps on the board or the line without me in the room. That's the actual measure of a programme like this working: not what happens in the session, but what keeps happening after it ends.`,
   },
@@ -586,7 +586,7 @@ By month three, kids were teaching each other at recess, coaching newcomers thro
     cat: 'education',
     tag: 'Workshop · Flow Arts · Community',
     title: 'Flow Arts Workshops',
-    desc: 'Using juggling, slacklining, and flow tools to help people find focus, breathe, and stay present — in classrooms, ashrams, and open fields.',
+    desc: 'Using juggling, slacklining, and flow tools to help people find focus, breathe, and stay present, in classrooms, ashrams, and open fields.',
     stat: '60+ participants · Shri Chitrapur Math',
     glyph: '🌀',
     gradient: 'radial-gradient(ellipse at 50% 55%, rgba(100,150,200,0.2), rgba(15,15,13,0.12) 65%, var(--bg-cream))',
@@ -613,7 +613,7 @@ The tools were slacklining, juggling balls, poi, the dapo star, and kendama. Sla
 
 By day two, seven participants were juggling three balls. Fifteen were playing passing patterns with the dapo star.
 
-I ran a separate session for the vaidiks — six students aged seven to fifteen, training to become priests. Same tools, scaled down. Same idea: that the state you reach mid-juggling and the state you reach mid-japa are closer than they look.
+I ran a separate session for the vaidiks: six students aged seven to fifteen, training to become priests. Same tools, scaled down. Same idea: that the state you reach mid-juggling and the state you reach mid-japa are closer than they look.
 
 The video above is the full session.`,
   },
@@ -623,7 +623,7 @@ The video above is the full session.`,
     cat: 'art',
     tag: 'Art · Street Art · Murals',
     title: 'Wall Murals',
-    desc: 'A portfolio of wall murals painted across Mumbai and beyond — from street interventions to commissioned pieces in public and private spaces.',
+    desc: 'A portfolio of wall murals painted across Mumbai and beyond, from street interventions to commissioned pieces in public and private spaces.',
     stat: 'Ongoing',
     glyph: '🎨',
     gradient: 'radial-gradient(ellipse at 40% 50%, rgba(191,155,69,0.22), rgba(15,15,13,0.12) 65%, var(--bg-cream))',
@@ -635,7 +635,7 @@ The video above is the full session.`,
     cat: 'art',
     tag: 'Art · Illustration',
     title: 'Illustrations',
-    desc: 'A collection of illustrations spanning editorial work, personal projects, and collaborations — drawing as thinking made visible.',
+    desc: 'A collection of illustrations spanning editorial work, personal projects, and collaborations, drawing as thinking made visible.',
     stat: 'Ongoing',
     glyph: '✏️',
     gradient: 'radial-gradient(ellipse at 55% 45%, rgba(200,100,80,0.18), rgba(15,15,13,0.12) 65%, var(--bg-cream))',
@@ -647,7 +647,7 @@ The video above is the full session.`,
     cat: 'performance',
     tag: 'Adventures · Travel · Flow',
     title: 'Pindari to Panchachuli',
-    desc: 'Train to Kathgodam. Car to Khati. Trek to Pindari. Jeep roof to Dugtu. Trek to Panchachuli. Juggled everything I could find — balls, rocks, snowballs, acorns.',
+    desc: 'Train to Kathgodam. Car to Khati. Trek to Pindari. Jeep roof to Dugtu. Trek to Panchachuli. Juggled everything I could find: balls, rocks, snowballs, acorns.',
     stat: 'Uttarakhand · March 2023',
     glyph: '🏔️',
     hidden: true,
@@ -687,7 +687,7 @@ The video above is the full session.`,
     ],
     imagePositions: ['top', '', '', '', '', '', '', '', '', '', '', 'bottom', '', ''],
     yt: 'jKgetBYGMbU',
-    ytCaption: 'Uttarakhand — the full trip',
+    ytCaption: 'Uttarakhand, the full trip',
     article: `Train to Kathgodam, overnight. Then a car through winding roads into the Bageshwar district. The plan was Pindari Glacier first, then Dharchula, then as far north as we could get before the snow stopped us.
 
 Khati is the last village before the glacier trail begins. It sits at around 2,200 metres, in a valley where the Pindar river runs loud and cold. Most people passing through are trekkers. We stayed a night.
@@ -757,8 +757,8 @@ At every stop along the way, Khati, Dharchula, the villages between, there were 
       'Above the snowline. Somewhere above Triund.',
     ],
     yt: '4mzfupkdmBc',
-    ytCaption: 'Bhagsunag — a month with Wicked Broz',
-    article: `A month in Bhagsunag. That was the plan — or more precisely, that was what happened when there was no plan.
+    ytCaption: 'Bhagsunag, a month with Wicked Broz',
+    article: `A month in Bhagsunag. That was the plan, or more precisely, that was what happened when there was no plan.
 
 Bhagsunag sits above McLeod Ganj, above Dharamshala, in the Dhauladhar range. Most people pass through on the way to Triund. We stayed.
 
@@ -810,14 +810,14 @@ The Wicked Broz know how to be somewhere. No agenda beyond the next meal, the ne
     captions: [
       'Student volunteers on stage for the juggling royal rumble',
       'Demonstrating with the dapo star',
-      'Juggling balls — the hand-eye coordination demo',
+      'Juggling balls, the hand-eye coordination demo',
       'Between demos, keeping it light for a young crowd',
     ],
-    article: `JBCN Oshiwara brought me in to speak at their annual event — a talk to a crowd of over 2,000 students on peripheral vision, hand-eye coordination, flow state, and spatial awareness, and why those things matter far beyond a stage: in a classroom, on a sports field, in everyday movement.
+    article: `JBCN Oshiwara brought me in to speak at their annual event: a talk to a crowd of over 2,000 students on peripheral vision, hand-eye coordination, flow state, and spatial awareness, and why those things matter far beyond a stage, in a classroom, on a sports field, in everyday movement.
 
-None of this stays on the stage. Peripheral vision is what lets you read a chessboard past the piece in front of you, or clock traffic while crossing the road without swinging your whole head around. The same hand-eye coordination and reaction time that catches a dropped ball show up on a football field, or anywhere something moves faster than you'd like. Flow state is the mental gear behind sustained focus of any kind: managing a dozen priorities at once, holding numbers in your head for mental maths, remembering a longer sequence than usual. And juggling rewires something subtler — how you relate to dropping the ball. A drop isn't the end of the round, it's information: pick it up, adjust, go again. That shift in how you treat failure is the one that travels furthest, well past the stage.
+None of this stays on the stage. Peripheral vision is what lets you read a chessboard past the piece in front of you, or clock traffic while crossing the road without swinging your whole head around. The same hand-eye coordination and reaction time that catches a dropped ball show up on a football field, or anywhere something moves faster than you'd like. Flow state is the mental gear behind sustained focus of any kind: managing a dozen priorities at once, holding numbers in your head for mental maths, remembering a longer sequence than usual. And juggling rewires something subtler: how you relate to dropping the ball. A drop isn't the end of the round, it's information: pick it up, adjust, go again. That shift in how you treat failure is the one that travels furthest, well past the stage.
 
-The talk wasn't just theory. Partway through, I called a few student volunteers up to join what I call the juggling royal rumble — a live, informal demo where the crowd on stage grows one dropped ball at a time. I ran through the tools that make the ideas tangible: the dapo star for reflex and reaction, juggling balls for hand-eye coordination, a balance board for core and spatial awareness, and poi for full-body flow.
+The talk wasn't just theory. Partway through, I called a few student volunteers up to join what I call the juggling royal rumble, a live, informal demo where the crowd on stage grows one dropped ball at a time. I ran through the tools that make the ideas tangible: the dapo star for reflex and reaction, juggling balls for hand-eye coordination, a balance board for core and spatial awareness, and poi for full-body flow.
 
 Talking about flow state to a room of 2,000 kids only works if you can make them feel it, not just hear about it. Watching a volunteer land their first catch on stage, in front of the whole school, tends to do that better than any slide.`,
   },
@@ -826,8 +826,8 @@ Talking about flow state to a room of 2,000 kids only works if you can make them
     slug: 'poetry-book-for-mom',
     cat: 'art',
     tag: 'Illustration · Design · Poetry',
-    title: 'A Journey — From Auspiciousness to Pure Gold',
-    desc: 'A book of poetry and illustration written for my mom\'s 55th birthday — her life told in six chapters, mapped onto a single day.',
+    title: 'A Journey: From Auspiciousness to Pure Gold',
+    desc: 'A book of poetry and illustration written for my mom\'s 55th birthday, her life told in six chapters, mapped onto a single day.',
     stat: '6 chapters · Mom\'s birthday gift',
     glyph: '📖',
     gradient: 'radial-gradient(ellipse at 50% 45%, rgba(200,100,80,0.2), rgba(15,15,13,0.12) 65%, var(--bg-cream))',
@@ -841,18 +841,18 @@ Talking about flow state to a room of 2,000 kids only works if you can make them
       '/images/poetry-book-mom/current.jpg',
     ],
     captions: [
-      'Childhood — "Auspiciousness in tow, she came to this world"',
-      'Teens — "A versatile artist, with fingers of magic"',
-      'Pre-Marriage — "She bloomed, with her smile came joy"',
-      'Marriage — "She found love, and with it responsibility"',
-      'Married Life — "Anew, she started to blend"',
-      'Current — "A mother, she\'s truly a star"',
+      'Childhood: "Auspiciousness in tow, she came to this world"',
+      'Teens: "A versatile artist, with fingers of magic"',
+      'Pre-Marriage: "She bloomed, with her smile came joy"',
+      'Marriage: "She found love, and with it responsibility"',
+      'Married Life: "Anew, she started to blend"',
+      'Current: "A mother, she\'s truly a star"',
     ],
-    article: `For my mom's 55th birthday, I wrote and illustrated a book of poetry built entirely around her life — six chapters, six watercolour portraits, one continuous poem.
+    article: `For my mom's 55th birthday, I wrote and illustrated a book of poetry built entirely around her life: six chapters, six watercolour portraits, one continuous poem.
 
 The title comes from her name. Before marriage she was Mangala, meaning auspiciousness. After marriage she became Sonali, meaning golden. The book's title is just her name, told as an arc.
 
-The image running through the whole book is a dewdrop on a blade of grass, with the sun as narrator and witness. Her life is mapped onto a single day: dawn is her birth, and the book moves through childhood, teens, the years before marriage, marriage itself, and married life, arriving at noon — now — with the rest of the day still unwritten. A dewdrop at dawn reads as auspiciousness. The same dewdrop, catching the midday sun, reads as gold.
+The image running through the whole book is a dewdrop on a blade of grass, with the sun as narrator and witness. Her life is mapped onto a single day: dawn is her birth, and the book moves through childhood, teens, the years before marriage, marriage itself, and married life, arriving at noon, now, with the rest of the day still unwritten. A dewdrop at dawn reads as auspiciousness. The same dewdrop, catching the midday sun, reads as gold.
 
 Each chapter got its own watercolour portrait and its own stanza, moving through a life instead of just describing one. The portraits were painted by [Aftab Ahmed, aka Manmauji](https://www.instagram.com/__manmauji/). [Read the full poem here](/writing/a-journey-from-auspiciousness-to-pure-gold).`,
   },
@@ -861,8 +861,8 @@ Each chapter got its own watercolour portrait and its own stanza, moving through
     slug: 'wicked-broz-mochi-tour',
     cat: 'brand',
     tag: 'Street Art · Brand · Mochi',
-    title: 'Wicked Broz × Mochi — Painting Shutters Across 5 Cities',
-    desc: 'A street art tour with Mochi across five cities — turning shuttered storefronts into interactive murals, painted after hours, in the months right after lockdown.',
+    title: 'Wicked Broz × Mochi: Painting Shutters Across 5 Cities',
+    desc: 'A street art tour with Mochi across five cities, turning shuttered storefronts into interactive murals, painted after hours, in the months right after lockdown.',
     stat: '5 cities · Post-lockdown tour',
     glyph: '🎨',
     gradient: 'radial-gradient(ellipse at 50% 45%, rgba(191,155,69,0.2), rgba(15,15,13,0.12) 65%, var(--bg-cream))',
@@ -879,23 +879,23 @@ Each chapter got its own watercolour portrait and its own stanza, moving through
       '/images/wicked-broz-mochi-tour/bengaluru-night-painting.jpg',
     ],
     captions: [
-      'Krypt One painting after hours — stores could only be touched once the shutters came down',
-      'Hyderabad — the narrator character worked into a giant sneaker',
-      'Hyderabad — "Ae Chicha" next to Charminar, with a plate of biryani worked into the wall',
+      'Krypt One painting after hours, since stores could only be touched once the shutters came down',
+      'Hyderabad: the narrator character worked into a giant sneaker',
+      'Hyderabad: "Ae Chicha" next to Charminar, with a plate of biryani worked into the wall',
       'Passersby who stopped for a photo, Goa',
-      'Bandra — another shutter, another night shift',
-      'Chennai — the shoes painted as swings',
+      'Bandra, another shutter, another night shift',
+      'Chennai: the shoes painted as swings',
       'Juggling in front of a finished wall, Colaba',
-      'A freeze at the Colaba store — a different dancer, not Arif',
-      'Bengaluru — painting after hours',
+      'A freeze at the Colaba store, a different dancer, not Arif',
+      'Bengaluru, painting after hours',
     ],
-    article: `Mochi wanted their shutters painted across five cities — Hyderabad, Mumbai, Bengaluru, Chennai, Goa — right as the country was coming out of lockdown. The brief was simple on paper: shoe-related street art. In practice it meant something bigger — turn a closed metal shutter into something a stranger would stop for, photograph, and remember the next morning when the store reopened.
+    article: `Mochi wanted their shutters painted across five cities (Hyderabad, Mumbai, Bengaluru, Chennai, Goa) right as the country was coming out of lockdown. The brief was simple on paper: shoe-related street art. In practice it meant something bigger: turn a closed metal shutter into something a stranger would stop for, photograph, and remember the next morning when the store reopened.
 
-We built the whole tour around one idea: a narrator. A spray-can character who shows up in every city, on every wall, tying otherwise unrelated murals into a single story. Around him, each city got its own local flavour worked in — Hyderabadi slang painted straight into the wall next to Charminar, shoes turned into swings in Chennai, an ultra-futuristic sneaker factory skyline elsewhere. None of it was generic Mochi branding dropped into a city. It had to feel like it belonged to that street.
+We built the whole tour around one idea: a narrator. A spray-can character who shows up in every city, on every wall, tying otherwise unrelated murals into a single story. Around him, each city got its own local flavour worked in: Hyderabadi slang painted straight into the wall next to Charminar, shoes turned into swings in Chennai, an ultra-futuristic sneaker factory skyline elsewhere. None of it was generic Mochi branding dropped into a city. It had to feel like it belonged to that street.
 
-The catch: we could only paint after the stores physically shut for the night. So the actual work happened between closing time and sunrise, city after city — ladder up, mask on, spray cans out, racing whatever hours we had before the shutter had to go back up for business. It was hard, unglamorous work, and also one of the best trips I've been on. Every city had a local crew of artists who showed up to paint alongside us, and most nights ended with everyone sitting on the pavement afterward, tired and covered in paint, just talking.
+The catch: we could only paint after the stores physically shut for the night. So the actual work happened between closing time and sunrise, city after city: ladder up, mask on, spray cans out, racing whatever hours we had before the shutter had to go back up for business. It was hard, unglamorous work, and also one of the best trips I've been on. Every city had a local crew of artists who showed up to paint alongside us, and most nights ended with everyone sitting on the pavement afterward, tired and covered in paint, just talking.
 
-[Krypt One](https://www.instagram.com/krypt.one/) and Siddharth Salian designed every wall; Krypt One executed all of it, city after city, night after night. The full trip — the painting, the cities, the people — is captured in [this video](https://www.youtube.com/watch?v=-EecfvR0_FE).`,
+[Krypt One](https://www.instagram.com/krypt.one/) and Siddharth Salian designed every wall; Krypt One executed all of it, city after city, night after night. The full trip (the painting, the cities, the people) is captured in [this video](https://www.youtube.com/watch?v=-EecfvR0_FE).`,
   },
 ];
 
