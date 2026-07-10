@@ -271,13 +271,13 @@ I was 22, freshly graduated as a Mechanical Engineer. My job title was Jr. Assoc
 
 Over the course of a month, I designed and fabricated 17 DIY survival devices: a rainwater collector rigged on a high-rise balcony, a catapult, a firestarter fashioned from steel wool and a dead battery, a rat trap, a urine-powered battery, and a guitar made from wooden sticks and a paint can with rope for strings. Four of the seventeen made the final cut of the film.
 
-## The Film and the People Behind It
+## The film and the people behind it
 
 [Vikramaditya Motwane](https://en.wikipedia.org/wiki/Vikramaditya_Motwane) is one of Hindi cinema's most precise directors — the mind behind **Udaan**, **Lootera**, and **AK vs AK**. Trapped was his most stripped-down work: a near-dialogue-free survival film set almost entirely in one locked apartment.
 
 [Rajkumaar Rao](https://en.wikipedia.org/wiki/Rajkummar_Rao) had already won a National Award for **Shahid** before Trapped. Here he lost significant weight for the role and carried almost every frame alone — his performance and the props around him were the entire movie.
 
-## How the Film Was Received
+## How the film was received
 
 Trapped released in 2017 to widespread critical acclaim. Critics called it a masterclass in minimalist filmmaking — a survival thriller that worked not through spectacle but through the slow, grinding logic of a man forced to improvise his way back to life. Rao's performance was recognised at multiple award ceremonies, and the film has since been cited as one of the more formally ambitious Indian films of that decade.
 
@@ -317,13 +317,13 @@ The campaign ran as an influencer series across Instagram under [#standtallforal
 
 What Lee Jeans captured in the campaign was something Wicked Broz had always understood: you don't need a stage, a grant, or a gallery to make something meaningful. A can of paint and the conviction that one wall can shift how a neighbourhood sees itself — that's enough to start. "All it takes for a street artist to stand tall — all you really need, is to believe in yourself. You can change the world, one wall at a time."
 
-## The Other Changemakers
+## The other changemakers
 
 The campaign was a collective, not a solo feature. Wicked Broz shared the series with four others, each standing tall in a completely different arena.
 
 [Malhar Kalambe](https://www.instagram.com/kalambemalhar/) is an environmentalist and the founder of **Beach Please** — a grassroots weekly clean-up movement that has removed over 8.5 million kilograms of waste from Mumbai's beaches and rivers since 2017. Recognised by Forbes India, awarded by the UN, and honoured with the National Creators Award 2024 by the Prime Minister of India.
 
-[Taba Chake](https://www.instagram.com/taba.chake/) is a singer-songwriter from Arunachal Pradesh whose finger-style guitar and multilingual songwriting has carried the sounds of India's Northeast to a national audience. The first artist from his state to make his Bollywood playback debut, he now serves as the Government of Arunachal Pradesh's official Ambassador for Art and Culture.
+[Taba Chake](https://www.instagram.com/taba.chake/) is a singer-songwriter from Arunachal Pradesh whose finger-style guitar and multilingual songwriting has carried the sounds of India's Northeast to a national audience. The first artist from his state to make his Bollywood playback debut, he is now the Government of Arunachal Pradesh's official Ambassador for Art and Culture.
 
 [Arnab Biswas](https://www.instagram.com/urnavishwas/) is a finance professional and LGBTIQA+ inclusion evangelist whose candid, personal storytelling on social media gave visibility to a community rarely seen in mainstream brand campaigns.
 
