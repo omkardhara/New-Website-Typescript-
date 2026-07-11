@@ -203,7 +203,7 @@ The crises kept lurking
 The pressure kept surging
 Yet she radiated with love and grace
 
-Current
+Present
 
 The sun has seen her baffling all odds
 It's seen her come so far

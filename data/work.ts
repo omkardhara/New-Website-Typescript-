@@ -846,7 +846,7 @@ Talking about flow state to a room of 2,000 kids only works if you can make them
       'Pre-Marriage: "She bloomed, with her smile came joy"',
       'Marriage: "She found love, and with it responsibility"',
       'Married Life: "Anew, she started to blend"',
-      'Current: "A mother, she\'s truly a star"',
+      'Present: "A mother, she\'s truly a star"',
     ],
     article: `For my mom's 55th birthday, I wrote and illustrated a book of poetry built entirely around her life: six chapters, six watercolour portraits, one continuous poem.
 
