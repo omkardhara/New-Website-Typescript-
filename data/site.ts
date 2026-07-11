@@ -360,14 +360,6 @@ export const NOTES: Note[] = [
       '/images/poetry-book-mom/married-life.jpg',
       '/images/poetry-book-mom/current.jpg',
     ],
-    captions: [
-      'Illustrated portrait — Childhood',
-      'Illustrated portrait — Teens',
-      'Illustrated portrait — Pre-Marriage',
-      'Illustrated portrait — Marriage',
-      'Illustrated portrait — Married Life',
-      'Illustrated portrait — Current',
-    ],
   },
   {
     id: 20,
