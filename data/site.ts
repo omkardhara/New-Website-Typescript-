@@ -396,6 +396,8 @@ export const NOTES: Note[] = [
     excerpt: 'The boy was walking. Alone in the desert / Walking. Despair stalking. Demons talking / Not a soul in sight.',
     content: WRITING_CONTENT['the-refugee'],
     image: '/images/writing/the-refugee.jpg',
+    instagramUrl: 'https://www.instagram.com/reel/DdzD2fToAU7/',
+    instagramCaption: "Here's the animated version of the poem",
   },
   {
     id: 15,

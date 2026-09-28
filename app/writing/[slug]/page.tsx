@@ -6,6 +6,7 @@ import Image from 'next/image';
 import { ShareButton } from '@/components/ShareButton';
 import { NOTES, getNoteBySlug } from '@/data/site';
 import { ReadingProgress } from '@/components/ReadingProgress';
+import { InstagramEmbed } from '@/components/InstagramEmbed';
 
 export function generateStaticParams() {
   return NOTES.filter((n) => !n.url).map((n) => ({ slug: n.slug }));
@@ -248,6 +249,27 @@ export default function WritingPage({ params }: { params: { slug: string } }) {
             priority
           />
         </div>
+      )}
+
+      {note.instagramUrl && (
+        <figure style={{ margin: 'clamp(32px,4vw,48px) auto', maxWidth: '400px', padding: '0 clamp(20px,5vw,32px)' }}>
+          <InstagramEmbed url={note.instagramUrl} title={note.title} />
+          {note.instagramCaption && (
+            <figcaption
+              style={{
+                textAlign: 'center',
+                marginTop: '14px',
+                fontFamily: 'var(--font-mono)',
+                fontSize: '12px',
+                fontStyle: 'italic',
+                color: 'var(--text-dark-3)',
+                letterSpacing: '0.04em',
+              }}
+            >
+              {note.instagramCaption}
+            </figcaption>
+          )}
+        </figure>
       )}
 
       <div

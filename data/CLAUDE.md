@@ -16,11 +16,13 @@ Cards with an `image` field automatically sort before cards without one. No manu
 
 ## Note type
 ```ts
-{ id, slug, title, date, read, tag, excerpt, type, image?, imagePosition?, content?, aiAssisted?, url?, publication? }
+{ id, slug, title, date, read, tag, excerpt, type, image?, imagePosition?, images?, captions?, instagramUrl?, instagramCaption?, content?, aiAssisted?, url?, publication? }
 ```
 - `type`: `article | poem | short-story`
 - Writing sections: `essays` = articles + short-stories where publication ≠ Red Bull; `redbull` = publication === 'Red Bull'; `poems` = type === poem
 - External notes (`url` set) don't get internal pages — excluded from generateStaticParams
+- `images?`/`captions?` — poem-only gallery; the poem renderer pairs each single-line "chapter heading" stanza block with the next image in order (only activates when `images` is set)
+- `instagramUrl?` — full Instagram post/reel URL; renders an embed (via `InstagramEmbed`) below the hero image. Pair with `instagramCaption?` for a subtext line under it
 
 ## PressItem type
 ```ts

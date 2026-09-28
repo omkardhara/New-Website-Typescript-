@@ -68,6 +68,8 @@ export type Note = {
   imagePosition?: string;
   images?: string[];
   captions?: string[];
+  instagramUrl?: string;
+  instagramCaption?: string;
   content?: string;
   aiAssisted?: boolean;
   url?: string;
