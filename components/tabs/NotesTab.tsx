@@ -18,9 +18,9 @@ function Excerpt({ text }: { text: string }) {
 }
 
 const SUB_TABS: { id: WritingSection; label: string; href: string }[] = [
+  { id: 'poems',   label: 'Poems',    href: '/writing/poems'   },
   { id: 'essays',  label: 'Essays',   href: '/writing/essays'  },
   { id: 'redbull', label: 'Red Bull', href: '/writing/redbull' },
-  { id: 'poems',   label: 'Poems',    href: '/writing/poems'   },
 ];
 
 function getFiltered(section: WritingSection) {
@@ -39,7 +39,7 @@ function getFiltered(section: WritingSection) {
 const PREVIEW_COUNT = 3;
 
 export function NotesTab() {
-  const [active, setActive] = useState<WritingSection>('essays');
+  const [active, setActive] = useState<WritingSection>('poems');
   const filtered = getFiltered(active);
   const preview = filtered.slice(0, PREVIEW_COUNT);
   const [featured, ...rest] = preview;

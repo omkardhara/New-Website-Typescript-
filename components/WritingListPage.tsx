@@ -17,9 +17,9 @@ function Excerpt({ text }: { text: string }) {
 export type WritingSection = 'essays' | 'redbull' | 'poems';
 
 const SECTIONS: { id: WritingSection; label: string; href: string }[] = [
+  { id: 'poems',   label: 'Poems',    href: '/writing/poems'   },
   { id: 'essays',  label: 'Essays',   href: '/writing/essays'  },
   { id: 'redbull', label: 'Red Bull', href: '/writing/redbull' },
-  { id: 'poems',   label: 'Poems',    href: '/writing/poems'   },
 ];
 
 const SECTION_TITLES: Record<WritingSection, string> = {
