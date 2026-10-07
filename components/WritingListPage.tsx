@@ -144,6 +144,23 @@ export function WritingListPage({ section }: { section: WritingSection }) {
           {title}
         </h1>
 
+        {section === 'redbull' && (
+          <p
+            style={{
+              maxWidth: '720px',
+              fontSize: '16px',
+              lineHeight: 1.7,
+              color: 'var(--text-dark-3)',
+              margin: '-24px 0 48px',
+            }}
+          >
+            Since 2019, I&apos;ve been a freelance writer for Red Bull India — profiles, event reports and
+            features from the places where sport meets street culture. There are {notes.length} pieces here:
+            dance and breaking (BC One Cypher India, cyphers, battles), football, surfing, fitness,
+            motorsport and music. Each card links to the original article on redbull.com.
+          </p>
+        )}
+
         <div className="writing-list-grid">
           {notes.map((n) => (
             <Link
