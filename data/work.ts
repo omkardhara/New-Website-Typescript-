@@ -833,6 +833,7 @@ Talking about flow state to a room of 2,000 kids only works if you can make them
     gradient: 'radial-gradient(ellipse at 50% 45%, rgba(200,100,80,0.2), rgba(15,15,13,0.12) 65%, var(--bg-cream))',
     image: '/images/poetry-book-mom/cover-spread.jpg',
     images: [
+      '/images/poetry-book-mom/cover-spread.jpg',
       '/images/poetry-book-mom/childhood.jpg',
       '/images/poetry-book-mom/teens.jpg',
       '/images/poetry-book-mom/pre-marriage.jpg',
@@ -841,6 +842,7 @@ Talking about flow state to a room of 2,000 kids only works if you can make them
       '/images/poetry-book-mom/current.jpg',
     ],
     captions: [
+      'The cover: A Journey, From Auspiciousness to Pure Gold',
       'Childhood: "Auspiciousness in tow, she came to this world"',
       'Teens: "A versatile artist, with fingers of magic"',
       'Pre-Marriage: "She bloomed, with her smile came joy"',
