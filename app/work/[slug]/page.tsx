@@ -217,6 +217,17 @@ export default function ProjectPage({ params }: { params: { slug: string } }) {
           {item.title}
         </h1>
 
+        <p
+          style={{
+            fontSize: '19px',
+            lineHeight: 1.6,
+            color: 'var(--text-dark-2)',
+            margin: '0 0 24px',
+          }}
+        >
+          {item.desc}
+        </p>
+
         <div
           style={{
             fontFamily: 'var(--font-mono)',

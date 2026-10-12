@@ -22,6 +22,8 @@ export type WorkItem = {
   url?: string;
   linkLabel?: string;
   hidden?: boolean;
+  /** Placeholder entry: excluded from lists, routes, and the sitemap until content is ready. */
+  draft?: boolean;
 };
 
 export type Video = {

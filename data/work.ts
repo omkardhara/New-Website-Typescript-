@@ -11,7 +11,7 @@ export const WORK_FILTERS = [
   { id: 'education',   label: 'Education'     },
 ] as const;
 
-export const WORK: WorkItem[] = [
+const ALL_WORK: WorkItem[] = [
   {
     id: 1,
     slug: 'garbage-spots-bollywood-memes',
@@ -620,6 +620,7 @@ The video above is the full session.`,
   {
     id: 16,
     slug: 'wall-murals',
+    draft: true,
     cat: 'art',
     tag: 'Art · Street Art · Murals',
     title: 'Wall Murals',
@@ -632,6 +633,7 @@ The video above is the full session.`,
   {
     id: 17,
     slug: 'illustrations',
+    draft: true,
     cat: 'art',
     tag: 'Art · Illustration',
     title: 'Illustrations',
@@ -912,5 +914,7 @@ Mumbai got two stops of its own: Colaba and Bandra. The Colaba shutter is where 
 The video above has all of it: the painting, the cities, the people.`,
   },
 ];
+
+export const WORK: WorkItem[] = ALL_WORK.filter((w) => !w.draft);
 
 export const getWorkBySlug = (slug: string) => WORK.find((w) => w.slug === slug);

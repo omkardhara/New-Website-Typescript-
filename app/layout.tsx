@@ -4,7 +4,7 @@ import { Nav } from '@/components/Nav';
 import { Footer } from '@/components/Footer';
 import { ScrollToTop } from '@/components/ScrollToTop';
 import { Analytics } from '@vercel/analytics/next';
-import { SOCIALS } from '@/data/site';
+import { SOCIALS, PRESS } from '@/data/site';
 import './globals.css';
 
 const SITE_URL = 'https://www.omkardhareshwar.com';
@@ -80,10 +80,18 @@ export const viewport: Viewport = {
   themeColor: '#0F0F0D',
 };
 
+const pressNames = Array.from(new Set(PRESS.map((p) => p.publication)));
+const pressPublications =
+  pressNames.length > 1 ? `${pressNames.slice(0, -1).join(', ')} and ${pressNames[pressNames.length - 1]}` : pressNames.join('');
+
 const personSchema = {
   '@context': 'https://schema.org',
   '@type': 'Person',
+  '@id': `${SITE_URL}/#person`,
   name: 'Omkar Dhareshwar',
+  description:
+    'Omkar Dhareshwar is a flow artist, performer and street artist based in Mumbai, India. He runs flow arts and juggling workshops, brand activations and community art projects, and co-founded Wicked Broz and Marol Art Village.',
+  image: `${SITE_URL}/og-2025.jpg`,
   alternateName: 'ManWith3Balls',
   jobTitle: 'Flow Artist, Performer & Storyteller',
   url: SITE_URL,
@@ -116,7 +124,7 @@ const personSchema = {
     '@type': 'CollectionPage',
     name: 'Press Coverage',
     url: `${SITE_URL}/press`,
-    description: 'Media features in National Geographic Traveller India, World Atlas of Street Art, Mid-Day, Times of India and Free Press Journal.',
+    description: `Media features in ${pressPublications}.`,
   },
 };
 

@@ -2,7 +2,8 @@
 
 ## WorkItem type
 ```ts
-{ id, slug, cat, tag, title, desc, stat, glyph, gradient?, image?, images?, captions?, article?, yt?, url?, linkLabel? }
+{ id, slug, cat, tag, title, desc, stat, glyph, gradient?, image?, images?, captions?, article?, yt?, url?, linkLabel?, hidden?, draft? }
+// draft: true removes the item from lists, routes and the sitemap until it is ready
 ```
 - `cat` values: `performance | brand | installation | activism | production | art | education`
 - `url?` — if set, card links externally; no internal page is generated
