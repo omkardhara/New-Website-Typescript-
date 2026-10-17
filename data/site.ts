@@ -661,6 +661,7 @@ export const NOTES: Note[] = [
     type: 'poem',
     excerpt: 'Time to switch on airplane mode / Turn the phones away / No calls for the next few hours.',
     content: WRITING_CONTENT['airplane-mode'],
+    image: '/images/writing/airplane-mode.jpg',
   },
 ];
 
