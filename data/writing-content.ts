@@ -385,6 +385,51 @@ An illusion, is this dark gloom.
 Eternal hunger in this prison of aspiration,
 There's no escape from this City of Doom.`,
 
+'airplane-mode': `Time to switch on airplane mode
+Turn the phones away
+No calls for the next few hours
+This feeling's just great
+
+The shackles start to come off
+As the peace gently settles in
+Everything stands still for the moment
+Without any notifications meddling
+
+Thoughts can finally soar now
+As the clouds float below
+Engines of creativity rumble on
+As the ac gently blows
+
+My mind goes back to the time
+When these devices didn't exist
+And this constant urge to swipe up and down
+We all could resist
+
+When you actually had to work hard
+To get a dopamine fix
+Before this disease infected human kind
+This technology made us sick
+
+How did we reach here?
+Can we undo this mess?
+Can we slow down this ticking time bomb
+Of anxiety, loneliness and stress?
+
+My thoughts get interrupted
+By the sound of the tyres hitting the tarmac
+Like violently been pulled out from a dream
+The shackles start snapping back
+
+The sound of notifications fill the air
+Before the flight even comes to a stop
+And we're back in this world of
+fake news, constant urgency and AI slop.
+
+And I pray I get to bathe in these waters
+Before the memories fade away
+Of no calls for the next few hours
+That feeling was just great`,
+
 'my-mind-wanders-free': `In a world bound by rules
 Forced to trudge down a paved path
 More like laws, not guidelines but,

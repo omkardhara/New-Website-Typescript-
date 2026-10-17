@@ -342,6 +342,17 @@ export const NOTES: Note[] = [
 
   // ── Poems ─────────────────────────────────────────────────
   {
+    id: 40,
+    slug: 'airplane-mode',
+    title: 'Airplane Mode',
+    date: '2026',
+    read: '2 min',
+    tag: 'Technology',
+    type: 'poem',
+    excerpt: 'Time to switch on airplane mode / Turn the phones away / No calls for the next few hours.',
+    content: WRITING_CONTENT['airplane-mode'],
+  },
+  {
     id: 39,
     slug: 'a-journey-from-auspiciousness-to-pure-gold',
     title: 'A Journey — From Auspiciousness to Pure Gold',
