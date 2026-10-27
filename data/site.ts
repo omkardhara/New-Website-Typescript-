@@ -663,6 +663,17 @@ export const NOTES: Note[] = [
     content: WRITING_CONTENT['airplane-mode'],
     image: '/images/writing/airplane-mode.jpg',
   },
+  {
+    id: 41,
+    slug: 'beast-of-burden',
+    title: 'Beast of Burden',
+    date: '2026',
+    read: '2 min',
+    tag: 'Freedom',
+    type: 'poem',
+    excerpt: 'Oh poor beast of burden / How tragic is your life / Bound to carry weight forever.',
+    content: WRITING_CONTENT['beast-of-burden'],
+  },
 ];
 
 // ─── STORY CHAPTERS ─────────────────────────────────────────

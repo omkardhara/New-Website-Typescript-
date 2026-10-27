@@ -385,6 +385,61 @@ An illusion, is this dark gloom.
 Eternal hunger in this prison of aspiration,
 There's no escape from this City of Doom.`,
 
+'beast-of-burden': `Oh poor beast of burden
+How tragic is your life
+Bound to carry weight forever
+Your dreams can never take flight
+
+Chained to your master always
+How truly pitiful is that
+His whip held at the ready
+One wrong move, and Whack!
+
+Oh poor beast of burden
+If only you were a little bright
+You could've make your own choices
+You'd be in control of your life
+
+From day to night you slog alone
+No end to the misery in sight
+You're destined to lead this pitiful life
+Only winter brings you respite
+
+The beast snorts and shakes his head
+His mane shimmering in the sunlight
+Oh young one , do you not see
+How you and I are alike?
+
+My weight comes off at the end of the day
+Atleast I sleep in peace
+But you carry the burden of hope,
+Anxieties weigh over your dreams
+
+I do have a master, yes
+Who's kind only when I behave
+But society dictates you the same way
+You're nothing but a slave.
+
+This intelligence that you wear with pride
+The epitome of your existence, oh human
+Is just like the blinders Im forced to wear
+Freedom of choice, is but an illusion
+
+Atleast in winters I get to rest
+You're forever pushed by your greed
+There is no end to your madness in sight
+Your wants tower over your needs
+
+Alas, we're both beasts of burden
+By destiny are were both bound
+You can flail and fight as much as you want
+But soon, you'll come around
+
+The beast snorts and shakes his head
+His mane shimmering in the sunlight
+Oh young one , do you not see
+How you and I are alike?`,
+
 'airplane-mode': `Time to switch on airplane mode
 And stow the phones away
 No calls for the next few hours
