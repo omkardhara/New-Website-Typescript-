@@ -669,7 +669,7 @@ export const NOTES: Note[] = [
     title: 'Beast of Burden',
     date: '2026',
     read: '2 min',
-    tag: 'Freedom',
+    tag: 'Society',
     type: 'poem',
     excerpt: 'Oh poor beast of burden / How tragic is your life / Bound to carry weight forever.',
     content: WRITING_CONTENT['beast-of-burden'],
