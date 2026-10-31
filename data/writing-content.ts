@@ -431,7 +431,7 @@ There is no end to your madness in sight
 Your wants tower over your needs
 
 Alas, we're both beasts of burden
-By destiny are were both bound
+By destiny are we both bound
 You can flail and fight as much as you want
 But soon, you'll come around
 
